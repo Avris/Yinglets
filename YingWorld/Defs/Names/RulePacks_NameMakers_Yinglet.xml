@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+	<defName>NamerPersonYinglet</defName>
+    <rulePack>
+		<rulesStrings>
+			<li>name->[malefirst] </li>
+			<li>name->[femalefirst] </li>
+		</rulesStrings>
+		<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>last</keyword>
+				<path>Yinglet_Names/Yinglet_last</path>
+			</li>
+			<li Class="Rule_File">
+			  <keyword>town</keyword>
+			  <path>Yinglet_Names/Yinglet_town</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>malefirst</keyword>
+				<path>Yinglet_Names/malefirst</path>
+			</li>
+			<li Class="Rule_File">
+			  <keyword>femalefirst</keyword>
+			  <path>Yinglet_Names/femalefirst</path>
+			</li>
+			<li Class="Rule_NamePerson">
+				<gender>Male</gender>
+				<keyword>malefirst</keyword>
+			</li>
+			<li Class="Rule_NamePerson">
+				<gender>Female</gender>
+				<keyword>femalefirst</keyword>
+			</li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

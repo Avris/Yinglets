@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ModMetaData>
+	<name>Yinglets</name>
+	<author>Val Salia and Co </author>
+	<url/>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>Derpy, stilt-legged and sometimes on fire.
+
+	Alien Race Framework 2.0 required, load this mod after it.
+
+	</description>
+</ModMetaData>

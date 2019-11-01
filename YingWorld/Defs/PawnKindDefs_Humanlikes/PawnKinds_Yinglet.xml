@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ============================ Yinglet Base ========================== -->
+
+	<PawnKindDef Name="YingletBase" Abstract="True">
+		<defaultFactionType>YingletEnclave</defaultFactionType>
+		<race>Alien_Yinglet</race>
+		<chemicalAddictionChance>0.005</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>YingletPlayer</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>YingletStart</defName>
+	</ResearchProjectTagDef>
+	<ResearchProjectTagDef>
+		<defName>ta-ignore</defName>
+	</ResearchProjectTagDef>
+
+	<!--<ResearchProjectDef>
+		<defName>LeeaniBrewing</defName>
+		<label>Cider Brewing</label>
+		<description>One of the oldest alcohols of all time. Unlocks juniper cultivation, wine press and cider keg.\n\nRequires Leeani researcher.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+			<li>LeeaniStart</li>
+			<li>ta-ignore</li>
+		</tags>
+		<tab>YingletResearchTab</tab>
+		<prerequisites>
+			<li>Brewing</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>-->
+</Defs>

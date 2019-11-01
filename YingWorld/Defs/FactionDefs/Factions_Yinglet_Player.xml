@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="YingletFactionBase">
+	</FactionDef>
+
+	<FactionDef Parent="YingletFactionBase">
+		<defName>YingletPlayerColony</defName>
+		<label>Yinglet Enclave</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Yinglet</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>YingletBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/YingletBaseIcon</homeIconPath>
+		<expandingIconTexture>World/YingletBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<li>YingletStart</li>
+		</startingResearchTags>
+		<forageabilityFactor>1.5</forageabilityFactor>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoolMuffalo</li>
+				<li>WoolAlpaca</li>
+			</thingDefs>
+		</apparelStuffFilter>
+
+	</FactionDef>
+
+	<FactionDef Parent="YingletFactionBase">
+		<defName>YingletPlayerColonyTribal</defName>
+		<label>Yinglet Enclave (No Research)</label>
+		<description>Yinglet Tribe. Only tribal researches done, but medieval tech level.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Yinglet</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>YingletBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+		<expandingIconTexture>World/WorldObjects/Expanding/Village</expandingIconTexture>
+		<startingResearchTags>
+			<li>TribalStart</li>
+			<li>YingletStart</li>
+		</startingResearchTags>
+		<forageabilityFactor>2.0</forageabilityFactor>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoolMuffalo</li>
+				<li>WoolAlpaca</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>
