@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
-<!--
-MAIN SPECIES DEFINITION
-
-Log:
-30-10-19 Foximus - Created file
-30-10-19 Sonja - polish
-
--->
-
 <Defs>
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Alien_Yinglet</defName>
@@ -46,7 +36,7 @@ Log:
 						<chance>10</chance>
 					</li>
 					<li>
-						<defname>Gay</defname>
+						<defName>Gay</defName>
 						<chance>60</chance>
 					</li>
 				</forcedRaceTraitEntries>
@@ -54,6 +44,9 @@ Log:
 					<li>BodyPurist</li>
 				</disallowedTraits>
 				<alienPartGenerator>
+					<useGenderedHeads>true</useGenderedHeads>
+					<useGenderedBodies>true</useGenderedBodies>
+				
 					<alienbodytypes>
 						<li>Thin</li>
 					</alienbodytypes>
@@ -73,7 +66,7 @@ Log:
 							</li>
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.3,0.1,0.5,1)</only>
+								<only>RGBA(0.5,0.4,0.4,1)</only>
 							</li>
 						</options>
 					</alienskincolorgen>
@@ -81,7 +74,7 @@ Log:
 						<options>
 							<li>
 								<weight>10</weight>
-								<only>RGBA(0.2,0.1,0.3,1)</only>
+								<only>RGBA(0.3,0.3,0.4,1)</only>
 							</li>
 							<li>
 								<weight>5</weight>
@@ -89,15 +82,15 @@ Log:
 							</li>
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.5,0.3,0.0,1)</only>
+								<only>RGBA(0.5,0.3,0.3,1)</only>
 							</li>
 						</options>
 					</alienskinsecondcolorgen>
 					
 					<bodyAddons>
 						<li>
-							<path>Things/Yinglet/Tails/TailYingF</path>
-							<bodyPart>yinglet tail</bodyPart>
+							<path>Things/Yinglet/Tail/TailYingF</path>
+							<bodyPart>YingletTail</bodyPart>
 							<useSkinColor>true</useSkinColor>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawnInBed>false</drawnInBed>
