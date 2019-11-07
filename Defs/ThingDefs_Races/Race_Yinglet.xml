@@ -6,7 +6,7 @@
 		<description>A recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
 		<alienRace>
 			<generalSettings>
-				<maleGenderProbability>0.8</maleGenderProbability>
+				<maleGenderProbability>0.6</maleGenderProbability>
 				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToAge>false</immuneToAge>
@@ -91,6 +91,46 @@
 						<li>
 							<path>Things/Yinglet/Tail/TailYingF</path>
 							<bodyPart>YingletTail</bodyPart>
+							<drawForMale>false</drawForMale >
+							<drawForFemale>true</drawForFemale>
+							<useSkinColor>true</useSkinColor>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawnInBed>false</drawnInBed>
+							<drawnOnGround>true</drawnOnGround>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Female>(-0.45,0.2)</Female>
+										<Thin>(-0.45,0.2)</Thin>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Female>(0,0.4)</Female>
+										<Thin>(0,0.4)</Thin>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Female>(-0.45,0.2)</Female>
+										<Thin>(-0.45,0.2)</Thin>
+									</bodyTypes>
+								</east>
+								<west>
+									<bodyTypes>
+										<Female>(-0.45,0.2)</Female>
+										<Thin>(-0.45,0.2)</Thin>
+									</bodyTypes>
+								</west>
+							</offsets>
+							<hediffGraphics>
+							</hediffGraphics>
+						</li>
+						<li>
+							<path>Things/Yinglet/Tail/TailYingM</path>
+							<bodyPart>YingletTailMale</bodyPart>
+							<drawForMale>true</drawForMale >
+							<drawForFemale>false</drawForFemale>
 							<useSkinColor>true</useSkinColor>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawnInBed>false</drawnInBed>
@@ -99,32 +139,24 @@
 								<south>
 									<bodyTypes>
 										<Male>(-0.45,0.2)</Male>
-										<Female>(-0.45,0.2)</Female>
-										<Fat>(-0.45,0.2)</Fat>
 										<Thin>(-0.45,0.2)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Male>(0,0.2)</Male>
-										<Female>(0,0.2)</Female>
-										<Fat>(0,0.2)</Fat>
-										<Thin>(0,0.2)</Thin>
+										<Male>(0,0.4)</Male>
+										<Thin>(0,0.4)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Male>(-0.45,0.2)</Male>
-										<Female>(-0.45,0.2)</Female>
-										<Fat>(-0.45,0.2)</Fat>
 										<Thin>(-0.45,0.2)</Thin>
 									</bodyTypes>
 								</east>
 								<west>
 									<bodyTypes>
 										<Male>(-0.45,0.2)</Male>
-										<Female>(-0.45,0.2)</Female>
-										<Fat>(-0.45,0.2)</Fat>
 										<Thin>(-0.45,0.2)</Thin>
 									</bodyTypes>
 								</west>
