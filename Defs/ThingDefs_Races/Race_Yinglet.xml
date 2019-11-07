@@ -132,6 +132,34 @@
 							<hediffGraphics>
 							</hediffGraphics>
 						</li>
+						<li>
+							<path>Things/Yinglet/Eyes/Female_Eyes_Default</path> <!-- Required field -->
+							<bodyPart>Eye</bodyPart> <!-- Required field -->
+							<useSkinColor>false</useSkinColor> <!-- When this is set to false, shader uses hair color. -->
+							<inFrontOfBody>true</inFrontOfBody> <!-- Sets layer offset to 0.30. "false" sets offset to -0.30. -->
+							<layerOffset>-0.27</layerOffset> <!-- Summed with the previous field. Chosen value results in an offset of 0.03, which places this addon above the head layer but below the headgear layer. A value of 0.01 is used for body addons. -->
+							<drawForMale>false</drawForMale> <!-- Useful for gender-specific addons. -->
+							<drawForFemale>true</drawForFemale> <!-- Useful for gender-specific addons. -->
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Thin>(-0.42, 0.16)</Thin>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.00, 0.00)</Average_Normal>
+									</crownTypes>
+								</south>
+								<north />
+								<east>
+									<bodyTypes>
+										<Thin>(-0.51, 0.15)</Thin>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.00, 0.00)</Average_Normal>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
 					</bodyAddons>
 				</alienPartGenerator>
 				<chemicalSettings>	
