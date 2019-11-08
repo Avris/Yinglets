@@ -87,6 +87,28 @@
 						</options>
 					</alienskinsecondcolorgen>
 					
+					<channelGenerators> <!-- New functionality utilizeing updated HAR code. -->
+						<li>
+							<channel>eyes</channel>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(0.000, 1.000, 0.000, 1.000)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</channelGenerators>
+					
 					<bodyAddons>
 						<li>
 							<path>Things/Yinglet/Tail/TailYingF</path>
@@ -167,7 +189,8 @@
 						<li>
 							<path>Things/Yinglet/Eyes/Female_Eyes_Default</path> <!-- Required field -->
 							<bodyPart>Eye</bodyPart> <!-- Required field -->
-							<useSkinColor>false</useSkinColor> <!-- When this is set to false, shader uses hair color. -->
+							<!--useSkinColor>false</useSkinColor--> <!-- When this is set to false, shader uses hair color. -->
+							<useColorChannel>eyes</useColorChannel> <!-- Sets the color channel to use the specified color generator. -->
 							<inFrontOfBody>true</inFrontOfBody> <!-- Sets layer offset to 0.30. "false" sets offset to -0.30. -->
 							<layerOffset>-0.27</layerOffset> <!-- Summed with the previous field. Chosen value results in an offset of 0.03, which places this addon above the head layer but below the headgear layer. A value of 0.01 is used for body addons. -->
 							<drawForMale>false</drawForMale> <!-- Useful for gender-specific addons. -->
