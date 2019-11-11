@@ -47,15 +47,6 @@
 					</groups>
 				</li>
 				<li>
-					<def>YingletTailMale</def>
-					<customLabel>yinglet male tail</customLabel>
-					<coverage>0.05</coverage>
-					<height>Bottom</height>
-					<groups>
-						<li>Torso</li>
-					</groups>
-				</li>
-				<li>
 					<def>Spine</def>
 					<coverage>0.02</coverage>
 					<depth>Inside</depth>

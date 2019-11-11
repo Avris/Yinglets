@@ -56,33 +56,54 @@
 					
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
+							<!-- browns -->
 							<li>
-								<weight>10</weight>
-								<only>RGBA(1.0,1.0,1.0,1)</only>
+								<weight>8</weight>
+								<only>RGBA(0.48,0.35,0.23,1.0)</only> <!-- brown -->
 							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.83,0.69,0.51,1.0)</only> <!-- sand-brown -->
+							</li>
+							<li>
+								<weight>7</weight>
+								<only>RGBA(0.51,0.31,0.24,1.0)</only> <!-- red brown -->
+							</li>
+							
+							<!-- blues -->
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.7,0.6,0.6,1)</only>
-							</li>
+								<only>RGBA(0.29,0.30,0.33,1.0)</only> <!-- dark bluegrey -->
+							</li>	
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.5,0.4,0.4,1)</only>
-							</li>
+								<only>RGBA(0.51,0.61,0.67,1.0)</only> <!-- light bluegrey -->
+							</li>	
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.67,0.61,0.60,1.0)</only> <!-- red grey -->
+							</li>	
+
+							<!-- misc -->
+							<li>
+								<weight>3</weight>
+								<only>RGBA(0.98,0.98,0.98,1.0)</only> <!-- white -->
+							</li>	
 						</options>
 					</alienskincolorgen>
 					<alienskinsecondcolorgen Class="ColorGenerator_Options">
 						<options>
 							<li>
 								<weight>10</weight>
-								<only>RGBA(0.3,0.3,0.4,1)</only>
+								<only>RGBA(0.3,0.3,0.4,1.0)</only>
 							</li>
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.7,0.6,0.6,1)</only>
+								<only>RGBA(0.7,0.6,0.6,1.0)</only>
 							</li>
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.5,0.3,0.3,1)</only>
+								<only>RGBA(0.5,0.3,0.3,1.0)</only>
 							</li>
 						</options>
 					</alienskinsecondcolorgen>
@@ -92,17 +113,34 @@
 							<name>eye</name>
 							<first Class="ColorGenerator_Options">
 								<options>
+									<!-- Yellows -->
 									<li>
 										<weight>10</weight>
-										<only>RGBA(0.000, 1.000, 0.000, 1.000)</only>
+										<only>RGBA(1.0, 0.78, 0.36, 1.0)</only> <!-- orange -->
 									</li>
 									<li>
-										<weight>10</weight>
-										<only>RGBA(0.000, 0.500, 1.000, 1.000)</only>
+										<weight>5</weight>
+										<only>RGBA(1.0, 0.82, 0.28, 1.0)</only> <!-- yellow -->
+									</li>
+									
+									<!-- blues -->
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.57, 0.61, 0.78, 1.0)</only> <!-- light blue -->
 									</li>
 									<li>
-										<weight>10</weight>
-										<only>RGBA(0.000, 0.000, 1.000, 1.000)</only>
+										<weight>5</weight>
+										<only>RGBA(0.18, 0.62, 0.74, 1.0)</only> <!-- cyan -->
+									</li>
+									
+									<!-- misc -->
+									<li>
+										<weight>5</weight>
+										<only>RGBA(1.0, 0.84, 0.82, 1.0)</only> <!-- pink -->
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only> <!-- white -->
 									</li>
 								</options>
 							</first>
@@ -110,7 +148,7 @@
 								<options>
 									<li>
 										<weight>10</weight>
-										<only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
 									</li>
 								</options>
 							</second>
@@ -158,7 +196,7 @@
 						</li>
 						<li>
 							<path>Things/Yinglet/Tail/TailYingM</path>
-							<bodyPart>YingletTailMale</bodyPart>
+							<bodyPart>YingletTail</bodyPart>
 							<drawForMale>true</drawForMale >
 							<drawForFemale>false</drawForFemale>
 							<useSkinColor>true</useSkinColor>
@@ -195,14 +233,41 @@
 							</hediffGraphics>
 						</li>
 						<li>
-							<path>Things/Yinglet/Eyes/Female_Eyes_Default</path> <!-- Required field -->
-							<bodyPart>Eye</bodyPart> <!-- Required field -->
-							<!--useSkinColor>false</useSkinColor--> <!-- When this is set to false, shader uses hair color. -->
-							<colorChannel>eye</colorChannel> <!-- Sets the color channel to use the specified color generator. -->
+							<path>Things/Yinglet/Eyes/Female_Eyes_Default</path>
+							<bodyPart>Eye</bodyPart>
+							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody> <!-- Sets layer offset to 0.30. "false" sets offset to -0.30. -->
 							<layerOffset>-0.27</layerOffset> <!-- Summed with the previous field. Chosen value results in an offset of 0.03, which places this addon above the head layer but below the headgear layer. A value of 0.01 is used for body addons. -->
-							<drawForMale>false</drawForMale> <!-- Useful for gender-specific addons. -->
-							<drawForFemale>true</drawForFemale> <!-- Useful for gender-specific addons. -->
+							<drawForMale>false</drawForMale>
+							<drawForFemale>true</drawForFemale>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Thin>(-0.42, 0.16)</Thin>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.00, 0.00)</Average_Normal>
+									</crownTypes>
+								</south>
+								<north />
+								<east>
+									<bodyTypes>
+										<Thin>(-0.51, 0.15)</Thin>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.00, 0.00)</Average_Normal>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Yinglet/Eyes/Male_Eyes_Default</path>
+							<bodyPart>Eye</bodyPart>
+							<colorChannel>eye</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.27</layerOffset>
+							<drawForMale>true</drawForMale>
+							<drawForFemale>false</drawForFemale>
 							<offsets>
 								<south>
 									<bodyTypes>
