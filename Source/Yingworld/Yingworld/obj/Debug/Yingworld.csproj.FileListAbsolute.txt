@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YingWorld\Assemblies\Yingworld.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YingWorld\Assemblies\Yingworld.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YingWorld\Source\Yingworld\Yingworld\obj\Debug\Yingworld.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YingWorld\Source\Yingworld\Yingworld\obj\Debug\Yingworld.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YingWorld\Source\Yingworld\Yingworld\obj\Debug\Yingworld.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YingWorld\Source\Yingworld\Yingworld\obj\Debug\Yingworld.pdb
