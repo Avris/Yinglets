@@ -9,14 +9,14 @@
 			<li>name->[femalefirst] </li>
 		</rulesStrings>
 		<rulesRaw>
-			<li Class="Rule_File">
+			<!--<li Class="Rule_File">
 				<keyword>last</keyword>
-				<path>Yinglet_Names/Yinglet_last</path>
-			</li>
+				<path>Yinglet_Names/Yingletlast</path>
+			</li>-
 			<li Class="Rule_File">
 			  <keyword>town</keyword>
 			  <path>Yinglet_Names/Yinglet_town</path>
-			</li>
+			</li>-->
 			<li Class="Rule_File">
 				<keyword>malefirst</keyword>
 				<path>Yinglet_Names/malefirst</path>
