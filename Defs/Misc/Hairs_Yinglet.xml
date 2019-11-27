@@ -7,7 +7,17 @@
     <hairGender>Any</hairGender>
     <texPath>Things/Pawn/Humanlike/Hairs/HairBlank</texPath>
 		<hairTags>
-			<li>YingletHair</li>
+			<li>YingletBald</li>
+		</hairTags>
+  </HairDef>
+  
+  <HairDef>
+    <defName>Yinglet_Hair_Male</defName>
+    <label>male hair</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/Male_Average_Hair</texPath>
+		<hairTags>
+			<li>YingletMaleHair</li>
 		</hairTags>
   </HairDef>
  
