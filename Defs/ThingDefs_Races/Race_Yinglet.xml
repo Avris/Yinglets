@@ -6,7 +6,7 @@
 		<description>A recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
 		<alienRace>
 			<generalSettings>
-				<maleGenderProbability>0.6</maleGenderProbability>
+				<maleGenderProbability>0.8</maleGenderProbability>
 				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToAge>false</immuneToAge>
@@ -51,9 +51,15 @@
 						<li>Thin</li>
 					</alienbodytypes>
 					
+					<aliencrowntypes>
+						<li>Average_Normal</li>
+						<li>Average_Var1</li>
+					</aliencrowntypes>
+					
 					<customDrawSize>(1, 1)</customDrawSize>
 					<headOffset>(0, -0.4)</headOffset>
 					
+					<!-- SKIN COLORS ============================================= -->
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
 							<!-- browns -->
@@ -108,6 +114,29 @@
 						</options>
 					</alienskinsecondcolorgen>
 					
+					<!-- HAIR COLORS ============================================= -->
+					<alienhaircolorgen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.51,0.77,0.86,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.70,0.65,0.82,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.61,0.75,0.91,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.79,0.86,0.96,1)</only>
+							</li>
+						</options>
+					</alienhaircolorgen>
+					
+					<!-- EYE COLORS ============================================= -->
 					<colorChannels> <!-- New functionality utilizeing updated HAR code. -->
 						<li>
 							<name>eye</name>
@@ -301,8 +330,18 @@
 				</li>
 			</graphicPaths>
 			<hairSettings>
-				<hasHair>false</hasHair>
+				<hasHair>true</hasHair>
+				<hairTags>
+					<li>YingletBald</li>
+					<li>YingletMaleHair</li>
+				</hairTags>
 			</hairSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>Yinglet_Herocape</li>
+				</apparelList>
+			</raceRestriction>
 			<relationSettings>
 				<relationChanceModifierChild>1</relationChanceModifierChild>
 				<relationChanceModifierExLover>1</relationChanceModifierExLover>
@@ -393,8 +432,8 @@
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
-			<lifeExpectancy>60</lifeExpectancy>
-			<!--<leatherDef>Leather_Yinglet</leatherDef>-->
+			<lifeExpectancy>40</lifeExpectancy>
+			<leatherDef>YingletLeather</leatherDef>
 			<nameGenerator>NamerPersonYinglet</nameGenerator>
 			<body>Yinglet</body>
 			<baseBodySize>0.6</baseBodySize>
