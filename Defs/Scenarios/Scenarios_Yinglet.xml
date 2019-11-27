@@ -50,8 +50,8 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>Bow_Great</thingDef> <!-- should be a spear??-->
-					<count>4</count>
+					<thingDef>Ying_Spear</thingDef> <!-- should be a spear??-->
+					<count>2</count>
 				</li>
 
 				<!-- Scatter some things near player start -->
