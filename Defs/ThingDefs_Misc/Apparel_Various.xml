@@ -4,10 +4,10 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Yinglet_Herocape</defName>
 		<label>Yinglet herocape</label>
-		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing an human or that the cape truly gave him flight.</description>
+		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Gear/Male_Herocape</texPath>
+			<texPath>Things/Pawn/Yinglet/Apparel/Male_Herocape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -33,9 +33,9 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Gear/Male_Herocape</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Yinglet/Apparel/Male_Herocape</wornGraphicPath>
 			<layers>
-				<li>OnSkin</li>
+				<li>Shell</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Civilian</li>

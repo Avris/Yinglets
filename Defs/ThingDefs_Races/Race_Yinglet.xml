@@ -48,7 +48,7 @@
 					<useGenderedBodies>true</useGenderedBodies>
 				
 					<alienbodytypes>
-						<li>Thin</li>
+						<li>Ying</li>
 					</alienbodytypes>
 					
 					<aliencrowntypes>
@@ -186,146 +186,104 @@
 					
 					<bodyAddons>
 						<li>
-							<path>Things/Yinglet/Tail/TailYingF</path>
+							<path>Things/Pawn/Yinglet/Tails/FemaleTail</path>
 							<bodyPart>YingletTail</bodyPart>
-							<drawForMale>false</drawForMale >
-							<drawForFemale>true</drawForFemale>
-							<useSkinColor>true</useSkinColor>
-							<inFrontOfBody>false</inFrontOfBody>
-							<drawnInBed>false</drawnInBed>
-							<drawnOnGround>true</drawnOnGround>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Female>(-0.45,0.2)</Female>
-										<Thin>(-0.45,0.2)</Thin>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Female>(0,0.4)</Female>
-										<Thin>(0,0.4)</Thin>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Female>(-0.45,0.2)</Female>
-										<Thin>(-0.45,0.2)</Thin>
-									</bodyTypes>
-								</east>
-								<west>
-									<bodyTypes>
-										<Female>(-0.45,0.2)</Female>
-										<Thin>(-0.45,0.2)</Thin>
-									</bodyTypes>
-								</west>
-							</offsets>
-							<hediffGraphics>
-							</hediffGraphics>
-						</li>
-						<li>
-							<path>Things/Yinglet/Tail/TailYingM</path>
-							<bodyPart>YingletTail</bodyPart>
-							<drawForMale>true</drawForMale >
-							<drawForFemale>false</drawForFemale>
-							<useSkinColor>true</useSkinColor>
-							<inFrontOfBody>false</inFrontOfBody>
-							<drawnInBed>false</drawnInBed>
-							<drawnOnGround>true</drawnOnGround>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Male>(-0.45,0.2)</Male>
-										<Thin>(-0.45,0.2)</Thin>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Male>(0,0.4)</Male>
-										<Thin>(0,0.4)</Thin>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Male>(-0.45,0.2)</Male>
-										<Thin>(-0.45,0.2)</Thin>
-									</bodyTypes>
-								</east>
-								<west>
-									<bodyTypes>
-										<Male>(-0.45,0.2)</Male>
-										<Thin>(-0.45,0.2)</Thin>
-									</bodyTypes>
-								</west>
-							</offsets>
-							<hediffGraphics>
-							</hediffGraphics>
-						</li>
-						<li>
-							<path>Things/Yinglet/Eyes/Female_Eyes_Default</path>
-							<bodyPart>Eye</bodyPart>
-							<colorChannel>eye</colorChannel>
-							<inFrontOfBody>true</inFrontOfBody> <!-- Sets layer offset to 0.30. "false" sets offset to -0.30. -->
-							<layerOffset>-0.27</layerOffset> <!-- Summed with the previous field. Chosen value results in an offset of 0.03, which places this addon above the head layer but below the headgear layer. A value of 0.01 is used for body addons. -->
+							<colorChannel>skin</colorChannel>
 							<drawForMale>false</drawForMale>
-							<drawForFemale>true</drawForFemale>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawnInBed>false</drawnInBed>
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Thin>(-0.42, 0.16)</Thin>
+										<Ying>(-0.45,0.2)</Ying>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.00, 0.00)</Average_Normal>
-									</crownTypes>
 								</south>
-								<north />
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.4)</Ying>
+									</bodyTypes>
+								</north>
 								<east>
 									<bodyTypes>
-										<Thin>(-0.51, 0.15)</Thin>
+										<Ying>(-0.45,0.2)</Ying>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.00, 0.00)</Average_Normal>
-									</crownTypes>
 								</east>
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Yinglet/Eyes/Male_Eyes_Default</path>
+							<path>Things/Pawn/Yinglet/Tails/MaleTail</path>
+							<bodyPart>YingletTail</bodyPart>
+							<colorChannel>skin</colorChannel>
+							<drawForFemale>false</drawForFemale>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.45,0.2)</Ying>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.4)</Ying>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.45,0.2)</Ying>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/Yinglet/Eyes/FemaleEyes</path>
 							<bodyPart>Eye</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
-							<drawForMale>true</drawForMale>
-							<drawForFemale>false</drawForFemale>
+							<drawForMale>false</drawForMale>
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Thin>(-0.42, 0.16)</Thin>
+										<Ying>(-0.42, 0.16)</Ying>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.00, 0.00)</Average_Normal>
-									</crownTypes>
 								</south>
 								<north />
 								<east>
 									<bodyTypes>
-										<Thin>(-0.51, 0.15)</Thin>
+										<Ying>(-0.51, 0.15)</Ying>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.00, 0.00)</Average_Normal>
-									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/Yinglet/Eyes/MaleEyes</path>
+							<bodyPart>Eye</bodyPart>
+							<colorChannel>eye</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.27</layerOffset>
+							<drawForFemale>false</drawForFemale>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42, 0.16)</Ying>
+									</bodyTypes>
+								</south>
+								<north />
+								<east>
+									<bodyTypes>
+										<Ying>(-0.51, 0.15)</Ying>
+									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
-				<chemicalSettings>	
-				</chemicalSettings>
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<head>Things/Yinglet/Head/</head>
-					<body>Things/Yinglet/Body/</body>
+					<head>Things/Pawn/Yinglet/Heads/</head>
+					<body>Things/Pawn/Yinglet/Bodies/</body>
 					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
 				</li>
 			</graphicPaths>
@@ -340,6 +298,7 @@
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>
 					<li>Yinglet_Herocape</li>
+					<li>Apparel_FlakVest</li>
 				</apparelList>
 			</raceRestriction>
 			<relationSettings>
