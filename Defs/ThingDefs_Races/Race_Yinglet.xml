@@ -7,7 +7,6 @@
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
-				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToAge>false</immuneToAge>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
