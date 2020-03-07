@@ -1,9 +1,11 @@
 ﻿<ModMetaData>
 	<name>YingWorld</name>
 	<author>Val Salia and Co </author>
+	<packageId>ValSalia.YingWorld.100</packageId>
 	<url/>
 	<supportedVersions>
 		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
 	<description>Derpy, stilt-legged and sometimes on fire.
 
