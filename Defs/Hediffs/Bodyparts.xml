@@ -4,6 +4,7 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>YingletBionicTail</defName>
 		<label>bionic yinglet tail</label>
+		<description>A tail that is beepboop.</description>
 		<spawnThingOnRemoved>YingletBionicTail</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -23,6 +24,7 @@
 
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>YingletClothTail</defName>
+		<description>A tail that is all snug and warm.</description>
 		<label>yinglet cloth tail</label>
 		<addedPartProps>
 			<solid>true</solid>
