@@ -12,4 +12,15 @@
 Alien Race Framework 2.0 required, load this mod after it.
 
 	</description>
+	<loadAfter>
+		<li>erdelf.HumanoidAlienRaces</li>
+	</loadAfter>
+	<modDependencies>
+		<li>
+		<packageId>erdelf.HumanoidAlienRaces</packageId>
+		<displayName>Humanoid Alien Races Framework</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+		<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+		</li>
+	</modDependencies>
 </ModMetaData>
