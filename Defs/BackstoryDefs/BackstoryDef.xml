@@ -105,7 +105,7 @@
 		<defName>YingletSmart</defName>
 		<title>Sosmart Yinglet</title>
 		<titleShort>Smart</titleShort>
-		<baseDescription>Born a prodigy [PAWN_nameDef] has started to excel within the enclave. [PAWN_pronoun] may yet become a good matriarch or patrairch.</baseDescription>
+		<baseDescription>Born a prodigy [PAWN_nameDef] has started to excel within the enclave. [PAWN_pronoun] may yet become a good {PAWN_gender?Patriarch:Matriarch}.</baseDescription>
 		<slot>Adulthood</slot>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Male</bodyTypeMale>
