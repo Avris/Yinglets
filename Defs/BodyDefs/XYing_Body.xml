@@ -260,15 +260,6 @@
 									<parts>
 										<li>
 											<def>Finger</def>
-											<customLabel>left pinky</customLabel>
-											<coverage>0.06</coverage>
-											<groups>
-												<li>Hands</li>
-												<li>LeftHand</li>
-											</groups>
-										</li>
-										<li>
-											<def>Finger</def>
 											<customLabel>left ring finger</customLabel>
 											<coverage>0.07</coverage>
 											<groups>
@@ -364,15 +355,6 @@
 									<parts>
 										<li>
 											<def>Finger</def>
-											<customLabel>right pinky</customLabel>
-											<coverage>0.06</coverage>
-											<groups>
-												<li>Hands</li>
-												<li>RightHand</li>
-											</groups>
-										</li>
-										<li>
-											<def>Finger</def>
 											<customLabel>right ring finger</customLabel>
 											<coverage>0.07</coverage>
 											<groups>
@@ -458,14 +440,6 @@
 							<parts>
 								<li>
 									<def>Toe</def>
-									<customLabel>left little toe</customLabel>
-									<coverage>0.1</coverage>
-									<groups>
-										<li>Feet</li>
-									</groups>
-								</li>
-								<li>
-									<def>Toe</def>
 									<customLabel>left fourth toe</customLabel>
 									<coverage>0.1</coverage>
 									<groups>
@@ -490,7 +464,7 @@
 								</li>
 								<li>
 									<def>Toe</def>
-									<customLabel>left big toe</customLabel>
+									<customLabel>left thumb toe</customLabel>
 									<coverage>0.1</coverage>
 									<groups>
 										<li>Feet</li>
@@ -537,14 +511,6 @@
 							<parts>
 								<li>
 									<def>Toe</def>
-									<customLabel>right little toe</customLabel>
-									<coverage>0.1</coverage>
-									<groups>
-										<li>Feet</li>
-									</groups>
-								</li>
-								<li>
-									<def>Toe</def>
 									<customLabel>right fourth toe</customLabel>
 									<coverage>0.1</coverage>
 									<groups>
@@ -569,7 +535,7 @@
 								</li>
 								<li>
 									<def>Toe</def>
-									<customLabel>right big toe</customLabel>
+									<customLabel>right thumb toe</customLabel>
 									<coverage>0.1</coverage>
 									<groups>
 										<li>Feet</li>
