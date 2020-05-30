@@ -2,55 +2,47 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>Ying_Spear</defName>
 		<label>Spear</label>
-		<techLevel>Neolithic</techLevel>
 		<description>A simple stone knife affixed to the end of a branch with a bit of twine.</description>
 		<graphicData>
 			<texPath>Things/Weapons/Ying_Spear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
 		<weaponTags>
 			<li>NeolithicMeleeBasic</li>
 		</weaponTags>
-		<costStuffCount>30</costStuffCount>
-			<statBases>
-				<WorkToMake>1800</WorkToMake>
-				<Mass>0.5</Mass>
-			</statBases>
-			<equippedAngleOffset>-65</equippedAngleOffset>
-			<stuffCategories>
-				<li>Metallic</li>
-				<li>Woody</li>
-			</stuffCategories>
 		<tools>
 			<li>
-				<label>handle</label>
+				<label>shaft</label>
 				<capacities>
 					<li>Blunt</li>
+					<li>Poke</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>blade</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>12</power>
-				<cooldownTime>1.5</cooldownTime>
+				<power>13</power>
+				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>13</power>
-				<cooldownTime>2</cooldownTime>
+				<power>23</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
-		<recipeMaker>
-			<recipeUsers>
-				<li>CraftingSpot</li>
-			</recipeUsers>
-		</recipeMaker>
 	</ThingDef>
 </Defs>

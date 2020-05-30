@@ -2,7 +2,7 @@
 	<identifier>YingWorld</identifier>
 	<version>1.0.0</version>
 	<dependencies>
-		<li>HumanoidAlienRaces2.0</li>
+		<li>erdelf.humanoidalienraces</li>
 	</dependencies>
 	<incompatibleWith />
 </Manifest>

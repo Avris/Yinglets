@@ -1,13 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-
+﻿<Defs>
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Yinglet_Herocape</defName>
 		<label>Heroic Cape</label>
 		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/Yinglet/Apparel/Male_Herocape</texPath>
+			<texPath>Things/Pawn/Yinglet/Apparel/HeroCape/HeroCape_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -24,7 +22,6 @@
 			<Cloth>30</Cloth>
 		</costList>
 		<equippedStatOffsets>
-			<!--<ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>-->
 			<AimingDelayFactor>-0.1</AimingDelayFactor>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<SocialImpact>0.10</SocialImpact>
@@ -33,7 +30,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Yinglet/Apparel/Male_Herocape</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Yinglet/Apparel/HeroCape/HeroCape</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -63,67 +60,4 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>Yinglet_Herocape</defName>
-		<label>Heroic Cape</label>
-		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
-		<techLevel>Medieval</techLevel>
-		<graphicData>
-			<texPath>Things/Pawn/Yinglet/Apparel/Male_Herocape</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<WorkToMake>1800</WorkToMake>
-			<Mass>0.10</Mass>
-			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.20</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>7</Insulation_Heat>
-			<EquipDelay>0.8</EquipDelay>
-		</statBases>
-		<costList>
-			<Cloth>30</Cloth>
-		</costList>
-		<equippedStatOffsets>
-			<!--<ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>-->
-			<AimingDelayFactor>-0.1</AimingDelayFactor>
-			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
-			<SocialImpact>0.10</SocialImpact>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Yinglet/Apparel/Male_Herocape</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Civilian</li>
-			</defaultOutfitTags>
-			<tags>
-				<li>YingletPlayer</li>
-				<li>YingletMilitary</li>
-				<li>YingletCivilian</li>
-			</tags>
-		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(0.9,0.3,0.15)</only>
-				</li>
-				<li>
-					<weight>15</weight>
-					<only>(0.9,0.45,0.18)</only>
-				</li>
-				<li>
-					<weight>20</weight>
-					<only>(0.8,0.6,0.23)</only>
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-
 </Defs>

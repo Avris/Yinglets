@@ -5,7 +5,7 @@
     <defName>Yinglet_Hair_Blank</defName>
     <label>no hair</label>
     <hairGender>Any</hairGender>
-    <texPath>Things/Pawn/Humanlike/Hairs/HairBlank</texPath>
+    <texPath>Things/Pawn/Humanlike/Hairs/Shaved</texPath>
 		<hairTags>
 			<li>YingletBald</li>
 		</hairTags>
