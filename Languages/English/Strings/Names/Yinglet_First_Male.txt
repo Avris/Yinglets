@@ -40,7 +40,7 @@ Speff
 Flape
 Graff
 Promley
-Bad Licker
+Bad-Licker
 Zeez
 Kimple
 Boppo
@@ -57,13 +57,13 @@ Honk
 Nee
 Whemble
 Lurps
-The Skin
+The-Skin
 Whoops
 Handy
 Gree-Gree
 Mollin
 Stepper
-That One
+That-One
 Locky
 Longle
 Eezer
@@ -79,7 +79,7 @@ Nim
 Piplip
 Nazzie
 Breather
-Star Head
+Star-Head
 Seeksey
 Tope
 Yubley
@@ -89,10 +89,10 @@ Eatmouth
 Nelbret
 Bloo
 Longbone
-A Jerk
+A-Jerk
 Thimp
 Feathers
-Big Time
+Big-Time
 Pfhorble
 Mar-Mar
 Twelve
@@ -126,7 +126,7 @@ Yogurp
 Picker
 Keepy
 Imbral
-Love Beast
+Love-Beast
 Hitting
 Mirabee
 Lalellilu
@@ -139,14 +139,14 @@ Cobble
 Weedy
 Parge
 Monch
-The Clap
+The-Clap
 Hoff
 Paddl
 Hairs
 Quizlet
-Physical Pain
+Physical-Pain
 Twitchy
-Long One
+Long-One
 Sneeze
 Vemple
 Kaka

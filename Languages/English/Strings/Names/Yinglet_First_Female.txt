@@ -1,5 +1,5 @@
 Babadoo
-Uh Oh
+Uh-Oh
 Take
 Pulpy
 Leemore
@@ -14,12 +14,12 @@ Hurting
 Kallapalla
 Woobie
 Stints
-Medicine Eater
+Medicine-Eater
 Grounder
 Zerb
 Mumbler
 Privvy
-Lil' Bitch
+Lil'-Bitch
 Chobby
 Justik
 Thirsty
@@ -28,7 +28,7 @@ Toes
 Armble
 Keefoo
 Danger
-Good Day
+Good-Day
 Flounce
 Fleeze
 Steezia
@@ -63,7 +63,7 @@ Flip
 Flop
 Hilla
 Nurr
-Magic Mindle
+Magic-Mindle
 Hokk
 Yewkka
 Hickhack
@@ -73,7 +73,7 @@ Noba
 Roil
 Honey
 Pitpit
-Orange Brain
+Orange-Brain
 Snapper
 Wet
 Skins
@@ -84,13 +84,13 @@ Koyple
 Workwork
 Lapple
 Seevle
-Really Big Rock
+Really-Big-Rock
 Jull
 Thousand
 Noseface
 Toughkidney
 Beezy
-The Shocker
+The-Shocker
 Tally
 Stimp
 Gillagilla
@@ -111,7 +111,7 @@ Illuvia
 Stank
 Dandy
 Prepper
-Doctor Feet
+Doctor-Feet
 Boomboom
 Rawnie
 Zibzab
@@ -125,4 +125,4 @@ Lellybelle
 Zink
 Nananana
 Vistle
-The Worst
+The-Worst

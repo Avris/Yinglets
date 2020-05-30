@@ -11,6 +11,8 @@
 		<pawnsPlural>yinglets</pawnsPlural>
 		<leaderTitle>patriarch</leaderTitle>
 		<leaderTitleFemale>matriarch</leaderTitleFemale>
+		<pawnNameMaker>NamerPersonYinglet</pawnNameMaker>
+		<pawnNameMakerFemale>NamerPersonYingletFemale</pawnNameMakerFemale>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>
 			<li>
