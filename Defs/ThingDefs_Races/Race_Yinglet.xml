@@ -290,7 +290,15 @@
 				<hasHair>true</hasHair>
 				<hairTags>
 					<li>YingletBald</li>
-					<li>YingletMaleHair</li>
+					<li>YingletMaleHair1</li>
+					<li>YingletMaleHair2</li>
+					<li>YingletMaleHair3</li>
+					<li>YingletMaleHair4</li>
+					<li>YingletMaleHair5</li>
+					<li>YingletFemaleHair1</li>
+					<li>YingletFemaleHair2</li>
+					<li>YingletFemaleHair3</li>
+					<li>YingletFemaleHair4</li>
 				</hairTags>
 			</hairSettings>
 			<raceRestriction>
