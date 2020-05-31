@@ -70,11 +70,12 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Yinglet_Loincloth</defName>
 		<label>loincloth</label>
-		<description>A simple set of pants.</description>
+		<description>A small covering for the groin.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Loincloth/Loincloth_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<techLevel>Neolithic</techLevel>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -96,6 +97,7 @@
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Loincloth/Loincloth</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -106,6 +108,220 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Civilian</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Yinglet_ChestWrap</defName>
+		<label>Wrap</label>
+		<description>A simple chest wrap and jeweled choker combo.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChestWrap/ChestWrap_Ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>600</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChestWrap/ChestWrap</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>YingletPlayer</li>
+				<li>YingletCivilian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Civilian</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef><ThingDef ParentName="ArmorMachineableBase">
+		<defName>Yinglet_ChestGuard</defName>
+		<label>chest guard</label>
+		<description>An ingenius yinglet once decided to strap a chunk of metal to his body, thinking it would make them unkillable. Others found it fashionable and decided to mimic the cumbersome clothing.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChestGuard/ChestGuard_Ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.6</Flammability>
+			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChestGuard/ChestGuard</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>YingletPlayer</li>
+				<li>YingletMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Yingworld_TunicFull</defName>
+		<label>simple tunic</label>
+		<description>A simple yinglet-sized tunic.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/TunicFull/TunicFull_Ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/TunicFull/TunicFull</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>MedievalBasic</li>
+				<li>YingletPlayer</li>
+				<li>YingletMilitary</li>
+				<li>YingletCivilian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Civilian</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Yinglet_TunicSplit</defName>
+		<label>tribal tunic</label>
+		<description>A two-piece tunic sized for yinglets.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/TunicSplit/TunicSplit_Ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/TunicSplit/TunicSplit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>MedievalBasic</li>
+				<li>YingletPlayer</li>
+				<li>YingletMilitary</li>
+				<li>YingletCivilian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Civilian</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
