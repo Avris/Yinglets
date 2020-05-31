@@ -162,12 +162,32 @@
 								</options>
 							</second>
 						</li>
+						<li>
+							<name>tail</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
+									</li>
+								</options>
+							</second>
+						</li>
 					</colorChannels>
 					<bodyAddons>
 						<li>
 							<path>Things/Pawn/Yinglet/Tails/FemaleTail</path>
 							<bodyPart>YingletTail</bodyPart>
-							<colorChannel>skin</colorChannel>
+							<colorChannel>tail</colorChannel>
+							<shaderType>CutoutComplex</shaderType>
 							<drawForMale>false</drawForMale>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawnInBed>false</drawnInBed>
@@ -196,6 +216,7 @@
 							<path>Things/Pawn/Yinglet/Tails/MaleTail</path>
 							<bodyPart>YingletTail</bodyPart>
 							<colorChannel>skin</colorChannel>
+							<shaderType>CutoutComplex</shaderType>
 							<drawForFemale>false</drawForFemale>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawnInBed>false</drawnInBed>
