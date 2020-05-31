@@ -8,9 +8,8 @@
 		<titleShort>Derpy</titleShort>
 		<baseDescription>[PAWN_nameDef] was born extremely Derp. [PAWN_pronoun] derped all over the nursery, much to the chagrin of the Matriarch.</baseDescription>
 		<slot>Childhood</slot>
-		<bodyTypeFemale>Female</bodyTypeFemale>
-		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeGlobal>Ying</bodyTypeGlobal>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
 		<spawnCategories>
 			<li>YingletBackstory</li>
 		</spawnCategories>
@@ -42,9 +41,8 @@
 		<titleShort>Younglet</titleShort>
 		<baseDescription>[PAWN_nameDef] grew up in a small enclave. [PAWN_pronoun] didn't achieve much, but may yet show potential.</baseDescription>
 		<slot>Childhood</slot>
-		<bodyTypeFemale>Female</bodyTypeFemale>
-		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeGlobal>Ying</bodyTypeGlobal>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
 		<spawnCategories>
 			<li>YingletBackstory</li>
 		</spawnCategories>
@@ -73,9 +71,8 @@
 		<titleShort>Yinglet</titleShort>
 		<baseDescription>[PAWN_nameDef] is your average derpy Yinglet. [PAWN_pronoun] does derps and scavenges for clams.</baseDescription>
 		<slot>Adulthood</slot>
-		<bodyTypeFemale>Female</bodyTypeFemale>
-		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeGlobal>Ying</bodyTypeGlobal>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
 		<spawnCategories>
 			<li>YingletBackstory</li>
 		</spawnCategories>
@@ -107,9 +104,8 @@
 		<titleShort>Smart</titleShort>
 		<baseDescription>Born a prodigy [PAWN_nameDef] has started to excel within the enclave. [PAWN_pronoun] may yet become a good {PAWN_gender?Patriarch:Matriarch}.</baseDescription>
 		<slot>Adulthood</slot>
-		<bodyTypeFemale>Female</bodyTypeFemale>
-		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeGlobal>Ying</bodyTypeGlobal>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
 		<spawnCategories>
 			<li>YingletBackstory</li>
 		</spawnCategories>

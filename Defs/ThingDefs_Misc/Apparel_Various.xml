@@ -3,12 +3,17 @@
 		<defName>Yinglet_Herocape</defName>
 		<label>Heroic Cape</label>
 		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
-		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/Yinglet/Apparel/HeroCape/HeroCape_Ying_south</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeroCape/HeroCape_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Cloth>30</Cloth>
+		</costList>
+		<tradeability>Sellable</tradeability>
 		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>1800</WorkToMake>
 			<Mass>0.10</Mass>
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
@@ -18,9 +23,9 @@
 			<Insulation_Heat>7</Insulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
-		<costList>
-			<Cloth>30</Cloth>
-		</costList>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
 		<equippedStatOffsets>
 			<AimingDelayFactor>-0.1</AimingDelayFactor>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
@@ -30,12 +35,14 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Yinglet/Apparel/HeroCape/HeroCape</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeroCape/HeroCape</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
 			<defaultOutfitTags>
+				<li>Worker</li>
 				<li>Civilian</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>YingletPlayer</li>
@@ -59,5 +66,48 @@
 				</li>
 			</options>
 		</colorGenerator>
+	</ThingDef>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Yinglet_Loincloth</defName>
+		<label>loincloth</label>
+		<description>A simple set of pants.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Loincloth/Loincloth_Ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>YingletPlayer</li>
+				<li>YingletCivilian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Civilian</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 </Defs>

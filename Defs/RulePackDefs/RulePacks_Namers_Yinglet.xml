@@ -1,0 +1,46 @@
+﻿<Defs>
+	<RulePackDef>
+		<defName>YingletNameUtility</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>YingletNameFirstMale->Names/Yinglet_First_Male</li>
+				<li>YingletNameFirstFemale->Names/Yinglet_First_Female</li>
+				<li>YingletNameLast->Names/Yinglet_Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerPersonYinglet</defName>
+		<include>
+			<li>YingletNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[YingletNameFirstMale] [YingletNameLast]</li>
+				<li>r_name->[YingletNameFirstFemale] [YingletNameLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerMaleYinglet</defName>
+		<include>
+			<li>YingletNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[YingletNameFirstMale] [YingletNameLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerFemaleYinglet</defName>
+		<include>
+			<li>YingletNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[YingletNameFirstFemale] [YingletNameLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

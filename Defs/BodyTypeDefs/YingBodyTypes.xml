@@ -3,6 +3,12 @@
 		<defName>Ying</defName>
 		<headOffset>(0.09, 0.34)</headOffset>
 		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Ying</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Ying</bodyDessicatedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef>
+		<defName>YingFem</defName>
+		<headOffset>(0.09, 0.34)</headOffset>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_YingFem</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Ying</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
 </Defs>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Alien_Yinglet</defName>
@@ -7,8 +6,9 @@
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
-				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToAge>false</immuneToAge>
+				<minAgeForAdulthood>2.0</minAgeForAdulthood>
+				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
 				<forcedRaceTraitEntries>
 					<li>
@@ -29,7 +29,7 @@
 					<li>
 						<defName>Nudist</defName>
 						<chance>50</chance>
-					</li>					
+					</li>
 					<li>
 						<defName>Transhumanist</defName>
 						<chance>10</chance>
@@ -44,56 +44,46 @@
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>true</useGenderedHeads>
-					<useGenderedBodies>true</useGenderedBodies>
-				
 					<alienbodytypes>
 						<li>Ying</li>
+						<li>YingFem</li>
 					</alienbodytypes>
-					
 					<aliencrowntypes>
 						<li>Average_Normal</li>
 						<li>Average_Var1</li>
 					</aliencrowntypes>
-					
 					<customDrawSize>(1, 1)</customDrawSize>
 					<headOffset>(0, -0.4)</headOffset>
-					
-					<!-- SKIN COLORS ============================================= -->
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
-							<!-- browns -->
 							<li>
 								<weight>8</weight>
-								<only>RGBA(0.48,0.35,0.23,1.0)</only> <!-- brown -->
+								<only>RGBA(0.48,0.35,0.23,1.0)</only>
 							</li>
 							<li>
 								<weight>8</weight>
-								<only>RGBA(0.83,0.69,0.51,1.0)</only> <!-- sand-brown -->
+								<only>RGBA(0.83,0.69,0.51,1.0)</only>
 							</li>
 							<li>
 								<weight>7</weight>
-								<only>RGBA(0.51,0.31,0.24,1.0)</only> <!-- red brown -->
+								<only>RGBA(0.51,0.31,0.24,1.0)</only>
 							</li>
-							
-							<!-- blues -->
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.29,0.30,0.33,1.0)</only> <!-- dark bluegrey -->
-							</li>	
+								<only>RGBA(0.29,0.30,0.33,1.0)</only>
+							</li>
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.51,0.61,0.67,1.0)</only> <!-- light bluegrey -->
-							</li>	
+								<only>RGBA(0.51,0.61,0.67,1.0)</only>
+							</li>
 							<li>
 								<weight>5</weight>
-								<only>RGBA(0.67,0.61,0.60,1.0)</only> <!-- red grey -->
-							</li>	
-
-							<!-- misc -->
+								<only>RGBA(0.67,0.61,0.60,1.0)</only>
+							</li>
 							<li>
 								<weight>3</weight>
-								<only>RGBA(0.98,0.98,0.98,1.0)</only> <!-- white -->
-							</li>	
+								<only>RGBA(0.98,0.98,0.98,1.0)</only>
+							</li>
 						</options>
 					</alienskincolorgen>
 					<alienskinsecondcolorgen Class="ColorGenerator_Options">
@@ -112,8 +102,6 @@
 							</li>
 						</options>
 					</alienskinsecondcolorgen>
-					
-					<!-- HAIR COLORS ============================================= -->
 					<alienhaircolorgen Class="ColorGenerator_Options">
 						<options>
 							<li>
@@ -134,41 +122,34 @@
 							</li>
 						</options>
 					</alienhaircolorgen>
-					
-					<!-- EYE COLORS ============================================= -->
-					<colorChannels> <!-- New functionality utilizeing updated HAR code. -->
+					<colorChannels>
 						<li>
 							<name>eye</name>
 							<first Class="ColorGenerator_Options">
 								<options>
-									<!-- Yellows -->
 									<li>
 										<weight>10</weight>
-										<only>RGBA(1.0, 0.78, 0.36, 1.0)</only> <!-- orange -->
+										<only>RGBA(1.0, 0.78, 0.36, 1.0)</only>
 									</li>
 									<li>
 										<weight>5</weight>
-										<only>RGBA(1.0, 0.82, 0.28, 1.0)</only> <!-- yellow -->
-									</li>
-									
-									<!-- blues -->
-									<li>
-										<weight>5</weight>
-										<only>RGBA(0.57, 0.61, 0.78, 1.0)</only> <!-- light blue -->
+										<only>RGBA(1.0, 0.82, 0.28, 1.0)</only>
 									</li>
 									<li>
 										<weight>5</weight>
-										<only>RGBA(0.18, 0.62, 0.74, 1.0)</only> <!-- cyan -->
+										<only>RGBA(0.57, 0.61, 0.78, 1.0)</only>
 									</li>
-									
-									<!-- misc -->
 									<li>
 										<weight>5</weight>
-										<only>RGBA(1.0, 0.84, 0.82, 1.0)</only> <!-- pink -->
+										<only>RGBA(0.18, 0.62, 0.74, 1.0)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(1.0, 0.84, 0.82, 1.0)</only>
 									</li>
 									<li>
 										<weight>3</weight>
-										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only> <!-- white -->
+										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
 									</li>
 								</options>
 							</first>
@@ -182,7 +163,6 @@
 							</second>
 						</li>
 					</colorChannels>
-					
 					<bodyAddons>
 						<li>
 							<path>Things/Pawn/Yinglet/Tails/FemaleTail</path>
@@ -195,16 +175,19 @@
 								<south>
 									<bodyTypes>
 										<Ying>(-0.45,0.2)</Ying>
+										<YingFem>(-0.45,0.2)</YingFem>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Ying>(0,0.4)</Ying>
+										<YingFem>(0,0.4)</YingFem>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Ying>(-0.45,0.2)</Ying>
+										<YingFem>(-0.45,0.2)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -220,16 +203,19 @@
 								<south>
 									<bodyTypes>
 										<Ying>(-0.45,0.2)</Ying>
+										<YingFem>(-0.45,0.2)</YingFem>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Ying>(0,0.4)</Ying>
+										<YingFem>(0,0.4)</YingFem>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Ying>(-0.45,0.2)</Ying>
+										<YingFem>(-0.45,0.2)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -245,12 +231,14 @@
 								<south>
 									<bodyTypes>
 										<Ying>(-0.42, 0.16)</Ying>
+										<YingFem>(-0.42, 0.16)</YingFem>
 									</bodyTypes>
 								</south>
-								<north />
+								<north/>
 								<east>
 									<bodyTypes>
 										<Ying>(-0.51, 0.15)</Ying>
+										<YingFem>(-0.51, 0.15)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -266,12 +254,14 @@
 								<south>
 									<bodyTypes>
 										<Ying>(-0.42, 0.16)</Ying>
+										<YingFem>(-0.42, 0.16)</YingFem>
 									</bodyTypes>
 								</south>
-								<north />
+								<north/>
 								<east>
 									<bodyTypes>
 										<Ying>(-0.51, 0.15)</Ying>
+										<YingFem>(-0.51, 0.15)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -282,8 +272,8 @@
 			<graphicPaths>
 				<li>
 					<head>Things/Pawn/Yinglet/Heads/</head>
-					<body>Things/Pawn/Yinglet/Bodies/</body>
-					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+					<body>Things/Pawn/Humanlike/Bodies/</body>
+					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Ying</skeleton>
 				</li>
 			</graphicPaths>
 			<hairSettings>
@@ -303,10 +293,12 @@
 			</hairSettings>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
-				<apparelList>
+				<whiteApparelList>
 					<li>Yinglet_Herocape</li>
+					<li>Yinglet_Loincloth</li>
 					<li>Apparel_FlakVest</li>
-				</apparelList>
+					<li>Apparel_PlateArmor</li>
+				</whiteApparelList>
 			</raceRestriction>
 			<relationSettings>
 				<relationChanceModifierChild>1</relationChanceModifierChild>
@@ -491,5 +483,4 @@
 			<li>Anesthetize</li>
 		</recipes>
 	</AlienRace.ThingDef_AlienRace>
-
 </Defs>

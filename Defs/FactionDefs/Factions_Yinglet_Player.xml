@@ -1,7 +1,5 @@
 ﻿<Defs>
-	<FactionDef Abstract="True" Name="YingletFactionBase"/>
-
-	<FactionDef Parent="YingletFactionBase">
+	<FactionDef>
 		<defName>YingletPlayerColony</defName>
 		<label>Yinglet Enclave</label>
 		<description>Your own community.</description>
@@ -11,8 +9,8 @@
 		<pawnsPlural>yinglets</pawnsPlural>
 		<leaderTitle>patriarch</leaderTitle>
 		<leaderTitleFemale>matriarch</leaderTitleFemale>
-		<pawnNameMaker>NamerPersonYinglet</pawnNameMaker>
-		<pawnNameMakerFemale>NamerPersonYingletFemale</pawnNameMakerFemale>
+		<pawnNameMaker>NamerMaleYinglet</pawnNameMaker>
+		<pawnNameMakerFemale>NamerFemaleYinglet</pawnNameMakerFemale>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>
 			<li>
@@ -21,7 +19,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<factionIconPath>World/YingletBaseIcon</factionIconPath>
+		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
@@ -30,45 +28,6 @@
 			<li>YingletStart</li>
 		</startingResearchTags>
 		<forageabilityFactor>1.5</forageabilityFactor>
-		<hairTags>
-			<li>Urban</li>
-		</hairTags>
-		<apparelStuffFilter>
-			<thingDefs>
-				<li>Cloth</li>
-				<li>WoolMuffalo</li>
-				<li>WoolAlpaca</li>
-			</thingDefs>
-		</apparelStuffFilter>
-	</FactionDef>
-
-	<FactionDef Parent="YingletFactionBase">
-		<defName>YingletPlayerColonyTribal</defName>
-		<label>Yinglet Enclave (No Research)</label>
-		<description>Yinglet Tribe. Only tribal researches done, but medieval tech level.</description>
-		<isPlayer>true</isPlayer>
-		<basicMemberKind>Yinglet</basicMemberKind>
-		<pawnSingular>yinglet</pawnSingular>
-		<pawnsPlural>yinglets</pawnsPlural>
-		<leaderTitle>patriarch</leaderTitle>
-		<leaderTitleFemale>matriarch</leaderTitleFemale>
-		<techLevel>Medieval</techLevel>
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>YingletBackstory</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-		<factionIconPath>World/YingletBaseIcon</factionIconPath>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<startingResearchTags>
-			<li>TribalStart</li>
-			<li>YingletStart</li>
-		</startingResearchTags>
-		<forageabilityFactor>2.0</forageabilityFactor>
 		<hairTags>
 			<li>Urban</li>
 		</hairTags>

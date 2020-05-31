@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<AlienRace.RaceSettings>
 		<defName>YingletRaceSettings</defName>
@@ -30,8 +29,8 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>YingletPlayerColony</li> 
-						<li>PlayerColony</li> 
+						<li>YingletPlayerColony</li>
+						<li>PlayerColony</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -46,7 +45,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li> 
+						<li>PlayerColony</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
