@@ -1,0 +1,8 @@
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HairDef[defName="Shaved"]/hairTags</xpath>
+		<value>
+			<li>Yinglet</li>
+		</value>
+	</Operation>
+</Patch>

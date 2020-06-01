@@ -49,10 +49,12 @@
 						<li>YingFem</li>
 					</alienbodytypes>
 					<aliencrowntypes>
-						<li>Average_Normal</li>
-						<li>Average_Var1</li>
+						<li>Yinglet_Normal</li>
+						<li>Yinglet_Narrow</li>
+						<li>Yinglet_NormalMono</li>
+						<li>Yinglet_NarrowMono</li>
 					</aliencrowntypes>
-					<customDrawSize>(1, 1)</customDrawSize>
+					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<headOffset>(0, -0.4)</headOffset>
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
@@ -184,9 +186,72 @@
 					</colorChannels>
 					<bodyAddons>
 						<li>
-							<path>Things/Pawn/Yinglet/Tails/FemaleTail</path>
+							<path>Things/Pawn/Humanlike/Addons/Bodies/NakedFemaleYinglet</path>
+							<bodyPart>YingletTail</bodyPart>
+							<colorChannel>skin</colorChannel>
+							<drawSize>(1.0, 1.0)</drawSize>
+							<shaderType>CutoutComplex</shaderType>
+							<drawForMale>false</drawForMale>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.3</layerOffset>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/Humanlike/Addons/Bodies/NakedMaleYinglet</path>
+							<bodyPart>YingletTail</bodyPart>
+							<colorChannel>skin</colorChannel>
+							<drawSize>(1.0, 1.0)</drawSize>
+							<shaderType>CutoutComplex</shaderType>
+							<drawForFemale>false</drawForFemale>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.3</layerOffset>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/Humanlike/Addons/Tails/FemaleTailYinglet</path>
 							<bodyPart>YingletTail</bodyPart>
 							<colorChannel>tail</colorChannel>
+							<drawSize>(1.0, 1.0)</drawSize>
 							<shaderType>CutoutComplex</shaderType>
 							<drawForMale>false</drawForMale>
 							<inFrontOfBody>false</inFrontOfBody>
@@ -194,28 +259,29 @@
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Ying>(-0.45,0.2)</Ying>
-										<YingFem>(-0.45,0.2)</YingFem>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Ying>(0,0.4)</Ying>
-										<YingFem>(0,0.4)</YingFem>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Ying>(-0.45,0.2)</Ying>
-										<YingFem>(-0.45,0.2)</YingFem>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Yinglet/Tails/MaleTail</path>
+							<path>Things/Pawn/Humanlike/Addons/Tails/MaleTailYinglet</path>
 							<bodyPart>YingletTail</bodyPart>
 							<colorChannel>skin</colorChannel>
+							<drawSize>(1.0, 1.0)</drawSize>
 							<shaderType>CutoutComplex</shaderType>
 							<drawForFemale>false</drawForFemale>
 							<inFrontOfBody>false</inFrontOfBody>
@@ -223,28 +289,29 @@
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Ying>(-0.45,0.2)</Ying>
-										<YingFem>(-0.45,0.2)</YingFem>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Ying>(0,0.4)</Ying>
-										<YingFem>(0,0.4)</YingFem>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Ying>(-0.45,0.2)</Ying>
-										<YingFem>(-0.45,0.2)</YingFem>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Yinglet/Eyes/FemaleEyes</path>
+							<path>Things/Pawn/Humanlike/Addons/Eyes/FemaleEyesYinglet</path>
 							<bodyPart>Eye</bodyPart>
 							<colorChannel>eye</colorChannel>
+							<drawSize>(1.0, 1.0)</drawSize>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
 							<drawForMale>false</drawForMale>
@@ -265,9 +332,10 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Yinglet/Eyes/MaleEyes</path>
+							<path>Things/Pawn/Humanlike/Addons/Eyes/MaleEyesYinglet</path>
 							<bodyPart>Eye</bodyPart>
 							<colorChannel>eye</colorChannel>
+							<drawSize>(1.0, 1.0)</drawSize>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
 							<drawForFemale>false</drawForFemale>
@@ -292,7 +360,7 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<head>Things/Pawn/Yinglet/Heads/</head>
+					<head>Things/Pawn/Humanlike/YingHeads/</head>
 					<body>Things/Pawn/Humanlike/Bodies/</body>
 					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Ying</skeleton>
 				</li>
@@ -300,16 +368,7 @@
 			<hairSettings>
 				<hasHair>true</hasHair>
 				<hairTags>
-					<li>YingletBald</li>
-					<li>YingletMaleHair1</li>
-					<li>YingletMaleHair2</li>
-					<li>YingletMaleHair3</li>
-					<li>YingletMaleHair4</li>
-					<li>YingletMaleHair5</li>
-					<li>YingletFemaleHair1</li>
-					<li>YingletFemaleHair2</li>
-					<li>YingletFemaleHair3</li>
-					<li>YingletFemaleHair4</li>
+					<li>Yinglet</li>
 				</hairTags>
 			</hairSettings>
 			<raceRestriction>
@@ -321,7 +380,6 @@
 					<li>Yinglet_ChestGuard</li>
 					<li>Yingworld_TunicFull</li>
 					<li>Yinglet_TunicSplit</li>
-					<li>Apparel_SimpleHelmet</li>
 					<li>Apparel_FlakVest</li>
 					<li>Apparel_PlateArmor</li>
 					<li>Apparel_PowerArmor</li>

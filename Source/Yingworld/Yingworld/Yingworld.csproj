@@ -63,6 +63,7 @@
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YingDefOf.cs" />
+    <Compile Include="Yingletify.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
