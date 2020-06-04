@@ -47,7 +47,7 @@
 	<HairDef>
 		<defName>Yinglet_Hair_Female1</defName>
 		<label>yinglet female hair 1</label>
-		<hairGender>Male</hairGender>
+		<hairGender>Female</hairGender>
 		<texPath>Things/Pawn/Humanlike/Hairs/Female_Average_Hair1</texPath>
 		<hairTags>
 			<li>Yinglet</li>
@@ -56,7 +56,7 @@
 	<HairDef>
 		<defName>Yinglet_Hair_Female2</defName>
 		<label>yinglet female hair 2</label>
-		<hairGender>Male</hairGender>
+		<hairGender>Female</hairGender>
 		<texPath>Things/Pawn/Humanlike/Hairs/Female_Average_Hair2</texPath>
 		<hairTags>
 			<li>Yinglet</li>
@@ -65,7 +65,7 @@
 	<HairDef>
 		<defName>Yinglet_Hair_Female3</defName>
 		<label>yinglet female hair 3</label>
-		<hairGender>Male</hairGender>
+		<hairGender>Female</hairGender>
 		<texPath>Things/Pawn/Humanlike/Hairs/Female_Average_Hair3</texPath>
 		<hairTags>
 			<li>Yinglet</li>
@@ -74,7 +74,7 @@
 	<HairDef>
 		<defName>Yinglet_Hair_Female4</defName>
 		<label>yinglet female hair 4</label>
-		<hairGender>Male</hairGender>
+		<hairGender>Female</hairGender>
 		<texPath>Things/Pawn/Humanlike/Hairs/Female_Average_Hair4</texPath>
 		<hairTags>
 			<li>Yinglet</li>

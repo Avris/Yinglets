@@ -248,42 +248,11 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Humanlike/Addons/Tails/FemaleTailYinglet</path>
-							<bodyPart>YingletTail</bodyPart>
-							<colorChannel>tail</colorChannel>
-							<drawSize>(1.0, 1.0)</drawSize>
-							<shaderType>CutoutComplex</shaderType>
-							<drawForMale>false</drawForMale>
-							<inFrontOfBody>false</inFrontOfBody>
-							<drawnInBed>false</drawnInBed>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
-								</east>
-							</offsets>
-						</li>
-						<li>
-							<path>Things/Pawn/Humanlike/Addons/Tails/MaleTailYinglet</path>
+							<path>Things/Pawn/Humanlike/Addons/Tails/TailYinglet</path>
 							<bodyPart>YingletTail</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<drawSize>(1.0, 1.0)</drawSize>
 							<shaderType>CutoutComplex</shaderType>
-							<drawForFemale>false</drawForFemale>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawnInBed>false</drawnInBed>
 							<offsets>
