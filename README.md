@@ -22,3 +22,23 @@ git clone https://github.com/RimWorld-CCL-Reborn/AlienRaces
 - Build the project.
 - Open the YingWorld .sln file in Visual Studio as above. Check that the references are correct. You may need to point the AlienRaces reference to the newly built assembly in the AlienRaces/Assemblies folder.
 - Build the project.
+
+### Install and build On linux
+- Install RimWorld on the target system.
+- Install Mono via your systems package manager.
+- Install AlienRaces either though steam workshop or build it yourself.
+```
+cd ~ /.local/share/Steam/steamapps/common/RimWorld/Mods/
+git clone https://github.com/RimWorld-CCL-Reborn/AlienRaces
+sed -i 's/RimWorldWin64_Data/RimWorldLinux_Data/g' Source/AlienRace/AlienRace/AlienRace.csproj
+cd AlienRace/Source/AlienRace/
+msbuild /t:restore
+```
+- Clone the YingWorld into the RimWorld mod folder, modify the build script for linux, and build.
+```
+cd ~ /.local/share/Steam/steamapps/common/RimWorld/Mods/
+git clone https://github.com/EvilDraggie/YingWorld
+sed --in-place 's/RimWorldWin64_Data/RimWorldLinux_Data/g' YingWorld/Source/Yingworld/Yingworld/Yingworld.csproj
+cd YingWorld/Source/Yingworld/
+msbuild
+```
