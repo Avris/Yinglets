@@ -4,7 +4,7 @@
 		<label>Heroic Cape</label>
 		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/HeroCape/HeroCape_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/HeroCape/HeroCape_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -35,7 +35,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeroCape/HeroCape</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeroCape/HeroCape</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -72,7 +72,7 @@
 		<label>loincloth</label>
 		<description>A small covering for the groin.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/Loincloth/Loincloth_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/Loincloth/Loincloth_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
@@ -97,7 +97,7 @@
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Loincloth/Loincloth</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Loincloth/Loincloth</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -117,7 +117,7 @@
 		<label>Wrap</label>
 		<description>A simple chest wrap and jeweled choker combo.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/ChestWrap/ChestWrap_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
@@ -142,7 +142,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChestWrap/ChestWrap</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -169,7 +169,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/ChestGuard/ChestGuard_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/ChestGuard/ChestGuard_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
@@ -197,7 +197,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChestGuard/ChestGuard</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestGuard/ChestGuard</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -233,7 +233,7 @@
 		<label>simple tunic</label>
 		<description>A simple yinglet-sized tunic.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/TunicFull/TunicFull_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/TunicFull/TunicFull_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -259,7 +259,7 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/TunicFull/TunicFull</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/TunicFull/TunicFull</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -282,7 +282,7 @@
 		<label>tribal tunic</label>
 		<description>A two-piece tunic sized for yinglets.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/TunicSplit/TunicSplit_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/TunicSplit/TunicSplit_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -308,7 +308,7 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/TunicSplit/TunicSplit</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/TunicSplit/TunicSplit</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>

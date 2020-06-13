@@ -7,7 +7,6 @@
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
-				<minAgeForAdulthood>2.0</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
 				<forcedRaceTraitEntries>
@@ -49,10 +48,10 @@
 						<li>YingFem</li>
 					</alienbodytypes>
 					<aliencrowntypes>
-						<li>Yinglet_Normal</li>
-						<li>Yinglet_Narrow</li>
-						<li>Yinglet_NormalMono</li>
-						<li>Yinglet_NarrowMono</li>
+						<li>YingLong</li>
+						<li>YingShort</li>
+						<li>YingLongMono</li>
+						<li>YingShortMono</li>
 					</aliencrowntypes>
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<headOffset>(0, -0.4)</headOffset>
@@ -186,7 +185,7 @@
 					</colorChannels>
 					<bodyAddons>
 						<li>
-							<path>Things/Pawn/Humanlike/Addons/Bodies/NakedFemaleYinglet</path>
+							<path>Things/Pawn/YingPawn/Parts/Bodies/FemaleBody</path>
 							<bodyPart>YingletTail</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<drawSize>(1.0, 1.0)</drawSize>
@@ -217,7 +216,7 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Humanlike/Addons/Bodies/NakedMaleYinglet</path>
+							<path>Things/Pawn/YingPawn/Parts/Bodies/MaleBody</path>
 							<bodyPart>YingletTail</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<drawSize>(1.0, 1.0)</drawSize>
@@ -248,7 +247,7 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Humanlike/Addons/Tails/TailYinglet</path>
+							<path>Things/Pawn/YingPawn/Parts/Tails/Tail</path>
 							<bodyPart>YingletTail</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<drawSize>(1.0, 1.0)</drawSize>
@@ -277,7 +276,7 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Humanlike/Addons/Eyes/FemaleEyesYinglet</path>
+							<path>Things/Pawn/YingPawn/Parts/Eyes/FemaleEyes</path>
 							<bodyPart>Eye</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<drawSize>(1.0, 1.0)</drawSize>
@@ -301,7 +300,7 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/Humanlike/Addons/Eyes/MaleEyesYinglet</path>
+							<path>Things/Pawn/YingPawn/Parts/Eyes/MaleEyes</path>
 							<bodyPart>Eye</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<drawSize>(1.0, 1.0)</drawSize>
@@ -324,14 +323,38 @@
 								</east>
 							</offsets>
 						</li>
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Ears/Ear</path>
+							<bodyPart>Ear</bodyPart>
+							<colorChannel>skin</colorChannel>
+							<drawSize>(1.0, 1.0)</drawSize>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.27</layerOffset>
+							<drawForFemale>true</drawForFemale>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42, 0.16)</Ying>
+										<YingFem>(-0.42, 0.16)</YingFem>
+									</bodyTypes>
+								</south>
+								<north/>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.51, 0.15)</Ying>
+										<YingFem>(-0.51, 0.15)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<head>Things/Pawn/Humanlike/YingHeads/</head>
-					<body>Things/Pawn/Humanlike/Bodies/</body>
-					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Ying</skeleton>
+					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
+					<body>Things/Pawn/YingPawn/Icons/</body>
+					<skeleton>Things/Pawn/YingPawn/Parts/Bodies/Dessicated/Dessicated_Ying</skeleton>
 				</li>
 			</graphicPaths>
 			<hairSettings>
@@ -343,7 +366,6 @@
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<whiteApparelList>
-					<li>Yinglet_Herocape</li>
 					<li>Yinglet_Loincloth</li>
 					<li>Yinglet_ChestWrap</li>
 					<li>Yinglet_ChestGuard</li>

@@ -48,11 +48,6 @@
 					<thingDef>ComponentIndustrial</thingDef>
 					<count>30</count>
 				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>Ying_Spear</thingDef> <!-- should be a spear??-->
-					<count>2</count>
-				</li>
 
 				<!-- Scatter some things near player start -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
