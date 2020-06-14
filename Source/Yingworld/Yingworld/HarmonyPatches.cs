@@ -11,18 +11,17 @@ namespace Yingworld
     [HarmonyPatch(typeof(GenSpawn))]
     internal static class HarmonyPatches
     {
-        [HarmonyPatch(nameof(GenSpawn.Spawn), new Type[] { typeof(Thing), typeof(IntVec3), typeof(Map), typeof(Rot4), typeof(WipeMode), typeof(bool) })]
+        [HarmonyPatch(typeof(PawnGraphicSet), nameof(PawnGraphicSet.ResolveAllGraphics))]
         [HarmonyPostfix]
-        static void SpawnPostfix(ref Thing __result, Thing newThing, IntVec3 loc, Map map, Rot4 rot, WipeMode wipeMode = WipeMode.Vanish, bool respawningAfterLoad = false)
+        static void ColorChannelPostfix(PawnGraphicSet __instance)
         {
-            Pawn pawn = __result as Pawn;
-            if (pawn != null && pawn.def == YingDefOf.Alien_Yinglet)
+            if (__instance.pawn != null && __instance.pawn.def == YingDefOf.Alien_Yinglet)
             {
-                AlienPartGenerator.AlienComp comp = pawn.GetComp<AlienPartGenerator.AlienComp>();
+                AlienPartGenerator.AlienComp comp = __instance.pawn.GetComp<AlienPartGenerator.AlienComp>();
                 if (comp != null)
                 {
-                    comp.ColorChannels.TryGetValue("tail").first = comp.skinColor;
-                    comp.ColorChannels.TryGetValue("tail").second = pawn.story.hairColor;
+                    comp.ColorChannels.TryGetValue("tail").first = comp.ColorChannels.TryGetValue("skin").first;
+                    comp.ColorChannels.TryGetValue("tail").second = comp.ColorChannels.TryGetValue("hair").first;
                 }
             }
         }
