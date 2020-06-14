@@ -1,13 +1,13 @@
 <Defs>
 	<BodyTypeDef>
 		<defName>Ying</defName>
-		<headOffset>(0.09, 0.34)</headOffset>
+		<headOffset>(0.09, -0.06)</headOffset>
 		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/Naked_Ying</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Dessicated/Dessicated_Ying</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
 	<BodyTypeDef>
 		<defName>YingFem</defName>
-		<headOffset>(0.09, 0.34)</headOffset>
+		<headOffset>(0.09, -0.06)</headOffset>
 		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/Naked_YingFem</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Dessicated/Dessicated_Ying</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
