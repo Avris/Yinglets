@@ -321,39 +321,12 @@
 								</east>
 							</offsets>
 						</li>
+						<!-- Layer offset inversion needs fixing: temporarily replaced with default hairstyle defs.
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Hairs/Over/Female_OverHair</path>
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>0.1</layerOffset>
-							<drawForMale>false</drawForMale>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.16)</Ying>
-										<YingFem>(-0.42,0.16)</YingFem>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Ying>(0,0.49)</Ying>
-										<YingFem>(0,0.49)</YingFem>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Ying>(-0.51,0.16)</Ying>
-										<YingFem>(-0.51,0.16)</YingFem>
-									</bodyTypes>
-								</east>
-							</offsets>
-						</li>
-						<li>
-							<path>Things/Pawn/YingPawn/Parts/Hairs/Under/Female_UnderHair</path>
-							<bodyPart>Head</bodyPart>
-							<colorChannel>hair</colorChannel>
-							<inFrontOfBody>false</inFrontOfBody>
 							<layerOffset>0.1</layerOffset>
 							<drawForMale>false</drawForMale>
 							<offsets>
@@ -404,13 +377,41 @@
 									</bodyTypes>
 								</east>
 							</offsets>
+						</li>-->
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Hairs/Under/Female_UnderHair</path>
+							<bodyPart>Head</bodyPart>
+							<colorChannel>hair</colorChannel>
+							<inFrontOfBody>false</inFrontOfBody>
+							<layerOffset>-0.3</layerOffset>
+							<drawForMale>false</drawForMale>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42,0.16)</Ying>
+										<YingFem>(-0.42,0.16)</YingFem>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.49)</Ying>
+										<YingFem>(0,0.49)</YingFem>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.51,0.16)</Ying>
+										<YingFem>(-0.51,0.16)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
 						</li>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Hairs/Under/Male_UnderHair</path>
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
-							<layerOffset>0.1</layerOffset>
+							<layerOffset>-0.3</layerOffset>
 							<drawForFemale>false</drawForFemale>
 							<offsets>
 								<south>
@@ -446,7 +447,16 @@
 			<hairSettings>
 				<hasHair>true</hasHair>
 				<hairTags>
-					<li>Yinglet</li>
+					<li>YingletBald</li>
+					<li>YingletMaleHair</li>
+					<li>YingletMaleHair1</li>
+					<li>YingletMaleHair2</li>
+					<li>YingletMaleHair3</li>
+					<li>YingletMaleHair4</li>
+					<li>YingletFemaleHair</li>
+					<li>YingletFemaleHair1</li>
+					<li>YingletFemaleHair2</li>
+					<li>YingletFemaleHair3</li>
 				</hairTags>
 			</hairSettings>
 			<raceRestriction>

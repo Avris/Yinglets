@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HairDef>
+    <defName>Yinglet_Hair_Blank</defName>
+    <label>no hair</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/OverHairBlank</texPath>
+		<hairTags>
+			<li>YingletBald</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Male</defName>
+    <label>male hair</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Male_OverHair</texPath>
+		<hairTags>
+			<li>YingletMaleHair</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Male1</defName>
+    <label>male hair</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Male_OverHair1</texPath>
+		<hairTags>
+			<li>YingletMaleHair1</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Male2</defName>
+    <label>male hair</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Male_OverHair2</texPath>
+		<hairTags>
+			<li>YingletMaleHair2</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Male3</defName>
+    <label>male hair</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Male_OverHair3</texPath>
+		<hairTags>
+			<li>YingletMaleHair3</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Male4</defName>
+    <label>male hair</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Male_OverHair4</texPath>
+		<hairTags>
+			<li>YingletMaleHair4</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Female</defName>
+    <label>male hair</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Female_OverHair</texPath>
+		<hairTags>
+			<li>YingletFemaleHair</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Female1</defName>
+    <label>male hair</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Female_OverHair1</texPath>
+		<hairTags>
+			<li>YingletFemaleHair1</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Female2</defName>
+    <label>male hair</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Female_OverHair2</texPath>
+		<hairTags>
+			<li>YingletFemaleHair2</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Yinglet_Hair_Female3</defName>
+    <label>male hair</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Female_OverHair3</texPath>
+		<hairTags>
+			<li>YingletFemaleHair3</li>
+		</hairTags>
+  </HairDef>
+ 
+</Defs>
