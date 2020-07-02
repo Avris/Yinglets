@@ -1,6 +1,6 @@
-﻿<Defs>
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>Yinglet_Herocape</defName>
+﻿<Defs> 
+	<ThingDef ParentName="ApparelMakeableBase"> 
+		<defName>Yinglet_Herocape</defName> 
 		<label>Heroic Cape</label>
 		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
 		<graphicData>
@@ -8,6 +8,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+		</recipeMaker>
+			
 		<costList>
 			<Cloth>30</Cloth>
 		</costList>
@@ -76,6 +80,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+		</recipeMaker>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -121,6 +128,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
+				<recipeMaker>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+		</recipeMaker>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -156,13 +166,15 @@
 			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
-	</ThingDef><ThingDef ParentName="ArmorMachineableBase">
+	</ThingDef>
+	
+	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Yinglet_ChestGuard</defName>
 		<label>chest guard</label>
 		<description>An ingenius yinglet once decided to strap a chunk of metal to his body, thinking it would make them unkillable. Others found it fashionable and decided to mimic the cumbersome clothing.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
@@ -237,6 +249,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+		</recipeMaker>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -286,6 +301,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+		</recipeMaker>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
