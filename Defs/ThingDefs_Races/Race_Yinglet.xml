@@ -172,7 +172,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<drawForMale>false</drawForMale>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.3</layerOffset>
+							<layerOffset>-0.29</layerOffset>
 							<drawnInBed>false</drawnInBed>
 							<offsets>
 								<south>
@@ -202,7 +202,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<drawForFemale>false</drawForFemale>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.3</layerOffset>
+							<layerOffset>-0.29</layerOffset>
 							<drawnInBed>false</drawnInBed>
 							<offsets>
 								<south>
@@ -232,7 +232,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawnInBed>false</drawnInBed>
-							<layerOffset>-0.3</layerOffset>
+							<layerOffset>-0.29</layerOffset>
 							<offsets>
 								<south>
 									<bodyTypes>

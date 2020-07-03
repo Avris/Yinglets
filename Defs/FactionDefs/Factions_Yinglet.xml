@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Name="YingletFactionBase" Abstract="True">
+		<goodwillDailyGain>0.20</goodwillDailyGain>
+		<goodwillDailyFall>0.20</goodwillDailyFall>
+	</FactionDef>
+
+	<FactionDef ParentName="YingletFactionBase" Name="YingletTribeBase" Abstract="True">
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<categoryTag>Tribal</categoryTag>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
+		<geneticVariance>0.1</geneticVariance>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<pawnNameMaker>NamerMaleYinglet</pawnNameMaker>
+		<pawnNameMakerFemale>NamerFemaleYinglet</pawnNameMakerFemale>
+		<techLevel>Neolithic</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<leaderTitle>chief</leaderTitle>
+		<hairTags>
+			<li>Tribal</li>
+		</hairTags>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Yinglet_Penitent>5</Yinglet_Penitent>
+					<Yinglet_Warrior>5</Yinglet_Warrior>
+					<Yinglet_Archer>10</Yinglet_Archer>
+					<Yinglet_Hunter>10</Yinglet_Hunter>
+					<Yinglet_HeavyArcher>10</Yinglet_HeavyArcher>
+					<Yinglet_Berserker>5</Yinglet_Berserker>
+					<Yinglet_ChiefRanged>3</Yinglet_ChiefRanged>
+					<Yinglet_ChiefMelee>1.5</Yinglet_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Yinglet_Archer>10</Yinglet_Archer>
+					<Yinglet_Hunter>10</Yinglet_Hunter>
+					<Yinglet_HeavyArcher>10</Yinglet_HeavyArcher>
+					<Yinglet_ChiefRanged>5</Yinglet_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Yinglet_Penitent>10</Yinglet_Penitent>
+					<Yinglet_Warrior>10</Yinglet_Warrior>
+					<Yinglet_Berserker>10</Yinglet_Berserker>
+					<Yinglet_ChiefMelee>5</Yinglet_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Yinglet_Warrior>20</Yinglet_Warrior>
+					<Yinglet_Archer>10</Yinglet_Archer>
+					<Yinglet_Hunter>10</Yinglet_Hunter>
+					<Yinglet_HeavyArcher>10</Yinglet_HeavyArcher>
+					<Yinglet_Berserker>5</Yinglet_Berserker>
+					<Yinglet_ChiefRanged>3</Yinglet_ChiefRanged>
+					<Yinglet_ChiefMelee>1.5</Yinglet_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Yinglet_Trader>1</Yinglet_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Yinglet_Warrior>7</Yinglet_Warrior>
+					<Yinglet_Archer>10</Yinglet_Archer>
+					<Yinglet_Hunter>10</Yinglet_Hunter>
+					<Yinglet_HeavyArcher>10</Yinglet_HeavyArcher>
+					<Yinglet_Berserker>7</Yinglet_Berserker>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Yinglet_Warrior>7</Yinglet_Warrior>
+					<Yinglet_Archer>10</Yinglet_Archer>
+					<Yinglet_Hunter>10</Yinglet_Hunter>
+					<Yinglet_HeavyArcher>10</Yinglet_HeavyArcher>
+					<Yinglet_Berserker>7</Yinglet_Berserker>
+					<Yinglet_ChiefRanged>10</Yinglet_ChiefRanged>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	</FactionDef>
+	<FactionDef ParentName="YingletTribeBase">
+		<defName>YingletTribeCivil</defName>
+		<label>gentle yinglet tribe</label>
+		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<colorSpectrum>
+			<li>(0.85, 0.75, 0.37)</li>
+			<li>(0.95, 0.95, 0.37)</li>
+		</colorSpectrum>
+		<startingGoodwill>0</startingGoodwill>
+		<naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
+	</FactionDef>
+
+	<FactionDef ParentName="YingletTribeBase">
+		<defName>YingletTribeRough</defName>
+		<label>fierce yinglet tribe</label>
+		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
+		<colorSpectrum>
+			<li>(0.25, 0.65, 0.05)</li>
+			<li>(0.25, 0.75, 0.05)</li>
+		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/VillageRough</factionIconPath>
+		<startingGoodwill>-80</startingGoodwill>
+		<naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
+	</FactionDef>
+
+	<FactionDef ParentName="YingletTribeBase">
+		<defName>YingletTribeSavage</defName>
+		<label>savage yinglet tribe</label>
+		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
+		<colorSpectrum>
+			<li>(0.85, 0, 0)</li>
+			<li>(1, 0.1, 0.1)</li>
+		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/VillageSavage</factionIconPath>
+		<permanentEnemy>true</permanentEnemy>
+		<goodwillDailyGain>0</goodwillDailyGain>
+		<!-- Reset goodwill inherited from TribeBase->HumanFactionBase for permanent enemy -->
+		<goodwillDailyFall>0</goodwillDailyFall>
+	</FactionDef>
+
+</Defs>
+
