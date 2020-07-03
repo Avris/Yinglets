@@ -468,9 +468,9 @@
 					<li>Yinglet_ChestGuard</li>
 					<li>Yingworld_TunicFull</li>
 					<li>Yinglet_TunicSplit</li>
-					<li>Apparel_FlakVest</li>
-					<li>Apparel_PlateArmor</li>
-					<li>Apparel_PowerArmor</li>
+					<li>Yinglet_FlakVest</li>
+					<li>Yinglet_PlateArmor</li>
+					<li>Yinglet_PowerArmor</li>
 				</whiteApparelList>
 			</raceRestriction>
 			<relationSettings>
