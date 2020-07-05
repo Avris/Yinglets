@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using AlienRace;
 using HarmonyLib;
@@ -8,20 +9,34 @@ using UnityEngine;
 
 namespace Yingworld
 {
-    [HarmonyPatch(typeof(GenSpawn))]
-    internal static class HarmonyPatches
+    [HarmonyPatch(typeof(Pawn))]
+    internal static class StyleSync
     {
-        [HarmonyPatch(typeof(PawnGraphicSet), nameof(PawnGraphicSet.ResolveAllGraphics))]
+        [HarmonyPatch(typeof(Pawn), nameof(Pawn.SpawnSetup))]
         [HarmonyPostfix]
-        static void ColorChannelPostfix(PawnGraphicSet __instance)
+        static void YingletStyleSync(bool respawningAfterLoad, Pawn __instance)
         {
-            if (__instance.pawn != null && __instance.pawn.def == YingDefOf.Alien_Yinglet)
+            if (__instance != null && __instance.def == YingDefOf.Alien_Yinglet)
             {
-                AlienPartGenerator.AlienComp comp = __instance.pawn.GetComp<AlienPartGenerator.AlienComp>();
-                if (comp != null)
+                // ThingDef_AlienRace pawn = __instance.def as ThingDef_AlienRace;
+                AlienPartGenerator.AlienComp comp = __instance.GetComp<AlienPartGenerator.AlienComp>();
+                if (comp != null && comp.addonVariants != null)
                 {
-                    comp.ColorChannels.TryGetValue("tail").first = comp.ColorChannels.TryGetValue("skin").first;
-                    comp.ColorChannels.TryGetValue("tail").second = comp.ColorChannels.TryGetValue("hair").first;
+                    for (int i = 0; i < comp.addonVariants.Count; i++)
+                    {
+                        comp.addonVariants[i] = 0;
+                    }
+                    if (Current.ProgramState != ProgramState.Playing) return;
+                    __instance.Drawer.renderer.graphics.ResolveAllGraphics();
+                    if (__instance.IsColonist) PortraitsCache.SetDirty(__instance);
+                }
+                else if (comp != null)
+                {
+                    comp.addonVariants = new List<int>();
+                    for (int i = 0; i < 8; i++)
+                    {
+                        comp.addonVariants.Add(0);
+                    }
                 }
             }
         }
