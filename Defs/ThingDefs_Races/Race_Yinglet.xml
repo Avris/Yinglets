@@ -94,10 +94,6 @@
 							</li>
 							<li>
 								<weight>8</weight>
-								<only>RGBA(0.92,0.8,0.72,1.0)</only>
-							</li>
-							<li>
-								<weight>8</weight>
 								<only>RGBA(0.42,0.31,0.22,1.0)</only>
 							</li>
 							<li>
