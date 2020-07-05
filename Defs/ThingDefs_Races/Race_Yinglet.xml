@@ -498,7 +498,7 @@
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
-							<layerOffset>-0.29</layerOffset>
+							<layerOffset>-0.295</layerOffset>
 							<drawForMale>false</drawForMale>
 							<offsets>
 								<south>
@@ -526,7 +526,7 @@
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
-							<layerOffset>-0.29</layerOffset>
+							<layerOffset>-0.295</layerOffset>
 							<drawForFemale>false</drawForFemale>
 							<offsets>
 								<south>
