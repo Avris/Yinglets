@@ -57,7 +57,97 @@
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
+
+
+
 							<li>
+								<weight>8</weight>
+								<only>RGBA(0.8,0.71,0.64,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.71,0.6,0.47,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.51,0.39,0.28,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.69,0.58,0.39,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.84,0.8,0.76,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.69,0.69,0.69,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.51,0.4,0.28,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.75,0.53,0.24,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.92,0.8,0.72,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.42,0.31,0.22,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.6,0.48,0.31,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.8,0.71,0.59,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.33,0.33,0.35,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.89,0.89,0.88,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.6,0.51,0.4,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.87,0.89,0.74,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.71,0.67,0.64,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.44,0.39,0.35,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.72,0.6,0.47,1.0)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.65,0.5,0.35,1.0)</only>
+							</li>
+
+
+
+
+
+
+
+							<!--<li>
 								<weight>8</weight>
 								<only>RGBA(0.48,0.35,0.23,1.0)</only>
 							</li>
@@ -84,7 +174,7 @@
 							<li>
 								<weight>3</weight>
 								<only>RGBA(0.98,0.98,0.98,1.0)</only>
-							</li>
+							</li>-->
 						</options>
 					</alienskincolorgen>
 					<alienskinsecondcolorgen Class="ColorGenerator_Options">
@@ -105,7 +195,7 @@
 					</alienskinsecondcolorgen>
 					<alienhaircolorgen Class="ColorGenerator_Options">
 						<options>
-							<li>
+							<!--<li>
 								<weight>5</weight>
 								<only>RGBA(0.51,0.77,0.86,1)</only>
 							</li>
@@ -120,6 +210,34 @@
 							<li>
 								<weight>5</weight>
 								<only>RGBA(0.79,0.86,0.96,1)</only>
+							</li>-->
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.87,0.79,0.57,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.23,0.19,0.15,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.35,0.3,0.24,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.59,0.3,0.15,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.77,0.78,0.81,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.61,0.5,0.35,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.43,0.3,0.16,1)</only>
 							</li>
 						</options>
 					</alienhaircolorgen>
