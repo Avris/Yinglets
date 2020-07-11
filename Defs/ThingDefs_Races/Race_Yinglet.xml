@@ -656,6 +656,7 @@
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Dessicated/Dessicated_Ying</skeleton>
+					<skull>Things/Pawn/YingPawn/Icons/Dessicated/Dessicated_Ying_skull</skull>
 				</li>
 			</graphicPaths>
 			<hairSettings>
