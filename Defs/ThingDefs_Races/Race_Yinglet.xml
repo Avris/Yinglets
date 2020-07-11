@@ -283,7 +283,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<inFrontOfBody>true</inFrontOfBody>
 							<drawForMale>false</drawForMale>
-							<layerOffset>-0.29</layerOffset>
+							<layerOffset>-0.28</layerOffset>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -307,12 +307,43 @@
 						</li>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Bodies/FemaleBody</path>
-							<bodyPart>YingletTail</bodyPart>
+							<bodyPart>Torso</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<shaderType>CutoutComplex</shaderType>
 							<drawForMale>false</drawForMale>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.30</layerOffset>
+							<drawnInBed>false</drawnInBed>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Tails/Tail</path>
+							<bodyPart>Torso</bodyPart>
+							<colorChannel>skin</colorChannel>
+							<shaderType>CutoutComplex</shaderType>
+							<drawForMale>false</drawForMale>
+							<inFrontOfBody>false</inFrontOfBody>
+							<layerOffset>0.1</layerOffset>
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
@@ -343,7 +374,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<inFrontOfBody>true</inFrontOfBody>
 							<drawForFemale>false</drawForFemale>
-							<layerOffset>-0.29</layerOffset>
+							<layerOffset>-0.28</layerOffset>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -367,7 +398,7 @@
 						</li>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Bodies/MaleBody</path>
-							<bodyPart>YingletTail</bodyPart>
+							<bodyPart>Torso</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<shaderType>CutoutComplex</shaderType>
 							<drawForFemale>false</drawForFemale>
@@ -398,11 +429,14 @@
 						</li>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Tails/Tail</path>
-							<bodyPart>YingletTail</bodyPart>
+							<bodyPart>Torso</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<shaderType>CutoutComplex</shaderType>
+							<drawForFemale>false</drawForFemale>
 							<inFrontOfBody>false</inFrontOfBody>
+							<layerOffset>0.1</layerOffset>
 							<drawnInBed>false</drawnInBed>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -426,10 +460,10 @@
 						</li>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Eyes/FemaleEyes</path>
-							<bodyPart>Eye</bodyPart>
+							<bodyPart>Head</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.26</layerOffset>
 							<drawForMale>false</drawForMale>
 							<offsets>
 								<south>
@@ -449,7 +483,7 @@
 						</li>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Eyes/MaleEyes</path>
-							<bodyPart>Eye</bodyPart>
+							<bodyPart>Head</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
@@ -472,7 +506,7 @@
 						</li>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Ears/Ear</path>
-							<bodyPart>Ear</bodyPart>
+							<bodyPart>Head</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
@@ -483,6 +517,19 @@
 										<YingFem>(-0.42, 0.16)</YingFem>
 									</bodyTypes>
 								</south>
+								<north/>
+								<east/>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Ears/Ear_Foreground</path>
+							<bodyPart>Head</bodyPart>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.25</layerOffset>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<offsets>
+								<south/>
 								<north/>
 								<east>
 									<bodyTypes>
@@ -497,7 +544,7 @@
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>0.1</layerOffset>
+							<layerOffset>-0.26</layerOffset>
 							<drawForMale>false</drawForMale>
 							<hiddenUnderApparelFor>
                                 <li>UpperHead</li>
@@ -528,7 +575,6 @@
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
-							<layerOffset>-0.2</layerOffset>
 							<drawForMale>false</drawForMale>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
@@ -554,7 +600,7 @@
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>0.1</layerOffset>
+							<layerOffset>-0.26</layerOffset>
 							<drawForFemale>false</drawForFemale>
 							<hiddenUnderApparelFor>
                                 <li>UpperHead</li>
@@ -582,7 +628,6 @@
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
-							<layerOffset>-0.2</layerOffset>
 							<drawForFemale>false</drawForFemale>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
