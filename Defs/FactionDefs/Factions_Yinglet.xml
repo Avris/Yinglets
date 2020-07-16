@@ -6,6 +6,16 @@
 		<goodwillDailyFall>0.20</goodwillDailyFall>
 	</FactionDef>
 
+  <FactionDef Name="YingletFactionBase1" Abstract="True">
+    <goodwillDailyGain>0.20</goodwillDailyGain>
+    <goodwillDailyFall>0.20</goodwillDailyFall>
+  </FactionDef>
+
+  <FactionDef Name="YingletFactionBase2" Abstract="True">
+    <goodwillDailyGain>0.20</goodwillDailyGain>
+    <goodwillDailyFall>0.20</goodwillDailyFall>
+  </FactionDef>
+
 	<FactionDef ParentName="YingletFactionBase" Name="YingletTribeBase" Abstract="True">
 		<pawnSingular>tribesman</pawnSingular>
 		<pawnsPlural>tribespeople</pawnsPlural>
