@@ -5,9 +5,9 @@
 		<description>A recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
 		<alienRace>
 			<generalSettings>
-				<maleGenderProbability>0.8</maleGenderProbability>
+				<maleGenderProbability>0.5</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
-				<minAgeForAdulthood>2</minAgeForAdulthood>
+				<minAgeForAdulthood>1</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
 				<forcedRaceTraitEntries>
@@ -54,9 +54,6 @@
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
-
-
-
 							<li>
 								<weight>8</weight>
 								<only>RGBA(0.8,0.71,0.64,1.0)</only>
@@ -134,6 +131,10 @@
 								<only>RGBA(0.65,0.5,0.35,1.0)</only>
 							</li>
 
+							<li>
+								<weight>1</weight>
+								<only>RGBA(0.8275,0.8235,0.886,1)</only>
+							</li>
 
 
 
@@ -174,6 +175,14 @@
 						<options>
 							<li>
 								<weight>10</weight>
+								<only>RGBA(0.8,0.6,0.4,1.0)</only>
+							</li>
+							<li>
+								<weight>1</weight>
+								<only>RGBA(0.55,0.59,1,1.0)</only>
+							</li>
+							<!--<li>
+								<weight>10</weight>
 								<only>RGBA(0.3,0.3,0.4,1.0)</only>
 							</li>
 							<li>
@@ -183,7 +192,7 @@
 							<li>
 								<weight>5</weight>
 								<only>RGBA(0.5,0.3,0.3,1.0)</only>
-							</li>
+							</li>-->
 						</options>
 					</alienskinsecondcolorgen>
 					<alienhaircolorgen Class="ColorGenerator_Options">
@@ -232,6 +241,10 @@
 								<weight>5</weight>
 								<only>RGBA(0.43,0.3,0.16,1)</only>
 							</li>
+							<li>
+								<weight>1</weight>
+								<only>RGBA(1,1,1,1)</only>
+							</li>
 						</options>
 					</alienhaircolorgen>
 					<colorChannels>
@@ -277,43 +290,12 @@
 					</colorChannels>
 					<bodyAddons>
 						<li>
-							<path>Things/Pawn/YingPawn/Parts/Tails/Tail</path>
-							<bodyPart>Torso</bodyPart>
-							<colorChannel>skin</colorChannel>
-							<shaderType>CutoutComplex</shaderType>
-							<inFrontOfBody>false</inFrontOfBody>
-							<layerOffset>0.1</layerOffset>
-							<drawnInBed>false</drawnInBed>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
-								</east>
-							</offsets>
-						</li>
-						<li>
-							<path>Things/Pawn/YingPawn/Parts/Heads/FemaleHead</path>
+							<path>Things/Pawn/YingPawn/Parts/Heads/YingHead</path>
 							<bodyPart>Head</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<shaderType>CutoutComplex</shaderType>
 							<inFrontOfBody>true</inFrontOfBody>
-							<drawForMale>false</drawForMale>
 							<layerOffset>-0.28</layerOffset>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -331,6 +313,36 @@
 									<bodyTypes>
 										<Ying>(-0.5,0.17)</Ying>
 										<YingFem>(-0.5,0.17)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Tails/Tail</path>
+							<bodyPart>Torso</bodyPart>
+							<colorChannel>skin</colorChannel>
+							<shaderType>CutoutComplex</shaderType>
+							<inFrontOfBody>false</inFrontOfBody>
+							<layerOffset>0.1</layerOffset>
+							<drawnInBed>false</drawnInBed>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.42,0.22)</Ying>
+										<YingFem>(-0.42,0.22)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -367,36 +379,6 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/YingPawn/Parts/Heads/MaleHead</path>
-							<bodyPart>Head</bodyPart>
-							<colorChannel>skin</colorChannel>
-							<shaderType>CutoutComplex</shaderType>
-							<inFrontOfBody>true</inFrontOfBody>
-							<drawForFemale>false</drawForFemale>
-							<layerOffset>-0.28</layerOffset>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.17)</Ying>
-										<YingFem>(-0.42,0.17)</YingFem>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Ying>(-0.5,0.17)</Ying>
-										<YingFem>(-0.5,0.17)</YingFem>
-									</bodyTypes>
-								</east>
-							</offsets>
-						</li>
-						<li>
 							<path>Things/Pawn/YingPawn/Parts/Bodies/MaleBody</path>
 							<bodyPart>Torso</bodyPart>
 							<colorChannel>skin</colorChannel>
@@ -423,6 +405,66 @@
 									<bodyTypes>
 										<Ying>(-0.42,0.22)</Ying>
 										<YingFem>(-0.42,0.22)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Shellteeth/FemaleTooth</path>
+							<bodyPart>Head</bodyPart>
+							<colorChannel>eye</colorChannel>
+							<shaderType>CutoutComplex</shaderType>
+							<drawForMale>false</drawForMale>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.25</layerOffset>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42,0.17)</Ying>
+										<YingFem>(-0.42,0.17)</YingFem>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.5,0.17)</Ying>
+										<YingFem>(-0.5,0.17)</YingFem>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Shellteeth/MaleTooth</path>
+							<bodyPart>Head</bodyPart>
+							<colorChannel>eye</colorChannel>
+							<shaderType>CutoutComplex</shaderType>
+							<drawForFemale>false</drawForFemale>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.25</layerOffset>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Ying>(-0.42,0.17)</Ying>
+										<YingFem>(-0.42,0.17)</YingFem>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Ying>(0,0.55)</Ying>
+										<YingFem>(0,0.55)</YingFem>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Ying>(-0.5,0.17)</Ying>
+										<YingFem>(-0.5,0.17)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -826,12 +868,11 @@
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
-					<li>(0,0)</li>
-					<li>(1,50)</li>
-					<li>(2,200)</li>
-					<li>(3,300)</li>
-					<li>(10,100)</li>
-					<li>(20,50)</li>
+					<li>(1,0)</li>
+					<li>(2,40)</li>
+					<li>(3,25)</li>
+					<li>(10,15)</li>
+					<li>(20,5)</li>
 					<li>(25,0)</li>
 				</points>
 			</ageGenerationCurve>
