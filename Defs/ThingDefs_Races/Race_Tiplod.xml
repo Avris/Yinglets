@@ -40,8 +40,8 @@
 			<baseHungerRate>0.35</baseHungerRate>
 			<baseBodySize>1.2</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
-			<gestationPeriodDays>25</gestationPeriodDays>
-			<lifeExpectancy>15</lifeExpectancy>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<lifeExpectancy>22</lifeExpectancy>
 			<wildness>0.10</wildness>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeStageAges>
