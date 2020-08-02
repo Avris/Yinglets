@@ -1,266 +1,256 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <!-- CHILD STAGE -->
-  <AlienRace.BackstoryDef>
-    <defName>YingletDerpChild</defName>
-    <title>Derpy Younglet</title>
-    <titleShort>derpy</titleShort>
-    <baseDescription>[PAWN_nameDef] was born extremely Derp. [PAWN_pronoun] derped all over the nursery, much to the chagrin of the Matriarch.</baseDescription>
-    <slot>Childhood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Social</defName>
-        <amount>-1</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-      <li>PlantWork</li>
-      <li>Hauling</li>
-      <li>Animals</li>
-      <li>Cleaning</li>
-    </workDisables>
-    <requiredWorkTags>
-      <li>Social</li>
-      <li>Caring</li>
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
-
-  <AlienRace.BackstoryDef>
-    <defName>YingletAverageChild</defName>
-    <title>Average Younglet</title>
-    <titleShort>younglet</titleShort>
-    <baseDescription>[PAWN_nameDef] grew up in a small enclave. [PAWN_pronoun] didn't achieve much, but may yet show potential.</baseDescription>
-    <slot>Childhood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
-      </li>
-      <li>
-        <defName>Intellectual</defName>
-        <amount>-1</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-
-    </workDisables>
-    <requiredWorkTags>
-
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
-
-  <!-- ADULT STAGE -->
-  <AlienRace.BackstoryDef>
-    <defName>YingletAverage</defName>
-    <title>Average Yinglet</title>
-    <titleShort>yinglet</titleShort>
-    <baseDescription>[PAWN_nameDef] is your average derpy Yinglet. [PAWN_pronoun] does derps and scavenges for clams.</baseDescription>
-    <slot>Adulthood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Social</defName>
-        <amount>5</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-      <li>Animals</li>
-      <li>Cleaning</li>
-    </workDisables>
-    <requiredWorkTags>
-      <li>Violent</li>
-      <li>Social</li>
-      <li>Caring</li>
-      <li>Intellectual</li>
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
-
-  <AlienRace.BackstoryDef>
-    <defName>YingletSmart</defName>
-    <title>Sosmart Yinglet</title>
-    <titleShort>smart</titleShort>
-    <baseDescription>Born a prodigy [PAWN_nameDef] has started to excel within the enclave. [PAWN_pronoun] may yet become a good {PAWN_gender?Patriarch:Matriarch}.</baseDescription>
-    <slot>Adulthood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Social</defName>
-        <amount>8</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>-2</amount>
-      </li>
-      <li>
-        <defName>Intellectual</defName>
-        <amount>5</amount>
-      </li>
-      <li>
-        <defName>Crafting</defName>
-        <amount>3</amount>
-      </li>
-      <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Animals</defName>
-        <amount>1</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-      <li>Hauling</li>
-    </workDisables>
-    <requiredWorkTags>
-      <li>Social</li>
-      <li>Intellectual</li>
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
-
-  <AlienRace.BackstoryDef>
-    <defName>Fishbaiter</defName>
-    <title>Fishbaiter</title>
-    <titleShort>baiter</titleShort>
-    <baseDescription>[PAWN_nameDef] was assigned to learn under [PAWN_possessive] enclave's Fishmaster, managing the bait for the more experienced fisheryings as a Fishbaiter. With enough practice, [PAWN_subjective] may be promoted to Masterbaiter!</baseDescription>
-    <slot>Adulthood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Animals</defName>
-        <amount>-2</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-      <li>Animals</li>
-    </workDisables>
-    <requiredWorkTags>
-      <li>Crafting</li>
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
-
-  <AlienRace.BackstoryDef>
-    <defName>BugCatcher</defName>
-    <title>Bug Catcher</title>
-    <titleShort>bug catcher</titleShort>
-    <baseDescription>Bugs are an important food source for every enclave, and [PAWN_nameDef] was one of the best at [PAWN_possessive] enclave. It takes the right set of skills to find and catch the right ones and not die from a deadly spider.</baseDescription>
-    <slot>Adulthood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Animals</defName>
-        <amount>6</amount>
-      </li>
-      <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-    </workDisables>
-    <requiredWorkTags>
-      <li>Animals</li>
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
-
-  <AlienRace.BackstoryDef>
-    <defName>ShinyRockCollector</defName>
-    <title>Shiny Rock Collector</title>
-    <titleShort>rock collector</titleShort>
-    <baseDescription>[PAWN_nameDef] isn't the smartest scav, but they have a decent eye for shiny things hidden among the rocks, and the humans seem to pay well for them.</baseDescription>
-    <slot>Adulthood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Mining</defName>
-        <amount>6</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-      <li>Intellectual</li>
-    </workDisables>
-    <requiredWorkTags>
-      <li>Mining</li>
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
-
-  <AlienRace.BackstoryDef>
-    <defName>CityScav</defName>
-    <title>City Scav</title>
-    <titleShort>scav</titleShort>
-    <baseDescription>Banished from [PAWN_possessive] enclave, [PAWN_nameDef] scraped out a living among the alleys and slums of the city. [PAWN_subjective] had to learn to fight for themselves and work the streets to survive.</baseDescription>
-    <slot>Adulthood</slot>
-    <bodyTypeFemale>YingFem</bodyTypeFemale>
-    <bodyTypeMale>Ying</bodyTypeMale>
-    <spawnCategories>
-      <li>YingletBackstory</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Social</defName>
-        <amount>4</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-      <li>Cleaning</li>
-    </workDisables>
-    <requiredWorkTags>
-      <li>Violent</li>
-      <li>Social</li>
-    </requiredWorkTags>
-  </AlienRace.BackstoryDef>
+	<!-- CHILD STAGE -->
+	<AlienRace.BackstoryDef>
+		<defName>YingletDerpChild</defName>
+		<title>Derpy Younglet</title>
+		<titleShort>derpy</titleShort>
+		<baseDescription>[PAWN_nameDef] was born extremely Derp. [PAWN_pronoun] derped all over the nursery, much to the chagrin of the Matriarch.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>-1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Hauling</li>
+			<li>Animals</li>
+			<li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>YingletAverageChild</defName>
+		<title>Average Younglet</title>
+		<titleShort>younglet</titleShort>
+		<baseDescription>[PAWN_nameDef] grew up in a small enclave. [PAWN_pronoun] didn't achieve much, but may yet show potential.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<!-- ADULT STAGE -->
+	<AlienRace.BackstoryDef>
+		<defName>YingletAverage</defName>
+		<title>Average Yinglet</title>
+		<titleShort>yinglet</titleShort>
+		<baseDescription>[PAWN_nameDef] is your average derpy Yinglet. [PAWN_pronoun] does derps and scavenges for clams.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+			<li>Caring</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>YingletSmart</defName>
+		<title>Sosmart Yinglet</title>
+		<titleShort>smart</titleShort>
+		<baseDescription>Born a prodigy [PAWN_nameDef] has started to excel within the enclave. [PAWN_pronoun] may yet become a good {PAWN_gender?Patriarch:Matriarch}.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Hauling</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>Fishbaiter</defName>
+		<title>Fishbaiter</title>
+		<titleShort>baiter</titleShort>
+		<baseDescription>[PAWN_nameDef] was assigned to learn under [PAWN_possessive] enclave's Fishmaster, managing the bait for the more experienced fisheryings as a Fishbaiter. With enough practice, [PAWN_pronoun] may be promoted to Masterbaiter!</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>BugCatcher</defName>
+		<title>Bug Catcher</title>
+		<titleShort>bug catcher</titleShort>
+		<baseDescription>Bugs are an important food source for every enclave, and [PAWN_nameDef] was one of the best at [PAWN_possessive] enclave. It takes the right set of skills to find and catch the right ones and not die from a deadly spider.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>ShinyRockCollector</defName>
+		<title>Shiny Rock Collector</title>
+		<titleShort>rock collector</titleShort>
+		<baseDescription>[PAWN_nameDef] isn't the smartest scav, but they have a decent eye for shiny things hidden among the rocks, and the humans seem to pay well for them.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Mining</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>CityScav</defName>
+		<title>City Scav</title>
+		<titleShort>scav</titleShort>
+		<baseDescription>Banished from [PAWN_possessive] enclave, [PAWN_nameDef] scraped out a living among the alleys and slums of the city. [PAWN_pronoun] had to learn to fight for themselves and work the streets to survive.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
 </Defs>
