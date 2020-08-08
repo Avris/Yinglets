@@ -483,7 +483,6 @@
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -493,24 +492,6 @@
 								</south>
 								<north/>
 								<east/>
-							</offsets>
-						</li>
-						<li>
-							<path>Things/Pawn/YingPawn/Parts/Ears/Ear_Foreground</path>
-							<bodyPart>Head</bodyPart>
-							<colorChannel>skin</colorChannel>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.25</layerOffset>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<offsets>
-								<south/>
-								<north/>
-								<east>
-									<bodyTypes>
-										<Ying>(-0.51, 0.16)</Ying>
-										<YingFem>(-0.51, 0.16)</YingFem>
-									</bodyTypes>
-								</east>
 							</offsets>
 						</li>
 						<li>
