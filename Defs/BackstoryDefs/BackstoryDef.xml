@@ -5,7 +5,7 @@
 		<defName>YingletDerpChild</defName>
 		<title>Derpy Younglet</title>
 		<titleShort>derpy</titleShort>
-		<baseDescription>[PAWN_nameDef] was born extremely Derp. [PAWN_pronoun] derped all over the nursery, much to the chagrin of the Matriarch.</baseDescription>
+		<baseDescription>[PAWN_nameDef] was born extremely Derp. [PAWN_pronoun] derped all over the nursery, much to the chagrin of [PAWN_possessive] Matriarch.</baseDescription>
 		<slot>Childhood</slot>
 		<bodyTypeFemale>YingFem</bodyTypeFemale>
 		<bodyTypeMale>Ying</bodyTypeMale>
@@ -228,7 +228,7 @@
 		<defName>CityScav</defName>
 		<title>City Scav</title>
 		<titleShort>scav</titleShort>
-		<baseDescription>Banished from [PAWN_possessive] enclave, [PAWN_nameDef] scraped out a living among the alleys and slums of the city. [PAWN_pronoun] had to learn to fight for themselves and work the streets to survive.</baseDescription>
+		<baseDescription>Banished from [PAWN_possessive] enclave, [PAWN_nameDef] scraped out a living among the alleys and slums of the city. [PAWN_pronoun] had to learn to fight for [PAWN_objective]self and work the streets to survive.</baseDescription>
 		<slot>Adulthood</slot>
 		<bodyTypeFemale>YingFem</bodyTypeFemale>
 		<bodyTypeMale>Ying</bodyTypeMale>

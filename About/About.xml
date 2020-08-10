@@ -1,15 +1,16 @@
 ﻿<ModMetaData>
 	<name>YingWorld</name>
-	<author>Val Salia and Co </author>
-	<packageId>ValSalia.YingWorld.099</packageId>
+	<author>A bunch of scavs</author>
+	<packageId>ValSalia.YingWorld.0.9</packageId>
 	<url/>
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<description>
-		Derpy, stilt-legged and sometimes on fire.
-        </description>
+		Derpy, stilt-legged and sometimes on fire. A description is coming soon!
+    </description>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>

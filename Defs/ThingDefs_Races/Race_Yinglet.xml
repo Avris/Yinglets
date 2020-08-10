@@ -40,7 +40,10 @@
 					</li>
 				</forcedRaceTraitEntries>
 				<disallowedTraits>
-					<li>BodyPurist</li>
+					<li>
+					<defName>BodyPurist</defName>
+					<chance>60</chance>
+					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>true</useGenderedHeads>
@@ -52,8 +55,50 @@
 						<li>Yinglet</li>
 					</aliencrowntypes>
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
-					<alienskincolorgen Class="ColorGenerator_Options">
-						<options>
+					<colorChannels>
+						<li>
+							<name>eye</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(1.0, 0.78, 0.36, 1.0)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(1.0, 0.82, 0.28, 1.0)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.57, 0.61, 0.78, 1.0)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.18, 0.62, 0.74, 1.0)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(1.0, 0.84, 0.82, 1.0)</only>
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+							<options>
 							<li>
 								<weight>8</weight>
 								<only>RGBA(0.8,0.71,0.64,1.0)</only>
@@ -170,8 +215,8 @@
 								<only>RGBA(0.98,0.98,0.98,1.0)</only>
 							</li>-->
 						</options>
-					</alienskincolorgen>
-					<alienskinsecondcolorgen Class="ColorGenerator_Options">
+							</first>
+							<second Class="ColorGenerator_Options">
 						<options>
 							<li><!--Vizlet Ear-->
 								<weight>8</weight>
@@ -202,8 +247,11 @@
 								<only>RGBA(0.5,0.3,0.3,1.0)</only>
 							</li>-->
 						</options>
-					</alienskinsecondcolorgen>
-					<alienhaircolorgen Class="ColorGenerator_Options">
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
 						<options>
 							<!--<li>
 								<weight>5</weight>
@@ -254,46 +302,7 @@
 								<only>RGBA(1,1,1,1)</only>
 							</li>
 						</options>
-					</alienhaircolorgen>
-					<colorChannels>
-						<li>
-							<name>eye</name>
-							<first Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<weight>10</weight>
-										<only>RGBA(1.0, 0.78, 0.36, 1.0)</only>
-									</li>
-									<li>
-										<weight>5</weight>
-										<only>RGBA(1.0, 0.82, 0.28, 1.0)</only>
-									</li>
-									<li>
-										<weight>5</weight>
-										<only>RGBA(0.57, 0.61, 0.78, 1.0)</only>
-									</li>
-									<li>
-										<weight>5</weight>
-										<only>RGBA(0.18, 0.62, 0.74, 1.0)</only>
-									</li>
-									<li>
-										<weight>5</weight>
-										<only>RGBA(1.0, 0.84, 0.82, 1.0)</only>
-									</li>
-									<li>
-										<weight>3</weight>
-										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
-									</li>
-								</options>
 							</first>
-							<second Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<weight>10</weight>
-										<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
-									</li>
-								</options>
-							</second>
 						</li>
 					</colorChannels>
 					<bodyAddons>
