@@ -595,7 +595,7 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<YingFem>(-0.54,0.17)</YingFem>
+										<YingFem>(-0.51,0.17)</YingFem>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -669,7 +669,7 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<Ying>(-0.55,0.17)</Ying>
+										<Ying>(-0.51,0.17)</Ying>
 									</bodyTypes>
 								</east>
 							</offsets>
