@@ -99,6 +99,7 @@
 		<baseDescription>Born a prodigy [PAWN_nameDef] has started to excel within the enclave. [PAWN_pronoun] may yet become a good {PAWN_gender?Patriarch:Matriarch}.</baseDescription>
 		<slot>Adulthood</slot>
 		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeGlobal>Ying</bodyTypeGlobal>
 		<bodyTypeMale>Ying</bodyTypeMale>
 		<spawnCategories>
 			<li>YingletBackstory</li>
@@ -144,6 +145,7 @@
 		<baseDescription>[PAWN_nameDef] was assigned to learn under [PAWN_possessive] enclave's Fishmaster, managing the bait for the more experienced fisheryings as a Fishbaiter. With enough practice, [PAWN_pronoun] may be promoted to Masterbaiter!</baseDescription>
 		<slot>Adulthood</slot>
 		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeGlobal>Ying</bodyTypeGlobal>
 		<bodyTypeMale>Ying</bodyTypeMale>
 		<spawnCategories>
 			<li>YingletBackstory</li>
