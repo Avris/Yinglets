@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Female -->
+
+  <HairDef>
+    <defName>Sareeha</defName>
+    <label>sofluffy</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Poof/Sareeha</texPath>
+    <hairTags>
+      <li>Tailpoof</li>
+    </hairTags>
+  </HairDef>
+
+  <HairDef>
+    <defName>Kass</defName>
+    <label>poofytail</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Poof/Kass</texPath>
+    <hairTags>
+      <li>Tailpoof</li>
+    </hairTags>
+  </HairDef>
+  
+  <!-- Duplicates for generation chance manipulation -->
+  
+  <HairDef>
+    <defName>Kass1</defName>
+    <label>poofytail</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Poof/Kass</texPath>
+    <hairTags>
+      <li>Tailpoof</li>
+    </hairTags>
+  </HairDef>
+  
+  <HairDef>
+    <defName>Kass2</defName>
+    <label>poofytail</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Poof/Kass</texPath>
+    <hairTags>
+      <li>Tailpoof</li>
+    </hairTags>
+  </HairDef>
+  
+  <HairDef>
+    <defName>Kass3</defName>
+    <label>poofytail</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Poof/Kass</texPath>
+    <hairTags>
+      <li>Tailpoof</li>
+    </hairTags>
+  </HairDef>
+
+  <HairDef>
+    <defName>YindBald</defName>
+    <label>No tailpoof</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/YingPawn/Parts/Hairs/Over/Male_OverHair5</texPath>
+    <hairTags>
+      <li>Tailpoof</li>
+    </hairTags>
+  </HairDef>
+  <!-- Male 
+
+  <HairDef>
+    <defName>Lackland</defName>
+    <label>lackland</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/Lackland</texPath>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+  </HairDef>
+
+  <HairDef>
+    <defName>Mohawk</defName>
+    <label>mohawk</label>
+    <hairGender>MaleUsually</hairGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/Mohawk</texPath>
+    <hairTags>
+      <li>Urban</li>
+      <li>Punk</li>
+    </hairTags>
+  </HairDef>
+-->
+</Defs>

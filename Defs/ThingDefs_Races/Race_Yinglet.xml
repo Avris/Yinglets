@@ -5,7 +5,7 @@
 		<description>A recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
 		<alienRace>
 			<generalSettings>
-				<maleGenderProbability>0.5</maleGenderProbability>
+				<maleGenderProbability>0.7</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<minAgeForAdulthood>1</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
@@ -508,7 +508,7 @@
 							<bodyPart>Head</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.26</layerOffset>
+							<layerOffset>-0.27</layerOffset>
 							<drawForMale>false</drawForMale>
 							<offsets>
 								<south>
@@ -585,6 +585,9 @@
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawForMale>false</drawForMale>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<hiddenUnderApparelFor>
+                                <li>Neck</li>
+                            </hiddenUnderApparelFor>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -662,6 +665,9 @@
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawForFemale>false</drawForFemale>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<hiddenUnderApparelFor>
+                                <li>Neck</li>
+                            </hiddenUnderApparelFor>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -715,7 +721,11 @@
 			<hairSettings>
 				<hasHair>true</hasHair>
 				<hairTags>
-					<li>Yinglet</li>
+					<li>Tailpoof</li>
+					<li>HairTag1</li>
+					<li>HairTag2</li>
+					<li>HairTag3</li>
+					<li>HairTag4</li>
 				</hairTags>
 			</hairSettings>
 			<raceRestriction>
@@ -728,11 +738,14 @@
 					<li>Yinglet_TunicSplit</li>
 					<li>Yinglet_FlakVest</li>
 					<li>Yinglet_PlateArmor</li>
-          <li>Yinglet_ScavengerPlate</li>
+					<li>Yinglet_ScavengerPlate</li>
 					<li>Yinglet_WinterRobe</li>
 					<li>Yinglet_PowerArmor</li>
 					<li>Yinglet_SimpleHelmet</li>
 					<li>Yinglet_AdvancedHelmet</li>
+					<li>Yinglet_FancyCrest</li>
+					<li>Yinglet_FancierCrest</li>
+					<li>Yinglet_FanciestCrest</li>
 				</whiteApparelList>
 			</raceRestriction>
 			<relationSettings>
