@@ -19,7 +19,8 @@
 	<FactionDef ParentName="YingletFactionBase" Name="YingletTribeBase" Abstract="True">
 		<pawnSingular>yinglet</pawnSingular>
 		<pawnsPlural>yinglets</pawnsPlural>
-		<categoryTag>Tribal</categoryTag>
+		<leaderTitle>patriarch</leaderTitle>
+		<leaderTitleFemale>matriarch</leaderTitleFemale>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -31,7 +32,7 @@
 		<settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
 		<pawnNameMaker>NamerMaleYinglet</pawnNameMaker>
 		<pawnNameMakerFemale>NamerFemaleYinglet</pawnNameMakerFemale>
-		<techLevel>Neolithic</techLevel>
+		<techLevel>Medieval</techLevel>
     <backstoryFilters>
       <li>
         <categories>
@@ -55,7 +56,7 @@
 		<baseTraderKinds>
 			<li>Base_Neolithic_Standard</li>
 		</baseTraderKinds>
-		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<allowedArrivalTemperatureRange>-10~45</allowedArrivalTemperatureRange>
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(0, 1)</li>
@@ -75,7 +76,7 @@
 	</FactionDef>
 	<FactionDef ParentName="YingletTribeBase">
 		<defName>YingletTribeCivil</defName>
-		<label>gentle yinglet tribe</label>
+		<label>yinglet enclaves</label>
 		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
 		<colorSpectrum>
 			<li>(0.85, 0.75, 0.37)</li>
@@ -91,11 +92,10 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Yinglet_Scrapper>5</Yinglet_Scrapper>
-          <Yinglet_Scavenger>5</Yinglet_Scavenger>
+          <Yinglet_Rookie>5</Yinglet_Rookie>
+          <Yinglet_Scout>5</Yinglet_Scout>
           <Yinglet_Sentry>10</Yinglet_Sentry>
           <Yinglet_Hunter>10</Yinglet_Hunter>
-          <Yinglet_Trader>10</Yinglet_Trader>
           <Yinglet_Protector>5</Yinglet_Protector>
           <Yinglet_Marksman>3</Yinglet_Marksman>
           <Yinglet_ChiefMelee>1.5</Yinglet_ChiefMelee>
@@ -107,9 +107,8 @@
         <kindDef>Combat</kindDef>
         <commonality>60</commonality>
         <options>
+          <Yinglet_Scout>10</Yinglet_Scout>
           <Yinglet_Hunter>10</Yinglet_Hunter>
-          <Yinglet_Trader>10</Yinglet_Trader>
-          <Yinglet_Protector>10</Yinglet_Protector>
           <Yinglet_Marksman>5</Yinglet_Marksman>
         </options>
       </li>
@@ -118,10 +117,10 @@
         <kindDef>Combat</kindDef>
         <commonality>60</commonality>
         <options>
-          <Yinglet_Scrapper>10</Yinglet_Scrapper>
-          <Yinglet_Scavenger>10</Yinglet_Scavenger>
-          <Yinglet_Protector>10</Yinglet_Protector>
-          <Yinglet_ChiefMelee>5</Yinglet_ChiefMelee>
+          <Yinglet_Rookie>10</Yinglet_Rookie>
+          <Yinglet_Sentry>10</Yinglet_Sentry>
+          <Yinglet_Protector>5</Yinglet_Protector>
+          <Yinglet_ChiefMelee>1.5</Yinglet_ChiefMelee>
 
         
       </options>
@@ -130,7 +129,7 @@
         <!-- Peaceful -->
         <kindDef>Peaceful</kindDef>
         <options>
-          <Yinglet_Scavenger>20</Yinglet_Scavenger>
+          <Yinglet_Rookie>20</Yinglet_Rookie>
           <Yinglet_Hunter>10</Yinglet_Hunter>
           <Yinglet_Sentry>10</Yinglet_Sentry>
           <Yinglet_Trader>10</Yinglet_Trader>
@@ -148,15 +147,14 @@
         </traders>
         <carriers>
           <YingWorld_Tiplod>10</YingWorld_Tiplod>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2.5</Alpaca>
-          <Elephant>2</Elephant>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+          <Alpaca>2</Alpaca>
         </carriers>
         <guards>
-          <Yinglet_Rookie>7</Yinglet_Rookie>
-          <Yinglet_Scout>10</Yinglet_Scout>
-          <Yinglet_Hunter>10</Yinglet_Hunter>
+          <Yinglet_Rookie>5</Yinglet_Rookie>
+          <Yinglet_Scout>5</Yinglet_Scout>
+          <Yinglet_Sentry>10</Yinglet_Sentry>
           <Yinglet_Marksman>10</Yinglet_Marksman>
           <Yinglet_Protector>7</Yinglet_Protector>
 
@@ -170,8 +168,8 @@
           <Yinglet_Hunter>10</Yinglet_Hunter>
           <Yinglet_Sentry>10</Yinglet_Sentry>
           <Yinglet_Marksman>10</Yinglet_Marksman>
-          <Yinglet_Protector>7</Yinglet_Protector>
-          <Yinglet_ChiefMelee>10</Yinglet_ChiefMelee>
+          <Yinglet_Protector>10</Yinglet_Protector>
+          <Yinglet_ChiefMelee>5</Yinglet_ChiefMelee>
 
 
 
@@ -184,17 +182,19 @@
 
 	<FactionDef ParentName="YingletTribeBase">
 		<defName>YingletTribeRough</defName>
-		<label>Scavvers</label>
+		<label>scavver tribes</label>
 		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
 		<colorSpectrum>
-			<li>(0.25, 0.65, 0.05)</li>
+		    <li>(0.25, 0.65, 0.05)</li>
 			<li>(0.25, 0.75, 0.05)</li>
 		</colorSpectrum>
+		<leaderTitle>scavlord</leaderTitle>
 		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
-		<startingGoodwill>-80</startingGoodwill>
-		<naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
-    <factionNameMaker>Yinglet_NamerFactionOutcasts</factionNameMaker>
-    <settlementNameMaker>Yinglet_NamerSettlementOutcasts</settlementNameMaker>
+		<startingGoodwill>-10</startingGoodwill>
+		<naturalColonyGoodwill>-10~-25</naturalColonyGoodwill>
+    <factionNameMaker>Yinglet_NamerFactionScavvers</factionNameMaker>
+    <settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
+	<techLevel>Industrial</techLevel>
     <pawnGroupMakers>
       <li>
         <!-- Normal fights, ranged with melee mix-ins -->
@@ -205,7 +205,6 @@
           <Yinglet_Scavenger>5</Yinglet_Scavenger>
           <Yinglet_Bruiser>10</Yinglet_Bruiser>
           <Yinglet_Junker>10</Yinglet_Junker>
-          <Yinglet_ScrapCollector>10</Yinglet_ScrapCollector>
           <Yinglet_Ironclad>5</Yinglet_Ironclad>
           <Yinglet_Deadeye>3</Yinglet_Deadeye>
           <Yinglet_JunkerChiefRanged>1.5</Yinglet_JunkerChiefRanged>
@@ -217,9 +216,8 @@
         <kindDef>Combat</kindDef>
         <commonality>60</commonality>
         <options>
+		  <Yinglet_Scavenger>10</Yinglet_Scavenger>
           <Yinglet_Junker>10</Yinglet_Junker>
-          <Yinglet_ScrapCollector>10</Yinglet_ScrapCollector>
-          <Yinglet_Ironclad>10</Yinglet_Ironclad>
           <Yinglet_Deadeye>5</Yinglet_Deadeye>
         </options>
       </li>
@@ -229,9 +227,9 @@
         <commonality>60</commonality>
         <options>
           <Yinglet_Scrapper>10</Yinglet_Scrapper>
-          <Yinglet_Scavenger>10</Yinglet_Scavenger>
-          <Yinglet_Ironclad>10</Yinglet_Ironclad>
-          <Yinglet_JunkerChiefRanged>5</Yinglet_JunkerChiefRanged>
+          <Yinglet_Bruiser>10</Yinglet_Bruiser>
+          <Yinglet_Ironclad>5</Yinglet_Ironclad>
+          <Yinglet_JunkerChiefRanged>1.5</Yinglet_JunkerChiefRanged>
         
       </options>
       </li>
@@ -252,21 +250,19 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <Yinglet_Trader>1</Yinglet_Trader>
+          <Yinglet_ScrapCollector>1</Yinglet_ScrapCollector>
         </traders>
         <carriers>
           <YingWorld_Tiplod>10</YingWorld_Tiplod>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
+          <Muffalo>2</Muffalo>
+          <Dromedary>3</Dromedary>
           <Alpaca>2.5</Alpaca>
-          <Elephant>2</Elephant>
         </carriers>
         <guards>
           <Yinglet_Scavenger>7</Yinglet_Scavenger>
           <Yinglet_Junker>10</Yinglet_Junker>
-          <Yinglet_ScrapCollector>10</Yinglet_ScrapCollector>
           <Yinglet_Deadeye>10</Yinglet_Deadeye>
-            <Yinglet_Ironclad>7</Yinglet_Ironclad>
+          <Yinglet_Ironclad>7</Yinglet_Ironclad>
 
         </guards>
       </li>
@@ -287,19 +283,20 @@
 
 	<FactionDef ParentName="YingletTribeBase">
 		<defName>YingletTribeSavage</defName>
-		<label>Outcasts</label>
+		<label>outcast tribes</label>
 		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
-		<colorSpectrum>
-			<li>(0.85, 0, 0)</li>
-			<li>(1, 0.1, 0.1)</li>
-		</colorSpectrum>
+		<li>(0.85, 0, 0)</li>
+		<li>(1, 0.1, 0.1)</li>
+		<leaderTitle>big boss</leaderTitle>
 		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
-		<permanentEnemy>true</permanentEnemy>
+		<startingGoodwill>-50</startingGoodwill>
+		<naturalColonyGoodwill>-10~-25</naturalColonyGoodwill>
+		<techLevel>Neolithic</techLevel>
 		<goodwillDailyGain>0</goodwillDailyGain>
 		<!-- Reset goodwill inherited from TribeBase->HumanFactionBase for permanent enemy -->
 		<goodwillDailyFall>0</goodwillDailyFall>
-    <factionNameMaker>Yinglet_NamerFactionScavvers</factionNameMaker>
-    <settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
+    <factionNameMaker>Yinglet_NamerFactionOutcasts</factionNameMaker>
+    <settlementNameMaker>Yinglet_NamerSettlementOutcasts</settlementNameMaker>
     <pawnGroupMakers>
       <li>
         <!-- Normal fights, ranged with melee mix-ins -->
@@ -310,7 +307,6 @@
           <Yinglet_Annoyer>5</Yinglet_Annoyer>
           <Yinglet_Bapper>10</Yinglet_Bapper>
           <Yinglet_Shootscav>10</Yinglet_Shootscav>
-          <Yinglet_Dealer>10</Yinglet_Dealer>
           <Yinglet_Smackmaster>5</Yinglet_Smackmaster>
           <Yinglet_Sharpeye>3</Yinglet_Sharpeye>
           <Yinglet_BanditChiefMelee>1.5</Yinglet_BanditChiefMelee>
@@ -322,8 +318,7 @@
         <commonality>60</commonality>
         <options>
           <Yinglet_Shootscav>10</Yinglet_Shootscav>
-          <Yinglet_Dealer>10</Yinglet_Dealer>
-          <Yinglet_Smackmaster>10</Yinglet_Smackmaster>
+          <Yinglet_Annoyer>10</Yinglet_Annoyer>
           <Yinglet_Sharpeye>5</Yinglet_Sharpeye>
         </options>
       </li>
@@ -333,9 +328,9 @@
         <commonality>60</commonality>
         <options>
           <Yinglet_Pest>10</Yinglet_Pest>
-          <Yinglet_Annoyer>10</Yinglet_Annoyer>
+          <Yinglet_Bapper>10</Yinglet_Bapper>
           <Yinglet_Smackmaster>10</Yinglet_Smackmaster>
-          <Yinglet_BanditChiefMelee>5</Yinglet_BanditChiefMelee>
+          <Yinglet_BanditChiefMelee>2</Yinglet_BanditChiefMelee>
         </options>
       </li>
       <li>
@@ -354,21 +349,17 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <Yinglet_Trader>1</Yinglet_Trader>
+          <Yinglet_Dealer>1</Yinglet_Dealer>
         </traders>
         <carriers>
           <YingWorld_Tiplod>10</YingWorld_Tiplod>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2.5</Alpaca>
-          <Elephant>2</Elephant>
         </carriers>
         <guards>
           <Yinglet_Annoyer>7</Yinglet_Annoyer>
           <Yinglet_Scout>10</Yinglet_Scout>
           <Yinglet_Bapper>10</Yinglet_Bapper>
-          <Yinglet_Dealer>10</Yinglet_Dealer>
           <Yinglet_Smackmaster>7</Yinglet_Smackmaster>
+          <Yinglet_Sharpeye>5</Yinglet_Sharpeye>
         </guards>
       </li>
       <li>
@@ -377,9 +368,9 @@
           <Yinglet_Annoyer>7</Yinglet_Annoyer>
           <Yinglet_Shootscav>10</Yinglet_Shootscav>
           <Yinglet_Bapper>10</Yinglet_Bapper>
-          <Yinglet_Sharpeye>10</Yinglet_Sharpeye>
-          <Yinglet_Smackmaster>7</Yinglet_Smackmaster>
-          <Yinglet_BanditChiefMelee>10</Yinglet_BanditChiefMelee>
+          <Yinglet_Sharpeye>8</Yinglet_Sharpeye>
+          <Yinglet_Smackmaster>8</Yinglet_Smackmaster>
+          <Yinglet_BanditChiefMelee>5</Yinglet_BanditChiefMelee>
         </options>
       </li>
     </pawnGroupMakers>
