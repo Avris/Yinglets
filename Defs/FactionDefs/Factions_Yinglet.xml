@@ -40,7 +40,6 @@
         </categories>
       </li>
     </backstoryFilters>
-		<leaderTitle>chief</leaderTitle>
 		<hairTags>
 			<li>Tribal</li>
 		</hairTags>
@@ -77,7 +76,7 @@
 	<FactionDef ParentName="YingletTribeBase">
 		<defName>YingletTribeCivil</defName>
 		<label>yinglet enclaves</label>
-		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here as forgotten travellers. Maybe they survived some civilization-ending cataclysm long ago. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
 		<colorSpectrum>
 			<li>(0.85, 0.75, 0.37)</li>
 			<li>(0.95, 0.95, 0.37)</li>
@@ -285,8 +284,10 @@
 		<defName>YingletTribeSavage</defName>
 		<label>outcast tribes</label>
 		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
+		<colorSpectrum>
 		<li>(0.85, 0, 0)</li>
 		<li>(1, 0.1, 0.1)</li>
+		</colorSpectrum>
 		<leaderTitle>big boss</leaderTitle>
 		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
 		<startingGoodwill>-50</startingGoodwill>
