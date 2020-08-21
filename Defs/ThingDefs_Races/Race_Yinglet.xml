@@ -730,7 +730,7 @@
 			</hairSettings>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
-				<whiteApparelList>
+				<apparelList>
 					<li>Yinglet_Loincloth</li>
 					<li>Yinglet_ChestWrap</li>
 					<li>Yinglet_ChestGuard</li>
@@ -746,7 +746,7 @@
 					<li>Yinglet_FancyCrest</li>
 					<li>Yinglet_FancierCrest</li>
 					<li>Yinglet_FanciestCrest</li>
-				</whiteApparelList>
+				</apparelList>
 			</raceRestriction>
 			<relationSettings>
 				<relationChanceModifierChild>1</relationChanceModifierChild>
