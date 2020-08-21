@@ -12,7 +12,7 @@
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
 		<costList>
-			<Cloth>30</Cloth>
+			<Cloth>35</Cloth>
 		</costList>
 		<tradeability>Sellable</tradeability>
 		<statBases>
@@ -51,6 +51,7 @@
 				<li>YingletPlayer</li>
 				<li>YingletMilitary</li>
 				<li>YingletCivilian</li>
+				<li>YingletCommon</li>
 			</tags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
@@ -82,7 +83,7 @@
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -110,6 +111,7 @@
 			<tags>
 				<li>YingletPlayer</li>
 				<li>YingletCivilian</li>
+				<li>YingletSimple</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -130,7 +132,7 @@
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -156,11 +158,9 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>YingletPlayer</li>
-				<li>YingletCivilian</li>
+				<li>YingletFancy</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>Worker</li>
 				<li>Civilian</li>
 			</defaultOutfitTags>
 		</apparel>
@@ -186,15 +186,13 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>40</costStuffCount>
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>6</Mass>
 			<Flammability>0.6</Flammability>
 			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -250,7 +248,7 @@
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -281,6 +279,7 @@
 				<li>YingletPlayer</li>
 				<li>YingletMilitary</li>
 				<li>YingletCivilian</li>
+				<li>YingletCommon</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -302,7 +301,7 @@
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -333,6 +332,7 @@
 				<li>YingletPlayer</li>
 				<li>YingletMilitary</li>
 				<li>YingletCivilian</li>
+				<li>YingletSimple</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -377,8 +377,8 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<costList>
-			<Cloth>30</Cloth>
-			<Steel>60</Steel>
+			<Cloth>20</Cloth>
+			<Steel>30</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<apparel>
@@ -393,6 +393,7 @@
 			</layers>
 			<tags>
 				<li>IndustrialMilitaryBasic</li>
+				<li>YingletMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -416,8 +417,8 @@
 	</ThingDef>
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>Yinglet_PlateArmor</defName>
-		<label>yinglet plate armor</label>
-		<description>Overlapping solid plates of armor covering the entire body from neck to feet. Sized for a Yinglet.</description>
+		<label>yinglet guard armor</label>
+		<description>Overlapping plates of armor covering the entire body from neck to feet. Sized for a Yinglet.</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<researchPrerequisite>ResearchProject_YingIndustrial</researchPrerequisite>
@@ -433,14 +434,13 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>170</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 		<statBases>
 			<WorkToMake>38000</WorkToMake>
 			<MaxHitPoints>290</MaxHitPoints>
-			<Mass>15</Mass>
+			<Mass>7</Mass>
 			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<thingSetMakerTags>
@@ -468,6 +468,7 @@
 			</layers>
 			<tags>
 				<li>MedievalMilitary</li>
+				<li>YingletMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -507,8 +508,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
-			<Cloth>30</Cloth>
-			<Steel>60</Steel>
+			<Leather>25</Leather>
+			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
@@ -517,7 +518,6 @@
 			<Mass>15</Mass>
 			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<thingSetMakerTags>
@@ -544,7 +544,8 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>MedievalMilitary</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>YingletMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -598,8 +599,8 @@
 		</thingCategories>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
-			<Plasteel>80</Plasteel>
-			<Uranium>10</Uranium>
+			<Plasteel>60</Plasteel>
+			<Uranium>5</Uranium>
 		</costList>
 		<apparel>
 			<bodyPartGroups>
@@ -615,8 +616,7 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>MedievalMilitary</li>
-				<li>YingletPlayer</li>
+				<li>SpacerMilitary</li>
 				<li>YingletMilitary</li>
 			</tags>
 			<defaultOutfitTags>
@@ -665,7 +665,7 @@
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -678,8 +678,7 @@
 			<WorkToMake>8000</WorkToMake>
 			<Mass>2</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>2.0</StuffEffectMultiplierInsulation_Cold>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
@@ -694,12 +693,14 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>IndustrialBasic</li>
-				<li>Neolithic</li>
+				<li>MedievalBasic</li>
+				<li>YingletPlayer</li>
+				<li>YingletCivilian</li>
+				<li>YingletCommon</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
+				<li>Civilian</li>
 			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
