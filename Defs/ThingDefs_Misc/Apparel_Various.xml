@@ -730,4 +730,54 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Yinglet_LeadersClothes</defName>
+		<label>parriarchal clothes</label>
+		<description>Set of clothes typically worn by the patriarchs and matriarchs of the yinglet enclaves./n/nFun fact: where patriarch is the term for a masculine leader and matriarch is the feminine equivilent, parriarch is a gender neutral term for the role.</description>
+		<graphicData>
+			<texPath>Things/Pawn/YingPawn/Apparel/YingletLeaderClothes/Leader_Ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2700</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/YingletLeaderClothes/Leader</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>YingletFancy</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Civilian</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_White"/>
+	</ThingDef>
 </Defs>
