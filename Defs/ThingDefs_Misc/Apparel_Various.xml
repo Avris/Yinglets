@@ -492,7 +492,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	<!--ThingDef ParentName="ArmorSmithableBase">
+	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>Yinglet_ScavengerPlate</defName>
 		<label>yinglet scavenger plate</label>
 		<description>Overlapping solid plates of armor covering the entire body from neck to feet. Sized for a Yinglet.</description>
@@ -507,8 +507,11 @@
 			<texPath>Things/Pawn/YingPawn/Apparel/ScavengerPlate/ScavengerPlate_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Leather>25</Leather>
 			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
@@ -551,7 +554,8 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-	</ThingDef-->
+		<colorGenerator Class="ColorGenerator_White"/>
+	</ThingDef>
 	<ThingDef ParentName="ApparelArmorYingletReconBase">
 		<defName>Yinglet_PowerArmor</defName>
 		<label>yinglet marine armor</label>
