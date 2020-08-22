@@ -492,7 +492,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	<ThingDef ParentName="ArmorSmithableBase">
+	<!--ThingDef ParentName="ArmorSmithableBase">
 		<defName>Yinglet_ScavengerPlate</defName>
 		<label>yinglet scavenger plate</label>
 		<description>Overlapping solid plates of armor covering the entire body from neck to feet. Sized for a Yinglet.</description>
@@ -551,7 +551,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-	</ThingDef>
+	</ThingDef-->
 	<ThingDef ParentName="ApparelArmorYingletReconBase">
 		<defName>Yinglet_PowerArmor</defName>
 		<label>yinglet marine armor</label>
