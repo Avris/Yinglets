@@ -1,5 +1,5 @@
 ﻿<Defs>
-	<ThingDef ParentName="ApparelMakeableBase">
+	<!--<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Yinglet_Herocape</defName>
 		<label>Heroic Cape</label>
 		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
@@ -70,7 +70,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	</ThingDef>
+	</ThingDef>-->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Yinglet_Loincloth</defName>
 		<label>loincloth</label>
