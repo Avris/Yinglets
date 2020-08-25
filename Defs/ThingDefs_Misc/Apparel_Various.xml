@@ -665,11 +665,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<techLevel>Neolithic</techLevel>
+		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>45</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>

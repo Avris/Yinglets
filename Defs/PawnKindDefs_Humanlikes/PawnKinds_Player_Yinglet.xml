@@ -14,6 +14,8 @@
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelMoney>450~750</apparelMoney>
+		<techHediffsMoney>25~350</techHediffsMoney>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BaseYingletPawnKind">
@@ -23,21 +25,14 @@
 		<backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
 		<apparelTags>
 			<li>YingletPlayer</li>
-			<li>YingletMilitary</li>
 		</apparelTags>
-		<apparelMoney>
-			<min>500</min>
-			<max>1000</max>
-		</apparelMoney>
+		<apparelMoney>25~175</apparelMoney>
 		<weaponMoney>
 			<min>0</min>
 			<max>0</max>
 		</weaponMoney>
 		<techHediffsChance>0.05</techHediffsChance>
-		<techHediffsMoney>
-			<min>50</min>
-			<max>800</max>
-		</techHediffsMoney>
+		<techHediffsMoney>25~35</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 			<li>Simple</li>
