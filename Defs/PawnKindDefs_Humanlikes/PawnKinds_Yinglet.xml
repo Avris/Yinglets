@@ -7,9 +7,17 @@
     <defaultFactionType>YingletTribeCivil</defaultFactionType>
     <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
     <race>Alien_Yinglet</race>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>YingletBackstory</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
     <apparelTags>
+      <li>YingletMilitary</li>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
       <li>YingletPlayer</li>
@@ -20,10 +28,18 @@
     <defaultFactionType>YingletTribeRough</defaultFactionType>
     <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
     <race>Alien_Yinglet</race>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>YingletBackstory</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
     <apparelTags>
       <li>IndustrialBasic</li>
+      <li>YingletMilitary</li>
       <li>IndustrialAdvanced</li>
       <li>YingletPlayer</li>
     </apparelTags>
@@ -33,9 +49,17 @@
     <defaultFactionType>YingletTribeSavage</defaultFactionType>
     <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
     <race>Alien_Yinglet</race>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>YingletBackstory</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
     <apparelTags>
+      <li>YingletMilitary</li>
       <li>YingletPlayer</li>
     </apparelTags>
   </PawnKindDef>
