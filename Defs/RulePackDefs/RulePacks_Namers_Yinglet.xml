@@ -3,9 +3,9 @@
 		<defName>YingletNameUtility</defName>
 		<rulePack>
 			<rulesFiles>
-				<li>YingletNameFirstMale->Names/Yinglet_First_Male</li>
-				<li>YingletNameFirstFemale->Names/Yinglet_First_Female</li>
-				<li>YingletNameLast->Names/Yinglet_Last</li>
+				<li>YingletNameMale->Names/Yinglet_Male</li>
+				<li>YingletNameFemale->Names/Yinglet_Female</li>
+				<li>Blank->Names/Blank</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -16,8 +16,8 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[YingletNameFirstMale] [YingletNameLast]</li>
-				<li>r_name->[YingletNameFirstFemale] [YingletNameLast]</li>
+				<li>r_name->[YingletNameMale]</li>
+				<li>r_name->[YingletNameFemale]</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -28,7 +28,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[YingletNameFirstMale] [YingletNameLast]</li>
+				<li>r_name->[Blank] [YingletNameMale]</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -39,7 +39,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[YingletNameFirstFemale] [YingletNameLast]</li>
+				<li>r_name->[Blank] [YingletNameFemale]</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
