@@ -803,7 +803,7 @@
 		</alienRace>
 		<statBases>
 			<MarketValue>200</MarketValue>
-			<MoveSpeed>5.65</MoveSpeed>
+			<MoveSpeed>5</MoveSpeed>
 			<Flammability>0.2</Flammability>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>40</ComfyTemperatureMax>
@@ -811,6 +811,7 @@
 			<PsychicSensitivity>1.25</PsychicSensitivity>
 			<MiningSpeed>0.75</MiningSpeed>
 			<TrapSpringChance>0.02</TrapSpringChance>
+			<RestRateMultiplier>5</RestRateMultiplier>
 		</statBases>
 		<tools>
 			<li>
@@ -920,15 +921,16 @@
 			<ageGenerationCurve>
 				<points>
 					<li>(1,0)</li>
-					<li>(2,40)</li>
+					<li>(2,0)</li>
 					<li>(3,25)</li>
-					<li>(10,15)</li>
-					<li>(20,5)</li>
+					<li>(10,3)</li>
+					<li>(20,1)</li>
 					<li>(25,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
+				<li>Yinglet</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>
