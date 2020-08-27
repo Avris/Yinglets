@@ -9,16 +9,15 @@
 		<pawnsPlural>yinglets</pawnsPlural>
 		<leaderTitle>patriarch</leaderTitle>
 		<leaderTitleFemale>matriarch</leaderTitleFemale>
-		<pawnNameMaker>NamerMaleYinglet</pawnNameMaker>
-		<pawnNameMakerFemale>NamerFemaleYinglet</pawnNameMakerFemale>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>
-			<li>
-				<categories>
-					<li>YingletBackstory</li>
-				</categories>
-			</li>
-		</backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                </categories>
+            </li>
+        </backstoryFilters>  
+		<humanlikeFaction>false</humanlikeFaction>
 		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
@@ -29,7 +28,7 @@
 		</startingResearchTags>
 		<forageabilityFactor>1.5</forageabilityFactor>
 		<hairTags>
-			<li>Urban</li>
+			<li>Rural</li>
 		</hairTags>
 		<apparelStuffFilter>
 			<thingDefs>

@@ -168,8 +168,8 @@
     <defName>Yinglet_BanditChiefMelee</defName>
     <combatPower>130</combatPower>
     <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-    <minGenerationAge>30</minGenerationAge>
-    <maxGenerationAge>999</maxGenerationAge>
+    <minGenerationAge>5</minGenerationAge>
+    <maxGenerationAge>25</maxGenerationAge>
     <itemQuality>Normal</itemQuality>
     <factionLeader>true</factionLeader>
     <canBeSapper>true</canBeSapper>
@@ -408,8 +408,8 @@
     <defName>Yinglet_ChiefMelee</defName>
     <combatPower>130</combatPower>
     <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-    <minGenerationAge>30</minGenerationAge>
-    <maxGenerationAge>999</maxGenerationAge>
+    <minGenerationAge>4</minGenerationAge>
+    <maxGenerationAge>25</maxGenerationAge>
     <itemQuality>Normal</itemQuality>
     <factionLeader>true</factionLeader>
     <canBeSapper>true</canBeSapper>

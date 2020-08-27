@@ -30,22 +30,16 @@
 		<geneticVariance>0.1</geneticVariance>
 		<factionNameMaker>Yinglet_NamerFactionScavvers</factionNameMaker>
 		<settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
-		<pawnNameMaker>NamerMaleYinglet</pawnNameMaker>
-		<pawnNameMakerFemale>NamerFemaleYinglet</pawnNameMakerFemale>
 		<techLevel>Medieval</techLevel>
     <backstoryFilters>
       <li>
         <categories>
-          <li>YingletBackstory</li>
+          <li>Outlander</li>
         </categories>
       </li>
     </backstoryFilters>		
 		<hairTags>
-					<li>Tailpoof</li>
-					<li>HairTag1</li>
-					<li>HairTag2</li>
-					<li>HairTag3</li>
-					<li>HairTag4</li>
+					<li>Tribal</li>
 		</hairTags>
 		<caravanTraderKinds>
 			<li>Caravan_Yinglet_EnclaveBulkGoods</li>

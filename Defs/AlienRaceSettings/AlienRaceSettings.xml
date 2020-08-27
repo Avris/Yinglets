@@ -1,19 +1,20 @@
 <Defs>
 	<AlienRace.RaceSettings>
 		<defName>YingletRaceSettings</defName>
+		
 		<pawnKindSettings>
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>YingletSpaceRefugee</li>
+						<li>Yinglet</li>
 					</kindDefs>
-					<chance>25.0</chance>
+					<chance>33.0</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>YingletSpaceRefugee</li>
+						<li>Yinglet</li>
 					</kindDefs>
 					<chance>25.0</chance>
 				</li>
@@ -23,9 +24,9 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>YingletSpacerColonist</li>
+								<li>Yinglet</li>
 							</kindDefs>
-							<chance>25.0</chance>
+							<chance>75.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -39,13 +40,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>YingletSpaceRefugee</li>
+								<li>Yinglet</li>
 							</kindDefs>
-							<chance>25.0</chance>
+							<chance>14.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li>
+						<li>YingletTribeCivil</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Yinglet</li>
+							</kindDefs>
+							<chance>7.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>YingletTribeRough</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
