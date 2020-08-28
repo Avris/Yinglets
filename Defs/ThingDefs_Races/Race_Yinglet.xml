@@ -746,9 +746,9 @@
 				<li>
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Dessicated/Dessicated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Dessicated/Dessicated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Dessicated/Dessicated_Ying_stump</stump>
+					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
+					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
+					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
 				</li>
 			</graphicPaths>
 			<hairSettings>

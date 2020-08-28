@@ -85,7 +85,7 @@
 					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Tiplod/Dessicated_Tiplod</texPath>
+					<texPath>Things/Pawn/Animal/Tiplod/Desiccated_Tiplod</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -95,7 +95,7 @@
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Tiplod/Dessicated_Tiplod</texPath>
+					<texPath>Things/Pawn/Animal/Tiplod/Desiccated_Tiplod</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -105,7 +105,7 @@
 					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Tiplod/Dessicated_Tiplod</texPath>
+					<texPath>Things/Pawn/Animal/Tiplod/Desiccated_Tiplod</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
