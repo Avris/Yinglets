@@ -152,6 +152,7 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap</wornGraphicPath>
 			<layers>
