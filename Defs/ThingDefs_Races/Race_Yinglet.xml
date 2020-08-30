@@ -586,6 +586,7 @@
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.26</layerOffset>
+							<layerInvert>false</layerInvert>
 							<drawForMale>false</drawForMale>
 							<hiddenUnderApparelFor>
                                 <li>UpperHead</li>
@@ -643,24 +644,34 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Things/Pawn/YingPawn/Parts/Hairs/North/Female_NorthHair</path>
+							<path>Things/Pawn/YingPawn/Parts/Hairs/Poof/FemalePoof</path>
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawForMale>false</drawForMale>
+							<layerOffset>-0.31</layerOffset>
+							<layerInvert>false</layerInvert>
+							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<hiddenUnderApparelFor>
-                                <li>UpperHead</li>
-                            </hiddenUnderApparelFor>
 							<offsets>
-								<south/>
+								<south>
+									<bodyTypes>
+										<YingFem>(-0.45,0.15)</YingFem>
+										<Ying>(-0.45,0.15)</Ying>
+									</bodyTypes>
+								</south>
 								<north>
 									<bodyTypes>
-										<Ying>(0,0.57)</Ying>
-										<YingFem>(0,0.57)</YingFem>
+										<YingFem>(0,0.49)</YingFem>
+										<Ying>(0,0.49)</Ying>
 									</bodyTypes>
 								</north>
-								<east/>
+								<east>
+									<bodyTypes>
+										<YingFem>(-0.51,0.13)</YingFem>
+										<Ying>(-0.51,0.13)</Ying>
+									</bodyTypes>
+								</east>
 							</offsets>
 						</li>
 						<li>
@@ -669,6 +680,7 @@
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.26</layerOffset>
+							<layerInvert>false</layerInvert>
 							<drawForFemale>false</drawForFemale>
 							<hiddenUnderApparelFor>
                                 <li>UpperHead</li>
@@ -719,16 +731,13 @@
 								</east>
 							</offsets>
 						</li>
-						<li>
-							<path>Things/Pawn/YingPawn/Parts/Hairs/North/Male_NorthHair</path>
+						<!--<li>
+							<path>Things/Pawn/YingPawn/Parts/Hairs/Poof/MalePoof</path>
 							<bodyPart>Head</bodyPart>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawForFemale>false</drawForFemale>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<hiddenUnderApparelFor>
-                                <li>UpperHead</li>
-                            </hiddenUnderApparelFor>
 							<offsets>
 								<south/>
 								<north>
@@ -738,7 +747,7 @@
 								</north>
 								<east/>
 							</offsets>
-						</li>
+						</li>-->
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
@@ -752,14 +761,7 @@
 				</li>
 			</graphicPaths>
 			<hairSettings>
-				<hasHair>true</hasHair>
-				<hairTags>
-					<li>Tailpoof</li>
-					<li>HairTag1</li>
-					<li>HairTag2</li>
-					<li>HairTag3</li>
-					<li>HairTag4</li>
-				</hairTags>
+				<hasHair>false</hasHair>
 			</hairSettings>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
