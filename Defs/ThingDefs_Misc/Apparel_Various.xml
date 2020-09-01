@@ -106,7 +106,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Loincloth/Loincloth</wornGraphicPath>
 			<layers>
-				<li>OnSkin</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>YingletPlayer</li>
@@ -127,6 +127,7 @@
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
@@ -155,8 +156,9 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
-				<li>OnSkin</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>YingletFancy</li>
@@ -509,6 +511,7 @@
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/ScavengerPlate/ScavengerPlate_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
 			<li>Leathery</li>
@@ -545,6 +548,7 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ScavengerPlate/ScavengerPlate</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
 				<li>Middle</li>
