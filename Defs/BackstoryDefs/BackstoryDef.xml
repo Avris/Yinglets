@@ -23,10 +23,8 @@
 			</li>
 		</skillGains>
 		<workDisables>
-			<li>PlantWork</li>
-			<li>Hauling</li>
 			<li>Animals</li>
-			<li>Cleaning</li>
+			<li>Intellectual</li>
 		</workDisables>
 		<requiredWorkTags>
 			<li>Social</li>
