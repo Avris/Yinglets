@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--    Exile    -->
+
+  <ThoughtDef>
+    <defName>ColonistExiled</defName>
+    <thoughtClass>Thought_Banished</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist exiled</label>
+        <description>We just exiled someone. I hope they'll be okay on their own.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>ColonistExiledToDie</defName>
+    <thoughtClass>Thought_Banished</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist exiled to death</label>
+        <description>We exiled someone to someplace they'll never survive.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>ClothedYinglet</defName>
+    <workerClass>ThoughtWorker_NudistNude</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <invert>true</invert>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>constraining clothes</label>
+        <description>I prefer being naked, but I have to wear these clothes. I don't like the constricting feeling against my fur.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+    <ThoughtDef>
+    <defName>YingAteInsectMeatDirect</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate insect meat</label>
+        <description>I ate some gray, slimy insect meat. It wasn't as good as a clam, but still pretty tasty!</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>YingAteInsectMeatAsIngredient</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate cooked insect meat</label>
+        <description>I ate a meal cooked from gray, slimy insect meat. There were glands and fluid pockets in there that I can't identify, every bite was an adventure!</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

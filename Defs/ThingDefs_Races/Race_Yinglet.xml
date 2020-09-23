@@ -12,27 +12,8 @@
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
 				<forcedRaceTraitEntries>
 					<li>
-						<defName>NaturalMood</defName>
-						<degree>2</degree>
-						<chance>50</chance>
-					</li>
-					<li>
-						<defName>Beauty</defName>
-						<degree>2</degree>
-						<chance>30</chance>
-					</li>
-					<li>
-						<defName>Beauty</defName>
-						<degree>1</degree>
-						<chance>30</chance>
-					</li>
-					<li>
 						<defName>Nudist</defName>
 						<chance>50</chance>
-					</li>
-					<li>
-						<defName>Transhumanist</defName>
-						<chance>10</chance>
 					</li>
 					<li>
 						<defName>Bisexual</defName>
@@ -794,15 +775,136 @@
 				<relationChanceModifierParent>1</relationChanceModifierParent>
 				<relationChanceModifierSibling>1</relationChanceModifierSibling>
 				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+				<renamer>
+					<li>
+						<relation>Spouse</relation>
+						<label>Bonded</label>
+						<femaleLabel>Bonded</femaleLabel>
+					</li>
+            </renamer>
 			</relationSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
 					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteWithoutTable</li>
 					<li>SleptOnGround</li>
 					<li>SleptOutside</li>
 					<li>EnvironmentDark</li>
-					<li>NonProsthophileHasAddedBodyParts</li>
+					<li>KnowPrisonerSold</li>
+					<li>ReleasedHealthyPrisoner</li>
+					<li>KnowGuestOrganHarvested</li>
+					<li>WrongApparelGender</li>
+					<li>Affair</li>
+					<li>Incestuous</li>
+					<li>WantToSleepWithSpouseOrLover</li>
+					<li>SharedBed</li>
+					<li>Naked</li>
 				</cannotReceiveThoughts>
+				<replacerList>
+                <li>
+                    <original>ColonistBanished</original>
+                    <replacer>ColonistExiled</replacer> 
+                </li>
+                <li>
+                    <original>ColonistBanishedToDie</original>
+                    <replacer>ColonistExiledToDie</replacer> 
+                </li>
+                <li>
+                    <original>SleptInBarracks</original>
+                    <replacer>SleptInNest</replacer> 
+                </li>
+                <li>
+                    <original>NeedBeauty</original>
+                    <replacer>YingNeedBeauty</replacer> 
+                </li>
+                <li>
+                    <original>ClothedNudist</original>
+                    <replacer>ClothedYinglet</replacer> 
+                </li>
+                <li>
+                    <original>AteInsectMeatDirect</original>
+                    <replacer>YingAteInsectMeatDirect</replacer> 
+                </li>
+                <li>
+                    <original>AteInsectMeatAsIngredient</original>
+                    <replacer>YingAteInsectMeatAsIngredient</replacer> 
+                </li>
+				<!--Kin-->
+                <li>
+                    <original>MyWifeLost</original>
+                    <replacer>MyLoverLost</replacer> 
+                </li>
+                <li>
+                    <original>MyHusbandLost</original>
+                    <replacer>MyLoverLost</replacer> 
+                </li>
+                <li>
+                    <original>MyFianceLost</original>
+                    <replacer>MyLoverLost</replacer> 
+                </li>
+                <li>
+                    <original>MyFianceeLost</original>
+                    <replacer>MyLoverLost</replacer> 
+                </li>
+                <li>
+                    <original>MySonLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyDaughterLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+				<li>
+                    <original>MySisterLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyBrotherLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyMotherLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyFatherLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyAuntLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyUncleLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyNieceLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyNephewLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyGrandparentLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyGrandchildLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyHalfSiblingLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+                <li>
+                    <original>MyCousinLost</original>
+                    <replacer>MyKinLost</replacer> 
+                </li>
+            </replacerList>
 			</thoughtSettings>
 		</alienRace>
 		<statBases>
