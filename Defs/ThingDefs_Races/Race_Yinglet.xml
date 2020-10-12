@@ -13,7 +13,7 @@
 				<forcedRaceTraitEntries>
 					<li>
 						<defName>Nudist</defName>
-						<chance>50</chance>
+						<chance>20</chance>
 					</li>
 					<li>
 						<defName>Bisexual</defName>
@@ -24,6 +24,10 @@
 					<li>
 					<defName>BodyPurist</defName>
 					<chance>60</chance>
+					</li>
+					<li>
+					<defName>QuickSleeper</defName>
+					<chance>100</chance>
 					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
@@ -747,7 +751,12 @@
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>
+					<li>Apparel_ShieldBelt</li>
+					<li>Apparel_SmokepopBelt</li>
+                    <li>Apparel_PsyfocusRobe</li>
+					<li>Apparel_EltexSkullcap</li>
 					<li>Yinglet_Loincloth</li>
+					<li>Yinglet_Herocape</li>
 					<li>Yinglet_ChestWrap</li>
 					<li>Yinglet_ChestGuard</li>
 					<li>Yingworld_TunicFull</li>

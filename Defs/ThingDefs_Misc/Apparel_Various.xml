@@ -1,5 +1,5 @@
 ﻿<Defs>
-	<!--<ThingDef ParentName="ApparelMakeableBase">
+        <ThingDef ParentName="ApparelMakeableBase">
 		<defName>Yinglet_Herocape</defName>
 		<label>Heroic Cape</label>
 		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
@@ -70,7 +70,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	</ThingDef>-->
+	</ThingDef>
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Yinglet_Loincloth</defName>
 		<label>loincloth</label>
@@ -82,6 +82,11 @@
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+          <li>CraftingSpot</li>
+        </recipeUsers>
 		</recipeMaker>
 		<costStuffCount>15</costStuffCount>
 		<stuffCategories>
@@ -106,7 +111,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Loincloth/Loincloth</wornGraphicPath>
 			<layers>
-				<li>Middle</li>
+	          <li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>YingletPlayer</li>
@@ -158,7 +163,7 @@
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
-				<li>Middle</li>
+             <li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>YingletFancy</li>
@@ -172,14 +177,18 @@
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Yinglet_ChestGuard</defName>
 		<label>chest guard</label>
-		<description>An ingenius yinglet once decided to strap a chunk of metal to his body, thinking it would make them unkillable. Others found it fashionable and decided to mimic the cumbersome clothing.</description>
-		<techLevel>Medieval</techLevel>
+		<description>An ingenius yinglet once decided to strap a piece of hardened leather to his body, thinking it would make them unkillable. Others found it fashionable and decided to mimic the cumbersome clothing.</description>
+		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>3</Crafting>
 			</skillRequirements>
+         <recipeUsers>
+           <li>ElectricSmithy</li>
+           <li>FueledSmithy</li>
+         </recipeUsers>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/ChestGuard/ChestGuard_Ying_south</texPath>
@@ -187,7 +196,8 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>Leathery</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<statBases>
@@ -206,14 +216,15 @@
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
-				<li>Torso</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestGuard/ChestGuard</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>MedievalMilitary</li>
+				<li>NeolithicMilitary</li>
 				<li>YingletPlayer</li>
 				<li>YingletMilitary</li>
 			</tags>
@@ -250,6 +261,10 @@
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+         <recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+         </recipeUsers>
 		</recipeMaker>
 		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
@@ -272,10 +287,11 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Legs</li>
+                <li>Shoulders</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/TunicFull/TunicFull</wornGraphicPath>
 			<layers>
-				<li>Middle</li>
+             <li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>MedievalBasic</li>
@@ -303,6 +319,11 @@
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+          <li>CraftingSpot</li>
+       </recipeUsers>
 		</recipeMaker>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
@@ -325,10 +346,11 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Legs</li>
+                <li>Shoulders</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/TunicSplit/TunicSplit</wornGraphicPath>
 			<layers>
-				<li>Middle</li>
+             <li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>MedievalBasic</li>
@@ -387,13 +409,11 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<li>Neck</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/FlakVest/FlakVest</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
-				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>IndustrialMilitaryBasic</li>
@@ -422,20 +442,25 @@
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>Yinglet_PlateArmor</defName>
 		<label>yinglet guard armor</label>
-		<description>Overlapping plates of armor covering the entire body from neck to feet. Sized for a Yinglet.</description>
+		<description>Overlapping plates of hardened leather covering the entire body from neck to feet. Sized for a Yinglet.</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<researchPrerequisite>ResearchProject_YingIndustrial</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+          <li>CraftingSpot</li>
+       </recipeUsers>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/PlateArmor/PlateArmor_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>Leathery</li>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
@@ -469,7 +494,6 @@
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
-				<li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>MedievalMilitary</li>
@@ -514,9 +538,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
-			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
@@ -623,6 +645,7 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
 				<li>Middle</li>
