@@ -13,15 +13,11 @@
 	  <li>
 	  	<minSeverity>0.5</minSeverity>
 		<label>so SO yinglet</label>
-		<restFallFactor>3.5</restFallFactor>
+		<restFallFactor>2.0</restFallFactor>
         <capMods>
           <li>
             <capacity>Moving</capacity>
-            <offset>0.10</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.10</offset>
+            <offset>0.15</offset>
           </li>
           <li>
             <capacity>Talking</capacity>

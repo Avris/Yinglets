@@ -16,8 +16,8 @@
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>5</pawnCount>
-					<pawnChoiceCount>8</pawnChoiceCount>
+					<pawnCount>6</pawnCount>
+					<pawnChoiceCount>9</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -27,17 +27,33 @@
 					<visible>false</visible>
 				</li>
 
+                 <!-- Starting research -->
+                 <li Class="ScenPart_StartingResearch">
+                 <def>StartingResearch</def>
+                 <project>ResearchProject_YingTribe</project>
+                 </li>
+				 
 				<!-- Player starting things -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Silver</thingDef>
-					<count>900</count>
+					<count>600</count>
 				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                  <def>StartingThing_Defined</def>
+                  <thingDef>Cloth</thingDef>
+                  <count>40</count>
+                </li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MealSurvivalPack</thingDef>
-					<count>42</count>
+					<count>10</count>
 				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pemmican</thingDef>
+                    <count>200</count>
+                </li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MedicineHerbal</thingDef>
@@ -48,7 +64,30 @@
 					<thingDef>ComponentIndustrial</thingDef>
 					<count>30</count>
 				</li>
-
+                <li Class="ScenPart_StartingThing_Defined">
+                  <def>StartingThing_Defined</def>
+                  <thingDef>Yinglet_ChestGuard</thingDef>
+				  <stuff>Leather_Plain</stuff>
+                 </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                   <def>StartingThing_Defined</def>
+                   <thingDef>MeleeWeapon_Spear</thingDef>
+                   <stuff>Steel</stuff>
+				   <count>2</count>
+                </li>
+                 <li Class="ScenPart_StartingThing_Defined">
+                  <def>StartingThing_Defined</def>
+                  <thingDef>Bow_Short</thingDef>
+                  <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingAnimal">
+                  <def>StartingAnimal</def>
+				  <animalKind>YingWorld_Tiplod</animalKind>
+                  <count>2</count>
+                  <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+                </li>
+			
+				
 				<!-- Scatter some things near player start -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
@@ -60,17 +99,12 @@
 					<thingDef>WoodLog</thingDef>
 					<count>400</count>
 				</li>      
-
+				
 				<!-- Scatter some things anywhere -->
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>
 					<thingDef>Steel</thingDef>
 					<count>500</count>
-				</li>
-				<li Class="ScenPart_ScatterThingsAnywhere">
-					<def>ScatterThingsAnywhere</def>
-					<thingDef>MealSurvivalPack</thingDef>
-					<count>10</count>
 				</li>
 
 			</parts>

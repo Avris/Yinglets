@@ -18,7 +18,12 @@
             </li>
         </backstoryFilters>  
 		<humanlikeFaction>false</humanlikeFaction>
-		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
+		<factionIconPath>World/Expanding/Yinglet/Yinglet_Player_Icon</factionIconPath>
+		<settlementTexturePath>World/Expanding/Yinglet/Yinglet_Player_Icon</settlementTexturePath>
+		<colorSpectrum>
+		    <li>(0.25, 0.66, 0.05)</li>
+			<li>(0.25, 0.75, 0.05)</li>
+		</colorSpectrum>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>

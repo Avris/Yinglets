@@ -30,6 +30,7 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet_Ying</wornGraphicPath>
 			<layers>
@@ -79,6 +80,7 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/AdvancedHelmet/AdvancedHelmet</wornGraphicPath>
 			<layers>
@@ -149,6 +151,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
+                <li>PrestigeCombatGear</li>
 				<li>YingletRoyal</li>
 			</tags>
 			<defaultOutfitTags>
@@ -200,6 +203,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
+                <li>PrestigeCombatGear</li>
 				<li>YingletRoyal</li>
 			</tags>
 			<defaultOutfitTags>
@@ -251,6 +255,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
+                <li>PrestigeCombatGear</li>
 				<li>YingletRoyal</li>
 			</tags>
 			<defaultOutfitTags>
