@@ -11,4 +11,10 @@
 		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/Naked_YingFem</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Desiccated/Desiccated_Ying</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
+	<BodyTypeDef>
+		<defName>YoungletFluffy</defName>
+		<headOffset>(0.09, -0.06)</headOffset>
+		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/Naked_YoungletFluffy</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Desiccated/Desiccated_Ying</bodyDessicatedGraphicPath>
+	</BodyTypeDef>
 </Defs>

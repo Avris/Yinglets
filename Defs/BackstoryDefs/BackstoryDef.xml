@@ -252,5 +252,24 @@
 			<li>Violent</li>
 			<li>Social</li>
 		</requiredWorkTags>
+	</AlienRace.BackstoryDef>	
+	<AlienRace.BackstoryDef>
+		<defName>Younglet</defName>
+		<title>Younglet</title>
+		<titleShort>scav</titleShort>
+		<baseDescription>Newly hatched, [PAWN_nameDef] can't really do much yet. That may change with age... or not.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>YoungletFluffy</bodyTypeFemale>
+		<spawnCategories>
+			<li>YoungletBackstory</li>
+		</spawnCategories>
+		<workDisables>
+		  <li>ManualDumb</li>
+		  <li>ManualSkilled</li>
+		  <li>PlantWork</li>
+		  <li>Mining</li>
+		  <li>Animals</li>
+		  <li>Violent</li>
+		</workDisables>
 	</AlienRace.BackstoryDef>
 </Defs>

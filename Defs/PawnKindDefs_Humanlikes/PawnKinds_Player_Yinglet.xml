@@ -37,5 +37,33 @@
 			<li>Poor</li>
 			<li>Simple</li>
 		</techHediffsTags>
+	</PawnKindDef>	
+	<PawnKindDef ParentName="BaseYingletPawnKind">
+		<race>Alien_Younglet</race>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>YoungletBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<defName>Younglet</defName>
+		<label>colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
+		<apparelTags>
+			<li>YingletPlayer</li>
+		</apparelTags>
+		<apparelMoney>25~175</apparelMoney>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>25~35</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
 	</PawnKindDef>
 </Defs>
