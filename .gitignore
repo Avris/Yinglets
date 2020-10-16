@@ -1,5 +1,8 @@
 Source/Yingworld/Yingworld/obj/Debug/*
 Source/Yingworld/.vs/*
-Assemblies/*
 *.sai
 Defs/ThingDefs_Misc/Filth_Yinglet.xml
+Assemblies/ShellTooth.dll.config
+Assemblies/ShellTooth.pdb
+Assemblies/UnityEngine.JSONSerializeModule.dll
+Source/ShellTooth/.vs/ShellTooth/v16/.suo
