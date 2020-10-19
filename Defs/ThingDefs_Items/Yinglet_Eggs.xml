@@ -1,0 +1,31 @@
+  <Defs>
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggYingletUnfertilized</defName>
+    <label>Yinglet egg (unfert.)</label>
+    <description>An unfertilized Yinglet egg. It can be eaten, but why would you want to?</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggYingletFertilized</defName>
+    <label>Yinglet egg (fert.)</label>
+    <description>A fertilized yinglet egg. If all goes well, it should hatch into a healthy younglet.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>75.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>0.01</hatcherDaystoHatch>
+        <hatcherPawn>Younglet</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  </Defs>

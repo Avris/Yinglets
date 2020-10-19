@@ -5,7 +5,7 @@
 		<description>A recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
 		<alienRace>
 			<generalSettings>
-				<maleGenderProbability>0.7</maleGenderProbability>
+				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<minAgeForAdulthood>1</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
@@ -31,7 +31,7 @@
 					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>true</useGenderedHeads>
+					<useGenderedHeads>false</useGenderedHeads>
 					<alienbodytypes>
 						<li>Ying</li>
 						<li>YingFem</li>
@@ -300,22 +300,19 @@
 							<layerOffset>-0.28</layerOffset>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.17)</Ying>
-										<YingFem>(-0.42,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.17)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.55)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.5,0.17)</Ying>
-										<YingFem>(-0.5,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.5,0.17)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -328,22 +325,19 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.55)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -358,22 +352,19 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.55)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -389,22 +380,19 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.55)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -420,22 +408,19 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.55)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.42,0.22)</Ying>
-										<YingFem>(-0.42,0.22)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -449,22 +434,19 @@
 							<layerOffset>-0.25</layerOffset>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.17)</Ying>
-										<YingFem>(-0.42,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.17)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.55)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.5,0.17)</Ying>
-										<YingFem>(-0.5,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.5,0.17)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -478,22 +460,19 @@
 							<layerOffset>-0.25</layerOffset>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.17)</Ying>
-										<YingFem>(-0.42,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.17)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.55)</Ying>
-										<YingFem>(0,0.55)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.55)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.5,0.17)</Ying>
-										<YingFem>(-0.5,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.5,0.17)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -505,16 +484,14 @@
 							<layerOffset>-0.275</layerOffset>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42, 0.16)</Ying>
-										<YingFem>(-0.42, 0.16)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42, 0.16)</Yinglet>
+									</crownTypes>
 								</south>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.51, 0.16)</Ying>
-										<YingFem>(-0.51, 0.16)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51, 0.16)</Yinglet>
+									</crownTypes>
 								</east>
 								<north/>
 							</offsets>
@@ -529,17 +506,15 @@
 							<drawnInBed>false</drawnInBed>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42, 0.16)</Ying>
-										<YingFem>(-0.42, 0.16)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42, 0.16)</Yinglet>
+									</crownTypes>
 								</south>
 								<north/>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.51, 0.16)</Ying>
-										<YingFem>(-0.51, 0.16)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51, 0.16)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -553,15 +528,15 @@
 							<drawnInBed>false</drawnInBed>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42, 0.16)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42, 0.16)</Yinglet>
+									</crownTypes>
 								</south>
 								<north/>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.51, 0.16)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51, 0.16)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -578,22 +553,19 @@
                             </hiddenUnderApparelFor>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.16)</Ying>
-										<YingFem>(-0.42,0.16)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.16)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.49)</Ying>
-										<YingFem>(0,0.49)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.49)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.51,0.16)</Ying>
-										<YingFem>(-0.51,0.16)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51,0.16)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -609,22 +581,19 @@
                             </hiddenUnderApparelFor>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.17)</Ying>
-										<YingFem>(-0.42,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.17)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.49)</Ying>
-										<YingFem>(0,0.49)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.49)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.51,0.17)</Ying>
-										<YingFem>(-0.51,0.17)</YingFem>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51,0.17)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -640,22 +609,19 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<YingFem>(-0.45,0.15)</YingFem>
-										<Ying>(-0.45,0.15)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.45,0.15)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<YingFem>(0,0.49)</YingFem>
-										<Ying>(0,0.49)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.49)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<YingFem>(-0.51,0.13)</YingFem>
-										<Ying>(-0.51,0.13)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51,0.13)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -672,19 +638,19 @@
                             </hiddenUnderApparelFor>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.16)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.16)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.49)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.49)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.51,0.16)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51,0.16)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -700,19 +666,19 @@
                             </hiddenUnderApparelFor>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Ying>(-0.42,0.17)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.17)</Yinglet>
+									</crownTypes>
 								</south>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.49)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.49)</Yinglet>
+									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Ying>(-0.51,0.17)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.51,0.17)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -726,9 +692,9 @@
 							<offsets>
 								<south/>
 								<north>
-									<bodyTypes>
-										<Ying>(0,0.57)</Ying>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(0,0.57)</Yinglet>
+									</crownTypes>
 								</north>
 								<east/>
 							</offsets>
@@ -981,9 +947,20 @@
 				</surpriseAttack>
 				<chanceFactor>2.0</chanceFactor>
 			</li>
-		</tools>
+		</tools>		
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>EggYingletUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>EggYingletFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>14</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
 		<race>
-			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<mateMtbHours>0.01</mateMtbHours>
+			<thinkTreeMain>YingThink</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
@@ -994,7 +971,6 @@
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
-			<gestationPeriodDays>25</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -1006,23 +982,7 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>HumanlikeBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>HumanlikeToddler</def>
-					<minAge>0.1</minAge>
-				</li>
-				<li>
-					<def>HumanlikeChild</def>
-					<minAge>0.2</minAge>
-				</li>
-				<li>
-					<def>HumanlikeTeenager</def>
-					<minAge>1</minAge>
-				</li>
-				<li>
-					<def>HumanlikeAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>2</minAge>
 				</li>
 			</lifeStageAges>

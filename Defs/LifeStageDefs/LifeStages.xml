@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<LifeStageDef>
+    <defName>Younglet</defName>
+    <label>younglet</label>
+    <adjective>baby</adjective>
+    <healthScaleFactor>0.20</healthScaleFactor>
+    <meleeDamageFactor>0.25</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.2</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+</Defs>
