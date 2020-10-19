@@ -12,6 +12,7 @@ namespace ShellTooth
                 pawn.Strip();
                 YingletMaker.MakeYinglet(pawn);
                 pawn.health.RemoveHediff(this);
+                Messages.Message($"{pawn} has grown into an adolescent yinglet!", pawn, MessageTypeDefOf.PositiveEvent, true);
             }
         }
     }

@@ -7,7 +7,7 @@
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
-				<minAgeForAdulthood>999</minAgeForAdulthood>
+				<minAgeForAdulthood>0.001</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
 				<disallowedTraits>
@@ -172,7 +172,30 @@
 						</options>
 							</second>
 						</li>
-					</colorChannels>
+					</colorChannels>					
+					<bodyAddons>
+						<li>
+							<path>Things/Pawn/YingPawn/Parts/Eyes/YoungletEyes</path>
+							<bodyPart>Head</bodyPart>
+							<colorChannel>eye</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<drawForFemale>false</drawForFemale>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
+								</south>
+								<north/>
+								<east>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
@@ -245,27 +268,18 @@
 			</li>
 		</tools>
 		<race>
-			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeMain>YingThink</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
-			<lifeExpectancy>50</lifeExpectancy>
+			<lifeExpectancy>0.001</lifeExpectancy>
 			<leatherDef>YingletLeather</leatherDef>
 			<nameGenerator>NamerPersonYinglet</nameGenerator>
 			<body>Yinglet</body>
 			<baseBodySize>0.2</baseBodySize>
-			<baseHealthScale>0.2</baseHealthScale>
+			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>25</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1)</li>
-					<li>(3, 0.3)</li>
-					<li>(3.1, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
 					<def>Younglet</def>
@@ -280,8 +294,8 @@
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 			<specialShadowData>
-				<volume>(0.3, 0.8, 0.4)</volume>
-				<offset>(0,0,-0.3)</offset>
+				<volume>(0.3, 0.5, 0.4)</volume>
+				<offset>(0,0,-0.5)</offset>
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
@@ -292,7 +306,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-				<li>Yinglet</li>
+				<li>YingletSpecial</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

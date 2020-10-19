@@ -19,7 +19,7 @@ namespace ShellTooth
 			{
 				return -1f;
 			}
-			return 0.5f;
+			return GetHumpinMtbHours(pawn, partnerInMyBed);
 		}
 		public static float GetHumpinMtbHours(Pawn pawn, Pawn partner)
 		{

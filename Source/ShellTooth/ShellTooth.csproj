@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Reproduction\HediffGiver_ChancePerDay.cs" />
     <Compile Include="Reproduction\JobDriver_Humps.cs" />
     <Compile Include="Reproduction\JobGiver_DoHumpin.cs" />
     <Compile Include="Reproduction\ThinkNode_ChancePerHour_Humpin.cs" />

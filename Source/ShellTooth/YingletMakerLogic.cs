@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Verse;
 using AlienRace;
 using UnityEngine;
-using RimWorld;
 
 namespace ShellTooth
 {
@@ -29,15 +28,26 @@ namespace ShellTooth
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = MakeColor(eyeFirst[r.Next(eyeFirst.Count)], new Color(1f, 1f, 1f, 1f));
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"].first = hairFirst[r.Next(hairFirst.Count)];
         }
+        static void BackstoryGen(Pawn pawn) {
+            PawnGenerationRequest request = new PawnGenerationRequest(
+                kind: PawnKindDef.Named("Yinglet"),
+                faction: pawn.Faction,
+                forceGenerateNewPawn: true,
+                fixedGender: pawn.gender,
+                fixedBiologicalAge: 3f
+                );
+            Pawn genPawn = PawnGenerator.GeneratePawn(request);
+            if (pawn.story.childhood.ToString() == "(Younglet)") {
+                pawn.story.childhood = genPawn.story.childhood;
+                pawn.story.adulthood = genPawn.story.adulthood; 
+                genPawn.Discard(silentlyRemoveReferences: true);
 
-       /* backstories not yet implemented
-       static void BackstoryGen(Pawn pawn) {
-            if (pawn.story.childhood) {
-                
-            }            
-            if (pawn.story.adulthood == null) {
             }
-        }*/
+            if (pawn.story.adulthood == null) {
+                pawn.story.adulthood = genPawn.story.adulthood;
+                genPawn.Discard(silentlyRemoveReferences: true);
+            }
+        }
         static List<int> AddonAdder(Pawn pawn)
         {
             pawn.story.bodyType.defName = BodyTyper(pawn);

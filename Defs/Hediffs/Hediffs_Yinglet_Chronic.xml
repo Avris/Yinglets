@@ -30,7 +30,7 @@
     <labelNoun>a yinglet</labelNoun>
 	<makesSickThought>false</makesSickThought>
 	<tendable>false</tendable>
-    <description>Internal test</description>
+    <description>Becoming a yinglet!</description>
 	<hediffClass>Shelltooth.Hediff_Yingify</hediffClass>
     <stages>
 	  <li>

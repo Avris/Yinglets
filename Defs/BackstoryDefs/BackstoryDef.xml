@@ -269,7 +269,6 @@
 		  <li>PlantWork</li>
 		  <li>Mining</li>
 		  <li>Animals</li>
-		  <li>Violent</li>
 		</workDisables>
 	</AlienRace.BackstoryDef>
 </Defs>
