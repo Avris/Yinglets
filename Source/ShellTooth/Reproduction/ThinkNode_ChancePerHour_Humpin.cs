@@ -3,6 +3,7 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using Verse.AI;
+using System.IO;
 
 namespace ShellTooth
 {
@@ -19,7 +20,9 @@ namespace ShellTooth
 			{
 				return -1f;
 			}
-			return GetHumpinMtbHours(pawn, partnerInMyBed);
+			float humpMTB = GetHumpinMtbHours(pawn, partnerInMyBed);
+			float humpChance = (humpMTB != 0 && humpMTB < 60) ? GetHumpinMtbHours(pawn, partnerInMyBed) : 70;
+			return humpChance;
 		}
 		public static float GetHumpinMtbHours(Pawn pawn, Pawn partner)
 		{
@@ -49,17 +52,16 @@ namespace ShellTooth
 			{
 				return -1f;
 			}
-			float num3 = 12f;
+			float num3 = 6f;
 			num3 *= num;
 			num3 *= num2;
-			num3 /= Mathf.Max(pawn.relations.SecondaryLovinChanceFactor(partner), 0.1f);
-			num3 /= Mathf.Max(partner.relations.SecondaryLovinChanceFactor(pawn), 0.1f);
 			num3 *= GenMath.LerpDouble(-100f, 100f, 1.3f, 0.7f, (float)pawn.relations.OpinionOf(partner));
 			num3 *= GenMath.LerpDouble(-100f, 100f, 1.3f, 0.7f, (float)partner.relations.OpinionOf(pawn));
 			if (pawn.health.hediffSet.HasHediff(HediffDefOf.PsychicLove, false))
 			{
 				num3 /= 4f;
 			}
+			Log.Message($"Humpin MTB between {pawn} and {partner} was {num3}.");
 			return num3;
 		}
 		private static float HumpinMtbSinglePawnFactor(Pawn pawn)
@@ -71,7 +73,7 @@ namespace ShellTooth
 			{
 				num /= level * 2f;
 			}
-			return num / GenMath.FlatHill(0f, 2f, 4f, 12f, 20f, 0.2f, pawn.ageTracker.AgeBiologicalYearsFloat);
+			return num / GenMath.FlatHill(0f, 0f, 2f, 12f, 20f, 0.2f, pawn.ageTracker.AgeBiologicalYearsFloat);
 		}
 	}
 }

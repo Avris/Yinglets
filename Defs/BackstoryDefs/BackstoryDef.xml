@@ -260,6 +260,7 @@
 		<baseDescription>Newly hatched, [PAWN_nameDef] can't really do much yet. That may change with age... or not.</baseDescription>
 		<slot>Childhood</slot>
 		<bodyTypeFemale>YoungletFluffy</bodyTypeFemale>
+		<bodyTypeMale>YoungletFluffy</bodyTypeMale>
 		<spawnCategories>
 			<li>YoungletBackstory</li>
 		</spawnCategories>

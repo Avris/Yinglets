@@ -23,7 +23,6 @@ namespace ShellTooth
         }
         static void ApplyColor(Pawn pawn)
         {
-            pawn.GetComp<AlienPartGenerator.AlienComp>().crownType = "Yinglet";
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = MakeColor(skinFirst[r.Next(skinFirst.Count)], skinSecond[r.Next(skinSecond.Count)]);
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = MakeColor(eyeFirst[r.Next(eyeFirst.Count)], new Color(1f, 1f, 1f, 1f));
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"].first = hairFirst[r.Next(hairFirst.Count)];
