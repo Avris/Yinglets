@@ -181,15 +181,15 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<offsets>
 								<south>
-									<crownTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
+									</bodyTypes>
 								</south>
 								<north/>
 								<east>
-									<crownTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
+									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
