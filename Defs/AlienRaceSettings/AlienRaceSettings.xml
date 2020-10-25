@@ -8,7 +8,7 @@
 					<kindDefs>
 						<li>Yinglet</li>
 					</kindDefs>
-					<chance>3.0</chance>
+					<chance>33.0</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
@@ -16,7 +16,7 @@
 					<kindDefs>
 						<li>Yinglet</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>25.0</chance>
 				</li>
 			</alienrefugeekinds>
 			<startingColonists>
@@ -26,7 +26,7 @@
 							<kindDefs>
 								<li>Yinglet</li>
 							</kindDefs>
-							<chance>1.0</chance>
+							<chance>75.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>

@@ -48,9 +48,9 @@ namespace ShellTooth
 			{
 				initAction = delegate ()
 				{
-					if (this.Partner.CurJob == null || this.Partner.CurJob.def != JobDefOfYinglet.Humps)
+					if (this.Partner.CurJob == null || this.Partner.CurJob.def != DefOfYinglet.Humps)
 					{
-						Job newJob = JobMaker.MakeJob(JobDefOfYinglet.Humps, this.pawn, this.Bed);
+						Job newJob = JobMaker.MakeJob(DefOfYinglet.Humps, this.pawn, this.Bed);
 						this.Partner.jobs.StartJob(newJob, JobCondition.InterruptForced, null, false, true, null, null, false, false);
 						this.ticksLeft = (int)(2500f * Mathf.Clamp(Rand.Range(0.1f, 1.1f), 0.1f, 2f));
 						return;
@@ -60,7 +60,7 @@ namespace ShellTooth
 				defaultCompleteMode = ToilCompleteMode.Instant
 			};
 			Toil toil = Toils_LayDown.LayDown(this.BedInd, true, false, false, false);
-			toil.FailOn(() => this.Partner.CurJob == null || this.Partner.CurJob.def != JobDefOfYinglet.Humps);
+			toil.FailOn(() => this.Partner.CurJob == null || this.Partner.CurJob.def != DefOfYinglet.Humps);
 			toil.AddPreTickAction(delegate
 			{
 				this.ticksLeft--;

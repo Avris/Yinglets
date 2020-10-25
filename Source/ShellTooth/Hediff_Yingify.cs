@@ -8,9 +8,10 @@ namespace ShellTooth
     {
         public override void PostMake()
         {
-            if (pawn.def.defName != "Yinglet") {
+            if (pawn.def.defName != "Alien_Yinglet") {
                 pawn.Strip();
-                YingletMaker.MakeYinglet(pawn);
+                YingletMaker yinglify = new YingletMaker();
+                yinglify.MakeYinglet(pawn);
                 pawn.health.RemoveHediff(this);
                 Messages.Message($"{pawn} has grown into an adolescent yinglet!", pawn, MessageTypeDefOf.PositiveEvent, true);
             }

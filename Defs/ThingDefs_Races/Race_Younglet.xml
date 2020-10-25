@@ -22,7 +22,7 @@
 						<li>YoungletFluffy</li>
 					</alienbodytypes>
 					<aliencrowntypes>
-						<li>YoungletFluffy</li>
+						<li>Yinglet</li>
 					</aliencrowntypes>
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<colorChannels>
@@ -175,21 +175,23 @@
 					</colorChannels>					
 					<bodyAddons>
 						<li>
-							<path>Things/Pawn/YingPawn/Parts/Younglet/YoungletEyes</path>
+							<path>Things/Pawn/YingPawn/Parts/Eyes/YoungletEyes</path>
 							<bodyPart>Head</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
+							<drawForFemale>false</drawForFemale>
+							<drawnInBed>false</drawnInBed>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</south>
 								<north/>
 								<east>
-									<bodyTypes>
-										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
-									</bodyTypes>
+									<crownTypes>
+										<Yinglet>(-0.42,0.22)</Yinglet>
+									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -198,7 +200,7 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
+					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
 					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>

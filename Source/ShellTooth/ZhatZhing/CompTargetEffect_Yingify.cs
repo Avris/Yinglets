@@ -13,7 +13,7 @@ namespace ShellTooth
 			{
 				return;
 			}
-			user.jobs.TryTakeOrderedJob(new Job(JobDefOfYinglet.Yingify, target, parent));
+			user.jobs.TryTakeOrderedJob(new Job(DefOfYinglet.Yingify, target, parent));
 		}
 	}
 }

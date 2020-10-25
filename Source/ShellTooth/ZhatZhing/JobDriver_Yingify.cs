@@ -51,7 +51,8 @@ namespace ShellTooth
 		{
 			Pawn victim = this.Victim;
 			victim.Strip();
-			YingletMaker.MakeYinglet(victim);
+			YingletMaker yinglify = new YingletMaker();
+			yinglify.MakeYinglet(victim);
 			Messages.Message($"Something awful has happened to {victim}!", victim, MessageTypeDefOf.PositiveEvent, true);
 			this.Item.Destroy(DestroyMode.Vanish);
 		}

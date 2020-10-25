@@ -20,7 +20,7 @@
     <hediffGivers>
       <li Class="ShellTooth.HediffGiver_AgeRangeDays">
         <hediff>Yingify</hediff>
-        <ageDayMinimum>42</ageDayMinimum>
+        <ageDayMinimum>14</ageDayMinimum>
 		<dayRange>28</dayRange>
       </li>
 	        <li Class="HediffGiver_Bleeding">

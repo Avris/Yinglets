@@ -892,7 +892,7 @@
 			<PsychicSensitivity>1.25</PsychicSensitivity>
 			<MiningSpeed>0.75</MiningSpeed>
 			<TrapSpringChance>0.02</TrapSpringChance>
-			<RestRateMultiplier>5</RestRateMultiplier>
+			<RestRateMultiplier>4</RestRateMultiplier>
 		</statBases>
 		<tools>
 			<li>
@@ -953,7 +953,7 @@
 				<eggUnfertilizedDef>EggYingletUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>EggYingletFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>14</eggLayIntervalDays>
+				<eggLayIntervalDays>0.1</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
