@@ -1,0 +1,9 @@
+<Defs>
+  <LetterDef Name="Younglet">
+    <defName>Younglet</defName>
+    <color>(172, 162, 255)</color>
+    <flashColor>(113, 137, 255)</flashColor>
+    <flashInterval>90</flashInterval>
+    <arriveSound>LetterArrive_Good</arriveSound>
+  </LetterDef>
+  </Defs>

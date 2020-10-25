@@ -5,14 +5,17 @@ using Verse;
 namespace ShellTooth
 {
     [DefOf]
-    public static class JobDefOfYinglet
+    public static class DefOfYinglet
     {
-        static JobDefOfYinglet()
+        static DefOfYinglet()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingCategoryDefOf));
         }
 
         public static JobDef Yingify;
         public static JobDef Humps;
+        public static BodyTypeDef Ying;
+        public static BodyTypeDef YingFem;
+        public static LetterDef Younglet;
     }
 }

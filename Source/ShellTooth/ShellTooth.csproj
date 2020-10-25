@@ -59,7 +59,7 @@
     <Compile Include="Reproduction\JobDriver_Humps.cs" />
     <Compile Include="Reproduction\JobGiver_DoHumpin.cs" />
     <Compile Include="Reproduction\ThinkNode_ChancePerHour_Humpin.cs" />
-    <Compile Include="ZhatZhing\JobDefOfYinglet.cs" />
+    <Compile Include="ZhatZhing\DefOfYinglet.cs" />
     <Compile Include="ZhatZhing\JobDriver_Yingify.cs" />
     <Compile Include="ZhatZhing\CompTargetEffect_Yingify.cs" />
     <Compile Include="ZhatZhing\CompTargetable_AliveNonYinglet.cs" />

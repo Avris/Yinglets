@@ -1,5 +1,6 @@
 ﻿using Verse;
 using RimWorld;
+using System;
 #pragma warning disable 0649
 
 namespace ShellTooth
@@ -8,9 +9,10 @@ namespace ShellTooth
 	{
 		public override void OnIntervalPassed(Pawn pawn, Hediff cause)
 		{
-			if ((pawn.ageTracker.AgeBiologicalYears % GenDate.TicksPerDay == 0) && pawn.ageTracker.AgeBiologicalTicks >= GenDate.TicksPerDay * (ageDayMinimum)) {
-				float chance = dayRange / (((int)pawn.ageTracker.AgeBiologicalTicks / GenDate.TicksPerDay) - ageDayMinimum);
-				if (Rand.Chance((float)chance)) {
+			float ageDays = (float)pawn.ageTracker.AgeBiologicalTicks / (float)GenDate.TicksPerDay;
+			if (ageDays >= ageDayMinimum + dayRange || ((Math.Round(ageDays % 1, 3) == 0) && (ageDays > ageDayMinimum))) {
+				float chance = (ageDays - ageDayMinimum) / dayRange;
+				if (Rand.Chance(chance)) {
 					if (TryApply(pawn, null)) {
 						return;
 					}

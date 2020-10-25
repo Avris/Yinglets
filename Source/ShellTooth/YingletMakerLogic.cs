@@ -3,31 +3,40 @@ using System.Collections.Generic;
 using Verse;
 using AlienRace;
 using UnityEngine;
+using RimWorld;
+using UnityEngine.Experimental.PlayerLoop;
 
 namespace ShellTooth
 {
     public partial class YingletMaker
     {
-        public static System.Random r = new System.Random();
-        static string BodyTyper(Pawn pawn)
+        public BodyTypeDef BodyTyper(Pawn pawn)
         {
-            if (pawn.gender == Gender.Female)
-            {
-                return (r.Next(0, 4) < 4) ? "YingFem" : "Ying";
+        System.Random r = new System.Random();
+            switch (pawn.gender) {
+                case Gender.Male:
+                    return DefOfYinglet.Ying;
+                case Gender.Female:
+                    BodyTypeDef bodyType = (r.Next(0, 4) < 4) ? DefOfYinglet.YingFem : DefOfYinglet.Ying;
+                    return bodyType;
+                default:
+                    Log.Error($"Assigning bodytype to {pawn} with unexpected gender {pawn.gender} - this may break!");
+                    return DefOfYinglet.Ying;
             }
-            else return "Ying";
         }
-        static AlienPartGenerator.ExposableValueTuple<Color, Color> MakeColor(Color first, Color second)
+        public AlienPartGenerator.ExposableValueTuple<Color, Color> MakeColor(Color first, Color second)
         {
             return new AlienPartGenerator.ExposableValueTuple<Color, Color>(first, second);
         }
-        static void ApplyColor(Pawn pawn)
+        public void ApplyColor(Pawn pawn)
         {
+            pawn.GetComp<AlienPartGenerator.AlienComp>().crownType = "Yinglet";
+            System.Random r = new System.Random();
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = MakeColor(skinFirst[r.Next(skinFirst.Count)], skinSecond[r.Next(skinSecond.Count)]);
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = MakeColor(eyeFirst[r.Next(eyeFirst.Count)], new Color(1f, 1f, 1f, 1f));
             pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"].first = hairFirst[r.Next(hairFirst.Count)];
         }
-        static void BackstoryGen(Pawn pawn) {
+        public void BackstoryGen(Pawn pawn) {
             PawnGenerationRequest request = new PawnGenerationRequest(
                 kind: PawnKindDef.Named("Yinglet"),
                 faction: pawn.Faction,
@@ -35,21 +44,19 @@ namespace ShellTooth
                 fixedGender: pawn.gender,
                 fixedBiologicalAge: 3f
                 );
-            Pawn genPawn = PawnGenerator.GeneratePawn(request);
+            Pawn genPawn = PawnGenerator.GeneratePawn(request); 
+            pawn.verbTracker = genPawn.verbTracker;
             if (pawn.story.childhood.ToString() == "(Younglet)") {
                 pawn.story.childhood = genPawn.story.childhood;
-                pawn.story.adulthood = genPawn.story.adulthood; 
-                genPawn.Discard(silentlyRemoveReferences: true);
-
+                pawn.story.adulthood = genPawn.story.adulthood;
             }
             if (pawn.story.adulthood == null) {
                 pawn.story.adulthood = genPawn.story.adulthood;
-                genPawn.Discard(silentlyRemoveReferences: true);
             }
         }
-        static List<int> AddonAdder(Pawn pawn)
+        public List<int> AddonAdder(Pawn pawn)
         {
-            pawn.story.bodyType.defName = BodyTyper(pawn);
+            System.Random r = new System.Random();
             int fur = r.Next(0, 1);
             int tth = r.Next(0, 1);
             int ear = r.Next(0, 2);
@@ -60,7 +67,7 @@ namespace ShellTooth
             return bodyAddons;
         }
 
-        static List<Color> skinFirst = new List<Color> {
+        private List<Color> skinFirst = new List<Color> {
         new Color(0.8f,0.71f,0.64f,1.0f),
         new Color(0.71f,0.6f,0.47f,1.0f),
         new Color(0.51f,0.39f,0.28f,1.0f),
@@ -82,13 +89,13 @@ namespace ShellTooth
         new Color(0.65f,0.5f,0.35f,1.0f),
         new Color(0.8275f,0.8235f,0.886f,1.0f)
         };
-        static List<Color> skinSecond = new List<Color> {
+        private List<Color> skinSecond = new List<Color> {
         new Color(0.71f,0.55f,0.46f,1.0f),
         new Color(0.88f,0.75f,0.66f,1.0f),
         new Color(0.39f,0.45f,0.61f,1.0f),
         new Color(0.81f,0.52f,0.46f,1.0f)
         };
-        static List<Color> eyeFirst = new List<Color> {
+        private List<Color> eyeFirst = new List<Color> {
         new Color(1.0f,0.78f,0.36f,1.0f),
         new Color(1.0f,0.82f,0.28f,1.0f),
         new Color(0.57f,0.61f,0.78f,1.0f),
@@ -96,7 +103,7 @@ namespace ShellTooth
         new Color(1.0f,0.84f,0.82f,1.0f),
         new Color(1.0f,1.0f,1.0f,1.0f)
         };
-        static List<Color> hairFirst = new List<Color> {
+        private List<Color> hairFirst = new List<Color> {
         new Color(0.87f,0.79f,0.57f,1.0f),
         new Color(0.23f,0.19f,0.15f,1.0f),
         new Color(0.35f,0.3f,0.24f,1.0f),
