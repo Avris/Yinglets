@@ -24,7 +24,6 @@ namespace ShellTooth
                         goto case "Alien_Younglet";
                     case "Alien_Younglet":
                         pawn.def = ThingDef.Named("Alien_Yinglet");
-
                         pawn.kindDef = PawnKindDef.Named("Yinglet");
                         pawn.story.bodyType = BodyTyper(pawn);
                         pawn.GetComp<AlienPartGenerator.AlienComp>().crownType = "Yinglet";
