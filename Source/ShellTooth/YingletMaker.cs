@@ -17,11 +17,6 @@ namespace ShellTooth
                     case "Alien_Yinglet":
                         Log.Error("Tried to transform a yinglet into a yinglet! That probably shouldn't happen!");
                         break;
-                    case "Human":
-                        ApplyColor(pawn);
-                        pawn.story.hairDef = DefDatabase<HairDef>.GetNamed("Shaved");
-                        Messages.Message($"Something terrible has happened to {pawn}!", pawn, MessageTypeDefOf.NeutralEvent, true);
-                        goto case "Alien_Younglet";
                     case "Alien_Younglet":
                         pawn.def = ThingDef.Named("Alien_Yinglet");
                         pawn.ChangeKind(PawnKindDef.Named("Yinglet"));
@@ -52,6 +47,7 @@ namespace ShellTooth
                         pawn.Discard(silentlyRemoveReferences: true);
                         GenSpawn.Spawn(newbie, ploc, pmap, WipeMode.Vanish);
                         newbie.Rotation = pawn.Rotation;
+                        Messages.Message($"Something terrible has happened to {pawn}!", pawn, MessageTypeDefOf.NeutralEvent, true);
                         break;
                 }
             }
