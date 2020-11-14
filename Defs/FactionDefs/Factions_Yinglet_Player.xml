@@ -28,9 +28,13 @@
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<startingResearchTags>
-			<li>ClassicStart</li>
+			<li>TribalStart</li>
 			<li>YingletStart</li>
 		</startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>TribalStart</li>
+            <li>TribalStartTechprints</li>
+        </startingTechprintsResearchTags>
 		<forageabilityFactor>1.5</forageabilityFactor>
 		<hairTags>
 			<li>Rural</li>

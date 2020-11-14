@@ -19,6 +19,10 @@
             <capacity>Moving</capacity>
             <offset>0.15</offset>
           </li>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>-0.3</offset>
+          </li>
         </capMods>
       </li>
     </stages>

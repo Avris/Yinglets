@@ -719,8 +719,8 @@
 				<apparelList>
 					<li>Apparel_ShieldBelt</li>
 					<li>Apparel_SmokepopBelt</li>
-                    <li>Apparel_PsyfocusRobe</li>
-					<li>Apparel_EltexSkullcap</li>
+                    <li>Yinglet_EltexRegalia</li>
+					<li>Yinglet_EltexCirclet</li>
 					<li>Yinglet_Loincloth</li>
 					<li>Yinglet_Herocape</li>
 					<li>Yinglet_ChestWrap</li>
@@ -893,6 +893,8 @@
 			<MiningSpeed>0.75</MiningSpeed>
 			<TrapSpringChance>0.02</TrapSpringChance>
 			<RestRateMultiplier>5</RestRateMultiplier>
+            <HungerRateMultiplier>0.6</HungerRateMultiplier>
+            <ImmunityGainSpeed>1.45</ImmunityGainSpeed>
 		</statBases>
 		<tools>
 			<li>

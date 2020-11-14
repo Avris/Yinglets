@@ -11,7 +11,7 @@
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -19,16 +19,20 @@
         <thingCategories>
           <li>ApparelNoble</li>
          </thingCategories>
-        <tradeTags>         </tradeTags>
+        <tradeTags>         
+	    </tradeTags>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>2700</WorkToMake>
+			<WorkToMake>6000</WorkToMake>
 			<Mass>0.25</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
+        <equippedStatOffsets>
+          <SocialImpact>0.30</SocialImpact>
+        </equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -37,7 +41,6 @@
                 <li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/YingletLeaderClothes/Matriarch</wornGraphicPath>
-			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
                 <li>OnSkin</li>		
@@ -48,7 +51,8 @@
 			</tags>
 			<gender>Female</gender>
 		</apparel>
-	</ThingDef>	<ThingDef ParentName="ApparelMakeableBase">
+	</ThingDef>	
+	<ThingDef ParentName="ApparelMakeableBase">
     <defName>Yinglet_Patriarchal</defName>
     <label>Patriarch's Robes</label>
     <description>A set of clothes traditionally worn by the Patriarchs of an enclave.</description>
@@ -60,7 +64,7 @@
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -70,13 +74,16 @@
          </thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>2700</WorkToMake>
+			<WorkToMake>6000</WorkToMake>
 			<Mass>0.25</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
+        <equippedStatOffsets>
+          <SocialImpact>0.30</SocialImpact>
+        </equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -85,7 +92,6 @@
                 <li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/YingletLeaderClothes/Patriarch</wornGraphicPath>
-			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
                 <li>OnSkin</li>		
@@ -97,4 +103,105 @@
 			<gender>Male</gender>
 		</apparel>
 	</ThingDef>
+  <ThingDef ParentName="ApparelBase">
+    <defName>Yinglet_EltexRegalia</defName>
+    <description>A long robe embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate neural heat.</description>
+    <label>eltex regalia</label>
+    <graphicData>
+      <texPath>Things/Pawn/YingPawn/Apparel/EltexRegalia/EltexRegalia_Ying_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>PsychicApparel</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.15</Mass>
+      <ArmorRating_Sharp>0.16</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+      <Insulation_Cold>15</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>0.30</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.100</PsychicEntropyRecoveryRate>
+      <SocialImpact>0.20</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/YingPawn/Apparel/EltexRegalia/EltexRegalia</wornGraphicPath>
+      <layers>
+		<li>Shell</li>
+        <li>OnSkin</li>		
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>Psychic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="ApparelBase">
+    <defName>Yinglet_EltexCirclet</defName>
+    <label>eltex circlet</label>
+    <description>A cloth-draped circlet designed for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate neural heat.</description>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>PsychicApparel</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Pawn/YingPawn/Apparel/EltexCirclet/EltexCirclet_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.6</Mass>
+      <ArmorRating_Sharp>0.09</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.066</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+		<li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/YingPawn/Apparel/EltexCirclet/EltexCirclet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Psychic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
 </Defs>

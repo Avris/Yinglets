@@ -117,7 +117,7 @@
 	</ThingDef>
 	<ThingDef ParentName="NobleHatMakeableBase">
 		<defName>Yinglet_FancyCrest</defName>
-		<label>Fancy headband</label>
+		<label>fancy headband</label>
 		<description>A fancy dress for heads!</description>
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fancy_south</texPath>
@@ -169,7 +169,7 @@
 	</ThingDef>
 	<ThingDef ParentName="NobleHatMakeableBase">
 		<defName>Yinglet_FancierCrest</defName>
-		<label>Fancier headband</label>
+		<label>fancier headband</label>
 		<description>A very fancy dress for heads!</description>
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fancier_south</texPath>
@@ -221,7 +221,7 @@
 	</ThingDef>
 	<ThingDef ParentName="NobleHatMakeableBase">
 		<defName>Yinglet_FanciestCrest</defName>
-		<label>Fanciest headband</label>
+		<label>fanciest headband</label>
 		<description>A very sofancy dress for heads!</description>
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fanciest_south</texPath>
