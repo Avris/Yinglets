@@ -30,6 +30,8 @@
 			<li>Social</li>
 			<li>Caring</li>
 		</requiredWorkTags>
+        <maleCommonality>100</maleCommonality>
+        <femaleCommonality>30</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	<AlienRace.BackstoryDef>
 		<defName>YingletAverageChild</defName>
@@ -50,6 +52,98 @@
 			<li>
 				<defName>Intellectual</defName>
 				<amount>-1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>YingletGiftedChild</defName>
+		<title>Gifted Younglet</title>
+		<titleShort>gifted younglet</titleShort>
+		<baseDescription>[PAWN_nameDef] has shown great promise. Being the top among [PAWN_possessive] litter, [PAWN_pronoun] is bound to reach far!</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+		</requiredWorkTags>
+	</AlienRace.BackstoryDef>
+		<AlienRace.BackstoryDef>
+		<defName>YingletWildChild</defName>
+		<title>Wild Younglet</title>
+		<titleShort>wild younglet</titleShort>
+		<baseDescription>[PAWN_nameDef] has proven to be unusually wild and rowdy. [PAWN_pronoun] would often get into fights with the other younglets, seemingly always finding new ways of causing trouble within the nursery.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<maleCommonality>100</maleCommonality>
+        <femaleCommonality>40</femaleCommonality>
+	</AlienRace.BackstoryDef>
+		<AlienRace.BackstoryDef>
+		<defName>YingletCuriousChild</defName>
+		<title>Curious Younglet</title>
+		<titleShort>curious younglet</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-3</amount>
 			</li>
 		</skillGains>
 		<workDisables>
@@ -80,7 +174,6 @@
 			</li>
 		</skillGains>
 		<workDisables>
-			<li>Animals</li>
 			<li>Cleaning</li>
 		</workDisables>
 		<requiredWorkTags>
@@ -135,6 +228,14 @@
 			<li>Social</li>
 			<li>Intellectual</li>
 		</requiredWorkTags>
+      <forcedTraits>
+        <li>
+            <defName>TooSmart</defName>
+            <chance>60</chance>
+       </li>
+      </forcedTraits>
+      <maleCommonality>40</maleCommonality>
+      <femaleCommonality>70</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	<AlienRace.BackstoryDef>
 		<defName>Fishbaiter</defName>
@@ -151,22 +252,22 @@
 		<skillGains>
 			<li>
 				<defName>Crafting</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
 				<amount>4</amount>
 			</li>
 			<li>
 				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
 				<amount>-2</amount>
 			</li>
 		</skillGains>
 		<workDisables>
-			<li>Animals</li>
 		</workDisables>
 		<requiredWorkTags>
 			<li>Crafting</li>
+			<li>Animals</li>
 		</requiredWorkTags>
 	</AlienRace.BackstoryDef>
 	<AlienRace.BackstoryDef>
@@ -199,6 +300,8 @@
 		<requiredWorkTags>
 			<li>Animals</li>
 		</requiredWorkTags>
+       <maleCommonality>100</maleCommonality>
+       <femaleCommonality>40</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	<AlienRace.BackstoryDef>
 		<defName>ShinyRockCollector</defName>
@@ -214,7 +317,7 @@
 		<skillGains>
 			<li>
 				<defName>Mining</defName>
-				<amount>6</amount>
+				<amount>7</amount>
 			</li>
 		</skillGains>
 		<workDisables>
@@ -223,6 +326,8 @@
 		<requiredWorkTags>
 			<li>Mining</li>
 		</requiredWorkTags>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>30</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	<AlienRace.BackstoryDef>
 		<defName>CityScav</defName>
@@ -252,7 +357,587 @@
 			<li>Violent</li>
 			<li>Social</li>
 		</requiredWorkTags>
-	</AlienRace.BackstoryDef>	
+    <forcedTraits>
+        <li>
+            <defName>Brawler</defName>
+            <chance>50</chance>
+       </li>
+        <li>
+            <defName>Abrasive</defName>
+            <chance>20</chance>
+       </li>
+    </forcedTraits>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>30</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>Gatherer</defName>
+		<title>Gatherer</title>
+		<titleShort>gatherer</titleShort>
+		<baseDescription>An affinity for the "gathering" part of hunting and gathering has kept this one light on [PAWN_possessive] feet, and [PAWN_pronoun] can strip a bush of its berries with just a few deft movements. </baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+    <forcedTraits>
+        <li>
+            <defName>SpeedOffset</defName>
+            <degree>1</degree>
+            <chance>100</chance>
+       </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>RockLobber</defName>
+		<title>Rock Lobber</title>
+		<titleShort>lobber</titleShort>
+		<baseDescription>[PAWN_nameDef] enjoys the common yinglet pasttime of throwing rocks at others for fun, but maybe a little too much. [PAWN_pronoun] has a highly developed sense of distance and trajectory as a result, but often finds it hard to make friends, because throwing rocks at people tends to have negative social consequences.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-5</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+         <li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+      <forcedTraits>
+        <li>
+            <defName>ShootingAccuracy</defName>
+            <degree>1</degree>
+            <chance>70</chance>
+        </li>
+      </forcedTraits>
+      <maleCommonality>100</maleCommonality>
+      <femaleCommonality>10</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>ClayShaper</defName>
+		<title>Clay Shaper</title>
+		<titleShort>clay shaper</titleShort>
+		<baseDescription>This one likes to make things like mud into pretty things like pots and statues.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Crafting</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+       <maleCommonality>50</maleCommonality>
+       <femaleCommonality>100</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>BruisegrassAddict</defName>
+		<title>Bruisegrass Addict</title>
+		<titleShort>addict</titleShort>
+		<baseDescription>As a youngling [PAWN_nameDef] was introduced to bruise grass by one of the local druggies. Ever since then [PAWN_pronoun] has a deep rooted desire to experience that high again.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+         <li>PlantWork</li>
+         <li>ManualDumb</li>
+		</requiredWorkTags>
+        <forcedTraits>
+         <li>
+            <defName>DrugDesire</defName>
+            <degree>2</degree>
+            <chance>100</chance>
+         </li>
+      </forcedTraits>
+      <maleCommonality>100</maleCommonality>
+      <femaleCommonality>20</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>RoadPerformer</defName>
+		<title>Road Performer</title>
+		<titleShort>performer</titleShort>
+		<baseDescription>[PAWN_nameDef] has found their strength at entertaining others. While [PAWN_pronoun] would perform, as others walked by, they would throw food at [PAWN_objective]! And that's on a good day!</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-4</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+       <maleCommonality>100</maleCommonality>
+       <femaleCommonality>30</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>Teacher</defName>
+		<title>Teacher</title>
+		<titleShort>teacher</titleShort>
+		<baseDescription>[PAWN_nameDef] has the responsibility to remember and to pass on the knowledge that was once taught to them as a youngling.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+         <li>ManualDumb</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Social</li>
+		</requiredWorkTags>
+        <maleCommonality>60</maleCommonality>
+        <femaleCommonality>100</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>PrettyYing</defName>
+		<title>Pretty Boy</title>
+		<titleShort>pretty boy</titleShort>
+        <titleFemale>Pretty Lady</titleFemale>
+        <titleShortFemale>pretty lady</titleShortFemale>
+		<baseDescription>[PAWN_nameDef] has been gifted with good looks. Making them rather quite desired by others due to their exotic appearance.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-3</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+         <li>Hauling</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+    <forcedTraits>
+        <li>
+            <defName>Beauty</defName>
+            <degree>1</degree>
+            <chance>100</chance>
+       </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>Tailor</defName>
+		<title>Tailor</title>
+		<titleShort>tailor</titleShort>
+        <titleFemale>Seamstress</titleFemale>
+        <titleShortFemale>seamstress</titleShortFemale>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+         <li>ManualSkilled</li>
+		</requiredWorkTags>
+      <forcedTraits>
+        <li>
+            <defName>Wimp</defName>
+            <chance>40</chance>
+       </li>
+      </forcedTraits>
+      <maleCommonality>60</maleCommonality>
+      <femaleCommonality>100</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>StreetMerchant</defName>
+		<title>Street Merchant</title>
+		<titleShort>peddler</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+         <li>Crafting</li>
+		</requiredWorkTags>
+      <forcedTraits>
+        <li>
+            <defName>NaturalMood</defName>
+            <degree>1</degree>
+            <chance>100</chance>
+       </li>
+      </forcedTraits>
+        <maleCommonality>100</maleCommonality>
+        <femaleCommonality>40</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>WoundMender</defName>
+		<title>Mender</title>
+		<titleShort>mender</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Medicine</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-4</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+         <li>Caring</li>
+		</requiredWorkTags>
+    <forcedTraits>
+        <li>
+            <defName>Kind</defName>
+            <chance>45</chance>
+       </li>
+    </forcedTraits>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>MarshFarmer</defName>
+		<title>Reed Tender</title>
+		<titleShort>tender</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-5</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+         <li>PlantWork</li>
+		</requiredWorkTags>
+    <forcedTraits>
+        <li>
+            <defName>Industriousness</defName>
+            <degree>1</degree>
+            <chance>30</chance>
+       </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>SwampChef</defName>
+		<title>Swampland Chef</title>
+		<titleShort>chef</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Cooking</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+         <li>Cooking</li>
+		</requiredWorkTags>
+    <forcedTraits>
+        <li>
+            <defName>Gourmand</defName>
+            <chance>60</chance>
+       </li>
+    </forcedTraits>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>YingDancer</defName>
+		<title>Dancer</title>
+		<titleShort>dancer</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+          <li>Hauling</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+      <forcedTraits>
+        <li>
+            <defName>Nimble</defName>
+            <chance>70</chance>
+       </li>
+        <li>
+            <defName>Beauty</defName>
+            <degree>1</degree>
+            <chance>30</chance>
+       </li>
+      </forcedTraits>
+      <maleCommonality>40</maleCommonality>
+      <femaleCommonality>100</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>YingHunter</defName>
+		<title>Hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+          <li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+          <li>Violent</li>
+          <li>Animals</li>
+		</requiredWorkTags>
+      <forcedTraits>
+        <li>
+            <defName>ShootingAccuracy</defName>
+            <degree>1</degree>
+            <chance>30</chance>
+        </li>
+        <li>
+            <defName>Ascetic</defName>
+            <chance>30</chance>
+        </li>         
+      </forcedTraits>
+      <maleCommonality>100</maleCommonality>
+      <femaleCommonality>20</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>ShoreScavenger</defName>
+		<title>Beach Comber</title>
+		<titleShort>scavenger</titleShort>
+		<baseDescription>Placeholder text.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<requiredWorkTags>
+		</requiredWorkTags>
+      <maleCommonality>100</maleCommonality>
+      <femaleCommonality>50</femaleCommonality>
+	</AlienRace.BackstoryDef>
+	<!--YOUNGLET-->
 	<AlienRace.BackstoryDef>
 		<defName>Younglet</defName>
 		<title>Younglet</title>
@@ -265,11 +950,21 @@
 			<li>YoungletBackstory</li>
 		</spawnCategories>
 		<workDisables>
-		  <li>ManualDumb</li>
-		  <li>ManualSkilled</li>
-		  <li>PlantWork</li>
-		  <li>Mining</li>
-		  <li>Animals</li>
+		<li>ManualDumb</li>
+		<li>ManualSkilled</li>
+		<li>Caring</li>
+		<li>Commoner</li>
+		<li>Intellectual</li>
+		<li>Animals</li>
+		<li>Artistic</li>
+		<li>Crafting</li>
+		<li>Cooking</li>
+		<li>Firefighting</li>
+		<li>Cleaning</li>
+		<li>Hauling</li>
+		<li>PlantWork</li>
+		<li>Mining</li>
+		<li>Hunting</li>
 		</workDisables>
 	</AlienRace.BackstoryDef>
 </Defs>
