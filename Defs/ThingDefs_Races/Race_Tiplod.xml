@@ -44,6 +44,7 @@
 			<lifeExpectancy>22</lifeExpectancy>
 			<wildness>0.10</wildness>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>
 					<def>EusocialInsectLarva</def>
