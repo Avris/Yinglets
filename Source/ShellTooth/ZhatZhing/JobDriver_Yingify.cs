@@ -24,14 +24,6 @@ namespace ShellTooth
 		}
 		public override bool TryMakePreToilReservations(bool errorOnFailed)
 		{
-			if (!this.pawn.Reserve(this.Victim, this.job, 1, -1, null, false))
-			{
-				return false;
-			}
-			if (!this.pawn.Reserve(this.Item, this.job, 1, -1, null, false))
-			{
-				return false;
-			}
 			return true;
 		}
 		protected override IEnumerable<Toil> MakeNewToils()
@@ -39,8 +31,8 @@ namespace ShellTooth
 			yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.B).FailOnDespawnedOrNull(TargetIndex.A);
 			yield return Toils_Haul.StartCarryThing(TargetIndex.B, false, false, false);
 			yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.A);
-			Toil toil = Toils_General.Wait(60, TargetIndex.None);
-			toil.WithProgressBarToilDelay(TargetIndex.A, false, -0.5f);
+			Toil toil = Toils_General.Wait(0, TargetIndex.None);
+			toil.WithProgressBarToilDelay(TargetIndex.A, false);
 			toil.FailOnDespawnedOrNull(TargetIndex.A);
 			toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
 			yield return toil;

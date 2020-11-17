@@ -24,7 +24,7 @@
 					<aliencrowntypes>
 						<li>YoungletFluffy</li>
 					</aliencrowntypes>
-					<customDrawSize>(1.0, 1.0)</customDrawSize>
+					<customDrawSize>(0.6, 0.6)</customDrawSize>
 					<colorChannels>
 						<li>
 							<name>eye</name>
@@ -172,13 +172,14 @@
 						</options>
 							</second>
 						</li>
-					</colorChannels>					
+					</colorChannels>
 					<bodyAddons>
 						<li>
 							<path>Things/Pawn/YingPawn/Parts/Younglet/YoungletEyes</path>
 							<bodyPart>Head</bodyPart>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -193,11 +194,38 @@
 								</east>
 							</offsets>
 						</li>
-						</bodyAddons>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
 				<li>
+                    <lifeStageDefs>
+                        <li>YoungletHatchling</li>
+                    </lifeStageDefs>
+					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
+					<body>Things/Pawn/YingPawn/Icons/</body>
+					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
+					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
+					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
+                    <customDrawSize>(0.45,0.45)</customDrawSize>
+					<customHeadDrawSize>(0.45, 0.45)</customHeadDrawSize>
+				</li>
+				<li>
+                    <lifeStageDefs>
+                        <li>Younglet</li>
+                    </lifeStageDefs>
+					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
+					<body>Things/Pawn/YingPawn/Icons/</body>
+					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
+					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
+					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
+                    <customDrawSize>(0.52,0.52)</customDrawSize>
+					<customHeadDrawSize>(0.52, 0.52)</customHeadDrawSize>
+				</li>
+				<li>
+                    <lifeStageDefs>
+                        <li>YoungletOlder</li>
+                    </lifeStageDefs>
 					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
@@ -280,8 +308,24 @@
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
-					<def>Younglet</def>
+					<def>YoungletHatchling</def>
 					<minAge>0</minAge>
+					<soundWounded>Pawn_Chick_Call</soundWounded>
+					<soundDeath>Pawn_Chick_Call</soundDeath>
+					<soundCall>Pawn_Chick_Call</soundCall>
+					<soundAngry>Pawn_Chick_Call</soundAngry>
+				</li>
+				<li>
+					<def>Younglet</def>
+					<minAge>0.018</minAge>
+					<soundWounded>Pawn_Chick_Call</soundWounded>
+					<soundDeath>Pawn_Chick_Call</soundDeath>
+					<soundCall>Pawn_Chick_Call</soundCall>
+					<soundAngry>Pawn_Chick_Call</soundAngry>
+				</li>
+				<li>
+					<def>YoungletOlder</def>
+					<minAge>0.06</minAge>
 					<soundWounded>Pawn_Chick_Call</soundWounded>
 					<soundDeath>Pawn_Chick_Call</soundDeath>
 					<soundCall>Pawn_Chick_Call</soundCall>

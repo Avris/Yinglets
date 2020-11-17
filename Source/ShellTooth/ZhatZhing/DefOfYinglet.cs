@@ -14,8 +14,17 @@ namespace ShellTooth
 
         public static JobDef Yingify;
         public static JobDef Humps;
+
         public static BodyTypeDef Ying;
         public static BodyTypeDef YingFem;
-        public static LetterDef Younglet;
+
+        public static LetterDef YoungletGrown;
+
+        public static LifeStageDef YoungletHatchling;
+        public static LifeStageDef Younglet;
+        public static LifeStageDef YoungletOlder;
+        public static LifeStageDef YingletTeen;
+        public static LifeStageDef Yinglet;
+
     }
 }

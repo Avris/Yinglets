@@ -10,16 +10,22 @@ namespace ShellTooth
 	{
 		protected override float MtbHours(Pawn pawn)
 		{
-			if (pawn.CurrentBed() == null)
+			Pawn partnerInMyBed = new Pawn();
+			if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder)
 			{
 				return -1f;
 			}
-			Pawn partnerInMyBed = LovePartnerRelationUtility.GetPartnerInMyBed(pawn);
-			if (partnerInMyBed == null)
+
+			foreach (Pawn pawns in pawn.CurrentBed().CurOccupants)
 			{
-				return -1f;
+				if (pawns != pawn && pawns.GetComp<YingComp>().isDesignatedBreeder)
+				{
+					partnerInMyBed = pawns;
+				}
 			}
-			return GetHumpinMtbHours(pawn, partnerInMyBed);
+			float MTB = GetHumpinMtbHours(pawn, partnerInMyBed);
+			Log.Error($"{MTB}");
+			return MTB;
 		}
 		public float GetHumpinMtbHours(Pawn pawn, Pawn partner)
 		{
@@ -49,7 +55,7 @@ namespace ShellTooth
 			{
 				return -1f;
 			}
-			float num3 = 12f;
+			float num3 = 0.02f;
 			num3 *= num;
 			num3 *= num2;
 			num3 /= Mathf.Max(pawn.relations.SecondaryLovinChanceFactor(partner), 0.1f);

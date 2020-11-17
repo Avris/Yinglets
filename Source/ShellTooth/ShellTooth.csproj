@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="YingComp.cs" />
     <Compile Include="Reproduction\HediffGiver_ChancePerDay.cs" />
     <Compile Include="Reproduction\JobDriver_Humps.cs" />
     <Compile Include="Reproduction\JobGiver_DoHumpin.cs" />

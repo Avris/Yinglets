@@ -1,53 +1,43 @@
 ﻿using System;
 using RimWorld;
+using System.Collections.Generic;
 using Verse;
 using AlienRace;
+using UnityEngine;
 
 namespace ShellTooth
 {
- 
     public partial class YingletMaker
     {
         public void MakeYinglet(Pawn pawn)
         {
             try
             {
+                Pawn newbie = ReplaceWithYing(pawn);
                 switch (pawn.def.defName)
                 {
                     case "Alien_Yinglet":
                         Log.Error("Tried to transform a yinglet into a yinglet! That probably shouldn't happen!");
                         break;
                     case "Alien_Younglet":
-                        pawn.def = ThingDef.Named("Alien_Yinglet");
-                        pawn.ChangeKind(PawnKindDef.Named("Yinglet"));
-                        pawn.story.bodyType = BodyTyper(pawn);
-                        pawn.GetComp<AlienPartGenerator.AlienComp>().crownType = "Yinglet";
-                        pawn.GetComp<AlienPartGenerator.AlienComp>().addonVariants = AddonAdder(pawn);
-                        BackstoryGen(pawn);
+                        IntVec3 ploc1 = pawn.Position;
+                        Map pmap1 = pawn.Map;
+                        newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"];
+                        newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"];
+                        newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"];
+                        newbie.gender = pawn.gender;
+                        newbie.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AgeBiologicalTicks;
+                        newbie.GetComp<YingComp>().wasYounglet = true;
+                        pawn.DeSpawn();
+                        GenSpawn.Spawn(newbie, ploc1, pmap1, WipeMode.Vanish);
                         break;
                     default:
-                        PawnGenerationRequest request = new PawnGenerationRequest(
-                            kind: PawnKindDef.Named("Yinglet"),
-                            faction: pawn.Faction,
-                            tile: pawn.Tile,
-                            forceGenerateNewPawn: true,
-                            canGeneratePawnRelations: false,
-                            allowFood: false,
-                            allowAddictions: false,
-                            inhabitant: true,
-                            fixedGender: pawn.gender,
-                            fixedBiologicalAge: pawn.ageTracker.AgeBiologicalYearsFloat,
-                            fixedChronologicalAge: pawn.ageTracker.AgeChronologicalYearsFloat
-                        );
-                        Pawn newbie = PawnGenerator.GeneratePawn(request);
-                        IntVec3 ploc = pawn.Position;
-                        Map pmap = pawn.Map;
-                        newbie.Name = pawn.Name;
+                        pawn.Strip();
+                        IntVec3 ploc2 = pawn.Position;
+                        Map pmap2 = pawn.Map;
+                        newbie.GetComp<YingComp>().wasOtherRace = pawn.def.defName;
+                        GenSpawn.Spawn(newbie, ploc2, pmap2, WipeMode.Vanish);
                         pawn.DeSpawn();
-                        pawn.Discard(silentlyRemoveReferences: true);
-                        GenSpawn.Spawn(newbie, ploc, pmap, WipeMode.Vanish);
-                        newbie.Rotation = pawn.Rotation;
-                        Messages.Message($"Something terrible has happened to {pawn}!", pawn, MessageTypeDefOf.NeutralEvent, true);
                         break;
                 }
             }

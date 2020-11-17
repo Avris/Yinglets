@@ -1,6 +1,6 @@
 <Defs>
-  <LetterDef Name="Younglet">
-    <defName>Younglet</defName>
+  <LetterDef Name="YoungletGrown">
+    <defName>YoungletGrown</defName>
     <color>(172, 162, 255)</color>
     <flashColor>(113, 137, 255)</flashColor>
     <flashInterval>90</flashInterval>

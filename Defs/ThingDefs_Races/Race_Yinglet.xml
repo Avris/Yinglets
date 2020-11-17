@@ -31,6 +31,7 @@
 					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
+				    <customDrawSize>(0.7,0.7)</customDrawSize>
 					<useGenderedHeads>false</useGenderedHeads>
 					<alienbodytypes>
 						<li>Ying</li>
@@ -39,7 +40,6 @@
 					<aliencrowntypes>
 						<li>Yinglet</li>
 					</aliencrowntypes>
-					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<colorChannels>
 						<li>
 							<name>eye</name>
@@ -298,6 +298,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.28</layerOffset>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -323,6 +324,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<inFrontOfBody>false</inFrontOfBody>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -350,6 +352,7 @@
 							<layerOffset>0.1</layerOffset>
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -378,6 +381,7 @@
 							<layerOffset>-0.30</layerOffset>
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -406,6 +410,7 @@
 							<layerOffset>-0.30</layerOffset>
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -431,7 +436,7 @@
 							<shaderType>CutoutComplex</shaderType>
 							<drawForMale>false</drawForMale>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.25</layerOffset>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -458,6 +463,7 @@
 							<drawForFemale>false</drawForFemale>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.25</layerOffset>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -482,6 +488,7 @@
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.275</layerOffset>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -504,6 +511,7 @@
 							<layerOffset>-0.27</layerOffset>
 							<drawForMale>false</drawForMale>
 							<drawnInBed>false</drawnInBed>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -526,6 +534,7 @@
 							<layerOffset>-0.27</layerOffset>
 							<drawForFemale>false</drawForFemale>
 							<drawnInBed>false</drawnInBed>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -548,6 +557,7 @@
 							<layerOffset>-0.26</layerOffset>
 							<layerInvert>false</layerInvert>
 							<drawForMale>false</drawForMale>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<hiddenUnderApparelFor>
                                 <li>UpperHead</li>
                             </hiddenUnderApparelFor>
@@ -576,6 +586,7 @@
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawForMale>false</drawForMale>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<hiddenUnderApparelFor>
                                 <li>Neck</li>
                             </hiddenUnderApparelFor>
@@ -607,6 +618,7 @@
 							<layerInvert>false</layerInvert>
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -636,6 +648,7 @@
 							<hiddenUnderApparelFor>
                                 <li>UpperHead</li>
                             </hiddenUnderApparelFor>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -661,6 +674,7 @@
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawForFemale>false</drawForFemale>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<hiddenUnderApparelFor>
                                 <li>Neck</li>
                             </hiddenUnderApparelFor>
@@ -704,12 +718,32 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
+                    <lifeStageDefs>
+                        <li>YoungletOlder</li>
+                    </lifeStageDefs>
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-				</li>
+					<customDrawSize>(0.55,0.55)</customDrawSize>
+                </li>
+				<li>
+                    <lifeStageDefs>
+                        <li>YingletTeen</li>
+                    </lifeStageDefs>
+					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
+					<body>Things/Pawn/YingPawn/Icons/</body>
+					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
+                    <customDrawSize>(0.62,0.62)</customDrawSize>
+                </li>
+				<li>
+                    <lifeStageDefs>
+                        <li>Yinglet</li>
+                    </lifeStageDefs>
+					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
+					<body>Things/Pawn/YingPawn/Icons/</body>
+					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
+                    <customDrawSize>(0.7,0.7)</customDrawSize>
+                </li>
 			</graphicPaths>
 			<hairSettings>
 				<hasHair>false</hasHair>
@@ -892,9 +926,7 @@
 			<PsychicSensitivity>1.25</PsychicSensitivity>
 			<MiningSpeed>0.75</MiningSpeed>
 			<TrapSpringChance>0.02</TrapSpringChance>
-			<RestRateMultiplier>5</RestRateMultiplier>
-            <HungerRateMultiplier>0.6</HungerRateMultiplier>
-            <ImmunityGainSpeed>1.45</ImmunityGainSpeed>
+			<RestRateMultiplier>4</RestRateMultiplier>
 		</statBases>
 		<tools>
 			<li>
@@ -955,10 +987,11 @@
 				<eggUnfertilizedDef>EggYingletUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>EggYingletFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>14</eggLayIntervalDays>
+				<eggLayIntervalDays>0.1</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="ShellTooth.CompProperties_Yinglet"/>
 		</comps>
 		<race>
 			<mateMtbHours>0.01</mateMtbHours>
@@ -984,8 +1017,16 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>AnimalAdult</def>
-					<minAge>2</minAge>
+				  <def>YoungletOlder</def>
+				  <minAge>0</minAge>
+				</li>
+				<li>
+				  <def>YingletTeen</def>
+				  <minAge>1</minAge>
+				</li>
+				<li>
+				  <def>Yinglet</def>
+				  <minAge>2</minAge>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
