@@ -11,7 +11,7 @@ namespace ShellTooth
 		protected override float MtbHours(Pawn pawn)
 		{
 			Pawn partnerInMyBed = new Pawn();
-			if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder)
+			if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder || pawn.CurrentBed().CurOccupants.EnumerableCount() != 2)
 			{
 				return -1f;
 			}
@@ -24,7 +24,6 @@ namespace ShellTooth
 				}
 			}
 			float MTB = GetHumpinMtbHours(pawn, partnerInMyBed);
-			Log.Error($"{MTB}");
 			return MTB;
 		}
 		public float GetHumpinMtbHours(Pawn pawn, Pawn partner)
