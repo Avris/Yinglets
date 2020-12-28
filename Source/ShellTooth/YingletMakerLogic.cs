@@ -20,19 +20,32 @@ namespace ShellTooth
                 allowFood: false,
                 allowAddictions: false,
                 inhabitant: true,
-                fixedChronologicalAge: pawn.ageTracker.AgeBiologicalYearsFloat
+                fixedChronologicalAge: pawn.ageTracker.AgeBiologicalYearsFloat,
+                fixedBiologicalAge: pawn.ageTracker.AgeBiologicalYearsFloat
             );
             Pawn newbie = PawnGenerator.GeneratePawn(request);
             newbie.Name = pawn.Name;
             newbie.Rotation = pawn.Rotation;
             newbie.relations = pawn.relations;
             newbie.interactions = pawn.interactions;
-            newbie.records = pawn.records;
-            newbie.thinker = pawn.thinker;
-            newbie.apparel = pawn.apparel;
+            newbie.story.bodyType = DefOfYinglet.Ying;
+            newbie.apparel = new Pawn_ApparelTracker(newbie);
+            if (pawn.def.defName == "Alien_Younglet")
+            {
+                newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"];
+                newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"];
+                newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"];
+                newbie.gender = pawn.gender;
+                newbie.story.bodyType = BodyTyper(newbie);
+                newbie.GetComp<YingComp>().wasYounglet = true;
+            }
+            else 
+            {
+                newbie.GetComp<YingComp>().wasOtherRace = pawn.def.defName;
+            }
             return newbie;
         }
-        public BodyTypeDef BodyTyper(Pawn pawn)
+        public static BodyTypeDef BodyTyper(Pawn pawn)
         {
         System.Random r = new System.Random();
             switch (pawn.gender) {

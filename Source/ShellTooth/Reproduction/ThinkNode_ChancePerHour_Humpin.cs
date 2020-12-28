@@ -10,12 +10,20 @@ namespace ShellTooth
 	{
 		protected override float MtbHours(Pawn pawn)
 		{
-			Pawn partnerInMyBed = new Pawn();
-			if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder || pawn.CurrentBed().CurOccupants.EnumerableCount() != 2)
+			if (pawn.def.defName == "Alien_Younglet") 
 			{
 				return -1f;
 			}
-
+			int tick = Current.Game.tickManager.TicksGame;
+			if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder || pawn.CurrentBed().CurOccupants.EnumerableCount() != 2)
+			{
+				if (pawn.CurrentBed() != null) 
+				{
+					Log.Message($"{pawn} is {(pawn.GetComp<YingComp>().isDesignatedBreeder ? "enabled" : "disabled")} in a bed with {pawn.CurrentBed().CurOccupants.EnumerableCount()} {(pawn.CurrentBed().CurOccupants.EnumerableCount() != 1 ? "occupants" : "occupant")} at tick {tick}", true);
+				}
+				return -1f;
+			}
+			Pawn partnerInMyBed = new Pawn();
 			foreach (Pawn pawns in pawn.CurrentBed().CurOccupants)
 			{
 				if (pawns != pawn && pawns.GetComp<YingComp>().isDesignatedBreeder)
@@ -24,6 +32,7 @@ namespace ShellTooth
 				}
 			}
 			float MTB = GetHumpinMtbHours(pawn, partnerInMyBed);
+			Log.Message($"{pawn} and {partnerInMyBed} have an MTB of {MTB} at tick {tick}", true);
 			return MTB;
 		}
 		public float GetHumpinMtbHours(Pawn pawn, Pawn partner)
@@ -63,7 +72,7 @@ namespace ShellTooth
 			num3 *= GenMath.LerpDouble(-100f, 100f, 1.3f, 0.7f, (float)partner.relations.OpinionOf(pawn));
 			if (pawn.health.hediffSet.HasHediff(HediffDefOf.PsychicLove, false))
 			{
-				num3 /= 4f;
+				num3 /= 5f;
 			}
 			return num3;
 		}
@@ -76,7 +85,8 @@ namespace ShellTooth
 			{
 				num /= level * 2f;
 			}
-			return num / GenMath.FlatHill(0f, 2f, 4f, 12f, 20f, 0.2f, pawn.ageTracker.AgeBiologicalYearsFloat);
+			float num2 = num / GenMath.FlatHill(0f, 2f, 4f, 12f, 20f, 0.2f, pawn.ageTracker.AgeBiologicalYearsFloat);
+			return num2;
 		}
 	}
 }

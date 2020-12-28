@@ -21,7 +21,7 @@
     <marketValueFactor>0.5</marketValueFactor>
     <meleeDamageFactor>0.5</meleeDamageFactor>
     <statFactors>
-      <MoveSpeed>10</MoveSpeed>
+      <MoveSpeed>0.1</MoveSpeed>
     </statFactors>
   </LifeStageDef>
 

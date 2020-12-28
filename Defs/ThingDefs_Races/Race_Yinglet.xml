@@ -31,7 +31,7 @@
 					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
-				    <customDrawSize>(0.7,0.7)</customDrawSize>
+				    <customDrawSize>(0.9,0.9)</customDrawSize>
 					<useGenderedHeads>false</useGenderedHeads>
 					<alienbodytypes>
 						<li>Ying</li>
@@ -724,7 +724,8 @@
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<customDrawSize>(0.55,0.55)</customDrawSize>
+					<customDrawSize>(0.74,0.74)</customDrawSize>
+					<customHeadDrawSize>(0.74, 0.74)</customHeadDrawSize>
                 </li>
 				<li>
                     <lifeStageDefs>
@@ -733,7 +734,8 @@
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-                    <customDrawSize>(0.62,0.62)</customDrawSize>
+                    <customDrawSize>(0.82,0.82)</customDrawSize>
+					<customHeadDrawSize>(0.82,0.82)</customHeadDrawSize>
                 </li>
 				<li>
                     <lifeStageDefs>
@@ -742,7 +744,8 @@
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-                    <customDrawSize>(0.7,0.7)</customDrawSize>
+                    <customDrawSize>(0.9,0.9)</customDrawSize>
+					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
                 </li>
 			</graphicPaths>
 			<hairSettings>

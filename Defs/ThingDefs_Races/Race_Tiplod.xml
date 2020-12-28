@@ -44,6 +44,7 @@
 			<lifeExpectancy>22</lifeExpectancy>
 			<wildness>0.10</wildness>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<foodType>VegetarianRoughAnimal</foodType>
 			<packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>

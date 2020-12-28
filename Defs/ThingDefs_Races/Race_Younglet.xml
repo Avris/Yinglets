@@ -24,7 +24,7 @@
 					<aliencrowntypes>
 						<li>YoungletFluffy</li>
 					</aliencrowntypes>
-					<customDrawSize>(0.6, 0.6)</customDrawSize>
+					<customDrawSize>(0.8, 0.8)</customDrawSize>
 					<colorChannels>
 						<li>
 							<name>eye</name>
@@ -207,8 +207,8 @@
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
 					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
 					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-                    <customDrawSize>(0.45,0.45)</customDrawSize>
-					<customHeadDrawSize>(0.45, 0.45)</customHeadDrawSize>
+                    <customDrawSize>(0.64,0.64)</customDrawSize>
+					<customHeadDrawSize>(0.64, 0.64)</customHeadDrawSize>
 				</li>
 				<li>
                     <lifeStageDefs>
@@ -219,8 +219,8 @@
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
 					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
 					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-                    <customDrawSize>(0.52,0.52)</customDrawSize>
-					<customHeadDrawSize>(0.52, 0.52)</customHeadDrawSize>
+                    <customDrawSize>(0.72,0.72)</customDrawSize>
+					<customHeadDrawSize>(0.72, 0.72)</customHeadDrawSize>
 				</li>
 				<li>
                     <lifeStageDefs>

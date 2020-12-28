@@ -107,10 +107,12 @@ namespace ShellTooth
 			{
 				if ((this.pawn.gender == Gender.Female) && (this.Partner.gender == Gender.Male))
 				{
+					Log.Message($"{pawn} and {Partner} successfully hump'd");
 					PawnUtility.Mated(this.Partner, this.pawn);
 				}
 				if ((this.pawn.gender == Gender.Male) && (this.Partner.gender == Gender.Female))
 				{
+					Log.Message($"{pawn} and {Partner} successfully hump'd");
 					PawnUtility.Mated(this.pawn, this.Partner);
 				}
 			});

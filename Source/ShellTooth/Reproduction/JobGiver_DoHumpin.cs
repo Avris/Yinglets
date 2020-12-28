@@ -13,11 +13,18 @@ namespace ShellTooth
 			{
 				return null;
 			}
-			if (pawn.CurrentBed() == null || pawn.CurrentBed().Medical || !pawn.health.capacities.CanBeAwake)
+			if (pawn.CurrentBed() == null || pawn.CurrentBed().Medical || !pawn.health.capacities.CanBeAwake || pawn.CurrentBed().CurOccupants.EnumerableCount() != 2)
 			{
 				return null;
 			}
-			Pawn partnerInMyBed = LovePartnerRelationUtility.GetPartnerInMyBed(pawn);
+			Pawn partnerInMyBed = new Pawn();
+			foreach (Pawn pawns in pawn.CurrentBed().CurOccupants)
+			{
+				if (pawns != pawn && pawns.GetComp<YingComp>().isDesignatedBreeder)
+				{
+					partnerInMyBed = pawns;
+				}
+			}
 			if (partnerInMyBed == null || !partnerInMyBed.health.capacities.CanBeAwake || Find.TickManager.TicksGame < partnerInMyBed.mindState.canLovinTick)
 			{
 				return null;

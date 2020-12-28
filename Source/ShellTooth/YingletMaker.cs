@@ -13,32 +13,18 @@ namespace ShellTooth
         {
             try
             {
-                Pawn newbie = ReplaceWithYing(pawn);
-                switch (pawn.def.defName)
+                if (pawn.def.defName == "Alien_Yinglet")
                 {
-                    case "Alien_Yinglet":
-                        Log.Error("Tried to transform a yinglet into a yinglet! That probably shouldn't happen!");
-                        break;
-                    case "Alien_Younglet":
-                        IntVec3 ploc1 = pawn.Position;
-                        Map pmap1 = pawn.Map;
-                        newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"];
-                        newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"];
-                        newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"];
-                        newbie.gender = pawn.gender;
-                        newbie.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AgeBiologicalTicks;
-                        newbie.GetComp<YingComp>().wasYounglet = true;
-                        pawn.DeSpawn();
-                        GenSpawn.Spawn(newbie, ploc1, pmap1, WipeMode.Vanish);
-                        break;
-                    default:
-                        pawn.Strip();
-                        IntVec3 ploc2 = pawn.Position;
-                        Map pmap2 = pawn.Map;
-                        newbie.GetComp<YingComp>().wasOtherRace = pawn.def.defName;
-                        GenSpawn.Spawn(newbie, ploc2, pmap2, WipeMode.Vanish);
-                        pawn.DeSpawn();
-                        break;
+                    Log.Error("Tried to transform a yinglet into a yinglet! That probably shouldn't happen!");
+                }
+                else
+                {
+                    Pawn newbie = ReplaceWithYing(pawn);
+                    pawn.Strip();
+                    IntVec3 ploc1 = pawn.Position;
+                    Map pmap1 = pawn.Map;
+                    pawn.DeSpawn();
+                    GenSpawn.Spawn(newbie, ploc1, pmap1, WipeMode.Vanish);
                 }
             }
             catch (NullReferenceException err)
