@@ -31,7 +31,7 @@ namespace ShellTooth
 					return false;
 				}
 				Pawn pawn = targ.Thing as Pawn;
-				return pawn != null && (pawn.def.defName != "Alien_Yinglet");
+				return pawn != null && (pawn.def.defName != "Alien_Yinglet" && pawn.def.defName != "Alien_Younglet");
 			};
 			return validation;
 

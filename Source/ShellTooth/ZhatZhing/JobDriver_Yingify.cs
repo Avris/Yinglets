@@ -24,7 +24,7 @@ namespace ShellTooth
 		}
 		public override bool TryMakePreToilReservations(bool errorOnFailed)
 		{
-			return true;
+			return this.pawn.Reserve(this.Victim, this.job, 1, -1, null, errorOnFailed) && this.pawn.Reserve(this.Item, this.job, 1, -1, null, errorOnFailed);
 		}
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
@@ -44,8 +44,7 @@ namespace ShellTooth
 			Pawn victim = this.Victim;
 			victim.Strip();
 			YingletMaker yinglify = new YingletMaker();
-			yinglify.MakeYinglet(victim);
-			Messages.Message($"Something awful has happened to {victim}!", victim, MessageTypeDefOf.PositiveEvent, true);
+			Messages.Message($"Something awful has happened to {yinglify.MakeYinglet(victim).Name.ToStringShort}!", victim, MessageTypeDefOf.PositiveEvent, true);
 			this.Item.Destroy(DestroyMode.Vanish);
 		}
 	}

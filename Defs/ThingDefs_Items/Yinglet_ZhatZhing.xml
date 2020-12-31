@@ -33,10 +33,4 @@
       </li>
     </comps>
   </ThingDef>
-  <JobDef>
-    <defName>Yingify</defName>
-    <driverClass>ShellTooth.JobDriver_Yingify</driverClass>
-    <reportString>"befriending" TargetA.</reportString>
-    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef>
 </Defs>

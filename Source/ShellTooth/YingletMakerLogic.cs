@@ -10,7 +10,8 @@ namespace ShellTooth
 {
     public partial class YingletMaker
     {
-        public Pawn ReplaceWithYing(Pawn pawn) {
+        public Pawn ReplaceWithYing(Pawn pawn)
+        {
             PawnGenerationRequest request = new PawnGenerationRequest(
                 kind: PawnKindDef.Named("Yinglet"),
                 faction: pawn.Faction,
@@ -20,35 +21,71 @@ namespace ShellTooth
                 allowFood: false,
                 allowAddictions: false,
                 inhabitant: true,
-                fixedChronologicalAge: pawn.ageTracker.AgeBiologicalYearsFloat,
-                fixedBiologicalAge: pawn.ageTracker.AgeBiologicalYearsFloat
+                fixedChronologicalAge: pawn.ageTracker.AgeChronologicalYearsFloat
             );
             Pawn newbie = PawnGenerator.GeneratePawn(request);
-            newbie.Name = pawn.Name;
             newbie.Rotation = pawn.Rotation;
-            newbie.relations = pawn.relations;
-            newbie.interactions = pawn.interactions;
             newbie.story.bodyType = DefOfYinglet.Ying;
             newbie.apparel = new Pawn_ApparelTracker(newbie);
-            if (pawn.def.defName == "Alien_Younglet")
+            if (pawn.def.race.Humanlike)
             {
-                newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"];
-                newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"];
-                newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"];
-                newbie.gender = pawn.gender;
-                newbie.story.bodyType = BodyTyper(newbie);
-                newbie.GetComp<YingComp>().wasYounglet = true;
+                newbie.Name = pawn.Name;
+                newbie.relations = pawn.relations;
+                newbie.interactions = pawn.interactions;
+                if (pawn.def.defName != "Alien_Younglet")
+                {
+                    newbie.skills = pawn.skills;
+                    newbie.story.childhood = pawn.story.childhood;
+                    newbie.story.adulthood = BackstoryDatabase.allBackstories["YingifiedHumanlike"];
+                    if (pawn.story.traits.HasTrait(TraitDefOf.Beauty))
+                    {
+                        Trait pawnBeauty = pawn.story.traits.allTraits[pawn.story.traits.allTraits.FindIndex((Trait tr) => tr.def == TraitDefOf.Beauty)];
+                        if (newbie.story.traits.HasTrait(TraitDefOf.Beauty))
+                        {
+                            pawnBeauty = newbie.story.traits.allTraits[newbie.story.traits.allTraits.FindIndex((Trait tr) => tr.def == TraitDefOf.Beauty)];
+                        }
+                        else
+                        {
+                            pawn.story.traits.allTraits.Remove(pawnBeauty);
+                        }
+                    }
+                    if (pawn.gender != newbie.gender && !pawn.story.traits.HasTrait(TraitDefOf.Bisexual))
+                    {
+                        if (pawn.story.traits.HasTrait(TraitDefOf.Gay))
+                        {
+                            pawn.story.traits.allTraits.Remove(pawn.story.traits.allTraits[pawn.story.traits.allTraits.FindIndex((Trait tr) => tr.def == TraitDefOf.Gay)]);
+                        }
+                        else
+                        {
+                            pawn.story.traits.GainTrait(newbie.gender == Gender.Female ? new Trait(TraitDefOf.Bisexual) : new Trait(TraitDefOf.Gay));
+                        }
+                    }
+                    newbie.story.traits = pawn.story.traits;
+                }
+                else
+                {
+                    newbie.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AgeBiologicalTicks;
+                    newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"];
+                    newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"];
+                    newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"];
+                    newbie.gender = pawn.gender;
+                    newbie.story.bodyType = BodyTyper(newbie);
+                    newbie.GetComp<YingComp>().wasYounglet = true;
+                }
             }
-            else 
+            else
             {
-                newbie.GetComp<YingComp>().wasOtherRace = pawn.def.defName;
+                newbie.Name = (pawn.Name == null ? newbie.Name : pawn.Name);
+                newbie.story.adulthood = BackstoryDatabase.allBackstories["YingifiedAnimal"];
+                newbie.story.childhood = BackstoryDatabase.allBackstories["YingifiedAnimalChildhood"];
             }
             return newbie;
         }
         public static BodyTypeDef BodyTyper(Pawn pawn)
         {
-        System.Random r = new System.Random();
-            switch (pawn.gender) {
+            System.Random r = new System.Random();
+            switch (pawn.gender)
+            {
                 case Gender.Male:
                     return DefOfYinglet.Ying;
                 case Gender.Female:
@@ -59,7 +96,8 @@ namespace ShellTooth
                     return DefOfYinglet.Ying;
             }
         }
-        public void BackstoryGen(Pawn pawn) {
+        public void BackstoryGen(Pawn pawn)
+        {
             PawnGenerationRequest request = new PawnGenerationRequest(
                 kind: PawnKindDef.Named("Yinglet"),
                 faction: pawn.Faction,
@@ -67,13 +105,15 @@ namespace ShellTooth
                 fixedGender: pawn.gender,
                 fixedBiologicalAge: 3f
                 );
-            Pawn genPawn = PawnGenerator.GeneratePawn(request); 
+            Pawn genPawn = PawnGenerator.GeneratePawn(request);
             pawn.verbTracker = genPawn.verbTracker;
-            if (pawn.story.childhood.ToString() == "(Younglet)") {
+            if (pawn.story.childhood.ToString() == "(Younglet)")
+            {
                 pawn.story.childhood = genPawn.story.childhood;
                 pawn.story.adulthood = genPawn.story.adulthood;
             }
-            if (pawn.story.adulthood == null) {
+            if (pawn.story.adulthood == null)
+            {
                 pawn.story.adulthood = genPawn.story.adulthood;
             }
         }

@@ -9,8 +9,9 @@ namespace ShellTooth
 {
     public partial class YingletMaker
     {
-        public void MakeYinglet(Pawn pawn)
+        public Pawn MakeYinglet(Pawn pawn)
         {
+            Pawn result = new Pawn();
             try
             {
                 if (pawn.def.defName == "Alien_Yinglet")
@@ -25,6 +26,7 @@ namespace ShellTooth
                     Map pmap1 = pawn.Map;
                     pawn.DeSpawn();
                     GenSpawn.Spawn(newbie, ploc1, pmap1, WipeMode.Vanish);
+                    result = newbie;
                 }
             }
             catch (NullReferenceException err)
@@ -32,6 +34,7 @@ namespace ShellTooth
                 Log.Error($"ShellTooth error: Tried to transform a {pawn.def.defName} into a yinglet, but failed! Here's why:");
                 Log.Error(err.ToString());
             }
+            return result;
         }
     }   
 }   

@@ -937,6 +937,45 @@
       <maleCommonality>100</maleCommonality>
       <femaleCommonality>50</femaleCommonality>
 	</AlienRace.BackstoryDef>
+	
+	<!--Transformees-->
+	<AlienRace.BackstoryDef>
+		<defName>YingifiedHumanlike</defName>
+		<title>Changed-One</title>
+		<titleShort>changed</titleShort>
+		<baseDescription>[PAWN_nameDef] used to be a lot taller... \n\n(Placeholder Text)</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletInternal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>YingifiedAnimal</defName>
+		<title>Uplifted</title>
+		<titleShort>uplifted</titleShort>
+		<baseDescription>[PAWN_nameDef] finds this new life confusing... \n\n(Placeholder Text)</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletInternal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef>
+		<defName>YingifiedAnimalChildhood</defName>
+		<title>Animal</title>
+		<titleShort>animal</titleShort>
+		<baseDescription>[PAWN_nameDef]'s early life was blissfully simple. How did it end up like this? \n\n(Placeholder Text)</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>YingFem</bodyTypeFemale>
+		<bodyTypeMale>Ying</bodyTypeMale>
+		<spawnCategories>
+			<li>YingletInternal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	
 	<!--YOUNGLET-->
 	<AlienRace.BackstoryDef>
 		<defName>Younglet</defName>
