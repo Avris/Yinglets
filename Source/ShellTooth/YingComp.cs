@@ -44,7 +44,7 @@ namespace ShellTooth
             BodyTypeDef bt = pawn.story.bodyType;
             if ((pawn.def.defName == "Alien_Yinglet") && (pawn.gender == Gender.Female))
             {
-                if (!(bt == DefOfYinglet.YingFem || bt == DefOfYinglet.Ying))
+                if (!(bt == YingDefOf.YingFem || bt == YingDefOf.Ying))
                 {
                     (this.parent as Pawn).story.bodyType = YingletMaker.BodyTyper(pawn);
                     Log.Error($"Fixed bodytype for pawn {pawn}");
@@ -53,9 +53,9 @@ namespace ShellTooth
             }
             if ((pawn.def.defName == "Alien_Yinglet") && (pawn.gender == Gender.Male))
             {
-                if (bt != DefOfYinglet.Ying)
+                if (bt != YingDefOf.Ying)
                 {
-                    (this.parent as Pawn).story.bodyType = DefOfYinglet.Ying;
+                    (this.parent as Pawn).story.bodyType = YingDefOf.Ying;
                     Log.Error($"Fixed bodytype for pawn {pawn}");
                     return true;
                 }

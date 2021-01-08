@@ -4,7 +4,6 @@ using Verse;
 using AlienRace;
 using UnityEngine;
 using RimWorld;
-using UnityEngine.Experimental.PlayerLoop;
 
 namespace ShellTooth
 {
@@ -25,7 +24,7 @@ namespace ShellTooth
             );
             Pawn newbie = PawnGenerator.GeneratePawn(request);
             newbie.Rotation = pawn.Rotation;
-            newbie.story.bodyType = DefOfYinglet.Ying;
+            newbie.story.bodyType = YingDefOf.Ying;
             newbie.apparel = new Pawn_ApparelTracker(newbie);
             if (pawn.def.race.Humanlike)
             {
@@ -65,6 +64,7 @@ namespace ShellTooth
                 else
                 {
                     newbie.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AgeBiologicalTicks;
+                    newbie.ageTracker.AgeChronologicalTicks = pawn.ageTracker.AgeBiologicalTicks;
                     newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["eye"];
                     newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["skin"];
                     newbie.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"] = pawn.GetComp<AlienPartGenerator.AlienComp>().ColorChannels["hair"];
@@ -87,13 +87,13 @@ namespace ShellTooth
             switch (pawn.gender)
             {
                 case Gender.Male:
-                    return DefOfYinglet.Ying;
+                    return YingDefOf.Ying;
                 case Gender.Female:
-                    BodyTypeDef bodyType = (r.Next(0, 4) < 4) ? DefOfYinglet.YingFem : DefOfYinglet.Ying;
+                    BodyTypeDef bodyType = (r.Next(0, 4) < 4) ? YingDefOf.YingFem : YingDefOf.Ying;
                     return bodyType;
                 default:
                     Log.Error($"Assigning bodytype to {pawn} with unexpected gender {pawn.gender} - this may break!");
-                    return DefOfYinglet.Ying;
+                    return YingDefOf.Ying;
             }
         }
         public void BackstoryGen(Pawn pawn)

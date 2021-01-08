@@ -103,7 +103,7 @@
 			<gender>Male</gender>
 		</apparel>
 	</ThingDef>
-  <ThingDef ParentName="ApparelBase">
+  <ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Yinglet_EltexRegalia</defName>
     <description>A long robe embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate neural heat.</description>
     <label>eltex regalia</label>
@@ -131,8 +131,8 @@
       <EquipDelay>2</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivityOffset>0.30</PsychicSensitivityOffset>
-      <PsychicEntropyRecoveryRate>0.100</PsychicEntropyRecoveryRate>
+      <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.100</PsychicEntropyRecoveryRate>
       <SocialImpact>0.20</SocialImpact>
     </equippedStatOffsets>
     <apparel>
@@ -184,8 +184,8 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
-      <PsychicEntropyRecoveryRate>0.066</PsychicEntropyRecoveryRate>
+      <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.15</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.066</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>

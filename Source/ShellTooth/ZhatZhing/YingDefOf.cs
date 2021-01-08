@@ -5,9 +5,9 @@ using Verse;
 namespace ShellTooth
 {
     [DefOf]
-    public static class DefOfYinglet
+    public static class YingDefOf
     {
-        static DefOfYinglet()
+        static YingDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingCategoryDefOf));
         }

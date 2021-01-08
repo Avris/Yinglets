@@ -33,7 +33,7 @@ namespace ShellTooth
 			{
 				return null;
 			}
-			return JobMaker.MakeJob(DefOfYinglet.Humps, partnerInMyBed, pawn.CurrentBed());
+			return JobMaker.MakeJob(YingDefOf.Humps, partnerInMyBed, pawn.CurrentBed());
 		}
 	}
 }

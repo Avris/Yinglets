@@ -10,26 +10,33 @@ namespace ShellTooth
 	{
 		protected override float MtbHours(Pawn pawn)
 		{
-			if (pawn.def.defName == "Alien_Younglet") 
+			if (pawn.def.defName == "Alien_Younglet")
 			{
 				return -1f;
 			}
 			int tick = Current.Game.tickManager.TicksGame;
-			if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder || pawn.CurrentBed().CurOccupants.EnumerableCount() != 2)
-			{
-				if (pawn.CurrentBed() != null) 
-				{
-					Log.Message($"{pawn} is {(pawn.GetComp<YingComp>().isDesignatedBreeder ? "enabled" : "disabled")} in a bed with {pawn.CurrentBed().CurOccupants.EnumerableCount()} {(pawn.CurrentBed().CurOccupants.EnumerableCount() != 1 ? "occupants" : "occupant")} at tick {tick}", true);
-				}
-				return -1f;
-			}
 			Pawn partnerInMyBed = new Pawn();
-			foreach (Pawn pawns in pawn.CurrentBed().CurOccupants)
+			try
 			{
-				if (pawns != pawn && pawns.GetComp<YingComp>().isDesignatedBreeder)
+				if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder || pawn.CurrentBed().CurOccupants.EnumerableCount() != 2)
 				{
-					partnerInMyBed = pawns;
+					if (pawn.CurrentBed() != null)
+					{
+						Log.Message($"{pawn} is {(pawn.GetComp<YingComp>().isDesignatedBreeder ? "enabled" : "disabled")} in a bed with {pawn.CurrentBed().CurOccupants.EnumerableCount()} {(pawn.CurrentBed().CurOccupants.EnumerableCount() != 1 ? "occupants" : "occupant")} at tick {tick}", true);
+					}
+					return -1f;
 				}
+				foreach (Pawn pawns in pawn.CurrentBed().CurOccupants)
+				{
+					if (pawns != pawn && pawns.GetComp<YingComp>().isDesignatedBreeder)
+					{
+						partnerInMyBed = pawns;
+					}
+				}
+			}
+			catch (NullReferenceException nre)
+			{
+				Log.Message("ShellTooth: attempted mtb check had NRE " + nre.ToString());
 			}
 			float MTB = GetHumpinMtbHours(pawn, partnerInMyBed);
 			Log.Message($"{pawn} and {partnerInMyBed} have an MTB of {MTB} at tick {tick}", true);
