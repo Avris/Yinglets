@@ -28,6 +28,7 @@
 		</statBases>
 		<thingCategories>
 			<li>Apparel</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<equippedStatOffsets>
 			<AimingDelayFactor>-0.1</AimingDelayFactor>
@@ -95,6 +96,7 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>Apparel</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -145,6 +147,7 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>Apparel</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -213,6 +216,7 @@
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -273,6 +277,7 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>Apparel</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -341,6 +346,7 @@
 		</statBases>
 		<thingCategories>
 			<li>Apparel</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -400,6 +406,7 @@
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<costList>
 			<Cloth>20</Cloth>
@@ -481,6 +488,7 @@
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -538,18 +546,24 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
+			<li>Metallic</li>
 		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<costList>
-			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>38000</WorkToMake>
 			<MaxHitPoints>290</MaxHitPoints>
 			<Mass>15</Mass>
-			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.43</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<EquipDelay>15</EquipDelay>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
 		</statBases>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -560,6 +574,7 @@
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -630,6 +645,7 @@
 		</statBases>
 		<thingCategories>
 			<li>ApparelArmor</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
@@ -708,6 +724,7 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>Apparel</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>

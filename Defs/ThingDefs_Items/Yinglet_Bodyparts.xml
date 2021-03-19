@@ -43,6 +43,9 @@
 			<color>(230, 0, 0)</color>
 			<colorTwo>(230, 0, 0)</colorTwo>
 		</graphicData>
+		<thingCategories>
+			<li>YingletThing</li>
+		</thingCategories>
 		<statBases>
 			<MarketValue>14</MarketValue>
 			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>

@@ -7,7 +7,7 @@
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
-				<minAgeForAdulthood>0.001</minAgeForAdulthood>
+				<minAgeForAdulthood>2</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
 				<disallowedTraits>

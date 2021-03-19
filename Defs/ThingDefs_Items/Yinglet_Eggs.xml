@@ -9,6 +9,9 @@
     <statBases>
       <MarketValue>7.0</MarketValue>
     </statBases>
+	<thingCategories>
+		<li>YingletThing</li>
+	</thingCategories>
   </ThingDef>
 
   <ThingDef ParentName="EggFertBase">
@@ -18,9 +21,13 @@
     <graphicData>
       <color>(245,245,245)</color>
     </graphicData>
+    <stackLimit>1</stackLimit>
     <statBases>
       <MarketValue>75.0</MarketValue>
     </statBases>
+	<thingCategories>
+		<li>YingletThing</li>
+	</thingCategories>
     <comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>0.01</hatcherDaystoHatch>

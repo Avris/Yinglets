@@ -21,6 +21,9 @@
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
+		<thingCategories>
+			<li>YingletThing</li>
+		</thingCategories>
 		<recipeMaker>
 			<recipeUsers>
 				<li>ElectricSmithy</li>
@@ -69,6 +72,9 @@
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
+		<thingCategories>
+			<li>YingletThing</li>
+		</thingCategories>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -131,6 +137,7 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>ApparelNoble</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
@@ -183,6 +190,7 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>ApparelNoble</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -235,6 +243,7 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>ApparelNoble</li>
+			<li>YingletThing</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>

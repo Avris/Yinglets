@@ -13,4 +13,10 @@
     <reportString>"befriending" TargetA.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
+  <JobDef>
+    <defName>Forage</defName>
+    <driverClass>ShellTooth.JobDriver_Forage</driverClass>
+    <reportString>Foraging.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
 </Defs>

@@ -17,7 +17,8 @@
 			<li>Leathery</li>
 		</stuffCategories>
         <thingCategories>
-          <li>ApparelNoble</li>
+			<li>ApparelNoble</li>
+			<li>YingletThing</li>
          </thingCategories>
         <tradeTags>         
 	    </tradeTags>
@@ -70,7 +71,8 @@
 			<li>Leathery</li>
 		</stuffCategories>
          <thingCategories>
-          <li>ApparelNoble</li>
+			<li>ApparelNoble</li>
+			<li>YingletThing</li>
          </thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -118,6 +120,7 @@
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <thingCategories>
       <li>Apparel</li>
+      <li>YingletThing</li>
     </thingCategories>
     <statBases>
       <MarketValue>1000</MarketValue>
@@ -131,8 +134,8 @@
       <EquipDelay>2</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivityOffset>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.100</PsychicEntropyRecoveryRate>
+      <PsychicSensitivityOffset>0.30</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.100</PsychicEntropyRecoveryRate>
       <SocialImpact>0.20</SocialImpact>
     </equippedStatOffsets>
     <apparel>
@@ -156,7 +159,7 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-  <ThingDef ParentName="ApparelBase">
+  <ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Royalty" >
     <defName>Yinglet_EltexCirclet</defName>
     <label>eltex circlet</label>
     <description>A cloth-draped circlet designed for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate neural heat.</description>
@@ -167,6 +170,7 @@
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <thingCategories>
       <li>Headgear</li>
+      <li>YingletThing</li>
     </thingCategories>
     <graphicData>
       <texPath>Things/Pawn/YingPawn/Apparel/EltexCirclet/EltexCirclet_south</texPath>
@@ -184,8 +188,8 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.15</PsychicSensitivityOffset>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.066</PsychicEntropyRecoveryRate>
+      <PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.066</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>

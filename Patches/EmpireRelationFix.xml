@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationConditional">
-		<xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
-			<value>
-				<li>YingletTribeRough</li>
-				<li>YingletTribeCivil</li>
-				<li>YingletPlayerColony</li>
-			</value>
-		</match>
+    <Operation Class="PatchOperationAdd">
+       <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+       <value>
+           <li>YingletTribeRough</li>
+           <li>YingletTribeCivil</li>
+           <li>YingletPlayerColony</li>
+        </value>
     </Operation>
 </Patch>

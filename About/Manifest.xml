@@ -1,8 +1,0 @@
-<Manifest>
-	<identifier>YingWorld</identifier>
-	<version>1.0.0</version>
-	<dependencies>
-		<li>erdelf.humanoidalienraces</li>
-	</dependencies>
-	<incompatibleWith />
-</Manifest>

@@ -10,7 +10,7 @@ namespace ShellTooth
 	{
 		protected override float MtbHours(Pawn pawn)
 		{
-			if (pawn.def.defName == "Alien_Younglet")
+			if (pawn.def.defName == "Alien_Younglet") 
 			{
 				return -1f;
 			}
@@ -34,8 +34,8 @@ namespace ShellTooth
 					}
 				}
 			}
-			catch (NullReferenceException nre)
-			{
+			catch (NullReferenceException nre) 
+			{ 
 				Log.Message("ShellTooth: attempted mtb check had NRE " + nre.ToString());
 			}
 			float MTB = GetHumpinMtbHours(pawn, partnerInMyBed);

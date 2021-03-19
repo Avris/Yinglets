@@ -12,9 +12,10 @@
     <statBases>
       <MarketValue>1700</MarketValue>
     </statBases>
-		<thingCategories>
-			<li>Artifacts</li>
-		</thingCategories>
+	<thingCategories>
+		<li>Artifacts</li>
+		<li>YingletThing</li>
+	</thingCategories>
     <tradeability>Sellable</tradeability>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>

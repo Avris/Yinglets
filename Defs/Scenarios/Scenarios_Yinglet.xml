@@ -13,6 +13,12 @@
 			</playerFaction>
 			<parts>
 
+				<!-- Enable foraging in the Storyteller -->
+				
+				<li Class="ShellTooth.ScenPart_EnableForaging">
+					<def>EnableForaging</def>
+				</li>
+
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>

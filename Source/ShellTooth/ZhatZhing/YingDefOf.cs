@@ -11,6 +11,9 @@ namespace ShellTooth
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingCategoryDefOf));
         }
+        public static ThingDef Alien_Yinglet;
+        public static ThingDef Alien_Younglet;
+        public static ThingDef YingWorld_Tiplod;
 
         public static JobDef Yingify;
         public static JobDef Humps;
@@ -26,5 +29,6 @@ namespace ShellTooth
         public static LifeStageDef YingletTeen;
         public static LifeStageDef Yinglet;
 
+        public static ThingCategoryDef YingletThing;
     }
 }
