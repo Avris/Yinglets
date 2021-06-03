@@ -1,0 +1,45 @@
+﻿<Defs>
+
+  
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>YingletWeapon_Thunderspear</defName>
+    <label>zapstick</label>
+    <description>A warhammer with an embedded EMP capacitor. Upon impact, it blasts the target with an EMP burst in addition to the physical damage.</description>
+    <soundInteract>Interact_ZeusHammer</soundInteract>
+    <meleeHitSound>MeleeHit_ZeusHammer</meleeHitSound>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Weapons/thunderstick</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>3</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>9</amount>
+          </li>
+          <li>
+            <def>Stun</def>
+            <amount>900</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

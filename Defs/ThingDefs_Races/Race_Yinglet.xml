@@ -299,6 +299,7 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.28</layerOffset>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -325,6 +326,7 @@
 							<inFrontOfBody>false</inFrontOfBody>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -353,6 +355,7 @@
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -382,6 +385,7 @@
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -411,6 +415,7 @@
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -437,6 +442,7 @@
 							<drawForMale>false</drawForMale>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -464,6 +470,7 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.25</layerOffset>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -489,6 +496,7 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.275</layerOffset>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -512,6 +520,7 @@
 							<drawForMale>false</drawForMale>
 							<drawnInBed>false</drawnInBed>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -535,6 +544,7 @@
 							<drawForFemale>false</drawForFemale>
 							<drawnInBed>false</drawnInBed>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -561,6 +571,7 @@
 							<hiddenUnderApparelFor>
                                 <li>UpperHead</li>
                             </hiddenUnderApparelFor>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -590,6 +601,7 @@
 							<hiddenUnderApparelFor>
                                 <li>Neck</li>
                             </hiddenUnderApparelFor>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -619,6 +631,7 @@
 							<drawnInBed>false</drawnInBed>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -649,6 +662,8 @@
                                 <li>UpperHead</li>
                             </hiddenUnderApparelFor>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<drawnOnGround>false</drawnOnGround>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -677,7 +692,8 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<hiddenUnderApparelFor>
                                 <li>Neck</li>
-                            </hiddenUnderApparelFor>
+                         </hiddenUnderApparelFor>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<crownTypes>
@@ -724,6 +740,7 @@
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
+					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
 					<customDrawSize>(0.7,0.7)</customDrawSize>
 					<customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
                 </li>
@@ -734,7 +751,8 @@
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-                    <customDrawSize>(0.8,0.8)</customDrawSize>
+					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
+                  <customDrawSize>(0.8,0.8)</customDrawSize>
 					<customHeadDrawSize>(0.8,0.8)</customHeadDrawSize>
                 </li>
 				<li>
@@ -744,7 +762,8 @@
 					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-                    <customDrawSize>(0.9,0.9)</customDrawSize>
+					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
+                  <customDrawSize>(0.9,0.9)</customDrawSize>
 					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
                 </li>
 			</graphicPaths>
@@ -982,7 +1001,6 @@
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
-				<chanceFactor>2.0</chanceFactor>
 			</li>
 		</tools>		
 		<comps>

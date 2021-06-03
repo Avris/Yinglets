@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Reflection;
 using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
+using Verse.AI;
 namespace ShellTooth
 {
     [StaticConstructorOnStartup]
@@ -10,8 +12,37 @@ namespace ShellTooth
     {
         static FLAP()
         {
-            List<FodderDef> allDefsListForReading4 = DefDatabase<FodderDef>.AllDefsListForReading;
+            Log.Message("Flapping flapper flapped flapping flapper cutely");
             Log.Message($"An egg has been laid! Version {ShellTooth.Version}.");
+            SetConfigs();
+            reflectUponScendef();
+        }
+        static void SetConfigs()
+        {
+            List<string> thingList = new List<string>() { "Plant_TreeAnima", "Wall" };
+
+            ThingDef treeAnima = DefDatabase<ThingDef>.AllDefsListForReading.Find(f => f.defName == "Plant_TreeAnima");
+            treeAnima.GetCompProperties<CompProperties_MeditationFocus>().focusTypes.Add(YingDefOf.Whiskery);
+
+
+            /*SetSpecificPrivateNodeEtc();*/
+        }
+
+        /// <summary> Harmony is neat, but fuck that whole convoluted mess.</summary>
+        static bool reflectUponScendef() 
+        {
+            List<ScenarioDef> scenDefs = DefDatabase<ScenarioDef>.AllDefsListForReading;
+            foreach (ScenarioDef sd in scenDefs)
+            {
+                List<ScenPartDef> types = new List<ScenPartDef>() { YingDefOf.EnableForaging };
+                var scenfield = sd.scenario.GetType().GetField("parts", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                List<ScenPart> scenparts = (List<ScenPart>)scenfield.GetValue(sd.scenario);
+                if (!scenparts.Exists(s => s.def == YingDefOf.EnableForaging))
+                {
+                    scenparts.Add(ScenarioMaker.MakeScenPart(YingDefOf.EnableForaging));
+                }
+            }
+            return true;
         }
     }
     public class ShellTooth : Mod

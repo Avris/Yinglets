@@ -180,6 +180,7 @@
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
 							<offsets>
 								<south>
 									<bodyTypes>

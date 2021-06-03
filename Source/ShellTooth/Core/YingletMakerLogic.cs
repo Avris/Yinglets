@@ -90,7 +90,8 @@ namespace ShellTooth
                 case Gender.Male:
                     return YingDefOf.Ying;
                 case Gender.Female:
-                    BodyTypeDef bodyType = (r.Next(0, 4) < 4) ? YingDefOf.YingFem : YingDefOf.Ying;
+                    BodyTypeDef bodyType = (r.Next(0, 4) < 3) ? YingDefOf.YingFem : YingDefOf.Ying;
+                    Log.Error(bodyType.ToString());
                     return bodyType;
                 default:
                     Log.Error($"Assigning bodytype to {pawn} with unexpected gender {pawn.gender} - this may break!");

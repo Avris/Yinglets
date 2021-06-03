@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <MeditationFocusDef>
+    <defName>Whiskery</defName>
+    <label>yinglet</label>
+    <requiredBackstoriesAny>
+      <li>
+        <categoryName>YingletBackstory</categoryName>
+        <slot>Childhood</slot>
+      </li>
+      <li>
+        <categoryName>YingletInternal</categoryName>
+        <slot>Childhood</slot>
+      </li>
+    </requiredBackstoriesAny>
+  </MeditationFocusDef>
+  
+</Defs>

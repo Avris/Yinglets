@@ -64,13 +64,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialogs\Dialog_Compatibility.cs" />
+    <Compile Include="Dialogs\Dialog_Introduction.cs" />
     <Compile Include="Foraging\FodderDef.cs" />
     <Compile Include="Foraging\Fodder.cs" />
     <Compile Include="Foraging\FodderUtility.cs" />
     <Compile Include="Foraging\JobDriver_Forage.cs" />
     <Compile Include="Foraging\ScenPart_EnableForaging.cs" />
     <Compile Include="Foraging\WorkGiver_Forage.cs" />
-    <Compile Include="Core\Dialog_SpawnYingletObject.cs" />
+    <Compile Include="Dialogs\Dialog_SpawnYingletObject.cs" />
     <Compile Include="Core\DebugOptions.cs" />
     <Compile Include="Core\YingComp.cs" />
     <Compile Include="Core\YingDefOf.cs" />
@@ -90,6 +92,7 @@
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

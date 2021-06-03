@@ -15,6 +15,8 @@ namespace ShellTooth
         public static ThingDef Alien_Younglet;
         public static ThingDef YingWorld_Tiplod;
 
+        public static ScenPartDef EnableForaging;
+
         public static JobDef Forage;
         public static JobDef Yingify;
         public static JobDef Humps;
@@ -33,5 +35,7 @@ namespace ShellTooth
         public static ThingDef EggYingletFertilized;
 
         public static ThingCategoryDef YingletThing;
+
+        public static MeditationFocusDef Whiskery;
     }
 }

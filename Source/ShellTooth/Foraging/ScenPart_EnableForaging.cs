@@ -10,14 +10,20 @@ namespace ShellTooth
 		private IntVec3 cell = new IntVec3(60, 0, 180);
 		private int checkedTick;
 		private int checkedInterval;
+		private bool splashed = false;
 		public override void ExposeData()
 		{
 			base.ExposeData();
 			Scribe_Values.Look(ref checkedTick, "checkedTick", 0);
 			Scribe_Values.Look(ref checkedInterval, "checkedInterval", 600);
 		}
-		public override void Tick()
+        public override void Tick()
 		{
+			if (!splashed)
+			{
+				Find.WindowStack.Add(new Dialog_Introduction());
+				splashed = true;
+			}
 			if ((YingDefOf.EggYingletFertilized.comps[3] as CompProperties_Hatcher).hatcherDaystoHatch != ShellTooth.YingletEgg) 
 			{
 				(YingDefOf.EggYingletFertilized.comps[3] as CompProperties_Hatcher).hatcherDaystoHatch = ShellTooth.YingletEgg;

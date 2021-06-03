@@ -1,7 +1,7 @@
-J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsHousekeeping\Source\ShellTooth\obj\Debug\ShellTooth.csprojAssemblyReference.cache
-J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsHousekeeping\Source\ShellTooth\obj\Debug\ShellTooth.csproj.CoreCompileInputs.cache
-J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsHousekeeping\Assemblies\ShellTooth.dll.config
-J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsHousekeeping\Assemblies\ShellTooth.dll
-J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsHousekeeping\Assemblies\ShellTooth.pdb
-J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsHousekeeping\Source\ShellTooth\obj\Debug\ShellTooth.dll
-J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsHousekeeping\Source\ShellTooth\obj\Debug\ShellTooth.pdb
+J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsOnGithub\Assemblies\ShellTooth.dll.config
+J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsOnGithub\Assemblies\ShellTooth.dll
+J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsOnGithub\Assemblies\ShellTooth.pdb
+J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsOnGithub\Source\ShellTooth\obj\Debug\ShellTooth.csprojAssemblyReference.cache
+J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsOnGithub\Source\ShellTooth\obj\Debug\ShellTooth.csproj.CoreCompileInputs.cache
+J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsOnGithub\Source\ShellTooth\obj\Debug\ShellTooth.dll
+J:\SteamApps\steamapps\common\RimWorld\Mods\YingletsOnGithub\Source\ShellTooth\obj\Debug\ShellTooth.pdb
