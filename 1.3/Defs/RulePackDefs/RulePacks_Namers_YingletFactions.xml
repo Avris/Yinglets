@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RulePackDef>
+        <defName>Yinglet_NamerFactionScavvers</defName>
+          <rulePack>
+            <rulesStrings>
+                <li>r_name->[yinglet_scavver]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>yinglet_scavver->Names/Yinglet_Scavvers</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>Yinglet_NamerSettlementScavvers</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[yingletSettlementScavvers]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>yingletSettlementScavvers->Names/Yinglet_Scavvers_Towns</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+	<RulePackDef>
+		<defName>Yinglet_NamerFactionEnclaves</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[yinglet_enclaves]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>yinglet_enclaves->Names/Yinglet_Enclaves</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Yinglet_NamerSettlementEnclaves</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[yingletSettlementEnclaves]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>yingletSettlementEnclaves->Names/Yinglet_Enclaves_Towns</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Yinglet_NamerFactionOutcasts</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[yinglet_outcasts]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>yinglet_outcasts->Names/Yinglet_Outcasts</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Yinglet_NamerSettlementOutcasts</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[yingletSettlementOutcasts]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>yingletSettlementOutcasts->Names/Yinglet_Outcasts_Towns</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

@@ -1,7 +1,7 @@
 ﻿<ModMetaData>
 	<name>Yinglets!</name>
 	<author>A bunch of scavs</author>
-	<packageId>ValSalia.Yinglets.Prerelease</packageId>
+	<packageId>ValSalia.Yinglets.Prerelease.Github</packageId>
 	<url/>
 	<supportedVersions>
 		<li>1.0</li>

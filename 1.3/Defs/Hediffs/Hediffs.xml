@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="ChronicDiseaseBase">
+	<defName>Yinglet</defName>
+	<label>Yingletness</label>
+	<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+	<labelNoun>a yinglet</labelNoun>
+	<makesSickThought>false</makesSickThought>
+	<tendable>false</tendable>
+	<description>This yinglet is afflicted by being a yinglet, resulting in altered sleep patterns and hyperactivity.</description>
+	<stages>
+	  <li>
+		<minSeverity>0.5</minSeverity>
+		<label>so SO yinglet</label>
+		<restFallFactor>2</restFallFactor>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>0.15</offset>
+		  </li>
+		  <li>
+			<capacity>Talking</capacity>
+			<offset>-0.3</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	</HediffDef>  
+	<HediffDef ParentName="ChronicDiseaseBase">
+	<defName>Yingify</defName>
+	<label>Yinglification</label>
+	<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+	<labelNoun>a yinglet</labelNoun>
+	<makesSickThought>false</makesSickThought>
+	<tendable>false</tendable>
+	<description>Becoming a yinglet!</description>
+	<hediffClass>Shelltooth.Hediff_Yingify</hediffClass>
+	<stages>
+	  <li>
+		<minSeverity>0.5</minSeverity>
+		<label>so SO yinglet</label>
+		<restFallFactor>3.5</restFallFactor>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>0.10</offset>
+		  </li>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.10</offset>
+		  </li>
+		  <li>
+			<capacity>Talking</capacity>
+			<offset>-0.3</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>YingletBionicTail</defName>
+		<label>bionic yinglet tail</label>
+		<description>A tail that is beepboop.</description>
+		<spawnThingOnRemoved>YingletBionicTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.2</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>YingletClothTail</defName>
+		<description>A tail that is all snug and warm.</description>
+		<label>yinglet cloth tail</label>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.6</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+</Defs>
