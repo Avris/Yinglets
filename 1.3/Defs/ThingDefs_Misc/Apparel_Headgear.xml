@@ -1,12 +1,13 @@
 ﻿<Defs>
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>Yinglet_SimpleHelmet</defName>
-		<label>simple helmet</label>
-		<description>A simple helmet which gives moderate protection against sharp attacks. Not effective against blunt weapons, or complex ideas.</description>
-		<techLevel>Industrial</techLevel>
+		<label>spiked helmet</label>
+		<description>A simple helmet which gives moderate protection against sharp attacks. Not effective against blunt weapons, or complex ideas. But hey! It got a spike.</description>
+		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/HeadgearSpiked/HeadgearSpiked_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.4</uiIconScale>
 		<stuffCategories>
@@ -18,7 +19,8 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>2</Mass>
 			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<thingCategories>
@@ -35,7 +37,8 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet_Ying</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeadgearSpiked/HeadgearSpiked</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -46,6 +49,177 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Yinglet_Headwrap</defName>
+		<label>headwrap</label>
+		<description>A protective wrap for your head!</description>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Pawn/YingPawn/Apparel/HeadgearSimple/HeadgearSimple_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<statBases>
+			<WorkToMake>1400</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>YingletThing</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+          <li>CraftingSpot</li>
+		  </recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeadgearSimple/HeadgearSimple</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalBasic</li>
+				<li>YingletPlayer</li>
+				<li>YingletMilitary</li>
+				<li>YingletCivilian</li>
+				<li>YingletCommon</li>				
+				<li>YingletPlayer</li>
+				<li>YingletMilitary</li>
+				<li>YingletCivilian</li>
+				<li>YingletCommon</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Civilian</li>				
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Yinglet_StrawHat</defName>
+		<label>straw hat</label>
+		<description>A hat? Made from straw? Clever!</description>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Pawn/YingPawn/Apparel/StrawHat/strawhat_ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+    <costList>
+      <Hay>30</Hay>
+    </costList>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>YingletThing</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers>
+           <li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/StrawHat/Strawhat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YingletCommon</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
 	</ThingDef>
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>Yinglet_AdvancedHelmet</defName>
@@ -60,8 +234,9 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/AdvancedHelmet/AdvancedHelmet_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.4</uiIconScale>
 		<statBases>
@@ -88,7 +263,8 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/AdvancedHelmet/AdvancedHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
 			</layers>

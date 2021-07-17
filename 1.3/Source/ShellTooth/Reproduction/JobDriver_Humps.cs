@@ -71,7 +71,7 @@ namespace ShellTooth
 				}
 				if (this.pawn.IsHashIntervalTick(100))
 				{
-					FleckMaker.Static(this.pawn.Position, this.pawn.Map, FleckDefOf.Heart);
+					FleckMaker.ThrowMetaIcon(this.pawn.Position, this.pawn.Map, FleckDefOf.Heart, 0.42f);
 				}
 			});
 			toil.AddFinishAction(delegate

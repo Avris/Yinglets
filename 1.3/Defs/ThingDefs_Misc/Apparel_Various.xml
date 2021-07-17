@@ -180,17 +180,16 @@
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>Yinglet_ChestGuard</defName>
 		<label>chest guard</label>
-		<description>An ingenius yinglet once decided to strap a piece of hardened leather to his body, thinking it would make them unkillable. Others found it fashionable and decided to mimic the cumbersome clothing.</description>
+		<description>An ingenius yinglet once decided to strap a piece of driftwood to his body, thinking it would make them unkillable. Others found it fashionable and decided to mimic the cumbersome clothing.</description>
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>1</Crafting>
 			</skillRequirements>
          <recipeUsers>
-           <li>ElectricSmithy</li>
-           <li>FueledSmithy</li>
+		   <li>CraftingSpot</li>
          </recipeUsers>
 		</recipeMaker>
 		<graphicData>
@@ -230,6 +229,90 @@
 			<tags>
 				<li>NeolithicMilitary</li>
 				<li>YingletPlayer</li>
+				<li>YingletMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>Yinglet_Scoundrel</defName>
+		<label>scoundrel vestments</label>
+		<description>A shady looking attire for sneaky yings.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ResearchProject_YingTribe</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+         <recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+         </recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/YingPawn/Apparel/Scoundrel/Scoundrel_Ying_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+ 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.10</MoveSpeed>
+            <SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>YingletThing</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Scoundrel/Scoundrel</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+                <li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>NeolithicMilitary</li>
+				<li>YingletOutlaw</li>
 				<li>YingletMilitary</li>
 			</tags>
 			<defaultOutfitTags>
@@ -449,7 +532,7 @@
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>Yinglet_PlateArmor</defName>
 		<label>yinglet guard armor</label>
-		<description>Overlapping plates of hardened leather covering the entire body from neck to feet. Sized for a Yinglet.</description>
+		<description>Overlapping plates made of either hardened leather or metal covering the entire body from neck to feet. Sized for a Yinglet.</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<researchPrerequisite>ResearchProject_YingIndustrial</researchPrerequisite>
@@ -457,9 +540,8 @@
 				<Crafting>7</Crafting>
 			</skillRequirements>
         <recipeUsers>
-          <li>ElectricTailoringBench</li>
-          <li>HandTailoringBench</li>
-          <li>CraftingSpot</li>
+           <li>ElectricSmithy</li>
+           <li>FueledSmithy</li>
        </recipeUsers>
 		</recipeMaker>
 		<graphicData>
@@ -701,7 +783,7 @@
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<comps>
-		  <li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -783,4 +865,120 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Yinglet_JetpackArmor</defName>
+    <label>cricket armor</label>
+    <description>A reverse-engineered, yinglet variant of the esteemed locust armor, "expertly" cobbled together by inspired yinglet artisans. Designed using an creative combination of grafting discarded shuttle parts and salvaged jet burners together before carefully strapping them onto a set of armor. This ingenius piece of technology is fully capable of rapidly launching your yinglets from point A to B with only the occasional risk of accidental explosions!</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>ResearchProject_YingSpacer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+        <recipeUsers>
+				<li>FabricationBench</li>
+      </recipeUsers>
+		</recipeMaker>
+		<tradeTags>
+			<li>HiTechArmor</li>
+		</tradeTags>
+    <statBases>
+	  <WorkToMake>40000</WorkToMake>
+	  <MaxHitPoints>260</MaxHitPoints>
+	  <Mass>7</Mass>
+      <ArmorRating_Sharp>0.84</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.38</ArmorRating_Heat>
+      <Insulation_Cold>28</Insulation_Cold>
+      <Insulation_Heat>9</Insulation_Heat>
+      <EquipDelay>9</EquipDelay>
+      <JumpRange>26</JumpRange>
+    </statBases>
+		<thingCategories>
+			<li>Apparel</li>
+			<li>YingletThing</li>
+		</thingCategories>
+    <graphicData>
+      <texPath>Things/Pawn/YingPawn/Apparel/JetpackArmor/JetpackArmor_ying_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>90</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>70</Chemfuel>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/YingPawn/Apparel/JetpackArmor/JetpackArmor</wornGraphicPath>
+	<layers>
+	<li>Shell</li>
+	<li>Middle</li>
+	<li>OnSkin</li>
+	</layers>
+	<tags>
+	<li>SpacerMilitary</li>
+	<li>YingletMilitary</li>
+	</tags>
+	<defaultOutfitTags>
+	<li>Soldier</li>
+	</defaultOutfitTags>
+	<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>20</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Jump</verbClass>
+        <label>jump</label>
+        <commandIcon>Things/Pawn/Humanlike/Apparel/JumpPack/JumpPack</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
 </Defs>
