@@ -1,18 +1,18 @@
 <Defs>
   <CultureDef>
-    <defName>YingSavage</defName>
-    <label>savage</label>
-    <description>Many yinglet tribes can only be described as savages.</description>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoYingSavage</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityYingSavage</deityNameMaker>
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerYingSavage</deityTypeMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_YingSavage</leaderTitleMaker>
-    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalYingSavage</festivalNameMaker>
+    <defName>YingCulture</defName>
+    <label>Yinglet</label>
+    <description>Yinglets.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoYing</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Ying</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/PirateOutpost</iconPath>
-    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <iconPath>World/Expanding/Yinglet/Yinglet_Icon</iconPath>
+    <iconColor>(0.1, 0.5, 0.1)</iconColor>
     <thingStyleCategories>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Totemic</category>
@@ -22,6 +22,11 @@
     <styleItemTags>
       <li>
         <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Bald</tag>
         <baseWeight>10</baseWeight>
         <weightFactor>1</weightFactor>
       </li>

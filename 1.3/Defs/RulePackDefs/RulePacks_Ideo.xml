@@ -1,0 +1,37 @@
+<Defs>
+  <RulePackDef>
+    <defName>CultureYing</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>globalAdjective->Yinglet</li>
+        <li>globalAdjective->Scav</li>
+
+        <li>globalHyphenPrefix->scav</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerIdeoYing</defName>
+    <include>
+      <li>NamerIdeoGlobal</li>
+      <li>CultureYing</li>
+    </include>
+  </RulePackDef>  
+  <RulePackDef>
+    <defName>LeaderTitleMaker_Ying</defName>
+    <include>
+      <li>LeaderTitleMaker_GlobalStructure</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+        <li>cultureLeaderAdjective->prime</li>
+        <li>cultureLeaderAdjective->first</li>
+        <li>cultureLeaderAdjective->grand</li>
+
+        <li>cultureLeaderNoun->civarch</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

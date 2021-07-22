@@ -181,6 +181,7 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnDesiccated>false</drawnDesiccated>
+							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -234,9 +235,6 @@
 					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
 				</li>
 			</graphicPaths>
-			<hairSettings>
-				<hasHair>false</hasHair>
-			</hairSettings>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList/>

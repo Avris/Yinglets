@@ -3,7 +3,7 @@
 		<defName>Alien_Yinglet</defName>
 		<label>yinglet</label>
 		<description>A recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
-		<alienRace>
+		<alienRace>      
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
@@ -395,19 +395,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
+									<layerOffset>-0.30</layerOffset>
 									<crownTypes>
-							<layerOffset>-0.30</layerOffset>
 										<Yinglet>(-0.42,0.22)</Yinglet>
 									</crownTypes>
 								</south>
 								<north>
-							<layerOffset>-0.30</layerOffset>
+									<layerOffset>-0.30</layerOffset>
 									<crownTypes>
 										<Yinglet>(0,0.55)</Yinglet>
 									</crownTypes>
 								</north>
 								<east>
-							<layerOffset>-0.30</layerOffset>
+									<layerOffset>-0.30</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
 									</crownTypes>
@@ -428,19 +428,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-							<layerOffset>-0.30</layerOffset>
+									<layerOffset>-0.30</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
 									</crownTypes>
 								</south>
 								<north>
-							<layerOffset>-0.30</layerOffset>
+									<layerOffset>-0.30</layerOffset>
 									<crownTypes>
 										<Yinglet>(0,0.55)</Yinglet>
 									</crownTypes>
 								</north>
 								<east>
-							<layerOffset>-0.30</layerOffset>
+									<layerOffset>-0.30</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
 									</crownTypes>
@@ -801,9 +801,6 @@
 					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
                 </li>
 			</graphicPaths>
-			<hairSettings>
-				<hasHair>false</hasHair>
-			</hairSettings>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>
@@ -829,6 +826,10 @@
 					<li>Yinglet_FanciestCrest</li>
 					<li>Yinglet_Matriarchal</li>
 					<li>Yinglet_Patriarchal</li>
+					<li>Yinglet_JetpackArmor</li>
+					<li>Yinglet_Scoundrel</li>
+					<li>Yinglet_StrawHat</li>					
+					<li>Yinglet_Headwrap</li>
 				</apparelList>
 			</raceRestriction>
 			<relationSettings>
@@ -971,6 +972,32 @@
                 </li>
             </replacerList>
 			</thoughtSettings>
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>true</hasStyle>
+						<styleTags>
+						  <li>alienNoStyle</li>
+						</styleTags>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>true</hasStyle>
+						<styleTags>
+						  <li>alienNoStyle</li>
+						</styleTags>
+                    </value>
+                </li>
+            </styleSettings>
 		</alienRace>
 		<statBases>
 			<MarketValue>200</MarketValue>
