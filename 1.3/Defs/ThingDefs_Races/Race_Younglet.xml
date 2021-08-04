@@ -259,6 +259,32 @@
 			<thoughtSettings>
 				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
 			</thoughtSettings>
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>true</hasStyle>
+						<styleTags>
+						  <li>alienNoStyle</li>
+						</styleTags>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>true</hasStyle>
+						<styleTags>
+						  <li>alienNoStyle</li>
+						</styleTags>
+                    </value>
+                </li>
+            </styleSettings>
 		</alienRace>
 		<statBases>
 			<MarketValue>100</MarketValue>

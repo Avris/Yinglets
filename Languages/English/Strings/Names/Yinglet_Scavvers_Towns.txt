@@ -1,4 +1,4 @@
-Junktown
+Junk Town
 Scrapheap
 Tarpit
 Scavhome 
@@ -13,3 +13,7 @@ Cinder
 Bartertown
 Powder River
 Scavver's Point
+Motorhead
+Arclight
+Grease Town
+Gunpoint

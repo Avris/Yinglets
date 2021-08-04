@@ -33,6 +33,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Neck</li>
@@ -71,7 +72,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>Yinglet_Headwrap</defName>
 		<label>headwrap</label>
 		<description>A protective wrap for your head!</description>
@@ -106,6 +107,7 @@
 		  </recipeUsers>
 		</recipeMaker>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Neck</li>
@@ -130,6 +132,7 @@
 				<li>Civilian</li>				
 				<li>Soldier</li>
 			</defaultOutfitTags>
+         <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -153,13 +156,13 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>Yinglet_StrawHat</defName>
 		<label>straw hat</label>
 		<description>A hat? Made from straw? Clever!</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/StrawHat/strawhat_ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/StrawHat/Strawhat_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -171,7 +174,7 @@
 			<WorkToMake>400</WorkToMake>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Mass>0.3</Mass>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
 			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
@@ -184,6 +187,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Neck</li>
@@ -199,27 +203,6 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(0.33,0.33,0.33,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.65,0.65,0.65,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<min>(0.3,0.3,0.3,1)</min>
-					<max>(0.5,0.5,0.5,1)</max>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.9,0.9,0.9,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
 	</ThingDef>
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>Yinglet_AdvancedHelmet</defName>
@@ -234,7 +217,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -259,12 +242,12 @@
 			<Plasteel>10</Plasteel>
 		</costList>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
-			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -275,27 +258,6 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(0.33,0.33,0.33,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.65,0.65,0.65,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<min>(0.3,0.3,0.3,1)</min>
-					<max>(0.5,0.5,0.5,1)</max>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.9,0.9,0.9,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
 	</ThingDef>
 	<ThingDef ParentName="NobleHatMakeableBase">
 		<defName>Yinglet_FancyCrest</defName>
@@ -324,6 +286,7 @@
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Neck</li>
@@ -377,6 +340,7 @@
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Neck</li>
@@ -430,6 +394,7 @@
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Neck</li>
@@ -452,6 +417,126 @@
 				<li>
 					<weight>10</weight>
 					<only>(0.33,0.33,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Yinglet_SlaveCollar</defName>
+    <label>slave collar</label>
+    <description>An uncomfortable collar made for slaves. It reminds the wearer of their slave status and psychologically suppresses them, reducing the chance of a slave rebellion. Sized to fit around a yinglet's thin neck.</description>
+    <graphicData>
+      <texPath>Things/Pawn/YingPawn/Apparel/SlaveCollar/SlaveCollar_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.1</Mass>
+      <StuffEffectMultiplierArmor>0.0</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset>0.15</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <slaveApparel>true</slaveApparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/YingPawn/Apparel/SlaveCollar/SlaveCollar</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+      <hatRenderedAboveBody>true</hatRenderedAboveBody>
+      <hatRenderedBehindHead>true</hatRenderedBehindHead>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <defaultOutfitTags>
+        <li>Slave</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Yinglet_GasMask</defName>
+		<label>gasmask</label>
+		<description>A make-shift gasmask fashioned out of spare parts.</description>
+	    <techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Pawn/YingPawn/Apparel/Gasmask/Gasmask_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>3200</WorkToMake>
+			<MaxHitPoints>110</MaxHitPoints>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>YingletThing</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+             <li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Gasmask/Gasmask</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+      <hatRenderedBehindHead>false</hatRenderedBehindHead>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YingletMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
 				</li>
 			</options>
 		</colorGenerator>

@@ -35,3 +35,6 @@ Swaggertown
 Clamsterdam
 Clamburg
 Oysterton
+Rivertail 
+Farplace
+Cragspire

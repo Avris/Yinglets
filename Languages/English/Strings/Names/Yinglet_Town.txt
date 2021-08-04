@@ -1,5 +1,5 @@
-﻿YingTown
-ClamCentral
+﻿Ying Town
+Clam Central
 Enclaviousness
 Wigglepoint
 Thessle
@@ -37,3 +37,4 @@ Biteybug Rock
 Sharpstone
 Snarlvine
 Thincrags
+Farpoint
