@@ -174,8 +174,10 @@
 			<WorkToMake>400</WorkToMake>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Mass>0.3</Mass>
-            <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<thingCategories>
