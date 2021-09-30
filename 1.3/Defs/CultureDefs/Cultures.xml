@@ -15,8 +15,8 @@
     <iconColor>(0.1, 0.5, 0.1)</iconColor>
     <thingStyleCategories>
       <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Totemic</category>
-        <priority>2</priority>
+        <category>YingStyle</category>
+        <priority>2147483647</priority>
       </li>
     </thingStyleCategories>
     <styleItemTags>

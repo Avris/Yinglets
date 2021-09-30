@@ -31,7 +31,6 @@
 					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
-				    <customDrawSize>(0.9,0.9)</customDrawSize>
 					<useGenderedHeads>false</useGenderedHeads>
 					<alienbodytypes>
 						<li>Ying</li>
@@ -459,16 +458,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
+									<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.42,0.17)</Yinglet>
 									</crownTypes>
 								</south>
 								<north>
+									<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(0,0.55)</Yinglet>
 									</crownTypes>
 								</north>
 								<east>
+									<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.5,0.17)</Yinglet>
 									</crownTypes>
@@ -487,19 +489,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-							<layerOffset>-0.25</layerOffset>
+							<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.42,0.17)</Yinglet>
 									</crownTypes>
 								</south>
 								<north>
-							<layerOffset>-0.25</layerOffset>
+							<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(0,0.55)</Yinglet>
 									</crownTypes>
 								</north>
 								<east>
-							<layerOffset>-0.25</layerOffset>
+							<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.5,0.17)</Yinglet>
 									</crownTypes>
@@ -597,19 +599,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-							<layerOffset>-0.26</layerOffset>
+									<layerOffset>-0.26</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.42,0.16)</Yinglet>
 									</crownTypes>
 								</south>
 								<north>
-							<layerOffset>-0.26</layerOffset>
+									<layerOffset>-0.26</layerOffset>
 									<crownTypes>
 										<Yinglet>(0,0.49)</Yinglet>
 									</crownTypes>
 								</north>
 								<east>
-							<layerOffset>-0.26</layerOffset>
+									<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.51,0.16)</Yinglet>
 									</crownTypes>
@@ -696,19 +698,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-							<layerOffset>-0.26</layerOffset>
+								<layerOffset>-0.26</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.42,0.16)</Yinglet>
 									</crownTypes>
 								</south>
 								<north>
-							<layerOffset>-0.26</layerOffset>
+								<layerOffset>-0.26</layerOffset>
 									<crownTypes>
 										<Yinglet>(0,0.49)</Yinglet>
 									</crownTypes>
 								</north>
 								<east>
-							<layerOffset>-0.26</layerOffset>
+								<layerOffset>-0.27</layerOffset>
 									<crownTypes>
 										<Yinglet>(-0.51,0.16)</Yinglet>
 									</crownTypes>
@@ -775,8 +777,16 @@
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
 					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
+					<headOffsetDirectional>
+					<north>(0,0.287)</north>
+					<south>(0,0.287)</south>
+					<east>(0.0,0.233)</east>
+					<west>(0.0,0.233)</west>
+					</headOffsetDirectional>
 					<customDrawSize>(0.7,0.7)</customDrawSize>
-					<customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.7,0.7)</customPortraitDrawSize>
+					<customHeadDrawSize>(0.388, 0.388)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.388, 0.388)</customPortraitHeadDrawSize>
                 </li>
 				<li>
                     <lifeStageDefs>
@@ -786,8 +796,16 @@
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
 					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-                  <customDrawSize>(0.8,0.8)</customDrawSize>
-					<customHeadDrawSize>(0.8,0.8)</customHeadDrawSize>
+					<headOffsetDirectional>
+					<north>(0,0.328)</north>
+					<south>(0,0.328)</south>
+					<east>(0.0,0.266)</east>
+					<west>(0.0,0.266)</west>
+					</headOffsetDirectional>
+					<customDrawSize>(0.8,0.8)</customDrawSize>
+					<customPortraitDrawSize>(0.8,0.8)</customPortraitDrawSize>
+					<customHeadDrawSize>(0.444,0.444)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.444,0.444)</customPortraitHeadDrawSize>
                 </li>
 				<li>
                     <lifeStageDefs>
@@ -797,8 +815,16 @@
 					<body>Things/Pawn/YingPawn/Icons/</body>
 					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
 					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-                  <customDrawSize>(0.9,0.9)</customDrawSize>
-					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
+					<headOffsetDirectional>
+					<north>(0,0.37)</north>
+					<south>(0,0.37)</south>
+					<east>(0.0,0.3)</east>
+					<west>(0.0,0.3)</west>
+					</headOffsetDirectional>
+					<customDrawSize>(0.9,0.9)</customDrawSize>
+					<customPortraitDrawSize>(0.9,0.9)</customPortraitDrawSize>
+					<customHeadDrawSize>(0.5,0.5)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.5,0.5)</customPortraitHeadDrawSize>
                 </li>
 			</graphicPaths>
 			<raceRestriction>
@@ -1071,7 +1097,7 @@
 				<eggUnfertilizedDef>EggYingletUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>EggYingletFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>0.1</eggLayIntervalDays>
+				<eggLayIntervalDays>7</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>

@@ -124,7 +124,7 @@ namespace ShellTooth
 							x = 0;
 						}
 						Rect tile = new Rect(viewRect.x + offset + (card.x * x), viewRect.y + card.y * y, card.x, card.y);
-						YingItemTile(tile, thingList[i], 1.5f, IsHelmet(thingList[i]) ? 50 : -46);
+						YingItemTile(tile, thingList[i], IsHelmet(thingList[i]) ? 0.75f : 1.5f, IsHelmet(thingList[i]) ? -10 : -46);
 					}
 				}
 				else if (this.tab == Tabs.Items)

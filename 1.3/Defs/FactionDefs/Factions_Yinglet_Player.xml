@@ -10,7 +10,9 @@
 		<leaderTitle>patriarch</leaderTitle>
 		<leaderTitleFemale>matriarch</leaderTitleFemale>
 		<techLevel>Medieval</techLevel>
-		<allowedCultures><li>YingCulture</li></allowedCultures>
+		<allowedCultures>
+			<li>YingCulture</li>
+		</allowedCultures>
 		<backstoryFilters>
             <li>
                 <categories>

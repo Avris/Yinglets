@@ -15,13 +15,14 @@
 		<factionNameMaker>Yinglet_NamerFactionScavvers</factionNameMaker>
 		<settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
 		<techLevel>Medieval</techLevel>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Outlander</li>
-        </categories>
-      </li>
-    </backstoryFilters>
+		<allowedCultures><li>YingCulture</li></allowedCultures>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Outlander</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
 		<caravanTraderKinds>
 			<li>Caravan_Yinglet_EnclaveBulkGoods</li>
 			<li>Caravan_Yinglet_EnclaveWarMerchant</li>

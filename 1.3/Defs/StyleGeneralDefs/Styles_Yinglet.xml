@@ -1,0 +1,14 @@
+<Defs><StyleCategoryDef>
+    <defName>YingStyle</defName>
+    <label>Yingy</label>
+    <iconPath>UI/StyleCategories/Spikecore</iconPath>
+    <soundOngoingRitual>RitualSustainer_Spikecore</soundOngoingRitual>
+    <ritualVisualEffectDef>Spikecore</ritualVisualEffectDef>
+    <thingDefStyles>
+      <li>
+        <thingDef>Apparel_Flophat</thingDef>
+        <styleDef>Yinglet_Headwrap</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+</Defs>
