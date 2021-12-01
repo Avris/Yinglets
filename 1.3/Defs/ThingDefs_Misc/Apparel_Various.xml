@@ -900,7 +900,7 @@
 			<li>YingletThing</li>
 		</thingCategories>
     <graphicData>
-      <texPath>Things/Pawn/YingPawn/Apparel/JetpackArmor/JetpackArmor_ying_south</texPath>
+      <texPath>Things/Pawn/YingPawn/Apparel/JetpackArmor/JetpackArmor_Ying_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -910,6 +910,13 @@
       <Chemfuel>70</Chemfuel>
     </costList>
     <apparel>
+	<bodyPartGroups>
+		<li>Torso</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+	</bodyPartGroups>
       <wornGraphicPath>Things/Pawn/YingPawn/Apparel/JetpackArmor/JetpackArmor</wornGraphicPath>
 	<layers>
 	<li>Shell</li>
