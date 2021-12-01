@@ -1,7 +1,7 @@
 ﻿<Defs>
 
 
-	<ThingDef ParentName="HatMakeableBase">
+	<!-- <ThingDef ParentName="HatMakeableBase">
 		<defName>Yinglet_IdeoPlaceholder</defName>
 		<label>straw hat</label>
 		<description>A hat? Made from straw? Clever!</description>
@@ -50,7 +50,7 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>Yinglet_SimpleHelmet</defName>
@@ -258,6 +258,14 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,0.6,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
 	</ThingDef>
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>Yinglet_AdvancedHelmet</defName>
