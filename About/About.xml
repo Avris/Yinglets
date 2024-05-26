@@ -1,7 +1,7 @@
 ﻿<ModMetaData>
 	<name>Yinglets!</name>
 	<author>A bunch of scavs</author>
-	<packageId>ValSalia.Yinglets.Prerelease.Github</packageId>
+	<packageId>ValSalia.Yinglets.Github</packageId>
 	<url/>
 	<supportedVersions>
 		<li>1.0</li>
@@ -13,9 +13,21 @@
 		Derpy, stilt-legged and sometimes on fire. A description is coming soon!
     </description>
 	<loadAfter>
+		<li>ludeon.rimworld.royalty</li>
+		<li>ludeon.rimworld.ideology</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 	<modDependencies>
+		<li>
+			<packageId>ludeon.rimworld.royalty</packageId>
+			<displayName>Royalty Expansion</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1149640/RimWorld__Royalty/</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>ludeon.rimworld.ideology</packageId>
+			<displayName>Ideology Expansion</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1392840/RimWorld__Ideology/</steamWorkshopUrl>
+		</li>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
 			<displayName>Humanoid Alien Races 2.0</displayName>

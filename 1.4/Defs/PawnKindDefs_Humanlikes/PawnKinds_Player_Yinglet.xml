@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef Abstract="True" Name="BaseYingletPawnKind">
+		<race>Alien_Yinglet</race>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>YingletBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<combatPower>20</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelMoney>450~750</apparelMoney>
+		<techHediffsMoney>25~350</techHediffsMoney>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>8~13</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseYingletPawnKind">
+		<defName>Yinglet</defName>
+		<label>colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
+		<apparelTags>
+			<li>YingletPlayer</li>
+		</apparelTags>
+		<apparelMoney>25~175</apparelMoney>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>25~35</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>	
+	<PawnKindDef>
+		<defName>Younglet</defName>
+		<race>Alien_Younglet</race>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>YoungletBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<combatPower>10</combatPower>
+		<label>colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
+		<apparelTags>
+			<li>YingletPlayer</li>
+		</apparelTags>
+		<apparelMoney>25~175</apparelMoney>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>25~35</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>0~1</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

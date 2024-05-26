@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase" Name="YingletTribeBase" Abstract="True">
+		<pawnSingular>yinglet</pawnSingular>
+		<pawnsPlural>yinglets</pawnsPlural>
+		<leaderTitle>patriarch</leaderTitle>
+		<leaderTitleFemale>matriarch</leaderTitleFemale>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
+		<geneticVariance>0.1</geneticVariance>
+		<factionNameMaker>Yinglet_NamerFactionScavvers</factionNameMaker>
+		<settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
+		<techLevel>Medieval</techLevel>
+		<allowedCultures><li>YingCulture</li></allowedCultures>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Outlander</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<caravanTraderKinds>
+			<li>Caravan_Yinglet_EnclaveBulkGoods</li>
+			<li>Caravan_Yinglet_EnclaveWarMerchant</li>
+			<li>Caravan_Yinglet_EnclaveFoodstuffs</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Yinglet_Enclave</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Yinglet_Enclave</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-3~45</allowedArrivalTemperatureRange>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(10000, 1000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<settlementTexturePath>World/Expanding/Yinglet/Yinglet_Icon</settlementTexturePath>
+	</FactionDef>
+	<FactionDef ParentName="YingletTribeBase">
+		<defName>YingletTribeCivil</defName>
+		<label>yinglet enclave</label>
+		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here as forgotten travellers. Maybe they survived some civilization-ending cataclysm long ago. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<colorSpectrum>
+		    <li>(0.25, 0.65, 0.05)</li>
+			<li>(0.25, 0.75, 0.05)</li>
+		</colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>20</configurationListOrderPriority>
+    <requiredMemes>
+      <li>Collectivist</li>
+      <li>Structure_Ideological</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li>Structure_Archist</li>
+      <li>Structure_TheistAbstract</li>
+      <li>Structure_Animist</li>
+      <li>Structure_TheistEmbodied</li>
+      <li>Structure_OriginBuddhist</li>
+      <li>Structure_OriginHindu</li>
+      <li>Structure_OriginChristian</li>
+      <li>Structure_OriginIslamic</li>
+      <li>Supremacist</li>
+      <li>Loyalist</li>
+      <li>Raider</li>
+      <li>Nudism</li>
+      <li>Blindsight</li>
+      <li>Cannibal</li>
+      <li>Guilty</li>
+      <li>Individualist</li>
+      <li>Darkness</li>
+      <li>Tunneler</li>
+      <li>TreeConnection</li>
+      <li>Transhumanist</li>
+      <li>FleshPurity</li>
+      <li>AnimalPersonhood</li>
+      <li>HumanPrimacy</li>
+      <li>NaturePrimacy</li>
+      <li>MaleSupremacy</li>
+      <li>FemaleSupremacy</li>
+      <li>PainIsVirtue</li>
+      <li>HighLife</li>
+      <li>Rancher</li>
+      <li>Proselytizer</li>
+    </disallowedMemes>
+    <factionNameMaker>Yinglet_NamerFactionEnclaves</factionNameMaker>
+    <settlementNameMaker>Yinglet_NamerSettlementEnclaves</settlementNameMaker>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Yinglet_Rookie>5</Yinglet_Rookie>
+          <Yinglet_Scout>5</Yinglet_Scout>
+          <Yinglet_Sentry>10</Yinglet_Sentry>
+          <Yinglet_Hunter>10</Yinglet_Hunter>
+          <Yinglet_Protector>5</Yinglet_Protector>
+          <Yinglet_Marksman>3</Yinglet_Marksman>
+          <Yinglet_ChiefMelee>1.5</Yinglet_ChiefMelee>
+
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Yinglet_Scout>10</Yinglet_Scout>
+          <Yinglet_Hunter>10</Yinglet_Hunter>
+          <Yinglet_Marksman>5</Yinglet_Marksman>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Yinglet_Rookie>10</Yinglet_Rookie>
+          <Yinglet_Sentry>10</Yinglet_Sentry>
+          <Yinglet_Protector>5</Yinglet_Protector>
+          <Yinglet_ChiefMelee>1.5</Yinglet_ChiefMelee>
+
+        
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Yinglet_Rookie>20</Yinglet_Rookie>
+          <Yinglet_Hunter>10</Yinglet_Hunter>
+          <Yinglet_Sentry>10</Yinglet_Sentry>
+          <Yinglet_Trader>10</Yinglet_Trader>
+          <Yinglet_Protector>5</Yinglet_Protector>
+          <Yinglet_Marksman>3</Yinglet_Marksman>
+          <Yinglet_ChiefMelee>1.5</Yinglet_ChiefMelee>
+
+        
+      </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Yinglet_Trader>1</Yinglet_Trader>
+        </traders>
+        <carriers>
+          <YingWorld_Tiplod>10</YingWorld_Tiplod>
+        </carriers>
+        <guards>
+          <Yinglet_Rookie>5</Yinglet_Rookie>
+          <Yinglet_Scout>5</Yinglet_Scout>
+          <Yinglet_Sentry>10</Yinglet_Sentry>
+          <Yinglet_Marksman>10</Yinglet_Marksman>
+          <Yinglet_Protector>7</Yinglet_Protector>
+
+        
+      </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Yinglet_Scout>7</Yinglet_Scout>
+          <Yinglet_Hunter>10</Yinglet_Hunter>
+          <Yinglet_Sentry>10</Yinglet_Sentry>
+          <Yinglet_Marksman>10</Yinglet_Marksman>
+          <Yinglet_Protector>10</Yinglet_Protector>
+          <Yinglet_ChiefMelee>5</Yinglet_ChiefMelee>
+
+
+
+
+
+        </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+
+	<FactionDef ParentName="YingletTribeBase">
+		<defName>YingletTribeRough</defName>
+		<label>scavver gang</label>
+		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
+		<colorSpectrum>
+			<li>(0.85, 0.75, 0.37)</li>
+			<li>(0.95, 0.95, 0.37)</li>
+		</colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>20</configurationListOrderPriority>
+    <requiredMemes>
+      <li>Structure_Ideological</li>
+      <li>Raider</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li>Structure_Archist</li>
+      <li>Structure_TheistAbstract</li>
+      <li>Structure_Animist</li>
+      <li>Structure_TheistEmbodied</li>
+      <li>Structure_OriginBuddhist</li>
+      <li>Structure_OriginHindu</li>
+      <li>Structure_OriginChristian</li>
+      <li>Structure_OriginIslamic</li>
+      <li>Supremacist</li>
+      <li>Loyalist</li>
+      <li>Nudism</li>
+      <li>Blindsight</li>
+      <li>Cannibal</li>
+      <li>Guilty</li>
+      <li>Darkness</li>
+      <li>Tunneler</li>
+      <li>TreeConnection</li>
+      <li>Transhumanist</li>
+      <li>FleshPurity</li>
+      <li>AnimalPersonhood</li>
+      <li>HumanPrimacy</li>
+      <li>NaturePrimacy</li>
+      <li>MaleSupremacy</li>
+      <li>FemaleSupremacy</li>
+      <li>Collectivist</li>
+      <li>Individualist</li>
+      <li>PainIsVirtue</li>
+      <li>Rancher</li>
+      <li>Proselytizer</li>
+    </disallowedMemes>
+		<leaderTitle>scavlord</leaderTitle>
+		<leaderTitleFemale>scavlord</leaderTitleFemale>
+		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
+    <factionNameMaker>Yinglet_NamerFactionScavvers</factionNameMaker>
+    <settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
+	<techLevel>Industrial</techLevel>
+	<caravanTraderKinds>
+	<li>Caravan_Yinglet_ScavverGeneralGoods</li>
+	<li>Caravan_Yinglet_ScavverWeapons</li>
+	</caravanTraderKinds>
+	<visitorTraderKinds>
+	<li>Visitor_Yinglet_Scavver</li>
+	</visitorTraderKinds>
+	<baseTraderKinds>
+	<li>Base_Yinglet_Scavver</li>
+	</baseTraderKinds>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Yinglet_Scrapper>5</Yinglet_Scrapper>
+          <Yinglet_Scavenger>5</Yinglet_Scavenger>
+          <Yinglet_Bruiser>10</Yinglet_Bruiser>
+          <Yinglet_Junker>10</Yinglet_Junker>
+          <Yinglet_Ironclad>5</Yinglet_Ironclad>
+          <Yinglet_Deadeye>3</Yinglet_Deadeye>
+          <Yinglet_JunkerChiefRanged>1.5</Yinglet_JunkerChiefRanged>
+        
+      </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+		  <Yinglet_Scavenger>10</Yinglet_Scavenger>
+          <Yinglet_Junker>10</Yinglet_Junker>
+          <Yinglet_Deadeye>5</Yinglet_Deadeye>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Yinglet_Scrapper>10</Yinglet_Scrapper>
+          <Yinglet_Bruiser>10</Yinglet_Bruiser>
+          <Yinglet_Ironclad>5</Yinglet_Ironclad>
+          <Yinglet_JunkerChiefRanged>1.5</Yinglet_JunkerChiefRanged>
+        
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Yinglet_Scavenger>20</Yinglet_Scavenger>
+          <Yinglet_Junker>10</Yinglet_Junker>
+          <Yinglet_Bruiser>10</Yinglet_Bruiser>
+          <Yinglet_ScrapCollector>10</Yinglet_ScrapCollector>
+          <Yinglet_Ironclad>5</Yinglet_Ironclad>
+          <Yinglet_Deadeye>3</Yinglet_Deadeye>
+          <Yinglet_JunkerChiefRanged>1.5</Yinglet_JunkerChiefRanged>
+        
+      </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Yinglet_ScrapCollector>1</Yinglet_ScrapCollector>
+        </traders>
+        <carriers>
+          <YingWorld_Tiplod>10</YingWorld_Tiplod>
+          <Muffalo>2</Muffalo>
+          <Dromedary>3</Dromedary>
+          <Alpaca>2.5</Alpaca>
+        </carriers>
+        <guards>
+          <Yinglet_Scavenger>7</Yinglet_Scavenger>
+          <Yinglet_Junker>10</Yinglet_Junker>
+          <Yinglet_Deadeye>10</Yinglet_Deadeye>
+          <Yinglet_Ironclad>7</Yinglet_Ironclad>
+
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Yinglet_Scavenger>7</Yinglet_Scavenger>
+          <Yinglet_Junker>10</Yinglet_Junker>
+          <Yinglet_Bruiser>10</Yinglet_Bruiser>
+          <Yinglet_Deadeye>10</Yinglet_Deadeye>
+          <Yinglet_Ironclad>7</Yinglet_Ironclad>
+          <Yinglet_JunkerChiefRanged>10</Yinglet_JunkerChiefRanged>
+        
+      </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+
+	<FactionDef ParentName="YingletTribeBase">
+		<defName>YingletTribeSavage</defName>
+		<label>outcast pack</label>
+		<description>These yinglets have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic yinglets who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
+		<colorSpectrum>
+		<li>(0.85, 0, 0)</li>
+		<li>(1, 0.1, 0.1)</li>
+		</colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>20</configurationListOrderPriority>
+    <requiredMemes>
+      <li>Structure_Ideological</li>
+      <li>Raider</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li>Structure_Archist</li>
+      <li>Structure_TheistAbstract</li>
+      <li>Structure_Animist</li>
+      <li>Structure_TheistEmbodied</li>
+      <li>Structure_OriginBuddhist</li>
+      <li>Structure_OriginHindu</li>
+      <li>Structure_OriginChristian</li>
+      <li>Structure_OriginIslamic</li>
+      <li>Supremacist</li>
+      <li>Loyalist</li>
+      <li>Nudism</li>
+      <li>Blindsight</li>
+      <li>Cannibal</li>
+      <li>Guilty</li>
+      <li>Individualist</li>
+      <li>Darkness</li>
+      <li>Tunneler</li>
+      <li>TreeConnection</li>
+      <li>Transhumanist</li>
+      <li>FleshPurity</li>
+      <li>AnimalPersonhood</li>
+      <li>HumanPrimacy</li>
+      <li>NaturePrimacy</li>
+      <li>MaleSupremacy</li>
+      <li>FemaleSupremacy</li>
+      <li>Collectivist</li>
+      <li>Individualist</li>
+      <li>PainIsVirtue</li>
+      <li>HighLife</li>
+      <li>Rancher</li>
+      <li>Proselytizer</li>
+    </disallowedMemes>
+		<leaderTitle>big boss</leaderTitle>
+		<leaderTitleFemale>big boss</leaderTitleFemale>
+		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
+		<techLevel>Neolithic</techLevel>
+    <factionNameMaker>Yinglet_NamerFactionOutcasts</factionNameMaker>
+    <settlementNameMaker>Yinglet_NamerSettlementOutcasts</settlementNameMaker>
+	<caravanTraderKinds>
+	<li>Caravan_Yinglet_OutcastGeneralGoods</li>
+	<li>Caravan_Yinglet_OutcastSmuggler</li>
+	</caravanTraderKinds>
+	<visitorTraderKinds>
+	<li>Visitor_Yinglet_Outcast</li>
+	</visitorTraderKinds>
+	<baseTraderKinds>
+	<li>Base_Yinglet_Outcast</li>
+	</baseTraderKinds>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Yinglet_Pest>5</Yinglet_Pest>
+          <Yinglet_Annoyer>5</Yinglet_Annoyer>
+          <Yinglet_Bapper>10</Yinglet_Bapper>
+          <Yinglet_Shootscav>10</Yinglet_Shootscav>
+          <Yinglet_Smackmaster>5</Yinglet_Smackmaster>
+          <Yinglet_Sharpeye>3</Yinglet_Sharpeye>
+          <Yinglet_BanditChiefMelee>1.5</Yinglet_BanditChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Yinglet_Shootscav>10</Yinglet_Shootscav>
+          <Yinglet_Annoyer>10</Yinglet_Annoyer>
+          <Yinglet_Sharpeye>5</Yinglet_Sharpeye>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Yinglet_Pest>10</Yinglet_Pest>
+          <Yinglet_Bapper>10</Yinglet_Bapper>
+          <Yinglet_Smackmaster>10</Yinglet_Smackmaster>
+          <Yinglet_BanditChiefMelee>2</Yinglet_BanditChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Yinglet_Annoyer>20</Yinglet_Annoyer>
+          <Yinglet_Shootscav>10</Yinglet_Shootscav>
+          <Yinglet_Bapper>10</Yinglet_Bapper>
+          <Yinglet_Dealer>10</Yinglet_Dealer>
+          <Yinglet_Smackmaster>5</Yinglet_Smackmaster>
+          <Yinglet_Sharpeye>3</Yinglet_Sharpeye>
+          <Yinglet_BanditChiefMelee>1.5</Yinglet_BanditChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Yinglet_Dealer>1</Yinglet_Dealer>
+        </traders>
+        <carriers>
+          <YingWorld_Tiplod>10</YingWorld_Tiplod>
+        </carriers>
+        <guards>
+          <Yinglet_Annoyer>7</Yinglet_Annoyer>
+          <Yinglet_Scout>10</Yinglet_Scout>
+          <Yinglet_Bapper>10</Yinglet_Bapper>
+          <Yinglet_Smackmaster>7</Yinglet_Smackmaster>
+          <Yinglet_Sharpeye>5</Yinglet_Sharpeye>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Yinglet_Annoyer>7</Yinglet_Annoyer>
+          <Yinglet_Shootscav>10</Yinglet_Shootscav>
+          <Yinglet_Bapper>10</Yinglet_Bapper>
+          <Yinglet_Sharpeye>8</Yinglet_Sharpeye>
+          <Yinglet_Smackmaster>8</Yinglet_Smackmaster>
+          <Yinglet_BanditChiefMelee>5</Yinglet_BanditChiefMelee>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+
+</Defs>
+
