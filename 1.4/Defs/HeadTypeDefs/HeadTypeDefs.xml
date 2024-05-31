@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Yinglet</defName>
+    <graphicPath>Things/Pawn/YingPawn/Parts/Heads/Yinglet</graphicPath>
+    <!-- <selectionWeight>0</selectionWeight> -->
+    <!-- <randomChosen>false</randomChosen> -->
+    <gender>None</gender>
+  </HeadTypeDef>
+  
+    <HeadTypeDef ParentName="AverageBase">
+    <defName>YoungletFluffy</defName>
+    <graphicPath>Things/Pawn/YingPawn/Parts/Heads/Yinglet</graphicPath>
+    <!-- <selectionWeight>0</selectionWeight> -->
+    <!-- <randomChosen>false</randomChosen> -->
+    <gender>None</gender>
+  </HeadTypeDef>
+
+</Defs>

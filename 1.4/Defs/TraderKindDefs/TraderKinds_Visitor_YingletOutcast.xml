@@ -39,7 +39,8 @@
       </li>
       
       <!-- Weapons -->
-      <li Class="StockGenerator_WeaponsRanged">
+      <li Class="StockGenerator_Category">
+	    <categoryDef>WeaponsRanged</categoryDef>
         <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
         <countRange>0~1</countRange>
       </li>
@@ -50,10 +51,10 @@
       </li>
       
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
-        <countRange>0~2</countRange>
-        <apparelTag>YingletBasic</apparelTag>
-        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+      <li Class="StockGenerator_MarketValue">
+       <tradeTag>YingletBasic</tradeTag>
+	   <countRange>2~3</countRange> 
+	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
       </li>
       
       <!-- Implants -->

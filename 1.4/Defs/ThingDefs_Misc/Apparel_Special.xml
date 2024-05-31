@@ -107,6 +107,7 @@
 	</ThingDef>
   <ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Yinglet_EltexRegalia</defName>
+	<smeltable>false</smeltable>
     <description>A long robe embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate neural heat.</description>
     <label>eltex regalia</label>
     <graphicData>
@@ -161,6 +162,7 @@
   </ThingDef>
   <ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Royalty" >
     <defName>Yinglet_EltexCirclet</defName>
+	<smeltable>false</smeltable>
     <label>eltex circlet</label>
     <description>A cloth-draped circlet designed for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate neural heat.</description>
     <techLevel>Ultra</techLevel>

@@ -3,6 +3,7 @@
   
   <ThingDef ParentName="MeleeWeaponUltratech">
     <defName>YingletWeapon_Thunderspear</defName>
+	<smeltable>false</smeltable>
     <label>zapstick</label>
     <description>A warhammer with an embedded EMP capacitor. Upon impact, it blasts the target with an EMP burst in addition to the physical damage.</description>
     <soundInteract>Interact_ZeusHammer</soundInteract>

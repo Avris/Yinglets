@@ -52,10 +52,10 @@
       <!-- none -->
       
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
-        <countRange>2~4</countRange>
-        <apparelTag>YingletBasic</apparelTag>
-        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+      <li Class="StockGenerator_MarketValue">
+       <tradeTag>YingletBasic</tradeTag>
+	   <countRange>2~4</countRange> 
+	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
       </li>
 
       <!-- Implants -->
@@ -132,7 +132,8 @@
         <countRange>1~1</countRange>
       </li>
 
-      <li Class="StockGenerator_WeaponsRanged">
+      <li Class="StockGenerator_Category">
+	    <categoryDef>WeaponsRanged</categoryDef>
         <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
         <countRange>4~4</countRange>
       </li>

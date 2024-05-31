@@ -59,14 +59,14 @@
       
 
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
+      <li Class="StockGenerator_MarketValue">
+       <tradeTag>YingletCommon</tradeTag>
        <countRange>2~3</countRange>
-       <apparelTag>YingletCommon</apparelTag>
 	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
       </li>
-      <li Class="StockGenerator_Clothes">
-       <countRange>2~3</countRange>
-       <apparelTag>YingletBasic</apparelTag>
+      <li Class="StockGenerator_MarketValue">
+       <tradeTag>YingletBasic</tradeTag>
+	   <countRange>2~3</countRange> 
 	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
       </li>
 
@@ -134,13 +134,15 @@
         <countRange>1~1</countRange>
       </li>
 
-      <li Class="StockGenerator_WeaponsRanged">
+      <li Class="StockGenerator_Category">
+	    <categoryDef>WeaponsRanged</categoryDef>
         <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
         <countRange>4~4</countRange>
       </li>
         
       <!-- Apparel -->
-      <li Class="StockGenerator_Armor">
+      <li Class="StockGenerator_MarketValue">
+	   <tradeTag>Armor</tradeTag>
        <countRange>2~5</countRange>
 	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
       </li>

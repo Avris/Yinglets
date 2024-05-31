@@ -211,6 +211,7 @@
 	</ThingDef>
 	<ThingDef ParentName="HatBase">
 		<defName>Yinglet_StrawHat</defName>
+		<smeltable>false</smeltable>
 		<label>straw hat</label>
 		<description>A hat? Made from straw? Clever!</description>
 		<techLevel>Neolithic</techLevel>
