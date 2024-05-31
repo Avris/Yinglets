@@ -5,7 +5,6 @@
 
   <PawnKindDef Name="YingletBase" Abstract="True">
     <defaultFactionType>YingletTribeCivil</defaultFactionType>
-    <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
     <race>Alien_Yinglet</race>
     <backstoryFiltersOverride>
         <li>
@@ -26,7 +25,6 @@
 
   <PawnKindDef Name="YingletJunkerBase" Abstract="True">
     <defaultFactionType>YingletTribeRough</defaultFactionType>
-    <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
     <race>Alien_Yinglet</race>
     <backstoryFiltersOverride>
         <li>
@@ -50,7 +48,6 @@
 
   <PawnKindDef Name="YingletRaiderBase" Abstract="True">
     <defaultFactionType>YingletTribeSavage</defaultFactionType>
-    <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
     <race>Alien_Yinglet</race>
     <backstoryFiltersOverride>
         <li>
@@ -173,7 +170,6 @@
     <combatPower>100</combatPower>
     <minGenerationAge>6</minGenerationAge>
     <maxGenerationAge>15</maxGenerationAge>
-    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
     <itemQuality>Normal</itemQuality>
     <factionLeader>true</factionLeader>
     <canBeSapper>true</canBeSapper>
@@ -438,7 +434,6 @@
   <PawnKindDef ParentName="YingletBase" Name="YingletChiefBase" Abstract="True">
     <defName>Yinglet_ChiefMelee</defName>
     <combatPower>120</combatPower>
-    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
     <minGenerationAge>15</minGenerationAge>
     <maxGenerationAge>21</maxGenerationAge>
     <itemQuality>Good</itemQuality>

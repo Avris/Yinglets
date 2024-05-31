@@ -11,7 +11,6 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>World/Expanding/Yinglet/Yinglet_Icon</factionIconPath>
-		<geneticVariance>0.1</geneticVariance>
 		<factionNameMaker>Yinglet_NamerFactionScavvers</factionNameMaker>
 		<settlementNameMaker>Yinglet_NamerSettlementScavvers</settlementNameMaker>
 		<techLevel>Medieval</techLevel>

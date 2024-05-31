@@ -41,7 +41,6 @@
 									<rotation>North</rotation>
 									<tag>YingletTail</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<range>0</range>
 									<layer>Body</layer>
 									<debugColor>(1,0,0,1)</debugColor>
@@ -52,36 +51,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -91,7 +90,6 @@
 									<rotation>North</rotation>
 									<tag>YingRightEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.1,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -103,36 +101,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -142,7 +140,6 @@
 									<rotation>North</rotation>
 									<tag>YingLeftEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.2,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -154,36 +151,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -196,7 +193,6 @@
 									<rotation>South</rotation>
 									<tag>YingletTail</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<range>0</range>
 									<layer>Body</layer>
 									<debugColor>(1,0,0,1)</debugColor>
@@ -207,36 +203,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -247,7 +243,6 @@
 									<rotation>South</rotation>
 									<tag>RightEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.1,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -259,36 +254,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -299,7 +294,6 @@
 									<rotation>South</rotation>
 									<tag>LeftEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.2,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -311,36 +305,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -353,7 +347,6 @@
 									<rotation>East</rotation>
 									<tag>YingletTail</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<range>0</range>
 									<layer>Body</layer>
 									<debugColor>(1,0,0,1)</debugColor>
@@ -364,36 +357,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -404,7 +397,6 @@
 									<rotation>East</rotation>
 									<tag>RightEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.1,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -416,36 +408,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -456,7 +448,6 @@
 									<rotation>East</rotation>
 									<tag>LeftEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.2,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -468,36 +459,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -510,7 +501,6 @@
 									<rotation>West</rotation>
 									<tag>YingletTail</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<range>0</range>
 									<layer>Body</layer>
 									<debugColor>(1,0,0,1)</debugColor>
@@ -521,36 +511,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -561,7 +551,6 @@
 									<rotation>West</rotation>
 									<tag>RightEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.1,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -573,36 +562,36 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
@@ -613,7 +602,6 @@
 									<rotation>West</rotation>
 									<tag>LeftEye</tag>
 									<canMirror>false</canMirror>
-									<crownType>Average</crownType>
 									<offset>(-0.2,0,-0.30)</offset>
 									<range>0</range>
 									<layer>Head</layer>
@@ -625,48 +613,47 @@
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</north>
 									<south>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</south>
 									<east>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</east>
 									<west>
 										<bodyTypes>
 											<Ying>(0,0)</Ying>
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
-										<crownTypes>
+										<headTypes>
 											<Yinglet>(0,0)</Yinglet>
-										</crownTypes>
+										</headTypes>
 									</west>
 								</offsets>
 							</li>
 						</anchorReplacements>
-					<useGenderedHeads>false</useGenderedHeads>
-					<alienbodytypes>
+					<bodyTypes>
 						<li>Ying</li>
 						<li>YingFem</li>
-					</alienbodytypes>
-					<aliencrowntypes>
+					</bodyTypes>
+					<headTypes>
 						<li>Yinglet</li>
-					</aliencrowntypes>
+					</headTypes>
 					<colorChannels>
 						<li>
 							<name>eye</name>
@@ -930,21 +917,21 @@
 							<offsets>
 								<south>
 									<layerOffset>-0.28</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.28</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.55)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.28</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.5,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -962,19 +949,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.55)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -992,21 +979,21 @@
 							<offsets>
 								<south>
 							<layerOffset>0.1</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 							<layerOffset>0.1</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.55)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 							<layerOffset>0.1</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1025,21 +1012,21 @@
 							<offsets>
 								<south>
 									<layerOffset>-0.30</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.30</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.55)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.30</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1058,21 +1045,21 @@
 							<offsets>
 								<south>
 									<layerOffset>-0.30</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.30</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.55)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.30</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.22)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1089,21 +1076,21 @@
 							<offsets>
 								<south>
 									<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.55)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.5,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1120,21 +1107,21 @@
 							<offsets>
 								<south>
 							<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 							<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.55)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 							<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.5,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1149,15 +1136,15 @@
 							<offsets>
 								<south>
 							<layerOffset>-0.275</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42, 0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<east>
 							<layerOffset>-0.275</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51, 0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 								<north/>
 							</offsets>
@@ -1175,16 +1162,16 @@
 							<offsets>
 								<south>
 							<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42, 0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north/>
 								<east>
 							<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51, 0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1201,16 +1188,16 @@
 							<offsets>
 								<south>
 							<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42, 0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north/>
 								<east>
 							<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51, 0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1230,21 +1217,21 @@
 							<offsets>
 								<south>
 									<layerOffset>-0.26</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.26</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.49)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51,0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1263,19 +1250,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.49)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1294,21 +1281,21 @@
 							<offsets>
 								<south>
 							<layerOffset>-0.31</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.45,0.15)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 							<layerOffset>-0.31</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.49)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 							<layerOffset>-0.31</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51,0.13)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1329,21 +1316,21 @@
 							<offsets>
 								<south>
 								<layerOffset>-0.26</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
 								<layerOffset>-0.26</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.49)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
 								<layerOffset>-0.27</layerOffset>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51,0.16)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1362,19 +1349,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.42,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</south>
 								<north>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.49)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(-0.51,0.17)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</east>
 							</offsets>
 						</li>
@@ -1388,9 +1375,9 @@
 							<offsets>
 								<south/>
 								<north>
-									<crownTypes>
+									<headTypes>
 										<Yinglet>(0,0.57)</Yinglet>
-									</crownTypes>
+									</headTypes>
 								</north>
 								<east/>
 							</offsets>
@@ -1398,7 +1385,7 @@
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
-			<graphicPaths>
+			<!-- <graphicPaths>
 				<li>
                     <lifeStageDefs>
                         <li>YoungletOlder</li>
@@ -1456,7 +1443,7 @@
 					<customHeadDrawSize>(0.5,0.5)</customHeadDrawSize>
 					<customPortraitHeadDrawSize>(0.5,0.5)</customPortraitHeadDrawSize>
                 </li>
-			</graphicPaths>
+			</graphicPaths> -->
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>

@@ -17,13 +17,12 @@
 					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
-					<alienbodytypes>
+					<bodyTypes>
 						<li>YoungletFluffy</li>
-					</alienbodytypes>
-					<aliencrowntypes>
+					</bodyTypes>
+					<headTypes>
 						<li>YoungletFluffy</li>
-					</aliencrowntypes>
+					</headTypes>
 					<customDrawSize>(0.8, 0.8)</customDrawSize>
 					<colorChannels>
 						<li>
@@ -199,7 +198,7 @@
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
-			<graphicPaths>
+			<!--<graphicPaths>
 				<li>
                     <lifeStageDefs>
                         <li>YoungletHatchling</li>
@@ -234,7 +233,7 @@
 					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
 					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
 				</li>
-			</graphicPaths>
+			</graphicPaths>-->
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList/>

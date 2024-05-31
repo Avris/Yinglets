@@ -10,7 +10,6 @@
 			</li>
 		</backstoryFiltersOverride>
 		<combatPower>20</combatPower>
-		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
