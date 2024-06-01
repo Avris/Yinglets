@@ -1,9 +1,0 @@
-<Defs>  
-	<ScenPartDef>
-		<defName>EnableForaging</defName>
-		<label>Enable Foraging</label>
-		<category>Rule</category>
-		<scenPartClass>ShellTooth.ScenPart_EnableForaging</scenPartClass>
-		<summaryPriority>750</summaryPriority>
-	</ScenPartDef>
-</Defs>

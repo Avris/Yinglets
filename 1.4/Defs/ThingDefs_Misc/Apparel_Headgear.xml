@@ -214,6 +214,7 @@
 		<label>straw hat</label>
 		<description>A hat? Made from straw? Clever!</description>
 		<techLevel>Neolithic</techLevel>
+		<smeltable>false</smeltable>
 		<graphicData>
 			<texPath>Things/Pawn/YingPawn/Apparel/StrawHat/Strawhat_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

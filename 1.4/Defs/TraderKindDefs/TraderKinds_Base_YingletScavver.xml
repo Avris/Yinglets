@@ -113,7 +113,7 @@
       </li>
 
       <!-- Weapons -->
-      <li Class="StockGenerator_WeaponsRanged">
+      <li Class="StockGenerator_MarketValue">
         <countRange>3~6</countRange>
       </li>
       <li Class="StockGenerator_Category">
@@ -123,12 +123,12 @@
       </li>
 
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
+      <li Class="StockGenerator_MarketValue">
       <countRange>2~4</countRange>
       <apparelTag>YingletCommon</apparelTag>
 	  <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
       </li>
-      <li Class="StockGenerator_Armor">
+      <li Class="StockGenerator_MarketValue">
       <countRange>2~4</countRange>
 	  <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
       </li>
@@ -146,7 +146,7 @@
         <thingDefCountRange>3~4</thingDefCountRange>
         <countRange>1~2</countRange>
       </li>
-      <li Class="StockGenerator_Art">
+      <li Class="StockGenerator_MarketValue">
         <countRange>5~10</countRange>
       </li>
       <li Class="StockGenerator_Tag">

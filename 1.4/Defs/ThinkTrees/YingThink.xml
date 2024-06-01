@@ -5,7 +5,7 @@
     <defName>YingThink</defName>
     <thinkRoot Class="ThinkNode_Priority">
       <subNodes>
-        <!-- Do lovin' -->
+	  <!-- Migrationtemp
         <li Class="ThinkNode_ConditionalLyingDown">
           <subNodes>
             <li Class="ShellTooth.ThinkNode_ChancePerHour_Humpin">
@@ -21,15 +21,11 @@
           </subNodes>
         </li>
 		<li Class="JobGiver_LayEgg" />
-        <!-- If we HAVE to keep lying down... -->
         <li Class="ThinkNode_ConditionalMustKeepLyingDown">
           <subNodes>
-            <!-- Do a queued job if possible (e.g. watch tv in bed) -->
             <li Class="ThinkNode_QueuedJob">
               <inBedOnly>true</inBedOnly>
             </li>
-
-            <!-- Get joy -->
             <li Class="ThinkNode_Tagger">
               <tagToGive>SatisfyingNeeds</tagToGive>
               <subNodes>
@@ -45,11 +41,10 @@
                 </li>
               </subNodes>
             </li>
-            
-            <!-- Keep lying down -->
             <li Class="JobGiver_KeepLyingDown" />
           </subNodes>
         </li>
+		-->
       
         <li Class="ThinkNode_Subtree">
           <treeDef>Downed</treeDef>

@@ -39,7 +39,7 @@
       </li>
       
       <!-- Weapons -->
-      <li Class="StockGenerator_WeaponsRanged">
+      <li Class="StockGenerator_MarketValue">
         <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
         <countRange>0~1</countRange>
       </li>
@@ -50,7 +50,7 @@
       </li>
       
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
+      <li Class="StockGenerator_MarketValue">
        <countRange>2~3</countRange>
        <apparelTag>YingletCommon</apparelTag>
 	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>

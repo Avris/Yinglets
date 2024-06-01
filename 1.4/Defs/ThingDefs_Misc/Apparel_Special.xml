@@ -114,6 +114,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Ultra</techLevel>
+	<smeltable>false</smeltable>
     <tradeTags>
       <li>PsychicApparel</li>
     </tradeTags>
@@ -164,6 +165,7 @@
     <label>eltex circlet</label>
     <description>A cloth-draped circlet designed for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate neural heat.</description>
     <techLevel>Ultra</techLevel>
+	<smeltable>false</smeltable>
     <tradeTags>
       <li>PsychicApparel</li>
     </tradeTags>

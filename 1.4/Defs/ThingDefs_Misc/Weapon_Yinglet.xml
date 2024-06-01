@@ -8,6 +8,7 @@
     <soundInteract>Interact_ZeusHammer</soundInteract>
     <meleeHitSound>MeleeHit_ZeusHammer</meleeHitSound>
     <equippedAngleOffset>-20</equippedAngleOffset>
+	<smeltable>false</smeltable>
     <graphicData>
       <texPath>Things/Weapons/thunderstick</texPath>
       <graphicClass>Graphic_Single</graphicClass>

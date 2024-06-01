@@ -1718,7 +1718,7 @@
 				<eggProgressUnfertilizedMax>0</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="ShellTooth.CompProperties_Yinglet"/>
+			<!-- Migrationtemp <li Class="ShellTooth.CompProperties_Yinglet"/> -->
 		</comps>
 		<race>
 			<mateMtbHours>0.01</mateMtbHours>
@@ -1775,7 +1775,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-				<li>Yinglet</li>
+				<!-- Migrationtemp <li>Yinglet</li> -->
 			</hediffGiverSets>
 		</race>
 		<recipes>
