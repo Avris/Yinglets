@@ -4,18 +4,21 @@
 		<label>younglet</label>
 		<description>The young of a recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
 		<alienRace>
+			<graphicPaths>
+				<body>
+					<path>Things/Pawn/YingPawn/Parts/Younglet/YoungletFluffy</path>
+				</body>
+				<head>
+					<path>Things/Pawn/YingPawn/blank</path>
+				</head>
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<minAgeForAdulthood>2</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
-				<disallowedTraits>
-					<li>
-					<defName>BodyPurist</defName>
-					<chance>60</chance>
-					</li>
-				</disallowedTraits>
 				<alienPartGenerator>
 					<bodyTypes>
 						<li>YoungletFluffy</li>

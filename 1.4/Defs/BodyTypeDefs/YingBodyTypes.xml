@@ -2,7 +2,7 @@
 	<BodyTypeDef>
 		<defName>Ying</defName>
 		<headOffset>(0.09, -0.06)</headOffset>
-		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/BlankBodyType</bodyNakedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/YingPawn/blank</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Desiccated/Desiccated_Ying</bodyDessicatedGraphicPath>
 		<woundAnchors>
 
@@ -191,7 +191,7 @@
 	<BodyTypeDef>
 		<defName>YingFem</defName>
 		<headOffset>(0.09, -0.06)</headOffset>
-		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/BlankBodyType</bodyNakedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/YingPawn/blank</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Desiccated/Desiccated_Ying</bodyDessicatedGraphicPath>
 				<woundAnchors>
 
@@ -379,7 +379,7 @@
 	<BodyTypeDef>
 		<defName>YoungletFluffy</defName>
 		<headOffset>(0, 0)</headOffset>
-		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/BlankBodyType</bodyNakedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/YingPawn/blank</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Younglet/YoungletFluffy</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
 </Defs>

@@ -3,7 +3,16 @@
 		<defName>Alien_Yinglet</defName>
 		<label>yinglet</label>
 		<description>A recently-discovered species of small, primitive, monotreme-like bird-lizard-rat things. Inferior to humans in nearly every way, but are known to reproduce and evolve quickly, adapting to their local environment and thriving despite great adversity.</description>
-		<alienRace>      
+		<alienRace>
+			<graphicPaths>
+				<body>
+					<path>Things/Pawn/YingPawn/blank</path>
+				</body>
+				<head>
+					<path>Things/Pawn/YingPawn/blank</path>
+				</head>
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
 			<generalSettings>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
@@ -20,16 +29,6 @@
 						<chance>60</chance>
 					</li>
 				</forcedRaceTraitEntries>
-				<disallowedTraits>
-					<li>
-					<defName>BodyPurist</defName>
-					<chance>60</chance>
-					</li>
-					<li>
-					<defName>QuickSleeper</defName>
-					<chance>100</chance>
-					</li>
-				</disallowedTraits>
 				<alienPartGenerator>
 				
 					<anchorReplacements>
