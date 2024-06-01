@@ -34,8 +34,8 @@ namespace ShellTooth
                 if (pawn.def.defName != "Alien_Younglet")
                 {
                     newbie.skills = pawn.skills;
-                    newbie.story.childhood = pawn.story.childhood;
-                    newbie.story.adulthood = BackstoryDatabase.allBackstories["YingifiedHumanlike"];
+                    newbie.story.Childhood = pawn.story.Childhood;
+                    newbie.story.Adulthood = DefDatabase<RimWorld.BackstoryDef>.GetNamed("YingifiedHumanlike");
                     if (pawn.story.traits.HasTrait(TraitDefOf.Beauty))
                     {
                         Trait pawnBeauty = pawn.story.traits.allTraits[pawn.story.traits.allTraits.FindIndex((Trait tr) => tr.def == TraitDefOf.Beauty)];
@@ -76,8 +76,8 @@ namespace ShellTooth
             else
             {
                 newbie.Name = (pawn.Name == null ? newbie.Name : pawn.Name);
-                newbie.story.adulthood = BackstoryDatabase.allBackstories["YingifiedAnimal"];
-                newbie.story.childhood = BackstoryDatabase.allBackstories["YingifiedAnimalChildhood"];
+                newbie.story.Adulthood = DefDatabase<RimWorld.BackstoryDef>.GetNamed("YingifiedAnimal");
+                newbie.story.Childhood = DefDatabase<RimWorld.BackstoryDef>.GetNamed("YingifiedAnimalChildhood");
             }
             return newbie;
         }
@@ -108,14 +108,14 @@ namespace ShellTooth
                 );
             Pawn genPawn = PawnGenerator.GeneratePawn(request);
             pawn.verbTracker = genPawn.verbTracker;
-            if (pawn.story.childhood.ToString() == "(Younglet)")
+            if (pawn.story.Childhood.ToString() == "(Younglet)")
             {
-                pawn.story.childhood = genPawn.story.childhood;
-                pawn.story.adulthood = genPawn.story.adulthood;
+                pawn.story.Childhood = genPawn.story.Childhood;
+                pawn.story.Adulthood = genPawn.story.Adulthood;
             }
-            if (pawn.story.adulthood == null)
+            if (pawn.story.Adulthood == null)
             {
-                pawn.story.adulthood = genPawn.story.adulthood;
+                pawn.story.Adulthood = genPawn.story.Adulthood;
             }
         }
         public List<int> AddonAdder(Pawn pawn)

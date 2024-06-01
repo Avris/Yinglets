@@ -26,7 +26,6 @@
 	  </li>
 	</stages>
 	</HediffDef>  
-	<!-- Migrationtemp 
 	<HediffDef ParentName="ChronicDiseaseBase">
 	<defName>Yingify</defName>
 	<label>Yinglification</label>
@@ -58,7 +57,6 @@
 	  </li>
 	</stages>
 	</HediffDef>
-	-->
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>YingletBionicTail</defName>
 		<label>bionic yinglet tail</label>

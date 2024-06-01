@@ -1,6 +1,4 @@
 <Defs>
-
-	<!-- Migrationtemp
 	<ThingDef ParentName="MechSerumBase">
     <defName>Yinglet_ZhatZhing</defName>
    		<label>Zhat Zhing!</label>
@@ -34,5 +32,5 @@
         <compClass>ShellTooth.CompTargetEffect_Yingify</compClass>
       </li>
     </comps>
-  </ThingDef>-->
+  </ThingDef>
 </Defs>

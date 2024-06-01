@@ -5,7 +5,6 @@
     <defName>YingThink</defName>
     <thinkRoot Class="ThinkNode_Priority">
       <subNodes>
-	  <!-- Migrationtemp
         <li Class="ThinkNode_ConditionalLyingDown">
           <subNodes>
             <li Class="ShellTooth.ThinkNode_ChancePerHour_Humpin">
@@ -44,7 +43,6 @@
             <li Class="JobGiver_KeepLyingDown" />
           </subNodes>
         </li>
-		-->
       
         <li Class="ThinkNode_Subtree">
           <treeDef>Downed</treeDef>

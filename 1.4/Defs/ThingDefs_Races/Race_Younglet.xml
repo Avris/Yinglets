@@ -375,7 +375,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-				<!-- Migrationtemp <li>YingletSpecial</li> -->
+				<li>YingletSpecial</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

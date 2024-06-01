@@ -304,7 +304,7 @@ namespace ShellTooth
 				{
 					pawn.Name = new NameTriple("", "Younglet", "");
 				}
-				pawn.story.hairColor = new Color(0.23f, 0.19f, 0.15f);
+				pawn.story.HairColor = new Color(0.23f, 0.19f, 0.15f);
 				AlienPartGenerator.AlienComp parts = pawn.GetComp<AlienPartGenerator.AlienComp>();
 				parts.ColorChannels["eye"] = new AlienPartGenerator.ExposableValueTuple<Color, Color>(new Color(1.00f, 0.82f, 0.34f), new Color(1f, 1f, 1f));
 				parts.ColorChannels["skin"] = new AlienPartGenerator.ExposableValueTuple<Color, Color>(new Color(0.51f, 0.39f, 0.28f), new Color(0.78f, 0.53f, 0.55f));

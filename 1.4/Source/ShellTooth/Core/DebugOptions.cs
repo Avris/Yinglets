@@ -28,7 +28,6 @@ namespace ShellTooth
                     IntVec3 from1 = UI.MouseCell();
                     Pawn father = from1.GetFirstPawn(Find.CurrentMap);
                     Hediff_Pregnant hediff_Pregnant = (Hediff_Pregnant)HediffMaker.MakeHediff(HediffDefOf.Pregnant, mother, null);
-                    hediff_Pregnant.father = father;
                     mother.health.AddHediff(hediff_Pregnant, null, null, null);
                     bool work = false;
                     if (mother.health.hediffSet.HasHediff(HediffDefOf.Pregnant, false))
