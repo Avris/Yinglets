@@ -6,7 +6,7 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>Yinglet</li>
+						<li>YingletKind</li>
 					</kindDefs>
 					<chance>3.0</chance>
 				</li>
@@ -14,7 +14,7 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>Yinglet</li>
+						<li>YingletKind</li>
 					</kindDefs>
 					<chance>2.0</chance>
 				</li>
@@ -24,7 +24,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Yinglet</li>
+								<li>YingletKind</li>
 							</kindDefs>
 							<chance>1.0</chance>
 						</li>
@@ -40,7 +40,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Yinglet</li>
+								<li>YingletKind</li>
 							</kindDefs>
 							<chance>14.0</chance>
 						</li>
@@ -53,7 +53,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Yinglet</li>
+								<li>YingletKind</li>
 							</kindDefs>
 							<chance>7.0</chance>
 						</li>

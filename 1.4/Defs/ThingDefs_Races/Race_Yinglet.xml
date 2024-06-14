@@ -51,7 +51,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -60,7 +60,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -69,7 +69,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -78,7 +78,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -101,7 +101,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -110,7 +110,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -119,7 +119,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -128,7 +128,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -151,7 +151,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -160,7 +160,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -169,7 +169,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -178,7 +178,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -203,7 +203,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -212,7 +212,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -221,7 +221,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -230,7 +230,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -254,7 +254,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -263,7 +263,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -272,7 +272,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -281,7 +281,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -305,7 +305,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -314,7 +314,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -323,7 +323,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -332,7 +332,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -357,7 +357,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -366,7 +366,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -375,7 +375,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -384,7 +384,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -408,7 +408,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -417,7 +417,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -426,7 +426,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -435,7 +435,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -459,7 +459,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -468,7 +468,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -477,7 +477,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -486,7 +486,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -511,7 +511,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -520,7 +520,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -529,7 +529,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -538,7 +538,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -562,7 +562,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -571,7 +571,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -580,7 +580,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -589,7 +589,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -613,7 +613,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</north>
 									<south>
@@ -622,7 +622,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</south>
 									<east>
@@ -631,7 +631,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</east>
 									<west>
@@ -640,7 +640,7 @@
 											<YingFem>(0,0)</YingFem>
 										</bodyTypes>
 										<headTypes>
-											<Yinglet>(0,0)</Yinglet>
+											<YingletHead>(0,0)</YingletHead>
 										</headTypes>
 									</west>
 								</offsets>
@@ -651,7 +651,7 @@
 						<li>YingFem</li>
 					</bodyTypes>
 					<headTypes>
-						<li>Yinglet</li>
+						<li>YingletHead</li>
 					</headTypes>
 					<colorChannels>
 						<li>
@@ -917,28 +917,28 @@
 								<south>
 									<layerOffset>-0.28</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.17)</Yinglet>
+										<YingletHead>(-0.42,0.17)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.28</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.55)</Yinglet>
+										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.28</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.5,0.17)</Yinglet>
+										<YingletHead>(-0.5,0.17)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
 						</li>
 						<li>
-							<drawForMale>false</drawForMale>
-							<drawForFemale>false</drawForFemale>
+							<drawForMale>true</drawForMale>
+							<drawForFemale>true</drawForFemale>
 							<path>Things/Pawn/YingPawn/Parts/Bodies/SleepyFix</path>
-							<bodyPart>Neck</bodyPart>
+							<bodyPart>Head</bodyPart>
 							<colorChannel>skin</colorChannel>
 							<shaderType>CutoutComplex</shaderType>
 							<inFrontOfBody>false</inFrontOfBody>
@@ -949,17 +949,17 @@
 							<offsets>
 								<south>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<headTypes>
-										<Yinglet>(0,0.55)</Yinglet>
+										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -979,19 +979,19 @@
 								<south>
 							<layerOffset>0.1</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 							<layerOffset>0.1</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.55)</Yinglet>
+										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 							<layerOffset>0.1</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1012,19 +1012,19 @@
 								<south>
 									<layerOffset>-0.30</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.30</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.55)</Yinglet>
+										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.30</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1045,19 +1045,19 @@
 								<south>
 									<layerOffset>-0.30</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.30</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.55)</Yinglet>
+										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.30</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.22)</Yinglet>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1076,19 +1076,19 @@
 								<south>
 									<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.17)</Yinglet>
+										<YingletHead>(-0.42,0.17)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.55)</Yinglet>
+										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.5,0.17)</Yinglet>
+										<YingletHead>(-0.5,0.17)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1107,19 +1107,19 @@
 								<south>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.17)</Yinglet>
+										<YingletHead>(-0.42,0.17)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.55)</Yinglet>
+										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.5,0.17)</Yinglet>
+										<YingletHead>(-0.5,0.17)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1136,13 +1136,13 @@
 								<south>
 							<layerOffset>-0.275</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42, 0.16)</Yinglet>
+										<YingletHead>(-0.42, 0.16)</YingletHead>
 									</headTypes>
 								</south>
 								<east>
 							<layerOffset>-0.275</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.51, 0.16)</Yinglet>
+										<YingletHead>(-0.51, 0.16)</YingletHead>
 									</headTypes>
 								</east>
 								<north/>
@@ -1162,14 +1162,14 @@
 								<south>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42, 0.16)</Yinglet>
+										<YingletHead>(-0.42, 0.16)</YingletHead>
 									</headTypes>
 								</south>
 								<north/>
 								<east>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.51, 0.16)</Yinglet>
+										<YingletHead>(-0.51, 0.16)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1188,14 +1188,14 @@
 								<south>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42, 0.16)</Yinglet>
+										<YingletHead>(-0.42, 0.16)</YingletHead>
 									</headTypes>
 								</south>
 								<north/>
 								<east>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.51, 0.16)</Yinglet>
+										<YingletHead>(-0.51, 0.16)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1217,19 +1217,19 @@
 								<south>
 									<layerOffset>-0.26</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.16)</Yinglet>
+										<YingletHead>(-0.42,0.16)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<layerOffset>-0.26</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.49)</Yinglet>
+										<YingletHead>(0,0.49)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.51,0.16)</Yinglet>
+										<YingletHead>(-0.51,0.16)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1250,17 +1250,17 @@
 							<offsets>
 								<south>
 									<headTypes>
-										<Yinglet>(-0.42,0.17)</Yinglet>
+										<YingletHead>(-0.42,0.17)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<headTypes>
-										<Yinglet>(0,0.49)</Yinglet>
+										<YingletHead>(0,0.49)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<headTypes>
-										<Yinglet>(-0.51,0.17)</Yinglet>
+										<YingletHead>(-0.51,0.17)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1281,19 +1281,19 @@
 								<south>
 							<layerOffset>-0.31</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.45,0.15)</Yinglet>
+										<YingletHead>(-0.45,0.15)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 							<layerOffset>-0.31</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.49)</Yinglet>
+										<YingletHead>(0,0.49)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 							<layerOffset>-0.31</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.51,0.13)</Yinglet>
+										<YingletHead>(-0.51,0.13)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1316,19 +1316,19 @@
 								<south>
 								<layerOffset>-0.26</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.42,0.16)</Yinglet>
+										<YingletHead>(-0.42,0.16)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 								<layerOffset>-0.26</layerOffset>
 									<headTypes>
-										<Yinglet>(0,0.49)</Yinglet>
+										<YingletHead>(0,0.49)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 								<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<Yinglet>(-0.51,0.16)</Yinglet>
+										<YingletHead>(-0.51,0.16)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1349,17 +1349,17 @@
 							<offsets>
 								<south>
 									<headTypes>
-										<Yinglet>(-0.42,0.17)</Yinglet>
+										<YingletHead>(-0.42,0.17)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
 									<headTypes>
-										<Yinglet>(0,0.49)</Yinglet>
+										<YingletHead>(0,0.49)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
 									<headTypes>
-										<Yinglet>(-0.51,0.17)</Yinglet>
+										<YingletHead>(-0.51,0.17)</YingletHead>
 									</headTypes>
 								</east>
 							</offsets>
@@ -1375,7 +1375,7 @@
 								<south/>
 								<north>
 									<headTypes>
-										<Yinglet>(0,0.57)</Yinglet>
+										<YingletHead>(0,0.57)</YingletHead>
 									</headTypes>
 								</north>
 								<east/>
@@ -1728,7 +1728,7 @@
 			<lifeExpectancy>50</lifeExpectancy>
 			<leatherDef>YingletLeather</leatherDef>
 			<nameGenerator>NamerPersonYinglet</nameGenerator>
-			<body>Yinglet</body>
+			<body>YingletBody</body>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
@@ -1751,7 +1751,7 @@
 				  <minAge>1</minAge>
 				</li>
 				<li>
-				  <def>Yinglet</def>
+				  <def>YingletAdult</def>
 				  <minAge>2</minAge>
 				</li>
 			</lifeStageAges>
@@ -1774,7 +1774,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-				<li>Yinglet</li>
+				<li>YingletSet</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

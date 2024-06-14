@@ -328,7 +328,7 @@
 			<lifeExpectancy>0.001</lifeExpectancy>
 			<leatherDef>YingletLeather</leatherDef>
 			<nameGenerator>NamerPersonYinglet</nameGenerator>
-			<body>Yinglet</body>
+			<body>YingletBody</body>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>

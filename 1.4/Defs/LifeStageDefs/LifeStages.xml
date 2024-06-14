@@ -66,7 +66,7 @@
   </LifeStageDef>
   
   <LifeStageDef>
-    <defName>Yinglet</defName>
+    <defName>YingletAdult</defName>
     <label>yinglet</label>
     <visible>true</visible>
     <reproductive>true</reproductive>

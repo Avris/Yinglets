@@ -35,7 +35,7 @@ namespace ShellTooth
                 {
                     newbie.skills = pawn.skills;
                     newbie.story.Childhood = pawn.story.Childhood;
-                    newbie.story.Adulthood = DefDatabase<RimWorld.BackstoryDef>.GetNamed("YingifiedHumanlike");
+                    newbie.story.Adulthood = YingDefOf.YingifiedHumanlike;
                     if (pawn.story.traits.HasTrait(TraitDefOf.Beauty))
                     {
                         Trait pawnBeauty = pawn.story.traits.allTraits[pawn.story.traits.allTraits.FindIndex((Trait tr) => tr.def == TraitDefOf.Beauty)];
@@ -90,10 +90,9 @@ namespace ShellTooth
                     return YingDefOf.Ying;
                 case Gender.Female:
                     BodyTypeDef bodyType = (r.Next(0, 4) < 3) ? YingDefOf.YingFem : YingDefOf.Ying;
-                    Log.Error(bodyType.ToString());
                     return bodyType;
                 default:
-                    Log.Error($"Assigning bodytype to {pawn} with unexpected gender {pawn.gender} - this may break!");
+                    Log.Error($"ShellTooth: assigning bodytype to {pawn} with unexpected gender {pawn.gender} - this may break!");
                     return YingDefOf.Ying;
             }
         }

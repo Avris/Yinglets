@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\CompatibilityUpdater.cs" />
+    <Compile Include="Core\DebugLogging.cs" />
+    <Compile Include="Core\ScenPart_YingletDriver.cs" />
     <Compile Include="Dialogs\Dialog_Compatibility.cs" />
     <Compile Include="Dialogs\Dialog_Introduction.cs" />
     <Compile Include="Foraging\FodderDef.cs" />

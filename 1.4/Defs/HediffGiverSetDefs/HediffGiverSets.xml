@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <HediffGiverSetDef>
-    <defName>Yinglet</defName>
+    <defName>YingletSet</defName>
     <hediffGivers>
       <li Class="HediffGiver_Birthday">
-        <hediff>Yinglet</hediff>
+        <hediff>Yingletness</hediff>
         <ageFractionChanceCurve>
           <points>
             <li>(0, 1)</li>

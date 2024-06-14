@@ -1,6 +1,6 @@
 <Defs>
-  <HeadTypeDef>
-    <defName>Yinglet</defName>
+  <HeadTypeDef Name="YingletHead">
+    <defName>YingletHead</defName>
     <hairMeshSize>(0, 0)</hairMeshSize>
     <beardMeshSize>(0, 0)</beardMeshSize>
     <graphicPath>Things/Pawn/YingPawn/blank</graphicPath>

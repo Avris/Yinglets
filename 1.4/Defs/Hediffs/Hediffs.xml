@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs> Migrationtemp
-	<HediffDef ParentName="ChronicDiseaseBase">
-	<defName>Yinglet</defName>
+	<HediffDef Name="Yingletness" ParentName="ChronicDiseaseBase">
+	<defName>Yingletness</defName>
 	<label>Yingletness</label>
 	<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
 	<labelNoun>a yinglet</labelNoun>

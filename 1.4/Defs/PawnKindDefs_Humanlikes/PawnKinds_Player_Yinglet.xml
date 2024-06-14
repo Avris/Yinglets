@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<PawnKindDef Abstract="True" Name="BaseYingletPawnKind">
+	<PawnKindDef Abstract="True" Name="BaseYingletKindKind">
 		<race>Alien_Yinglet</race>
 		<backstoryFiltersOverride>
 			<li>
@@ -19,8 +19,8 @@
     <initialResistanceRange>8~13</initialResistanceRange>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="BaseYingletPawnKind">
-		<defName>Yinglet</defName>
+	<PawnKindDef Name="YingletKind" ParentName="BaseYingletKindKind">
+		<defName>YingletKind</defName>
 		<label>colonist</label>
 		<defaultFactionType>PlayerColony</defaultFactionType>
 		<backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>

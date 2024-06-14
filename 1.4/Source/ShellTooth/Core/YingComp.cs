@@ -4,6 +4,8 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using AlienRace;
+using ShellTooth.Core;
+using System.Linq;
 
 namespace ShellTooth
 {
@@ -17,6 +19,7 @@ namespace ShellTooth
     public class YingComp : ThingComp
     {
         public string updateStamp = "none";
+        public bool checkedScenpart = false;
         public bool isDesignatedBreeder = false;
         public bool wasYounglet = false;
         public string wasOtherRace;
@@ -29,35 +32,45 @@ namespace ShellTooth
             Scribe_Values.Look(ref this.wasYounglet, label: "wasYounglet");
             Scribe_Values.Look(ref this.wasOtherRace, label: "wasOtherRace");
         }
+        static bool reflectUponScendef()
+        {
+            List<ScenarioDef> scenDefs = DefDatabase<ScenarioDef>.AllDefsListForReading;
+            foreach (ScenarioDef sd in scenDefs)
+            {
+                List<ScenPartDef> types = new List<ScenPartDef>() { YingDefOf.YingletDriver };
+                var scenfield = sd.scenario.GetType().GetField("parts", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                List<ScenPart> scenparts = (List<ScenPart>)scenfield.GetValue(sd.scenario);
+                if (!scenparts.Exists(s => s.def == YingDefOf.YingletDriver))
+                {
+                    scenparts.Add(ScenarioMaker.MakeScenPart(YingDefOf.YingletDriver));
+                }
+            }
+            return true;
+        }
         public override void CompTick()
         {
-            if (updateStamp == "none" || updateStamp == null)
+            if (!checkedScenpart)
             {
-                updateStamp = CheckBodyType(this.parent as Pawn) ? "1227: applied" : "1227: not applied";
+                if (!Current.Game.Scenario.AllParts.Any((ScenPart part) => part is ScenPart_YingletDriver))
+                {
+                    var scenario = Current.Game.Scenario.GetType().GetField("parts", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                    List<ScenPart> scenparts = (List<ScenPart>)scenario.GetValue(Current.Game.Scenario);
+                    scenparts.Add(ScenarioMaker.MakeScenPart(YingDefOf.YingletDriver));
+                    Log.Warning("ShellTooth: restored missing scenpart, please don't remove that!");
+                }
+            }
+            if (Find.TickManager.TicksGame % 100 == 0)
+            {
+                ReapplyYinglet(this.parent as Pawn);
             }
         }
-        private bool CheckBodyType(Pawn pawn)
+        public static void ReapplyYinglet(Pawn pawn)
         {
-            BodyTypeDef bt = pawn.story.bodyType;
-            if ((pawn.def.defName == "Alien_Yinglet") && (pawn.gender == Gender.Female))
+            if (!(pawn.health.hediffSet.HasHediff(YingDefOf.Yingletness)))
             {
-                if (!(bt == YingDefOf.YingFem || bt == YingDefOf.Ying))
-                {
-                    (this.parent as Pawn).story.bodyType = YingletMaker.BodyTyper(pawn);
-                    Log.Error($"Fixed bodytype for pawn {pawn}");
-                    return true;
-                }
+                pawn.health.AddHediff(YingDefOf.Yingletness);
+                Log.Warning($"Reapplied missing yingletness to {pawn}");
             }
-            if ((pawn.def.defName == "Alien_Yinglet") && (pawn.gender == Gender.Male))
-            {
-                if (bt != YingDefOf.Ying)
-                {
-                    (this.parent as Pawn).story.bodyType = YingDefOf.Ying;
-                    Log.Error($"Fixed bodytype for pawn {pawn}");
-                    return true;
-                }
-            }
-            return false;
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {

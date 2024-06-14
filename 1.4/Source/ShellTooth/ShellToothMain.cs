@@ -12,10 +12,9 @@ namespace ShellTooth
     {
         static FLAP()
         {
-            Log.Message("Flapping flapper flapped flapping flapper cutely");
+            Log.Message("Flapping flapper flapped flapping flapper cutely!!!");
             Log.Message($"An egg has been laid! Version {ShellTooth.Version}.");
             SetConfigs();
-            reflectUponScendef();
         }
         static void SetConfigs()
         {
@@ -26,23 +25,6 @@ namespace ShellTooth
 
 
             /*SetSpecificPrivateNodeEtc();*/
-        }
-
-        /// <summary> Harmony is neat, but fuck that whole convoluted mess.</summary>
-        static bool reflectUponScendef() 
-        {
-            List<ScenarioDef> scenDefs = DefDatabase<ScenarioDef>.AllDefsListForReading;
-            foreach (ScenarioDef sd in scenDefs)
-            {
-                List<ScenPartDef> types = new List<ScenPartDef>() { YingDefOf.EnableForaging };
-                var scenfield = sd.scenario.GetType().GetField("parts", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                List<ScenPart> scenparts = (List<ScenPart>)scenfield.GetValue(sd.scenario);
-                if (!scenparts.Exists(s => s.def == YingDefOf.EnableForaging))
-                {
-                    scenparts.Add(ScenarioMaker.MakeScenPart(YingDefOf.EnableForaging));
-                }
-            }
-            return true;
         }
     }
     public class ShellTooth : Mod
@@ -61,8 +43,10 @@ namespace ShellTooth
         public ShellTooth(ModContentPack content) : base(content)
         {
         }
-        [TweakValue("Hatch Time", 0.1f, 7f)]
+        [TweakValue("Younglet Hatch Time", 0.1f, 7f)]
         public static float YingletEgg = 7;
+        [TweakValue("Younglet Adulthood Time", 0.1f, 7f)]
+        public static float A = 7;
         public static ThingCategory Fodder = (ThingCategory)12;
     }
 }

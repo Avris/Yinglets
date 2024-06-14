@@ -4,6 +4,7 @@ using Verse;
 using Verse.AI;
 using RimWorld;
 using UnityEngine;
+using ShellTooth.Core;
 
 namespace ShellTooth
 {
@@ -76,6 +77,7 @@ namespace ShellTooth
 			});
 			toil.AddFinishAction(delegate
 			{
+				/// Adapted from vanilla decomp (clean up the gotos)
 				Thought_Memory thought_Memory = (Thought_Memory)ThoughtMaker.MakeThought(ThoughtDefOf.GotSomeLovin);
 				if (this.pawn.health != null && this.pawn.health.hediffSet != null)
 				{
@@ -99,26 +101,38 @@ namespace ShellTooth
 				{
 					this.pawn.needs.mood.thoughts.memories.TryGainMemory(thought_Memory, this.Partner);
 				}
+				if (this.pawn.gender == Gender.Female && this.Partner.gender == Gender.Male)
+                {
+                    Humped(this.pawn, this.Partner);
+                }
 				this.pawn.mindState.canLovinTick = Find.TickManager.TicksGame + this.GenerateRandomMinTicksToNextLovin(this.pawn);
-			});
+            });
 			toil.socialMode = RandomSocialMode.Off;
 			yield return toil; 
-			yield return Toils_General.Do(delegate
-			{
-				if ((this.pawn.gender == Gender.Female) && (this.Partner.gender == Gender.Male))
-				{
-					Log.Message($"{pawn} and {Partner} successfully hump'd");
-					PawnUtility.Mated(this.Partner, this.pawn);
-				}
-				if ((this.pawn.gender == Gender.Male) && (this.Partner.gender == Gender.Female))
-				{
-					Log.Message($"{pawn} and {Partner} successfully hump'd");
-					PawnUtility.Mated(this.pawn, this.Partner);
-				}
-			});
 			yield break;
-		}
-		private int GenerateRandomMinTicksToNextLovin(Pawn pawn)
+        }
+        public static void Humped(Pawn mother, Pawn father)
+        {
+			if (!YingSterile(mother) && !YingSterile(father))
+			{
+				bool success = false;
+				float chance = Rand.Value;
+				CompEggLayer compEggLayer = mother.TryGetComp<CompEggLayer>();
+				if (compEggLayer != null)
+				{
+					compEggLayer.Fertilize(father);
+				}
+				if (chance < 0.5f)
+				{
+					Hediff_Pregnant hediff_Pregnant = (Hediff_Pregnant)HediffMaker.MakeHediff(HediffDefOf.Pregnant, mother);
+					hediff_Pregnant.SetParents(null, father, null);
+					mother.health.AddHediff(hediff_Pregnant);
+					success = true;
+				}
+				DebugLogging.BreedingChance(mother, father, success, chance);
+			}
+        }
+        private int GenerateRandomMinTicksToNextLovin(Pawn pawn)
 		{
 			if (DebugSettings.alwaysDoLovin)
 			{
@@ -131,32 +145,52 @@ namespace ShellTooth
 				num = 0.5f;
 			}
 			return (int)(num * 2500f);
-		}
-		private int ticksLeft;
+        }
+		// Because the vanilla check fails for yinglet lifespans
+        public static bool YingSterile(Pawn pawn)
+        {
+            if (!pawn.ageTracker.CurLifeStage.reproductive)
+            {
+                return true;
+            }
+            if (pawn.RaceProps.Humanlike)
+            {
+                if (!ModsConfig.BiotechActive)
+                {
+                    return true;
+                }
+            }
+            if (pawn.health.hediffSet.HasHediffPreventsPregnancy())
+            {
+                return true;
+            }
+            return false;
+        }
+        private static readonly SimpleCurve LovinIntervalHoursFromAgeCurve = new SimpleCurve
+        {
+            {
+                new CurvePoint(0.5f, 0.015f),
+                true
+            },
+            {
+                new CurvePoint(5f, 0.15f),
+                true
+            },
+            {
+                new CurvePoint(10f, 4f),
+                true
+            },
+            {
+                new CurvePoint(15f, 12f),
+                true
+            },
+            {
+                new CurvePoint(20f, 36f),
+                true
+            }
+        };
+        private int ticksLeft;
 		private TargetIndex PartnerInd = TargetIndex.A;
 		private TargetIndex BedInd = TargetIndex.B;
-		private static readonly SimpleCurve LovinIntervalHoursFromAgeCurve = new SimpleCurve
-		{
-			{
-				new CurvePoint(0.5f, 0.015f),
-				true
-			},
-			{
-				new CurvePoint(5f, 0.15f),
-				true
-			},
-			{
-				new CurvePoint(10f, 4f),
-				true
-			},
-			{
-				new CurvePoint(15f, 12f),
-				true
-			},
-			{
-				new CurvePoint(20f, 36f),
-				true
-			}
-		};
 	}
 }

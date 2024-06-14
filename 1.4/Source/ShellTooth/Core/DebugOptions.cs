@@ -21,7 +21,7 @@ namespace ShellTooth
             {
                 if (mother == null)
                 { 
-                    Log.Error("It didn't set for some reason");
+                    Log.Warning("It didn't set for some reason");
                 }
                 else
                 {
@@ -32,7 +32,7 @@ namespace ShellTooth
                     bool work = false;
                     if (mother.health.hediffSet.HasHediff(HediffDefOf.Pregnant, false))
                     { work = true; };
-                    Log.Error($"Tried to make {mother.NameShortColored} pregnant from {father.NameShortColored}. It {(work ? "worked!" : "did not work.")}");
+                    Log.Warning($"Tried to make {mother.NameShortColored} pregnant from {father.NameShortColored}. It {(work ? "worked!" : "did not work.")}");
                     DebugTools.curTool = null;
                 }
             });
