@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <JobDef>
+    <defName>Forage</defName>
+    <driverClass>ShellTooth.JobDriver_Forage</driverClass>
+    <reportString>Deprecated</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  <JobDef>
     <defName>Humps</defName>
     <driverClass>ShellTooth.JobDriver_Humps</driverClass>
     <reportString>Humpin'.</reportString>
     <casualInterruptible>false</casualInterruptible>
   </JobDef>
   <JobDef>
-    <defName>Forage</defName>
-    <driverClass>ShellTooth.JobDriver_Forage</driverClass>
-    <reportString>Deprecated</reportString>
+    <defName>LayYingletEgg</defName>
+    <driverClass>ShellTooth.JobDriver_LayYingletEgg</driverClass>
+    <reportString>Layin' egg.</reportString>
     <casualInterruptible>false</casualInterruptible>
   </JobDef>
   <JobDef>

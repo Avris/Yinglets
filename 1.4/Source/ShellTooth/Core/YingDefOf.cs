@@ -22,8 +22,9 @@ namespace ShellTooth
         public static HediffDef Yingletness;
 
         public static JobDef Forage;
-        public static JobDef Yingify;
         public static JobDef Humps;
+        public static JobDef LayYingletEgg;
+        public static JobDef Yingify;
 
         public static LetterDef YoungletGrown;
 
@@ -38,7 +39,7 @@ namespace ShellTooth
         public static PawnKindDef YingletKind;
 
         public static ScenPartDef EnableForaging;
-        public static ScenPartDef YingletDriver;
+        public static ScenPartDef YingletWorker;
 
         public static ThingCategoryDef YingletThing;
 

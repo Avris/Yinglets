@@ -22,7 +22,7 @@ namespace ShellTooth
 				{
 					if (pawn.CurrentBed() != null)
 					{
-						Log.Message($"{pawn} is {(pawn.GetComp<YingComp>().isDesignatedBreeder ? "enabled" : "disabled")} in a bed with {pawn.CurrentBed().CurOccupants.EnumerableCount()} {(pawn.CurrentBed().CurOccupants.EnumerableCount() != 1 ? "occupants" : "occupant")} at tick {tick}", true);
+						Log.Message($"{pawn} is {(pawn.GetComp<YingComp>().isDesignatedBreeder ? "enabled" : "disabled")} in a bed with {pawn.CurrentBed().CurOccupants.EnumerableCount()} {(pawn.CurrentBed().CurOccupants.EnumerableCount() != 1 ? "occupants" : "occupant")} at tick {tick}");
 					}
 					return -1f;
 				}
@@ -39,7 +39,7 @@ namespace ShellTooth
 				Log.Message("ShellTooth: attempted mtb check had NRE " + nre.ToString());
 			}
 			float MTB = GetHumpinMtbHours(pawn, partnerInMyBed);
-			Log.Message($"{pawn} and {partnerInMyBed} have an MTB of {MTB} at tick {tick}", true);
+			Log.Message($"{pawn} and {partnerInMyBed} have an MTB of {MTB} at tick {tick}");
 			return MTB;
 		}
 		public float GetHumpinMtbHours(Pawn pawn, Pawn partner)
@@ -75,8 +75,8 @@ namespace ShellTooth
 			num3 *= num2;
 			num3 /= Mathf.Max(pawn.relations.SecondaryLovinChanceFactor(partner), 0.1f);
 			num3 /= Mathf.Max(partner.relations.SecondaryLovinChanceFactor(pawn), 0.1f);
-			num3 *= GenMath.LerpDouble(-100f, 100f, 1.3f, 0.7f, (float)pawn.relations.OpinionOf(partner));
-			num3 *= GenMath.LerpDouble(-100f, 100f, 1.3f, 0.7f, (float)partner.relations.OpinionOf(pawn));
+			num3 *= GenMath.LerpDouble(-100f, 100f, 1.3f, 0.7f, pawn.relations.OpinionOf(partner));
+			num3 *= GenMath.LerpDouble(-100f, 100f, 1.3f, 0.7f, partner.relations.OpinionOf(pawn));
 			if (pawn.health.hediffSet.HasHediff(HediffDefOf.PsychicLove, false))
 			{
 				num3 /= 5f;

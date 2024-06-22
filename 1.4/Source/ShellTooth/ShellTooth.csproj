@@ -14,6 +14,7 @@
     <Deterministic>false</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,8 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\CompatibilityUpdater.cs" />
-    <Compile Include="Core\DebugLogging.cs" />
-    <Compile Include="Core\ScenPart_YingletDriver.cs" />
+    <Compile Include="Dialogs\DebugLogging.cs" />
+    <Compile Include="Core\ScenPart_YingletWorker.cs" />
     <Compile Include="Dialogs\Dialog_Compatibility.cs" />
     <Compile Include="Dialogs\Dialog_Introduction.cs" />
     <Compile Include="Foraging\FodderDef.cs" />
@@ -79,6 +80,9 @@
     <Compile Include="Core\DebugOptions.cs" />
     <Compile Include="Core\YingComp.cs" />
     <Compile Include="Core\YingDefOf.cs" />
+    <Compile Include="Reproduction\JobDriver_LayYingletEgg.cs" />
+    <Compile Include="Reproduction\JobGiver_LayYingletEgg.cs" />
+    <Compile Include="Reproduction\EggMaker.cs" />
     <Compile Include="Reproduction\HediffGiver_ChancePerDay.cs" />
     <Compile Include="Reproduction\JobDriver_Humps.cs" />
     <Compile Include="Reproduction\JobGiver_DoHumpin.cs" />

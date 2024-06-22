@@ -7,7 +7,7 @@
         <hediff>Yingletness</hediff>
         <ageFractionChanceCurve>
           <points>
-            <li>(0, 1)</li>
+            <li>(1, 1)</li>
             <li>(1, 1)</li>
           </points>
         </ageFractionChanceCurve>
@@ -19,8 +19,6 @@
     <hediffGivers>
       <li Class="ShellTooth.HediffGiver_AgeRangeDays">
         <hediff>Yingify</hediff>
-        <ageDayMinimum>14</ageDayMinimum>
-		<dayRange>7</dayRange>
       </li>
 	        <li Class="HediffGiver_Bleeding">
         <hediff>BloodLoss</hediff>

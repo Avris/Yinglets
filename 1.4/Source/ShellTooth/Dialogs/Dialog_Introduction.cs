@@ -19,11 +19,11 @@ namespace ShellTooth
 		}
 		public Dialog_Introduction()
 		{
-			this.forcePause = true;
-			this.draggable = false;
-			this.doCloseX = true;
-			this.closeOnClickedOutside = false;
-			this.absorbInputAroundWindow = false;
+			forcePause = true;
+			draggable = false;
+			doCloseX = true;
+			closeOnClickedOutside = false;
+			absorbInputAroundWindow = false;
 			Text.Font = GameFont.Small;
 		}
 		public override void DoWindowContents(Rect container)

@@ -1,7 +1,7 @@
   <Defs>
   <ThingDef ParentName="EggUnfertBase">
     <defName>EggYingletUnfertilized</defName>
-    <label>Yinglet egg (unfert.)</label>
+    <label>Unfertilised Yinglet Egg (Placeholder Item)</label>
     <description>An unfertilized Yinglet egg. It can be eaten, but why would you want to?</description>
     <graphicData>
       <color>(228,185,135)</color>
@@ -16,10 +16,11 @@
 
   <ThingDef ParentName="EggFertBase">
     <defName>EggYingletFertilized</defName>
-    <label>Yinglet egg (fert.)</label>
+    <label>Yinglet egg</label>
     <description>A fertilized yinglet egg. If all goes well, it should hatch into a healthy younglet.</description>
     <graphicData>
-      <color>(245,245,245)</color>
+      <texPath>Things/Item/Yegg/YEGG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stackLimit>1</stackLimit>
     <statBases>

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 using Verse;
 using UnityEngine;
 
-namespace ShellTooth.Dialogs
+namespace ShellTooth
 {
 	class Dialog_Compatibility : Window
 	{
 		public Dialog_Compatibility()
 		{
-			this.forcePause = true;
-			this.draggable = false;
-			this.doCloseX = true;
-			this.closeOnClickedOutside = false;
-			this.absorbInputAroundWindow = false;
+			forcePause = true;
+			draggable = false;
+			doCloseX = true;
+			closeOnClickedOutside = false;
+			absorbInputAroundWindow = false;
 			Text.Font = GameFont.Small;
 		}
 		public override void DoWindowContents(Rect container)

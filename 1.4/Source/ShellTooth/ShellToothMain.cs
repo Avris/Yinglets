@@ -5,6 +5,8 @@ using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.AI;
+using UnityEngine;
+
 namespace ShellTooth
 {
     [StaticConstructorOnStartup]
@@ -13,7 +15,7 @@ namespace ShellTooth
         static FLAP()
         {
             Log.Message("Flapping flapper flapped flapping flapper cutely!!!");
-            Log.Message($"An egg has been laid! Version {ShellTooth.Version}.");
+            Log.Message($"An egg has been laid! Version {ShellTooth.Version}."); 
             SetConfigs();
         }
         static void SetConfigs()
@@ -22,9 +24,6 @@ namespace ShellTooth
 
             ThingDef treeAnima = DefDatabase<ThingDef>.AllDefsListForReading.Find(f => f.defName == "Plant_TreeAnima");
             treeAnima.GetCompProperties<CompProperties_MeditationFocus>().focusTypes.Add(YingDefOf.Whiskery);
-
-
-            /*SetSpecificPrivateNodeEtc();*/
         }
     }
     public class ShellTooth : Mod
@@ -40,13 +39,17 @@ namespace ShellTooth
                 return displayableVersion;
             }
         }
+        public static bool verboseLogging;
         public ShellTooth(ModContentPack content) : base(content)
         {
         }
-        [TweakValue("Younglet Hatch Time", 0.1f, 7f)]
-        public static float YingletEgg = 7;
-        [TweakValue("Younglet Adulthood Time", 0.1f, 7f)]
-        public static float A = 7;
-        public static ThingCategory Fodder = (ThingCategory)12;
+        [TweakValue("Yinglets: Chance to fertilise egg", 0f, 1f)]
+        public static float yingletEggChance = 0.5f;
+        [TweakValue("Yinglets: Younglet hatch time", 0.01f, 7f)]
+        public static float yingletEgg = 7f;
+        [TweakValue("Yinglets: Gestation time", 1f, 60f)]
+        public static float yingletGestation = 60f;
+        [TweakValue("Yinglets: Younglet adulthood minimum in days", 0f, 14f)]
+        public static float yingletAdultDaysMinimum = 14f;
     }
 }

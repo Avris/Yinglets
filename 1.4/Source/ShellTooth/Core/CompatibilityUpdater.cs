@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace ShellTooth.Core
+namespace ShellTooth
 {
     internal class CompatibilityUpdater
     {
@@ -66,7 +66,7 @@ namespace ShellTooth.Core
         {
             var scenario = Current.Game.Scenario.GetType().GetField("parts", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             List<ScenPart> scenparts = (List<ScenPart>)scenario.GetValue(Current.Game.Scenario);
-            scenparts.Add(ScenarioMaker.MakeScenPart(YingDefOf.YingletDriver));
+            scenparts.Add(ScenarioMaker.MakeScenPart(YingDefOf.YingletWorker));
             Log.Warning("ShellTooth: restored missing scenpart, please don't remove that!");
         }
         /// <summary>

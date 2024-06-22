@@ -16,7 +16,7 @@ namespace ShellTooth
 		{
 			get
 			{
-				return (this.def as FodderDef);
+				return (def as FodderDef);
 			}
 		}
 		public FodderDrop forageDrop(Pawn pawn)
@@ -42,7 +42,7 @@ namespace ShellTooth
 		{
 			get
 			{
-				return this.def.graphic;
+				return def.graphic;
 			}
 		}
 		public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn pawn)
@@ -79,11 +79,11 @@ namespace ShellTooth
 		}
 		public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
 		{
-			Map map = this.Map;
+			Map map = Map;
 			base.Destroy(mode);
 			if (mode == DestroyMode.KillFinalize && foragedBy != null)
 			{
-				FodderDrop drop = this.forageDrop(foragedBy);
+				FodderDrop drop = forageDrop(foragedBy);
 				int skill = foragedBy.skills.GetSkill(SkillDefOf.Plants).Level;
 				int count = drop.count;
 				if (drop.winterItem != null && !PlantUtility.GrowthSeasonNow(base.Position, map, false))
@@ -111,17 +111,17 @@ namespace ShellTooth
 		public override void SpawnSetup(Map map, bool respawningAfterLoad)
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
-			if (base.Position.GetThingList(base.Map).Count >= 2 || !FodderUtility.tileTypes.Contains(this.Position.GetTerrain(map).defName))
+			if (base.Position.GetThingList(base.Map).Count >= 2 || !FodderUtility.tileTypes.Contains(Position.GetTerrain(map).defName))
 			{
-				this.Destroy(DestroyMode.Vanish);
+				Destroy(DestroyMode.Vanish);
 			}
-			else if (FodderUtility.fodList[this.Position.GetTerrain(map).defName].ContainsKey(map.Index))
+			else if (FodderUtility.fodList[Position.GetTerrain(map).defName].ContainsKey(map.Index))
 			{
-				FodderUtility.fodList[this.Position.GetTerrain(map).defName][map.Index].Add(this);
+				FodderUtility.fodList[Position.GetTerrain(map).defName][map.Index].Add(this);
 			}
-			else if (!FodderUtility.fodList[this.Position.GetTerrain(map).defName].ContainsKey(map.Index))
+			else if (!FodderUtility.fodList[Position.GetTerrain(map).defName].ContainsKey(map.Index))
 			{
-				FodderUtility.fodList[this.Position.GetTerrain(map).defName].Add(map.Index, new List<Fodder>() { this });
+				FodderUtility.fodList[Position.GetTerrain(map).defName].Add(map.Index, new List<Fodder>() { this });
 			}
 		}
 		public bool blockPlants = true;

@@ -1,9 +1,9 @@
 <Defs>  
 	<ScenPartDef>
-		<defName>YingletDriver</defName>
+		<defName>YingletWorker</defName>
 		<label>Yinglets!</label>
 		<category>Rule</category>
-		<scenPartClass>ShellTooth.ScenPart_YingletDriver</scenPartClass>
+		<scenPartClass>ShellTooth.ScenPart_YingletWorker</scenPartClass>
 		<summaryPriority>500</summaryPriority>
 	</ScenPartDef>
 	<ScenPartDef>

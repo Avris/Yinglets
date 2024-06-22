@@ -8,13 +8,20 @@ namespace ShellTooth
 {
     class DebugOptions
     {
+        private static string verboseOnOff = $"Verbose Logging: {(ShellTooth.verboseLogging ? "ON" : "OFF")}";
         [DebugAction("Yinglets", "Work In Progress Button", allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static void YingletDebugMenu()
         {
             Find.WindowStack.Add(new Dialog_SpawnYingletObject());
         }
+        // Does nothing yet!
+        [DebugAction("Yinglets", "Verbose Logging: OFF", allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        private static void YingletVerboseLogging()
+        {
+            ShellTooth.verboseLogging = !ShellTooth.verboseLogging;
+        }
         [DebugAction("Yinglets", "Tiplod pregnancy tester", allowedGameStates = AllowedGameStates.PlayingOnMap)]
-        private static void TiplodTester()
+        private static void YingletTiplodTester()
         {
             Pawn mother = null;
             DebugTool tool2 = new DebugTool("Select the father...", delegate ()

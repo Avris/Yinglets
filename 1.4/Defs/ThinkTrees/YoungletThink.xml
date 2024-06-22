@@ -19,7 +19,7 @@
             </li>
           </subNodes>
         </li>
-		<li Class="JobGiver_LayEgg" />
+		<li Class="ShellTooth.JobGiver_LayYingletEgg" />
         <li Class="ThinkNode_ConditionalMustKeepLyingDown">
           <subNodes>
             <li Class="ThinkNode_QueuedJob">

@@ -32,7 +32,7 @@ namespace ShellTooth
 		{
 			LongEventHandler.ExecuteWhenFinished(delegate
 			{
-				this.graphic = this.graphicData.Graphic;
+				graphic = graphicData.Graphic;
 				terrainTypes.ForEach(delegate (String terrain) {
 					FodderUtility.defList[terrain].Add(this);
 				});

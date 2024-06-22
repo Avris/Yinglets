@@ -22,11 +22,11 @@ namespace ShellTooth
 
 		public Dialog_SpawnYingletObject()
 		{
-			this.forcePause = true;
-			this.draggable = true;
-			this.doCloseX = true;
-			this.closeOnClickedOutside = false;
-			this.absorbInputAroundWindow = false;
+			forcePause = true;
+			draggable = true;
+			doCloseX = true;
+			closeOnClickedOutside = false;
+			absorbInputAroundWindow = false;
 			Text.Font = GameFont.Small;
 			PrepTabs();
 			SetLists();
@@ -83,20 +83,20 @@ namespace ShellTooth
 			tabsList.Clear();
 			tabsList.Add(new TabRecord("Char", delegate ()
 			{
-				this.tab = Tabs.Char;
-			}, () => this.tab == Tabs.Char));
+				tab = Tabs.Char;
+			}, () => tab == Tabs.Char));
 			tabsList.Add(new TabRecord("Apparel", delegate ()
 			{
-				this.tab = Tabs.Apparel;
-			}, () => this.tab == Tabs.Apparel));
+				tab = Tabs.Apparel;
+			}, () => tab == Tabs.Apparel));
 			tabsList.Add(new TabRecord("Items", delegate ()
 			{
-				this.tab = Tabs.Items;
-			}, () => this.tab == Tabs.Items));
+				tab = Tabs.Items;
+			}, () => tab == Tabs.Items));
 			tabsList.Add(new TabRecord("Fodder", delegate ()
 			{
-				this.tab = Tabs.Fodder;
-			}, () => this.tab == Tabs.Fodder));
+				tab = Tabs.Fodder;
+			}, () => tab == Tabs.Fodder));
 		}
 		private void YingItemTab(Rect container, List<ThingDef> thingList)
 		{
@@ -107,14 +107,14 @@ namespace ShellTooth
 				float scrollerWidth = card.x * 4;
 				float scrollerHeight = card.y * (float)Math.Ceiling(thingList.Count / 4f);
 				Rect viewRect = new Rect(container.x, container.y, scrollerWidth, scrollerHeight);
-				Widgets.BeginScrollView(container, ref this.scrollPosition, viewRect, true);
+				Widgets.BeginScrollView(container, ref scrollPosition, viewRect, true);
 				viewRect.x = container.x + ((container.width - scrollerWidth) / 2) - 6;
 				float offset = 0;
 				if (thingList.Count <= 12)
 				{
 					offset = 8;
 				}
-				if (this.tab == Tabs.Apparel)
+				if (tab == Tabs.Apparel)
 				{
 					for (int i = 0, x = 0, y = 0; i < thingList.Count; i++, x++)
 					{
@@ -127,7 +127,7 @@ namespace ShellTooth
 						YingItemTile(tile, thingList[i], IsHelmet(thingList[i]) ? 0.75f : 1.5f, IsHelmet(thingList[i]) ? -10 : -46);
 					}
 				}
-				else if (this.tab == Tabs.Items)
+				else if (tab == Tabs.Items)
 				{
 						for (int i = 0, x = 0, y = 0; i < thingList.Count; i++, x++)
 						{
@@ -140,7 +140,7 @@ namespace ShellTooth
 							YingItemTile(tile, thingList[i]);
 						}
 				}
-				else if (this.tab == Tabs.Fodder)
+				else if (tab == Tabs.Fodder)
 				{
 						for (int i = 0, x = 0, y = 0; i < thingList.Count; i++, x++)
 						{

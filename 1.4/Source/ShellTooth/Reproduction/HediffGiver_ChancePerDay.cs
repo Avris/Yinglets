@@ -5,21 +5,18 @@ using System;
 
 namespace ShellTooth
 {
-    class HediffGiver_AgeRangeDays : HediffGiver
+	class HediffGiver_AgeRangeDays : HediffGiver
 	{
+		// Replacing next pass this with either more nuanced checks in the worker, or vanilla-style growth
 		public override void OnIntervalPassed(Pawn pawn, Hediff cause)
 		{
-			float ageDays = (float)pawn.ageTracker.AgeBiologicalTicks / (float)GenDate.TicksPerDay;
-			if (ageDays >= ageDayMinimum + dayRange || ((Math.Round(ageDays % 1, 3) == 0) && (ageDays > ageDayMinimum))) {
-				float chance = (ageDays - ageDayMinimum) / dayRange;
-				if (Rand.Chance(chance)) {
-					if (TryApply(pawn, null)) {
-						return;
-					}
-				}
+			float min = ShellTooth.yingletAdultDaysMinimum;
+			float ageDays = pawn.ageTracker.AgeBiologicalTicks / (float)GenDate.TicksPerDay;
+			if (ageDays >= min)
+			{
+				TryApply(pawn, null);
 			}
 		}
-		public float ageDayMinimum;
-		public float dayRange;
 	}
 }
+

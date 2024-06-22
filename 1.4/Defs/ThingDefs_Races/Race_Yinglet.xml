@@ -1213,6 +1213,7 @@
                             </hiddenUnderApparelFor>
 							<drawnDesiccated>false</drawnDesiccated>
 							<defaultOffset>Tail</defaultOffset>
+							<drawnInBed>true</drawnInBed>
 							<offsets>
 								<south>
 									<layerOffset>-0.26</layerOffset>
@@ -1279,19 +1280,19 @@
 							<defaultOffset>Tail</defaultOffset>
 							<offsets>
 								<south>
-							<layerOffset>-0.31</layerOffset>
+									<layerOffset>-0.31</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.45,0.15)</YingletHead>
 									</headTypes>
-								</south>
+									</south>
 								<north>
-							<layerOffset>-0.31</layerOffset>
+									<layerOffset>-0.31</layerOffset>
 									<headTypes>
 										<YingletHead>(0,0.49)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
-							<layerOffset>-0.31</layerOffset>
+									<layerOffset>-0.31</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.51,0.13)</YingletHead>
 									</headTypes>
@@ -1312,21 +1313,22 @@
 							<drawnDesiccated>false</drawnDesiccated>
 							<drawnOnGround>false</drawnOnGround>
 							<defaultOffset>Tail</defaultOffset>
+							<drawnInBed>true</drawnInBed>
 							<offsets>
 								<south>
-								<layerOffset>-0.26</layerOffset>
+									<layerOffset>-0.26</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.42,0.16)</YingletHead>
 									</headTypes>
-								</south>
+									</south>
 								<north>
-								<layerOffset>-0.26</layerOffset>
+									<layerOffset>-0.26</layerOffset>
 									<headTypes>
 										<YingletHead>(0,0.49)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
-								<layerOffset>-0.27</layerOffset>
+									<layerOffset>-0.27</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.51,0.16)</YingletHead>
 									</headTypes>
@@ -1709,15 +1711,7 @@
 			</li>
 		</tools>		
 		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>EggYingletUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>EggYingletFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>7</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0</eggProgressUnfertilizedMax>
-				<eggCountRange>1</eggCountRange>
-			</li>
-			<li Class="ShellTooth.CompProperties_Yinglet"/> 
+			<li Class="ShellTooth.CompProperties_Yinglet"/>
 		</comps>
 		<race>
 			<mateMtbHours>0.01</mateMtbHours>
