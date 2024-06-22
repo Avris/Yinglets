@@ -14,7 +14,7 @@
 			<parts>
 				<!-- Enable foraging in the Storyteller -->
 				
-				<li Class="ShellTooth.ScenPart_EnableForaging">
+				<li Class="ShellTooth.ScenPart_YingletWorker">
 					<def>EnableForaging</def>
 				</li>
 

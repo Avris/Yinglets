@@ -30,13 +30,8 @@ namespace ShellTooth
 		{
 			Text.Font = GameFont.Medium;
 			Text.Anchor = TextAnchor.UpperCenter;
-			Widgets.Label(container, "Welcome to the Yinglet mod public beta!");
-			Text.Font = GameFont.Small;
-			Widgets.Label(container, "\n\nThis is a work in progress - expect unfinished stuff and possible bugs." +
-				"\n\n\n" +
-				"Please make sure to check the workshop page's buglist before reporting issues.\n" +
-				"Otherwise, feel free to poke us in #yingworld channel on the official OoPs server!");
-			Text.Font = GameFont.Medium;
+			Widgets.Label(container, "You're now cooking with yinglets!" 
+			+ "\n\n\n\nRimworld 1.4 is not fully supported. Please update to 1.5!");
 			Text.Anchor = TextAnchor.UpperLeft;
 		}
 	}
