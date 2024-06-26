@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Caravan_Yinglet_OutcastGeneralGoods</defName>
+    <label>outcast trader</label>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>150~650</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>WoodLog</thingDef>
+        <countRange>30~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>50~150</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Pemmican</thingDef>
+        <countRange>20~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineHerbal</thingDef>
+        <countRange>0~3</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Textiles</categoryDef>
+        <thingDefCountRange>3~3</thingDefCountRange>
+        <totalPriceRange>100~400</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <excludedCategories><li>EggsFertilized</li></excludedCategories>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <totalPriceRange>400~600</totalPriceRange>
+      </li>
+     
+      <!-- Drugs -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+      </li>
+      
+      <!-- Techprints -->
+      <!-- none -->
+      
+      <!-- Weapons -->
+      <!-- none -->
+      
+      <!-- Apparel -->
+      <li Class="StockGenerator_MarketValue">
+        <countRange>2~4</countRange>
+        <apparelTag>YingletBasic</apparelTag>
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+      </li>
+
+      <!-- Implants -->
+      <!-- none -->
+
+      <!-- Buildings -->
+      <!-- none -->
+
+      <!-- Exotic -->
+      <!-- none -->
+      
+      <!-- Slaves -->
+      <!-- none -->
+      
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <maxWildness>0.70</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalInsect</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~2</kindCountRange>
+        <countRange>3~4</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      
+    </stockGenerators>
+  </TraderKindDef>
+
+  <!--======================================================================================-->
+
+  <TraderKindDef>
+    <defName>Caravan_Yinglet_OutcastSmuggler</defName>
+    <label>outcast smuggler</label>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>400~700</countRange>
+      </li>    
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineHerbal</thingDef>
+        <countRange>15~30</countRange>
+      </li>
+      
+      <!-- Drugs -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+      </li>
+      
+      <!-- Techprints -->
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>1</count>
+            <chance>1</chance>
+          </li>
+        </countChances>
+      </li>
+      
+      <!-- Weapons -->
+      <li Class="StockGenerator_Category">
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+        <categoryDef>WeaponsMelee</categoryDef>
+        <thingDefCountRange>4~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+
+      <li Class="StockGenerator_MarketValue">
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+        <countRange>4~4</countRange>
+      </li>
+        
+
+      <!-- Implants -->
+      <!-- none -->
+
+      <!-- Buildings -->
+      <!-- none -->
+
+      <!-- Exotic -->
+      <!-- none -->
+
+      <!-- Slaves -->
+      <!-- none -->
+
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <tradeTagsSell>
+          <li>AnimalFighter</li>
+          <li>AnimalExotic</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~2</kindCountRange>
+        <countRange>3~4</countRange>
+      </li>
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffGiverSetDef>
+    <defName>YingletSet</defName>
+    <hediffGivers>
+      <li Class="HediffGiver_Birthday">
+        <hediff>Yingletness</hediff>
+        <ageFractionChanceCurve>
+          <points>
+            <li>(1, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  <HediffGiverSetDef>
+    <defName>YingletSpecial</defName>
+    <hediffGivers>
+      <li Class="ShellTooth.HediffGiver_AgeRangeDays">
+        <hediff>Yingify</hediff>
+      </li>
+	        <li Class="HediffGiver_Bleeding">
+        <hediff>BloodLoss</hediff>
+      </li>
+      <li Class="HediffGiver_Hypothermia">
+        <hediff>Hypothermia</hediff>
+        <hediffInsectoid>HypothermicSlowdown</hediffInsectoid>
+      </li>
+      <li Class="HediffGiver_Heat">
+        <hediff>Heatstroke</hediff>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+</Defs>

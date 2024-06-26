@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE9568DD-DFC2-478D-8A07-3605B525C3CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShellTooth</RootNamespace>
+    <AssemblyName>ShellTooth</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>false</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.2\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\CompatibilityUpdater.cs" />
+    <Compile Include="Dialogs\DebugLogging.cs" />
+    <Compile Include="Core\ScenPart_YingletWorker.cs" />
+    <Compile Include="Dialogs\Dialog_Compatibility.cs" />
+    <Compile Include="Dialogs\Dialog_Introduction.cs" />
+    <Compile Include="Foraging\FodderDef.cs" />
+    <Compile Include="Foraging\Fodder.cs" />
+    <Compile Include="Foraging\FodderUtility.cs" />
+    <Compile Include="Foraging\JobDriver_Forage.cs" />
+    <Compile Include="Foraging\ScenPart_EnableForaging.cs" />
+    <Compile Include="Foraging\WorkGiver_Forage.cs" />
+    <Compile Include="Dialogs\Dialog_SpawnYingletObject.cs" />
+    <Compile Include="Core\DebugOptions.cs" />
+    <Compile Include="Core\YingComp.cs" />
+    <Compile Include="Core\YingDefOf.cs" />
+    <Compile Include="Reproduction\JobDriver_LayYingletEgg.cs" />
+    <Compile Include="Reproduction\JobGiver_LayYingletEgg.cs" />
+    <Compile Include="Reproduction\EggMaker.cs" />
+    <Compile Include="Reproduction\HediffGiver_ChancePerDay.cs" />
+    <Compile Include="Reproduction\JobDriver_Humps.cs" />
+    <Compile Include="Reproduction\JobGiver_DoHumpin.cs" />
+    <Compile Include="Reproduction\ThinkNode_ChancePerHour_Humpin.cs" />
+    <Compile Include="ZhatZhing\JobDriver_Yingify.cs" />
+    <Compile Include="ZhatZhing\CompTargetEffect_Yingify.cs" />
+    <Compile Include="ZhatZhing\CompTargetable_AliveNonYinglet.cs" />
+    <Compile Include="Core\YingletMakerLogic.cs" />
+    <Compile Include="Core\YingletMaker.cs" />
+    <Compile Include="Core\Hediff_Yingify.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShellToothMain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XMLFile1.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

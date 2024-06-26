@@ -1,0 +1,15 @@
+<Defs>
+	<!--   Didn't expect to be doing this long enough for these naming conventions to be so inconvenient >_>   -->
+	<BodyDef ParentName="YingletBody">
+		<defName>Yinglet</defName>
+	</BodyDef>
+	<HeadTypeDef ParentName="YingletHead">
+		<defName>Yinglet</defName>
+	</HeadTypeDef>
+	<PawnKindDef ParentName="YingletKind">
+		<defName>Yinglet</defName>
+	</PawnKindDef>
+	<HediffDef ParentName="Yingletness">
+		<defName>Yinglet</defName>
+	</HediffDef>
+</Defs>

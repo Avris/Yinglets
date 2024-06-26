@@ -1,7 +1,11 @@
 *.sai
+*.suo
+WIP/*
 Defs/ThingDefs_Misc/Filth_Yinglet.xml
 Assemblies/ShellTooth.dll.config
 Assemblies/ShellTooth.pdb
 Assemblies/UnityEngine.JSONSerializeModule.dll
 Source/ShellTooth/.vs/
 Source/ShellTooth/obj/
+*.vsidx
+*.vsidx
