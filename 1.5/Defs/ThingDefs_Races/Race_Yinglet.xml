@@ -22,6 +22,9 @@
 						<li>(5,1.75f)</li>
 					</points>
 				</ageSkillFactorCurve>-->
+				<growthAges>
+					<li>777</li>
+				</growthAges>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<minAgeForAdulthood>1</minAgeForAdulthood>
