@@ -973,6 +973,7 @@
 							</extendedGraphics>
 							<offsets>
 								<south>
+									<layerOffset>-0.30</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
@@ -1144,19 +1145,19 @@
 							</extendedGraphics>
 							<offsets>
 								<south>
-									<layerOffset>-0.27</layerOffset>
+									<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
-									<layerOffset>-0.27</layerOffset>
+									<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
-									<layerOffset>-0.27</layerOffset>
+									<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.39,0.21)</YingletHead>
 									</headTypes>
@@ -1188,19 +1189,19 @@
 							</extendedGraphics>
 							<offsets>
 								<south>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(0,0.55)</YingletHead>
 									</headTypes>
 								</north>
 								<east>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.39,0.21)</YingletHead>
 									</headTypes>
@@ -1270,14 +1271,14 @@
 							</extendedGraphics>
 							<offsets>
 								<south>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.42,0.21)</YingletHead>
 									</headTypes>
 								</south>
 								<north/>
 								<east>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.395,0.23)</YingletHead>
 									</headTypes>
@@ -1309,14 +1310,14 @@
 							</extendedGraphics>
 							<offsets>
 								<south>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.42,0.21)</YingletHead>
 									</headTypes>
 								</south>
 								<north/>
 								<east>
-							<layerOffset>-0.27</layerOffset>
+							<layerOffset>-0.275</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.395,0.23)</YingletHead>
 									</headTypes>
@@ -1367,7 +1368,7 @@
 									</headTypes>
 								</north>
 								<east>
-									<layerOffset>-0.27</layerOffset>
+									<layerOffset>-0.28</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.33,0.29)</YingletHead>
 									</headTypes>
@@ -1510,7 +1511,7 @@
 									</headTypes>
 								</north>
 								<east>
-									<layerOffset>-0.27</layerOffset>
+									<layerOffset>-0.28</layerOffset>
 									<headTypes>
 										<YingletHead>(-0.33,0.29)</YingletHead>
 									</headTypes>

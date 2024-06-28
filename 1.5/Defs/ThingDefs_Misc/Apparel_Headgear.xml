@@ -498,6 +498,9 @@
       <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
+    <thingCategories>
+      <li>YingletThing</li>
+    </thingCategories>
     <equippedStatOffsets>
       <SlaveSuppressionOffset>0.15</SlaveSuppressionOffset>
     </equippedStatOffsets>
@@ -509,7 +512,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/SlaveCollar/SlaveCollar</wornGraphicPath>
       <layers>
-        <li>Overhead</li>
+        <li>OnSkin</li>
       </layers>
       <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -560,7 +563,7 @@
 			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/Gasmask/Gasmask</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
-				<li>Overhead</li>
+				<li>EyeCover</li>
 			</layers>
 			<tags>
 				<li>YingletMilitary</li>

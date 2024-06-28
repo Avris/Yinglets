@@ -33,7 +33,7 @@ namespace ShellTooth
             Widgets.Label(container, "You're now cooking with yinglets!");
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.UpperLeft;
-            Widgets.Label(container, "\n\n\n\nNotice: 1.5 support is new, and old saves may have issues. Try not to overwrite them!\n\n\nPlease report gamebreaking bugs in the Steam thread or on the #YingWorld channel on the OoPs discord, and have fun!");
+            Widgets.Label(container, "\n\n\n\nHeads up! 1.5 support is new, and old saves may load wrong. Try not to overwrite them!\n\n\nPlease report gamebreaking bugs in the Steam thread or on the #YingWorld channel on the OoPs discord, and have fun!");
         }
 	}
 }
