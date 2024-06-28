@@ -7,7 +7,7 @@
 		<description>A hat? Made from straw? Clever!</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/StrawHat/Strawhat_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadStrawHat/Strawhat_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -39,7 +39,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/StrawHat/Strawhat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/StrawHat/Strawhat</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -58,7 +58,7 @@
 		<description>A simple helmet which gives moderate protection against sharp attacks. Not effective against blunt weapons, or complex ideas. But hey! It got a spike.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/HeadgearSpiked/HeadgearSpiked_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadgearSpiked/HeadgearSpiked_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -91,7 +91,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeadgearSpiked/HeadgearSpiked</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadgearSpiked/HeadgearSpiked</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -131,7 +131,7 @@
 		<description>A protective wrap for your head!</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/HeadgearSimple/HeadgearSimple_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadgearSimple/HeadgearSimple_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -165,7 +165,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeadgearSimple/HeadgearSimple</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadgearSimple/HeadgearSimple</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -216,7 +216,7 @@
 		<techLevel>Neolithic</techLevel>
 		<smeltable>false</smeltable>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/StrawHat/Strawhat_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/StrawHat/Strawhat_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -239,7 +239,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/StrawHat/Strawhat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/StrawHat/Strawhat</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -272,7 +272,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/SimpleHelmet/SimpleHelmet_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -302,7 +302,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/SimpleHelmet/SimpleHelmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -319,7 +319,7 @@
 		<label>fancy headband</label>
 		<description>A fancy dress for heads!</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fancy_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadPiece/HeadPiece_fancy_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -346,7 +346,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fancy</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadPiece/HeadPiece_fancy</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -373,7 +373,7 @@
 		<label>fancier headband</label>
 		<description>A very fancy dress for heads!</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fancier_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadPiece/HeadPiece_fancier_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -400,7 +400,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fancier</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadPiece/HeadPiece_fancier</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -427,7 +427,7 @@
 		<label>fanciest headband</label>
 		<description>A very sofancy dress for heads!</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fanciest_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadPiece/HeadPiece_fanciest_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -454,7 +454,7 @@
 				<li>UpperHead</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeadPiece/HeadPiece_fanciest</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/HeadPiece/HeadPiece_fanciest</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -481,7 +481,7 @@
     <label>slave collar</label>
     <description>An uncomfortable collar made for slaves. It reminds the wearer of their slave status and psychologically suppresses them, reducing the chance of a slave rebellion. Sized to fit around a yinglet's thin neck.</description>
     <graphicData>
-      <texPath>Things/Pawn/YingPawn/Apparel/SlaveCollar/SlaveCollar_south</texPath>
+      <texPath>Things/Pawn/YingPawn1-5/Apparel/Head/SlaveCollar/SlaveCollar_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>25</costStuffCount>
@@ -507,7 +507,7 @@
       <bodyPartGroups>
         <li>Neck</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/YingPawn/Apparel/SlaveCollar/SlaveCollar</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/SlaveCollar/SlaveCollar</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -525,7 +525,7 @@
 		<description>A make-shift gasmask fashioned out of spare parts.</description>
 	    <techLevel>Industrial</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/Gasmask/Gasmask_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Head/Gasmask/Gasmask_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.4</uiIconScale>
@@ -557,7 +557,7 @@
 			<bodyPartGroups>
              <li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Gasmask/Gasmask</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Head/Gasmask/Gasmask</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>

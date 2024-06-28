@@ -21,7 +21,7 @@
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>6</pawnCount>
+					<pawnCount>5</pawnCount>
 					<pawnChoiceCount>9</pawnChoiceCount>
 				</li>
 

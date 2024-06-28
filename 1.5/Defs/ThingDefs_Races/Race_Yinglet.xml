@@ -14,6 +14,14 @@
 				<skinShader>Cutout</skinShader>
 			</graphicPaths>
 			<generalSettings>
+			<!--<ageSkillFactorCurve>
+					<points>
+						<li>(0,0)</li>
+						<li>(1,0.7f)</li>
+						<li>(3,1f)</li>
+						<li>(5,1.75f)</li>
+					</points>
+				</ageSkillFactorCurve>-->
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<minAgeForAdulthood>1</minAgeForAdulthood>
@@ -901,7 +909,7 @@
 						<!-- Chrys: Gonna condense these with HAR changes only after core 1.5 stuff is done, will need to code automatic conversion for old saves and that'd make the update take longer -->
 						<li>
 							<name>head</name>
-							<userCustomizable>false</userCustomizable>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -925,7 +933,7 @@
 								<south>
 									<layerOffset>-0.28</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42,0.17)</YingletHead>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
@@ -1024,6 +1032,7 @@
 						
 						<li>
 							<name>busty yinglet body</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
@@ -1068,6 +1077,7 @@
 						
 						<li>
 							<name>sleek yinglet body</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
@@ -1136,7 +1146,7 @@
 								<south>
 									<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42,0.17)</YingletHead>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
@@ -1180,7 +1190,7 @@
 								<south>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42,0.17)</YingletHead>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
@@ -1223,7 +1233,7 @@
 								<south>
 							<layerOffset>-0.275</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42, 0.16)</YingletHead>
+										<YingletHead>(-0.42,0.21)</YingletHead>
 									</headTypes>
 								</south>
 								<east>
@@ -1238,6 +1248,7 @@
 						
 						<li>
 							<name>eyes</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -1261,7 +1272,7 @@
 								<south>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42, 0.16)</YingletHead>
+										<YingletHead>(-0.42,0.21)</YingletHead>
 									</headTypes>
 								</south>
 								<north/>
@@ -1276,6 +1287,7 @@
 						
 						<li>
 							<name>eyes</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -1293,13 +1305,13 @@
 								</Posture>
 							</conditions>
 							<extendedGraphics>
-							<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Eyes/FemaleEyes</HeadType>
+							<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Eyes/MaleEyes</HeadType>
 							</extendedGraphics>
 							<offsets>
 								<south>
 							<layerOffset>-0.27</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42, 0.16)</YingletHead>
+										<YingletHead>(-0.42,0.21)</YingletHead>
 									</headTypes>
 								</south>
 								<north/>
@@ -1314,6 +1326,7 @@
 						
 						<li>
 							<name>upper hair</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -1344,7 +1357,7 @@
 								<south>
 									<layerOffset>-0.26</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42,0.16)</YingletHead>
+										<YingletHead>(-0.42,0.21)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
@@ -1364,6 +1377,7 @@
 						
 						<li>
 							<name>lower hair</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
@@ -1393,7 +1407,7 @@
 							<offsets>
 								<south>
 									<headTypes>
-										<YingletHead>(-0.42,0.17)</YingletHead>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>
@@ -1411,6 +1425,7 @@
 						
 						<li>
 							<name>tailpoof</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -1454,6 +1469,7 @@
 						
 						<li>
 							<name>upper hair</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -1484,7 +1500,7 @@
 								<south>
 									<layerOffset>-0.26</layerOffset>
 									<headTypes>
-										<YingletHead>(-0.42,0.16)</YingletHead>
+										<YingletHead>(-0.42,0.21)</YingletHead>
 									</headTypes>
 									</south>
 								<north>
@@ -1504,6 +1520,7 @@
 						
 						<li>
 							<name>lower hair</name>
+							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
@@ -1533,7 +1550,7 @@
 							<offsets>
 								<south>
 									<headTypes>
-										<YingletHead>(-0.42,0.17)</YingletHead>
+										<YingletHead>(-0.42,0.22)</YingletHead>
 									</headTypes>
 								</south>
 								<north>

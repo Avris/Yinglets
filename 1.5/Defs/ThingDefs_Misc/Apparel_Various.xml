@@ -4,7 +4,7 @@
 		<label>Heroic Cape</label>
 		<description>Legends say this cape made a certain Yinglet fly really far. It's still debated if this was due to him chasing a human or that the cape truly gave him flight.</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/HeroCape/HeroCape_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/HeroCape/HeroCape_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -39,7 +39,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/HeroCape/HeroCape</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/HeroCape/HeroCape</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -77,7 +77,7 @@
 		<label>loincloth</label>
 		<description>A small covering for the groin.</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/Loincloth/Loincloth_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/Loincloth/Loincloth_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
@@ -111,7 +111,7 @@
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Loincloth/Loincloth</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/Loincloth/Loincloth</wornGraphicPath>
 			<layers>
 	          <li>OnSkin</li>
 			</layers>
@@ -132,7 +132,7 @@
 		<label>Wrap</label>
 		<description>A simple chest wrap and jeweled choker combo.</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/ChestWrap/ChestWrap_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -163,7 +163,7 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestWrap/ChestWrap</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/ChestWrap/ChestWrap</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
              <li>OnSkin</li>
@@ -193,7 +193,7 @@
          </recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/ChestGuard/ChestGuard_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/ChestGuard/ChestGuard_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
@@ -222,7 +222,7 @@
                 <li>Torso</li>
                 <li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ChestGuard/ChestGuard</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/ChestGuard/ChestGuard</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -270,7 +270,7 @@
          </recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/Scoundrel/Scoundrel_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/Scoundrel/Scoundrel_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.90</drawSize>
@@ -304,7 +304,7 @@
                 <li>Shoulders</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/Scoundrel/Scoundrel</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/Scoundrel/Scoundrel</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -342,7 +342,7 @@
 		<label>simple tunic</label>
 		<description>A simple yinglet-sized tunic.</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/TunicFull/TunicFull_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/TunicFull/TunicFull_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -377,7 +377,7 @@
 				<li>Legs</li>
                 <li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/TunicFull/TunicFull</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/TunicFull/TunicFull</wornGraphicPath>
 			<layers>
              <li>OnSkin</li>
 			</layers>
@@ -401,7 +401,7 @@
 		<label>tribal tunic</label>
 		<description>A two-piece tunic sized for yinglets.</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/TunicSplit/TunicSplit_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/TunicSplit/TunicSplit_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
@@ -437,7 +437,7 @@
 				<li>Legs</li>
                 <li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/TunicSplit/TunicSplit</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/TunicSplit/TunicSplit</wornGraphicPath>
 			<layers>
              <li>OnSkin</li>
 			</layers>
@@ -469,7 +469,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/FlakVest/FlakVest_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/FlakVest/FlakVest_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
@@ -501,7 +501,7 @@
 				<li>Torso</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/FlakVest/FlakVest</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/FlakVest/FlakVest</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -545,7 +545,7 @@
        </recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/PlateArmor/PlateArmor_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/PlateArmor/PlateArmor_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -580,7 +580,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/PlateArmor/PlateArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/PlateArmor/PlateArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -623,7 +623,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/ScavengerPlate/ScavengerPlate_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/ScavengerPlate/ScavengerPlate_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -666,7 +666,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/ScavengerPlate/ScavengerPlate</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/ScavengerPlate/ScavengerPlate</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
@@ -706,7 +706,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/PowerArmor/PowerArmor_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/PowerArmor/PowerArmor_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
@@ -742,7 +742,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/PowerArmor/PowerArmor</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
@@ -791,7 +791,7 @@
 		<label>Winter Robe</label>
 		<description>A winter robe for staying warm in even the coldest of temperatures.</description>
 		<graphicData>
-			<texPath>Things/Pawn/YingPawn/Apparel/WinterRobes/WinterRobes_Ying_south</texPath>
+			<texPath>Things/Pawn/YingPawn1-5/Apparel/Body/WinterRobes/WinterRobes_Ying_south</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
@@ -823,7 +823,7 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/YingPawn/Apparel/WinterRobes/WinterRobes</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/WinterRobes/WinterRobes</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -900,7 +900,7 @@
 			<li>YingletThing</li>
 		</thingCategories>
     <graphicData>
-      <texPath>Things/Pawn/YingPawn/Apparel/JetpackArmor/JetpackArmor_Ying_south</texPath>
+      <texPath>Things/Pawn/YingPawn1-5/Apparel/Body/JetpackArmor/JetpackArmor_Ying_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -917,7 +917,7 @@
 		<li>Arms</li>
 		<li>Legs</li>
 	</bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/YingPawn/Apparel/JetpackArmor/JetpackArmor</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/YingPawn1-5/Apparel/Body/JetpackArmor/JetpackArmor</wornGraphicPath>
 	<layers>
 	<li>Shell</li>
 	<li>Middle</li>
@@ -972,7 +972,7 @@
       <li>
         <verbClass>Verb_Jump</verbClass>
         <label>jump</label>
-        <commandIcon>Things/Pawn/Humanlike/Apparel/JumpPack/JumpPack</commandIcon>
+        <commandIcon>Things/Pawn/Humanlike/Apparel/Body/JumpPack/JumpPack</commandIcon>
         <violent>false</violent>
         <hasStandardCommand>true</hasStandardCommand>
         <onlyManualCast>True</onlyManualCast>

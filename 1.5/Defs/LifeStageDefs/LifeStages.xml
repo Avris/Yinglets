@@ -81,7 +81,7 @@
     <silhouetteGraphicData>
       <texPath>Things/Pawn/YingPawn/blank</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1</drawSize>
+      <drawSize>0.5</drawSize>
     </silhouetteGraphicData>
   </LifeStageDef>
   
@@ -91,18 +91,20 @@
     <visible>true</visible>
     <reproductive>true</reproductive>
     <milkable>true</milkable>
+    <bodySizeFactor>1</bodySizeFactor>
+	<headSizeFactor>1</headSizeFactor>
     <silhouetteGraphicData>
       <texPath>Things/Pawn/YingPawn/blank</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1</drawSize>
     </silhouetteGraphicData>
   </LifeStageDef>
-  <LifeStageDef>
   
+  <LifeStageDef>
     <defName>TiplodAdult</defName>
     <label>adult</label>
     <visible>false</visible>
-    <milkable>true</milkable>
+    <milkable>false</milkable>
     <reproductive>true</reproductive>
     <silhouetteGraphicData>
       <texPath>Things/Pawn/YingPawn/blank</texPath>

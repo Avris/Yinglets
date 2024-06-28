@@ -14,7 +14,7 @@ namespace ShellTooth
 		{
 			get
 			{
-				return new Vector2(600f, 160f);
+				return new Vector2(600f, 200f);
 			}
 		}
 		public Dialog_Introduction()
@@ -30,9 +30,10 @@ namespace ShellTooth
 		{
 			Text.Font = GameFont.Medium;
 			Text.Anchor = TextAnchor.UpperCenter;
-			Widgets.Label(container, "You're now cooking with yinglets!" 
-			+ "\n\n\n\nRimworld 1.4 is not fully supported. Please update to 1.5!");
-			Text.Anchor = TextAnchor.UpperLeft;
-		}
+            Widgets.Label(container, "You're now cooking with yinglets!");
+            Text.Font = GameFont.Small;
+            Text.Anchor = TextAnchor.UpperLeft;
+            Widgets.Label(container, "\n\n\n\nNotice: 1.5 support is new, and old saves may have issues. Try not to overwrite them!\n\n\nPlease report gamebreaking bugs in the Steam thread or on the #YingWorld channel on the OoPs discord, and have fun!");
+        }
 	}
 }
