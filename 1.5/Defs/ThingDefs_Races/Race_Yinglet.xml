@@ -14,17 +14,20 @@
 				<skinShader>Cutout</skinShader>
 			</graphicPaths>
 			<generalSettings>
-			<!--<ageSkillFactorCurve>
+				<ageSkillFactorCurve>
 					<points>
 						<li>(0,0)</li>
-						<li>(1,0.7f)</li>
-						<li>(3,1f)</li>
-						<li>(5,1.75f)</li>
+						<li>(1,0.7)</li>
+						<li>(2,1)</li>
+						<li>(3,1.75)</li>
 					</points>
-				</ageSkillFactorCurve>-->
-				<growthAges>
-					<li>777</li>
-				</growthAges>
+				</ageSkillFactorCurve>
+				<growthFactorByAge>
+					<points>
+						<li>(0,0)</li>
+						<li>(1,0)</li>
+					</points>
+				</growthFactorByAge>
 				<maleGenderProbability>0.8</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<minAgeForAdulthood>1</minAgeForAdulthood>
@@ -38,6 +41,48 @@
 					<li>
 						<defName>Bisexual</defName>
 						<chance>60</chance>
+					</li>
+					<li>
+						<defName>Gay</defName>
+						<chance>100</chance>
+						<commonalityMale>30</commonalityMale>
+						<commonalityFemale>10</commonalityFemale>
+					</li>
+					<li>
+						<defName Degree="-1">Nerves</defName>
+						<chance>33</chance>
+					</li>
+					<li>
+						<defName Degree="-2">Nerves</defName>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName Degree="1">PsychicSensitivity</defName>
+						<chance>33</chance>
+					</li>
+					<li>
+						<defName Degree="2">PsychicSensitivity</defName>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName Degree="1">Immunity</defName>
+						<chance>50</chance>
+					</li>
+					<li>
+						<defName Degree="2">NaturalMood</defName>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName Degree="1">NaturalMood</defName>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName Degree="1">NaturalMood</defName>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName Degree="-2">NaturalMood</defName>
+						<chance>25</chance>
 					</li>
 				</forcedRaceTraitEntries>
 				<alienPartGenerator>
@@ -1572,65 +1617,6 @@
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
-			<!-- <graphicPaths>
-				<li>
-                    <lifeStageDefs>
-                        <li>YoungletOlder</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<headOffsetDirectional>
-					<north>(0,0.287)</north>
-					<south>(0,0.287)</south>
-					d
-					<west>(0.0,0.233)</west>
-					</headOffsetDirectional>
-					<customDrawSize>(0.7,0.7)</customDrawSize>
-					<customPortraitDrawSize>(0.7,0.7)</customPortraitDrawSize>
-					<customHeadDrawSize>(0.388, 0.388)</customHeadDrawSize>
-					<customPortraitHeadDrawSize>(0.388, 0.388)</customPortraitHeadDrawSize>
-                </li>
-				<li>
-                    <lifeStageDefs>
-                        <li>YingletTeen</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<headOffsetDirectional>
-					<north>(0,0.328)</north>
-					<south>(0,0.328)</south>
-					d
-					<west>(0.0,0.266)</west>
-					</headOffsetDirectional>
-					<customDrawSize>(0.8,0.8)</customDrawSize>
-					<customPortraitDrawSize>(0.8,0.8)</customPortraitDrawSize>
-					<customHeadDrawSize>(0.444,0.444)</customHeadDrawSize>
-					<customPortraitHeadDrawSize>(0.444,0.444)</customPortraitHeadDrawSize>
-                </li>
-				<li>
-                    <lifeStageDefs>
-                        <li>Yinglet</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Heads/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<headOffsetDirectional>
-					<north>(0,0.37)</north>
-					<south>(0,0.37)</south>
-					d
-					<west>(0.0,0.3)</west>
-					</headOffsetDirectional>
-					<customDrawSize>(0.9,0.9)</customDrawSize>
-					<customPortraitDrawSize>(0.9,0.9)</customPortraitDrawSize>
-					<customHeadDrawSize>(0.5,0.5)</customHeadDrawSize>
-					<customPortraitHeadDrawSize>(0.5,0.5)</customPortraitHeadDrawSize>
-                </li>
-			</graphicPaths> -->
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>
@@ -1913,6 +1899,8 @@
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
+			<bloodDef>Filth_Blood</bloodDef>
+			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -1936,6 +1924,31 @@
 				  <minAge>2</minAge>
 				</li>
 			</lifeStageAges>
+			
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Patient>0</Patient>
+				<PatientBedRest>0</PatientBedRest>
+				<Firefighter>1</Firefighter>
+				<BasicWorker>1</BasicWorker>
+				<Cleaning>1</Cleaning>
+				<Hunting>1</Hunting>
+				<Handling>1</Handling>
+				<Growing>1</Growing>
+				<PlantCutting>1</PlantCutting>
+				<Hauling>1</Hauling>
+				<Cooking>2</Cooking>
+				<Construction>2</Construction>
+				<Crafting>2</Crafting>
+				<Mining>2</Mining>
+				<Tailoring>3</Tailoring>
+				<Art>3</Art>
+				<Research>3</Research>
+				<Doctor>4</Doctor>
+				<Warden>4</Warden>
+				<Smithing>4</Smithing>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">4</Childcare>
+			</lifeStageWorkSettings>
+
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>

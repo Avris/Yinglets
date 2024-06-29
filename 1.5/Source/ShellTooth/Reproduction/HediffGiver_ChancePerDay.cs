@@ -10,11 +10,14 @@ namespace ShellTooth
 		// Replacing next pass this with either more nuanced checks in the worker, or vanilla-style growth
 		public override void OnIntervalPassed(Pawn pawn, Hediff cause)
 		{
-			float min = ShellTooth.yingletAdultDaysMinimum;
-			float ageDays = pawn.ageTracker.AgeBiologicalTicks / (float)GenDate.TicksPerDay;
-			if (ageDays >= min)
+			if (pawn.def == YingDefOf.Alien_Younglet)
 			{
-				TryApply(pawn, null);
+				float min = ShellTooth.yingletAdultDaysMinimum;
+				float ageDays = pawn.ageTracker.AgeBiologicalTicks / (float)GenDate.TicksPerDay;
+				if (ageDays >= min)
+				{
+					TryApply(pawn, null);
+				}
 			}
 		}
 	}

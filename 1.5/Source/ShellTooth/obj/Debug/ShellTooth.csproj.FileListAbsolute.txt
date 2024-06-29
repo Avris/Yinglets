@@ -26,3 +26,10 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets_Migration_1-4\1.5\Source
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets_Migration_1-4\1.5\Assemblies\ShellTooth.dll.config
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets_Migration_1-4\1.5\Assemblies\ShellTooth.dll
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets_Migration_1-4\1.5\Assemblies\ShellTooth.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets! GITHUB\1.5\Assemblies\ShellTooth.dll.config
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets! GITHUB\1.5\Assemblies\ShellTooth.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets! GITHUB\1.5\Source\ShellTooth\obj\Debug\ShellTooth.csproj.AssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets! GITHUB\1.5\Source\ShellTooth\obj\Debug\ShellTooth.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets! GITHUB\1.5\Source\ShellTooth\obj\Debug\ShellTooth.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets! GITHUB\1.5\Source\ShellTooth\obj\Debug\ShellTooth.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Yinglets! GITHUB\1.5\Assemblies\ShellTooth.pdb
