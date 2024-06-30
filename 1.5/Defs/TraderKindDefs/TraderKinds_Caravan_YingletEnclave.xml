@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Caravan_Yinglet_EnclaveBulkGoods</defName>
+    <label>enclave trader</label>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>250~650</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>WoodLog</thingDef>
+        <countRange>100~350</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>100~350</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Pemmican</thingDef>
+        <countRange>250~300</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineHerbal</thingDef>
+        <countRange>0~10</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Textiles</categoryDef>
+        <thingDefCountRange>2~2</thingDefCountRange>
+        <totalPriceRange>200~600</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <excludedCategories><li>EggsFertilized</li></excludedCategories>
+        <thingDefCountRange>4~4</thingDefCountRange>
+        <totalPriceRange>400~600</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Milk</li>
+          <li>Kibble</li>
+        </thingDefs>
+      </li>
+      
+      <!-- Drugs -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+      </li>
+      
+      <!-- Techprints -->
+      <!-- none -->
+      
+      <!-- Weapons -->
+      <!-- none -->
+      
+
+      <!-- Apparel -->
+      <li Class="StockGenerator_MarketValue">
+       <countRange>2~3</countRange>
+       <apparelTag>YingletCommon</apparelTag>
+	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+       <countRange>2~3</countRange>
+       <apparelTag>YingletBasic</apparelTag>
+	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+      </li>
+
+      <!-- Implants -->
+      <!-- none -->
+
+      <!-- Buildings -->
+      <!-- none -->
+
+      <!-- Exotic -->
+      <!-- none -->
+      
+      <!-- Slaves -->
+      <!-- none -->
+      
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <maxWildness>0.70</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalInsect</li>
+          <li>AnimalPet</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~2</kindCountRange>
+        <countRange>3~4</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      
+    </stockGenerators>
+  </TraderKindDef>
+
+  <!--======================================================================================-->
+
+  <TraderKindDef>
+    <defName>Caravan_Yinglet_EnclaveWarMerchant</defName>
+    <label>enclave war trader</label>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>750~1200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Pemmican</thingDef>
+        <countRange>150~300</countRange>
+      </li>     
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineHerbal</thingDef>
+        <countRange>15~30</countRange>
+      </li>
+      
+      
+      <!-- Weapons -->
+      <li Class="StockGenerator_Category">
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+        <categoryDef>WeaponsMelee</categoryDef>
+        <thingDefCountRange>4~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+
+      <li Class="StockGenerator_MarketValue">
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+        <countRange>4~4</countRange>
+      </li>
+        
+      <!-- Apparel -->
+      <li Class="StockGenerator_MarketValue">
+       <countRange>2~5</countRange>
+	   <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+      </li>
+
+      <!-- Implants -->
+      <!-- none -->
+
+      <!-- Buildings -->
+      <!-- none -->
+
+      <!-- Exotic -->
+      <!-- none -->
+
+      <!-- Slaves -->
+      <!-- none -->
+
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <tradeTagsSell>
+          <li>AnimalInsect</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~2</kindCountRange>
+        <countRange>3~4</countRange>
+      </li>
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      
+    </stockGenerators>
+  </TraderKindDef>
+
+  <!--======================================================================================-->
+
+  <TraderKindDef>
+    <defName>Caravan_Yinglet_EnclaveFoodstuffs</defName>
+    <label>enclave foodstuffs trader</label>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>250~850</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Pemmican</thingDef>
+        <countRange>150~300</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Milk</thingDef>
+        <countRange>15~80</countRange>
+      </li>	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RawBerries</thingDef>
+        <countRange>40~300</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RawFungus</thingDef>
+        <countRange>30~140</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>InsectJelly</thingDef>
+        <countRange>1~15</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>EggChickenUnfertilized</thingDef>
+        <countRange>20~100</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>EggChickenFertilized</thingDef>
+        <countRange>2~7</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>EggCobraFertilized</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>EggIguanaFertilized</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Kibble</thingDef>
+        <countRange>50~250</countRange>
+      </li>
+      
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <tradeTagsSell>
+          <li>AnimalFarm</li>
+          <li>AnimalInsect</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>1~2</kindCountRange>
+        <countRange>3~4</countRange>
+      </li>
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

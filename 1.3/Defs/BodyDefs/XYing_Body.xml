@@ -45,6 +45,7 @@
 					<groups>
 						<li>Torso</li>
 					</groups>
+					<woundAnchorTag>YingletTail</woundAnchorTag>
 				</li>
 				<li>
 					<def>Spine</def>
@@ -158,6 +159,7 @@
 										<li>FullHead</li>
 										<li>Eyes</li>
 									</groups>
+									<woundAnchorTag>YingLeftEye</woundAnchorTag>
 								</li>
 								<li>
 									<def>Eye</def>
@@ -167,6 +169,7 @@
 										<li>FullHead</li>
 										<li>Eyes</li>
 									</groups>
+									<woundAnchorTag>YingRightEye</woundAnchorTag>
 								</li>
 								<li>
 									<def>Ear</def>

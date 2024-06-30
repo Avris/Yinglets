@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--<LifeStageDef>
+    <defName>Younglet</defName>
+    <label>younglet</label>
+    <adjective>baby</adjective>
+    <healthScaleFactor>0.20</healthScaleFactor>
+    <meleeDamageFactor>0.25</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.2</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>-->
+    <LifeStageDef>
+    <defName>YoungletHatchling</defName>
+    <label>hatchling</label>
+    <bodySizeFactor>0.2</bodySizeFactor>
+    <foodMaxFactor>5</foodMaxFactor>
+    <healthScaleFactor>0.2</healthScaleFactor>
+    <hungerRateFactor>0.2</hungerRateFactor>
+    <marketValueFactor>0.5</marketValueFactor>
+    <meleeDamageFactor>0.5</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.1</MoveSpeed>
+    </statFactors>
+    <silhouetteGraphicData>
+      <texPath>Things/Pawn/YingPawn/blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>Younglet</defName>
+    <label>younglet</label>
+    <bodySizeFactor>0.3</bodySizeFactor>
+    <foodMaxFactor>2.5</foodMaxFactor>
+    <healthScaleFactor>0.4</healthScaleFactor>
+    <hungerRateFactor>0.4</hungerRateFactor>
+    <marketValueFactor>0.7</marketValueFactor>
+    <meleeDamageFactor>0.6</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.3</MoveSpeed>
+    </statFactors>
+    <silhouetteGraphicData>
+      <texPath>Things/Pawn/YingPawn/blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>YoungletOlder</defName>
+    <label>younglet</label>
+    <bodySizeFactor>0.5</bodySizeFactor>
+    <healthScaleFactor>0.5</healthScaleFactor>
+    <hungerRateFactor>0.6</hungerRateFactor>
+    <marketValueFactor>0.9</marketValueFactor>
+    <meleeDamageFactor>0.7</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.65</MoveSpeed>
+    </statFactors>
+    <silhouetteGraphicData>
+      <texPath>Things/Pawn/YingPawn/blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>YingletTeen</defName>
+    <label>yinglet</label>
+    <adjective>adolescent</adjective>
+    <reproductive>true</reproductive>
+    <bodySizeFactor>0.85</bodySizeFactor>
+    <healthScaleFactor>0.90</healthScaleFactor>
+    <meleeDamageFactor>0.75</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.95</MoveSpeed>
+    </statFactors>
+    <silhouetteGraphicData>
+      <texPath>Things/Pawn/YingPawn/blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.5</drawSize>
+    </silhouetteGraphicData>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>YingletAdult</defName>
+    <label>yinglet</label>
+    <visible>true</visible>
+    <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <bodySizeFactor>1</bodySizeFactor>
+	<headSizeFactor>1</headSizeFactor>
+    <silhouetteGraphicData>
+      <texPath>Things/Pawn/YingPawn/blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>TiplodAdult</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <milkable>false</milkable>
+    <reproductive>true</reproductive>
+    <silhouetteGraphicData>
+      <texPath>Things/Pawn/YingPawn/blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+  </LifeStageDef>
+
+</Defs>

@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Yinglet Base ========================== -->
+
+  <PawnKindDef Name="YingletBase" Abstract="True">
+    <defaultFactionType>YingletTribeCivil</defaultFactionType>
+    <race>Alien_Yinglet</race>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>YingletBackstory</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.005</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>YingletCommon</li>
+      <li>YingletSimple</li>
+    </apparelTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>8~13</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef Name="YingletJunkerBase" Abstract="True">
+    <defaultFactionType>YingletTribeRough</defaultFactionType>
+    <race>Alien_Yinglet</race>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>YingletBackstory</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.005</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>YingletSimple</li>
+      <li>YingletCommon</li>
+	  <li>YingletMilitary</li>
+    </apparelTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef Name="YingletRaiderBase" Abstract="True">
+    <defaultFactionType>YingletTribeSavage</defaultFactionType>
+    <race>Alien_Yinglet</race>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>YingletBackstory</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.005</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>YingletSimple</li>
+    </apparelTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>20~27</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Yinglet Raider Faction -->
+
+  <PawnKindDef ParentName="YingletRaiderBase">
+    <defName>Yinglet_Pest</defName>
+    <label>Pest</label>
+    <combatPower>25</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>50~100</apparelMoney>
+    <weaponMoney>90~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletRaiderBase">
+    <defName>Yinglet_Annoyer</defName>
+    <label>annoyer</label>
+    <combatPower>32</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>180~350</apparelMoney>
+    <weaponMoney>80~80</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+  </PawnKindDef>
+
+  <!-- Mid tier - warrior, hunter, trader -->
+
+  <PawnKindDef ParentName="YingletRaiderBase">
+    <defName>Yinglet_Bapper</defName>
+    <label>bapper</label>
+    <combatPower>42</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletRaiderBase" Name="Yinglet_Shootscav">
+    <defName>Yinglet_Shootscav</defName>
+    <label>shootscav</label>
+    <combatPower>42</combatPower>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <weaponMoney>100~100</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Yinglet_Shootscav">
+    <defName>Yinglet_Dealer</defName>
+    <label>dealer</label>
+    <trader>true</trader>
+  </PawnKindDef>
+
+  <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+
+  <PawnKindDef ParentName="YingletRaiderBase">
+    <defName>Yinglet_Smackmaster</defName>
+    <label>smackmaster</label>
+    <combatPower>60</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>300~300</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletRaiderBase">
+    <defName>Yinglet_Sharpeye</defName>
+    <label>sharpeye</label>
+    <combatPower>60</combatPower>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>250~250</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletRaiderBase" Name="YingletBanditChiefBase" Abstract="True">
+    <defName>Yinglet_BanditChiefMelee</defName>
+    <combatPower>100</combatPower>
+    <minGenerationAge>6</minGenerationAge>
+    <maxGenerationAge>15</maxGenerationAge>
+    <itemQuality>Normal</itemQuality>
+    <factionLeader>true</factionLeader>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>450~750</apparelMoney>
+    <apparelRequired>
+      <li>Yinglet_PlateArmor</li>
+    </apparelRequired>
+    <weaponMoney>500~1000</weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletBanditChiefBase">
+    <defName>Yinglet_BanditChiefMelee</defName>
+    <label>bandit chief</label>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Yinglet Junker Faction -->
+
+  <PawnKindDef ParentName="YingletJunkerBase">
+    <defName>Yinglet_Scrapper</defName>
+    <label>scrapper</label>
+    <combatPower>32</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>50~100</apparelMoney>
+    <weaponMoney>90~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletJunkerBase">
+    <defName>Yinglet_Scavenger</defName>
+    <label>scavenger</label>
+    <combatPower>32</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>180~350</apparelMoney>
+    <weaponMoney>200~200</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+  </PawnKindDef>
+
+  <!-- Mid tier - warrior, hunter, trader -->
+
+  <PawnKindDef ParentName="YingletJunkerBase">
+    <defName>Yinglet_Bruiser</defName>
+    <label>bruiser</label>
+    <combatPower>45</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <apparelRequired>
+      <li>Yinglet_ChestGuard</li>
+    </apparelRequired>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletJunkerBase" Name="Yinglet_Junker">
+    <defName>Yinglet_Junker</defName>
+    <label>junker</label>
+    <combatPower>45</combatPower>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <weaponMoney>250~350</weaponMoney>
+    <apparelRequired>
+      <li>Yinglet_ChestGuard</li>
+    </apparelRequired>
+    <weaponTags>
+	  <li>Gun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Yinglet_Junker">
+    <defName>Yinglet_ScrapCollector</defName>
+    <label>scrap collector</label>
+    <trader>true</trader>
+  </PawnKindDef>
+
+  <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+
+  <PawnKindDef ParentName="YingletJunkerBase">
+    <defName>Yinglet_Ironclad</defName>
+    <label>ironclad</label>
+    <combatPower>75</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>350~750</apparelMoney>
+	<apparelRequired>
+    <li>Yinglet_ScavengerPlate</li>
+    </apparelRequired>
+    <weaponMoney>300~300</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletJunkerBase">
+    <defName>Yinglet_Deadeye</defName>
+    <label>deadeye</label>
+    <combatPower>75</combatPower>
+    <apparelMoney>200~550</apparelMoney>
+    <apparelRequired>
+      <li>Yinglet_FlakVest</li>
+    </apparelRequired>
+    <weaponMoney>600~600</weaponMoney>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="YingletJunkerBase">
+    <defName>Yinglet_JunkerChiefRanged</defName>
+    <label>scrapmaster</label>
+    <combatPower>120</combatPower>
+    <minGenerationAge>9</minGenerationAge>
+    <maxGenerationAge>21</maxGenerationAge>
+    <itemQuality>Good</itemQuality>
+    <factionLeader>true</factionLeader>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>450~750</apparelMoney>
+	<apparelRequired>
+    <li>Yinglet_ScavengerPlate</li>
+    </apparelRequired>
+    <weaponMoney>700~1200</weaponMoney>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Yinglet Enclave Faction -->
+
+  <PawnKindDef ParentName="YingletBase">
+    <defName>Yinglet_Rookie</defName>
+    <label>rookie</label>
+    <combatPower>30</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>50~100</apparelMoney>
+    <weaponMoney>90~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletBase">
+    <defName>Yinglet_Scout</defName>
+    <label>scout</label>
+    <combatPower>35</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>180~350</apparelMoney>
+    <weaponMoney>80~180</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+  </PawnKindDef>
+
+  <!-- Mid tier - warrior, hunter, trader -->
+
+  <PawnKindDef ParentName="YingletBase">
+    <defName>Yinglet_Sentry</defName>
+    <label>sentry</label>
+    <combatPower>45</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <apparelRequired>
+      <li>Yinglet_ChestGuard</li>
+    </apparelRequired>
+    <weaponMoney>200~200</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletBase" Name="Yinglet_Hunter">
+    <defName>Yinglet_Hunter</defName>
+    <label>hunter</label>
+    <combatPower>45</combatPower>
+    <gearHealthRange>0.9~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <weaponMoney>200~450</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Yinglet_Hunter">
+    <defName>Yinglet_Trader</defName>
+    <label>trader</label>
+    <trader>true</trader>
+  </PawnKindDef>
+
+  <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+
+  <PawnKindDef ParentName="YingletBase">
+    <defName>Yinglet_Protector</defName>
+    <label>protector</label>
+    <combatPower>80</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>500~550</apparelMoney>
+    <apparelRequired>
+      <li>Yinglet_PlateArmor</li>
+    </apparelRequired>
+    <weaponMoney>300~300</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletBase">
+    <defName>Yinglet_Marksman</defName>
+    <label>marksman</label>
+    <combatPower>80</combatPower>
+    <apparelMoney>200~550</apparelMoney>
+    <apparelRequired>
+      <li>Yinglet_ChestGuard</li>
+    </apparelRequired>
+    <weaponMoney>350~450</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+      <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletBase" Name="YingletChiefBase" Abstract="True">
+    <defName>Yinglet_ChiefMelee</defName>
+    <combatPower>120</combatPower>
+    <minGenerationAge>15</minGenerationAge>
+    <maxGenerationAge>21</maxGenerationAge>
+    <itemQuality>Good</itemQuality>
+    <factionLeader>true</factionLeader>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>550~750</apparelMoney>
+    <apparelRequired>
+      <li>Yinglet_PlateArmor</li>
+    </apparelRequired>
+    <weaponMoney>500~1000</weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="YingletChiefBase">
+    <defName>Yinglet_ChiefMelee</defName>
+    <label>quartermaster</label>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+</Defs>

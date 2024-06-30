@@ -209,7 +209,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="HatBase">
 		<defName>Yinglet_StrawHat</defName>
 		<label>straw hat</label>
 		<description>A hat? Made from straw? Clever!</description>
@@ -220,11 +220,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.4</uiIconScale>
-    <costList>
-      <Hay>30</Hay>
-    </costList>
 		<statBases>
-			<WorkToMake>400</WorkToMake>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Mass>0.3</Mass>
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
@@ -236,11 +232,6 @@
 		<thingCategories>
 			<li>YingletThing</li>
 		</thingCategories>
-		<recipeMaker>
-			<recipeUsers>
-           <li>CraftingSpot</li>
-			</recipeUsers>
-		</recipeMaker>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>

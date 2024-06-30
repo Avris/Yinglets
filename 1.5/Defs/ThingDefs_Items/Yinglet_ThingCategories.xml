@@ -1,0 +1,9 @@
+<Defs>
+
+
+  <ThingCategoryDef>
+    <defName>YingletThing</defName>
+    <label>yinglet-themed items</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+</Defs>

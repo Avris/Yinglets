@@ -1,0 +1,16 @@
+<Defs>  
+	<ScenPartDef>
+		<defName>YingletWorker</defName>
+		<label>Yinglets!</label>
+		<category>Rule</category>
+		<scenPartClass>ShellTooth.ScenPart_YingletWorker</scenPartClass>
+		<summaryPriority>500</summaryPriority>
+	</ScenPartDef>
+	<ScenPartDef>
+		<defName>EnableForaging</defName>
+		<label>Enable Foraging</label>
+		<category>Rule</category>
+		<scenPartClass>ShellTooth.ScenPart_EnableForaging</scenPartClass>
+		<summaryPriority>750</summaryPriority>
+	</ScenPartDef>
+</Defs>

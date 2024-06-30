@@ -1,0 +1,49 @@
+﻿<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>YingletPlayerColony</defName>
+		<label>Yinglet Enclave</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>YingletKind</basicMemberKind>
+		<pawnSingular>yinglet</pawnSingular>
+		<pawnsPlural>yinglets</pawnsPlural>
+		<leaderTitle>patriarch</leaderTitle>
+		<leaderTitleFemale>matriarch</leaderTitleFemale>
+		<techLevel>Medieval</techLevel>
+		<allowedCultures>
+			<li>YingCulture</li>
+		</allowedCultures>
+		<backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                </categories>
+            </li>
+        </backstoryFilters>  
+		<factionIconPath>World/Expanding/Yinglet/Yinglet_Player_Icon</factionIconPath>
+		<settlementTexturePath>World/Expanding/Yinglet/Yinglet_Player_Icon</settlementTexturePath>
+		<colorSpectrum>
+		    <li>(0.25, 0.66, 0.05)</li>
+			<li>(0.25, 0.75, 0.05)</li>
+		</colorSpectrum>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<startingResearchTags>
+			<li>TribalStart</li>
+			<li>YingletStart</li>
+		</startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>TribalStart</li>
+            <li>TribalStartTechprints</li>
+        </startingTechprintsResearchTags>
+		<forageabilityFactor>1.5</forageabilityFactor>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoolMuffalo</li>
+				<li>WoolAlpaca</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

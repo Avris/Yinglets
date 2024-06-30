@@ -1,21 +1,59 @@
 ﻿<ModMetaData>
 	<name>Yinglets!</name>
-	<author>A bunch of scavs</author>
-	<packageId>ValSalia.Yinglets.Prerelease.Github</packageId>
+	<author>Chrysopoeia and ValSalia</author>
+	<packageId>Chrysopoeia.Yinglets</packageId>
 	<url/>
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
 		<li>1.2</li>
 		<li>1.3</li>
+		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
-	<description>
-		Derpy, stilt-legged and sometimes on fire. A description is coming soon!
+	<description>&lt;size=18&gt; Derpy, stilt-legged and sometimes usually on fire,&lt;/size&gt;
+&lt;size=22&gt;  It's the official Yinglet mod for Rimworld!&lt;/size&gt;
+
+1.5 support is new, and bugs are expected - try not to overwrite old saves just yet! Please report any gamebreaking bugs in the Steam thread or in #YingWorld channel on the OoPs Discord, and enjoy~
+
+
+&lt;size=24&gt;Features coming soon:&lt;/size&gt;
+
+• Younglet nurseries! Don't let them out of your sight!
+• Breeding rooms. No more needing beds for getting eggs!
+• Trait inheritance! Get those good looks the old fashioned way.
+• And MORE! What? Who knows. I sure don't!
+
+&lt;size=24&gt;Issues that have fixes in the works:&lt;/size&gt;
+
+• Younglets grow directly into full-size yinglets.
+• Adults get extra unwanted growth points Temporary!
+• Editor mods can't change fur and hair colors.
+• Random harmless lifestage error happens sometimes.
+• Bed graphics need to be moved down a little bit.
     </description>
 	<loadAfter>
+		<li>ludeon.rimworld.royalty</li>
+		<li>ludeon.rimworld.ideology</li>
+		<li>ludeon.rimworld.biotech</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 	<modDependencies>
+		<li>
+			<packageId>ludeon.rimworld.royalty</packageId>
+			<displayName>Royalty Expansion</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1149640/RimWorld__Royalty/</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>ludeon.rimworld.ideology</packageId>
+			<displayName>Ideology Expansion</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1392840/RimWorld__Ideology/</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>ludeon.rimworld.biotech</packageId>
+			<displayName>Biotech Expansion</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1392840/RimWorld__Biotech/</steamWorkshopUrl>
+		</li>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
 			<displayName>Humanoid Alien Races 2.0</displayName>

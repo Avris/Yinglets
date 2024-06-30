@@ -14,7 +14,7 @@ namespace ShellTooth
 		{
 			get
 			{
-				return new Vector2(600f, 200f);
+				return new Vector2(600f, 160f);
 			}
 		}
 		public Dialog_Introduction()
@@ -29,8 +29,14 @@ namespace ShellTooth
 		public override void DoWindowContents(Rect container)
 		{
 			Text.Font = GameFont.Medium;
-			Text.Anchor = TextAnchor.MiddleCenter;
-			Widgets.Label(container, "Not a public version of the yinglet mod!\nExpect unfinished stuff and possible bugs.");
+			Text.Anchor = TextAnchor.UpperCenter;
+			Widgets.Label(container, "Welcome to the Yinglet mod public beta!");
+			Text.Font = GameFont.Small;
+			Widgets.Label(container, "\n\nThis is a work in progress - expect unfinished stuff and possible bugs." +
+				"\n\n\n" +
+				"Please make sure to check the workshop page's buglist before reporting issues.\n" +
+				"Otherwise, feel free to poke us in #yingworld channel on the official OoPs server!");
+			Text.Font = GameFont.Medium;
 			Text.Anchor = TextAnchor.UpperLeft;
 		}
 	}

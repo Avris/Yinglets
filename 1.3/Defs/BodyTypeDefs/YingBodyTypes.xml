@@ -4,12 +4,377 @@
 		<headOffset>(0.09, -0.06)</headOffset>
 		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/BlankBodyType</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Desiccated/Desiccated_Ying</bodyDessicatedGraphicPath>
+		<woundAnchors>
+
+			<!-- FullHead -->
+
+			<li>
+				<rotation>South</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.1</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+
+			<li>
+				<rotation>West</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.2</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			
+
+			<!-- Tail -->
+
+			<li>
+				<rotation>South</rotation>
+				<tag>YingletTail</tag>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.1</range>
+				<layer>Body</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+
+			<li>
+				<rotation>West</rotation>
+				<tag>YingletTail</tag>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.2</range>
+				<layer>Body</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			
+			<!-- LeftEye -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>YingLeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.095, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>West</rotation>
+				<tag>YingLeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.22, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			
+			<!-- RightEye -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>YingRightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.095, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>East</rotation>
+				<tag>YingRightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.22, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>			
+
+			<!-- Torso -->
+
+			<li>
+				<rotation>South</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.20)</offset>
+				<range>0.15</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+
+			<li>
+				<rotation>West</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.20)</offset>
+				<range>0.2</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			
+			<!-- LeftShoulder -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.1,0,0.05)</offset>
+				<range>0.075</range>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			
+			<!-- RightShoulder -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.1,0,0.05)</offset>
+				<range>0.075</range>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>West</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>			
+			
+			<!-- LeftLeg -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.075,0,-0.375)</offset>
+				<range>0.1</range>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.05,0,-0.3)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			
+			<!-- RightLeg -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.075,0,-0.375)</offset>
+				<range>0.1</range>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>West</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.05,0,-0.3)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			
+		</woundAnchors>
+		
 	</BodyTypeDef>
 	<BodyTypeDef>
 		<defName>YingFem</defName>
 		<headOffset>(0.09, -0.06)</headOffset>
 		<bodyNakedGraphicPath>Things/Pawn/YingPawn/Icons/BlankBodyType</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Desiccated/Desiccated_Ying</bodyDessicatedGraphicPath>
+				<woundAnchors>
+
+			<!-- FullHead -->
+
+			<li>
+				<rotation>South</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.1</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+
+			<li>
+				<rotation>West</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.2</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			
+
+			<!-- Tail -->
+
+			<li>
+				<rotation>South</rotation>
+				<tag>YingletTail</tag>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.1</range>
+				<layer>Body</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+
+			<li>
+				<rotation>West</rotation>
+				<tag>YingletTail</tag>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.2</range>
+				<layer>Body</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			
+			<!-- LeftEye -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>YingLeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.095, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>West</rotation>
+				<tag>YingLeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.22, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			
+			<!-- RightEye -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>YingRightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.095, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>East</rotation>
+				<tag>YingRightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.22, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>			
+
+			<!-- Torso -->
+
+			<li>
+				<rotation>South</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.20)</offset>
+				<range>0.15</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+
+			<li>
+				<rotation>West</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.20)</offset>
+				<range>0.2</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			
+			<!-- LeftShoulder -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.1,0,0.05)</offset>
+				<range>0.075</range>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			
+			<!-- RightShoulder -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.1,0,0.05)</offset>
+				<range>0.075</range>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>West</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>			
+			
+			<!-- LeftLeg -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.075,0,-0.375)</offset>
+				<range>0.1</range>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.05,0,-0.3)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			
+			<!-- RightLeg -->
+			
+			<li>
+				<rotation>South</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.075,0,-0.375)</offset>
+				<range>0.1</range>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			
+			<li>
+				<rotation>West</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.05,0,-0.3)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			
+		</woundAnchors>
 	</BodyTypeDef>
 	<BodyTypeDef>
 		<defName>YoungletFluffy</defName>

@@ -1,0 +1,36 @@
+<Defs>
+	<ThingDef ParentName="MechSerumBase">
+    <defName>Yinglet_ZhatZhing</defName>
+   		<label>Zhat Zhing!</label>
+		<description>A wierd looking glowing rock.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/ZhatZhing</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>1700</MarketValue>
+    </statBases>
+	<thingCategories>
+		<li>Artifacts</li>
+		<li>YingletThing</li>
+	</thingCategories>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use zhat zhing?</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>ShellTooth.CompTargetable_AliveNonYinglet</compClass>
+      </li>
+      <li>
+        <compClass>ShellTooth.CompTargetEffect_Yingify</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
