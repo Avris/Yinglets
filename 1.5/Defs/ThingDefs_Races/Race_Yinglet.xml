@@ -85,6 +85,82 @@
 						<chance>25</chance>
 					</li>
 				</forcedRaceTraitEntries>
+				 <!-- Attempt to override the childhood debuffs starts here -->
+				<ageStatOverrides>
+					<WorkSpeedGlobal>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.2)</li>
+									<li>(1,0.8)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</WorkSpeedGlobal>
+					<ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.95)</li> 
+									<li>(1,0.98)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</ShootingAccuracyChildFactor>
+					<MarketValue>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.5)</li>
+									<li>(1,0.9)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</MarketValue>
+					<MeleeHitChance>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.05)</li>
+									<li>(1,0.8)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</MeleeHitChance>
+					<AimingDelayFactor>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,1.8)</li>
+									<li>(1,1.1)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</AimingDelayFactor>
+					<ImmunityGainSpeed>
+						<curve>
+							<points>
+								<li>(0.65,1)</li>
+								<li>(0.8,0.95)</li>
+								<li>(1.0,0.9)</li>
+								<li>(1.2,0.8)</li>
+								<li>(1.5,0.5)</li>
+							</points>
+						</curve>
+					</ImmunityGainSpeed>
+					<ArrestSuccessChance>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5, 0.05)</li>
+									<li>(1, 0.8)</li>
+									<li>(2, 1)</li>
+								</points>
+							</curve>
+					</ArrestSuccessChance>
+				</ageStatOverrides>
+				<!-- False childhood-related number juggling ends here -->
+				
 				<alienPartGenerator>
 				
 					<anchorReplacements>
@@ -1911,15 +1987,15 @@
 				</points>
 			</litterSizeCurve>
 			<lifeStageAges>
-				<li>
+				<li Class="AlienRace.LifeStageAgeAlien">
 				  <def>YoungletOlder</def>
 				  <minAge>0</minAge>
 				</li>
-				<li>
+				<li Class="AlienRace.LifeStageAgeAlien">
 				  <def>YingletTeen</def>
 				  <minAge>1</minAge>
 				</li>
-				<li>
+				<li Class="AlienRace.LifeStageAgeAlien">
 				  <def>YingletAdult</def>
 				  <minAge>2</minAge>
 				</li>

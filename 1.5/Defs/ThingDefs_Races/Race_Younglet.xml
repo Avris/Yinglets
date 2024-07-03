@@ -19,6 +19,81 @@
 				<minAgeForAdulthood>2</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
+				<!-- Attempt to override the childhood debuffs starts here -->
+				<ageStatOverrides>
+					<WorkSpeedGlobal>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.2)</li>
+									<li>(1,0.8)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</WorkSpeedGlobal>
+					<ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.95)</li> 
+									<li>(1,0.98)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</ShootingAccuracyChildFactor>
+					<MarketValue>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.5)</li>
+									<li>(1,0.9)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</MarketValue>
+					<MeleeHitChance>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.05)</li>
+									<li>(1,0.8)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</MeleeHitChance>
+					<AimingDelayFactor>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,1.8)</li>
+									<li>(1,1.1)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</AimingDelayFactor>
+					<ImmunityGainSpeed>
+						<curve>
+							<points>
+								<li>(0.65,1)</li>
+								<li>(0.8,0.95)</li>
+								<li>(1.0,0.9)</li>
+								<li>(1.2,0.8)</li>
+								<li>(1.5,0.5)</li>
+							</points>
+						</curve>
+					</ImmunityGainSpeed>
+					<ArrestSuccessChance>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5, 0.05)</li>
+									<li>(1, 0.8)</li>
+									<li>(2, 1)</li>
+								</points>
+							</curve>
+					</ArrestSuccessChance>
+				</ageStatOverrides>
+				<!-- False childhood-related number juggling ends here -->
 				<alienPartGenerator>
 					<bodyTypes>
 						<li>YoungletFluffy</li>
@@ -311,7 +386,7 @@
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<lifeStageAges>
-				<li>
+				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>YoungletHatchling</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Chick_Call</soundWounded>
@@ -319,7 +394,7 @@
 					<soundCall>Pawn_Chick_Call</soundCall>
 					<soundAngry>Pawn_Chick_Call</soundAngry>
 				</li>
-				<li>
+				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>Younglet</def>
 					<minAge>0.018</minAge>
 					<soundWounded>Pawn_Chick_Call</soundWounded>
@@ -327,7 +402,7 @@
 					<soundCall>Pawn_Chick_Call</soundCall>
 					<soundAngry>Pawn_Chick_Call</soundAngry>
 				</li>
-				<li>
+				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>YoungletOlder</def>
 					<minAge>0.06</minAge>
 					<soundWounded>Pawn_Chick_Call</soundWounded>
@@ -336,6 +411,31 @@
 					<soundAngry>Pawn_Chick_Call</soundAngry>
 				</li>
 			</lifeStageAges>
+			
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Patient>0</Patient>
+				<PatientBedRest>0</PatientBedRest>
+				<Firefighter>1</Firefighter>
+				<BasicWorker>1</BasicWorker>
+				<Cleaning>1</Cleaning>
+				<Hunting>1</Hunting>
+				<Handling>1</Handling>
+				<Growing>1</Growing>
+				<PlantCutting>1</PlantCutting>
+				<Hauling>1</Hauling>
+				<Cooking>2</Cooking>
+				<Construction>2</Construction>
+				<Crafting>2</Crafting>
+				<Mining>2</Mining>
+				<Tailoring>3</Tailoring>
+				<Art>3</Art>
+				<Research>3</Research>
+				<Doctor>4</Doctor>
+				<Warden>4</Warden>
+				<Smithing>4</Smithing>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">4</Childcare>
+			</lifeStageWorkSettings>
+			
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
