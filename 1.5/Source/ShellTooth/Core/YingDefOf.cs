@@ -20,6 +20,7 @@ namespace ShellTooth
         public static HeadTypeDef YingletHead;
 
         public static HediffDef Yingletness;
+        public static HediffDef Sleepying;
 
         public static JobDef Forage;
         public static JobDef Humps;

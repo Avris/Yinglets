@@ -86,4 +86,10 @@
 			<partEfficiency>0.6</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
+	<HediffDef>
+		<defName>Sleepying</defName>
+		<description>Sleepin'</description>
+		<!--<hediffClass>Shelltooth.Hediff_Sleepy</hediffClass>-->
+		<label>sleepy sleeper</label>
+	</HediffDef>
 </Defs>

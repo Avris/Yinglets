@@ -75,6 +75,7 @@
     <bodySizeFactor>0.85</bodySizeFactor>
     <healthScaleFactor>0.90</healthScaleFactor>
     <meleeDamageFactor>0.75</meleeDamageFactor>
+	<bodyDrawOffset>0,0,-0.06</bodyDrawOffset>
     <statFactors>
       <MoveSpeed>0.95</MoveSpeed>
     </statFactors>
@@ -91,8 +92,7 @@
     <visible>true</visible>
     <reproductive>true</reproductive>
     <milkable>true</milkable>
-    <bodySizeFactor>1</bodySizeFactor>
-	<headSizeFactor>1</headSizeFactor>
+	<bodyDrawOffset>0,0,-0.06</bodyDrawOffset>
     <silhouetteGraphicData>
       <texPath>Things/Pawn/YingPawn/blank</texPath>
       <graphicClass>Graphic_Single</graphicClass>

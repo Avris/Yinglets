@@ -85,7 +85,6 @@
 						<chance>25</chance>
 					</li>
 				</forcedRaceTraitEntries>
-				 <!-- Attempt to override the childhood debuffs starts here -->
 				<ageStatOverrides>
 					<WorkSpeedGlobal>
 						<useBiologicalYears>true</useBiologicalYears>
@@ -159,8 +158,6 @@
 							</curve>
 					</ArrestSuccessChance>
 				</ageStatOverrides>
-				<!-- False childhood-related number juggling ends here -->
-				
 				<alienPartGenerator>
 				
 					<anchorReplacements>
@@ -1032,6 +1029,7 @@
 					<bodyAddons>
 						<!-- Chrys: Gonna condense these with HAR changes only after core 1.5 stuff is done, will need to code automatic conversion for old saves and that'd make the update take longer -->
 						<li>
+							<!-- index 0 (was 0) -->
 							<name>head</name>
 							<userCustomizable>true</userCustomizable>
 							<colorChannel>skin</colorChannel>
@@ -1074,48 +1072,9 @@
 								</east>
 							</offsets>
 						</li>
-						
+
 						<li>
-							<name>sleepy ying</name>
-							<colorChannel>skin</colorChannel>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<defaultOffset>Tail</defaultOffset>
-							<alignWithHead>true</alignWithHead>
-							<conditions>
-								<BodyPart>
-									<bodyPart>Head</bodyPart>
-								</BodyPart>
-								<RotStage>Fresh,Rotting</RotStage>
-								<Posture>
-									<drawnLaying>true</drawnLaying>
-									<drawnInBed>true</drawnInBed>
-								</Posture>
-							</conditions>
-							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Bodies/SleepyFix</HeadType>
-							</extendedGraphics>
-							<offsets>
-								<south>
-									<layerOffset>-0.30</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.42,0.22)</YingletHead>
-									</headTypes>
-								</south>
-								<north>
-									<headTypes>
-										<YingletHead>(0,0.55)</YingletHead>
-									</headTypes>
-								</north>
-								<east>
-									<headTypes>
-										<YingletHead>(-0.33,0.29)</YingletHead>
-									</headTypes>
-								</east>
-							</offsets>
-						</li>
-						
-						<li>
+							<!-- index 1 (was 1) -->
 							<name>yinglet tail</name>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
@@ -1154,9 +1113,10 @@
 								</east>
 							</offsets>
 						</li>
-						
+
 						<li>
-							<name>busty yinglet body</name>
+							<!-- index 2 (was 3-4) -->
+							<name>yinglet body</name>
 							<userCustomizable>true</userCustomizable>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
@@ -1172,55 +1132,12 @@
 								<Posture>
 									<drawnStanding>true</drawnStanding>
 									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
 								</Posture>
-								<BodyType>YingFem</BodyType>
 							</conditions>
 							<extendedGraphics>
-								<BodyType For="YingFem">Things/Pawn/YingPawn1-5/Parts/Bodies/FemaleBody</BodyType>
-							</extendedGraphics>
-							<offsets>
-								<south>
-									<layerOffset>-0.30</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.42,0.22)</YingletHead>
-									</headTypes>
-								</south>
-								<north>
-									<layerOffset>-0.30</layerOffset>
-									<headTypes>
-										<YingletHead>(0,0.55)</YingletHead>
-									</headTypes>
-								</north>
-								<east>
-									<layerOffset>-0.30</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.33,0.29)</YingletHead>
-									</headTypes>
-								</east>
-							</offsets>
-						</li>
-						
-						<li>
-							<name>sleek yinglet body</name>
-							<userCustomizable>true</userCustomizable>
-							<colorChannel>skin</colorChannel>
-							<inFrontOfBody>true</inFrontOfBody>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<defaultOffset>Tail</defaultOffset>
-							<alignWithHead>true</alignWithHead>
-							<conditions>
-								<BodyPart>
-									<bodyPart>Torso</bodyPart>
-								</BodyPart>
-								<RotStage>Fresh,Rotting</RotStage>
-								<Posture>
-									<drawnStanding>true</drawnStanding>
-									<drawnLaying>true</drawnLaying>
-								</Posture>
-								<BodyType>Ying</BodyType>
-							</conditions>
-							<extendedGraphics>
+								<Hediff For="Sleepying">Things/Pawn/YingPawn1-5/Parts/Bodies/SleepyFix</Hediff>
+								<BodyType For="YingFem">Things/Pawn/YingPawn/Parts/Bodies/FemaleBody</BodyType>
 								<BodyType For="Ying">Things/Pawn/YingPawn1-5/Parts/Bodies/MaleBody</BodyType>
 							</extendedGraphics>
 							<offsets>
@@ -1244,8 +1161,9 @@
 								</east>
 							</offsets>
 						</li>
-						
+
 						<li>
+							<!-- index 3 (was 5-6) -->
 							<name>shelltooth</name>
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
@@ -1253,7 +1171,6 @@
 							<defaultOffset>Tail</defaultOffset>
 							<alignWithHead>true</alignWithHead>
 							<conditions>
-								<Gender>Female</Gender>
 								<BodyPart>
 									<bodyPart>Head</bodyPart>
 								</BodyPart>
@@ -1265,7 +1182,8 @@
 								</Posture>
 							</conditions>
 							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Shellteeth/FemaleTooth</HeadType>
+								<Gender For="Female">Things/Pawn/YingPawn1-5/Parts/Shellteeth/FemaleTooth</Gender>
+								<Gender For="Male">Things/Pawn/YingPawn1-5/Parts/Shellteeth/MaleTooth</Gender>
 							</extendedGraphics>
 							<offsets>
 								<south>
@@ -1288,52 +1206,9 @@
 								</east>
 							</offsets>
 						</li>
-						
+
 						<li>
-							<name>shelltooth</name>
-							<colorChannel>eye</colorChannel>
-							<inFrontOfBody>true</inFrontOfBody>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<defaultOffset>Tail</defaultOffset>
-							<alignWithHead>true</alignWithHead>
-							<conditions>
-								<Gender>Male</Gender>
-								<BodyPart>
-									<bodyPart>Head</bodyPart>
-								</BodyPart>
-								<RotStage>Fresh,Rotting</RotStage>
-								<Posture>
-									<drawnStanding>true</drawnStanding>
-									<drawnLaying>true</drawnLaying>
-									<drawnInBed>true</drawnInBed>
-								</Posture>
-							</conditions>
-							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Shellteeth/MaleTooth</HeadType>
-							</extendedGraphics>
-							<offsets>
-								<south>
-							<layerOffset>-0.275</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.42,0.22)</YingletHead>
-									</headTypes>
-								</south>
-								<north>
-							<layerOffset>-0.275</layerOffset>
-									<headTypes>
-										<YingletHead>(0,0.55)</YingletHead>
-									</headTypes>
-								</north>
-								<east>
-							<layerOffset>-0.275</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.39,0.21)</YingletHead>
-									</headTypes>
-								</east>
-							</offsets>
-						</li>
-						
-						<li>
+							<!-- index 4 (was 7) -->
 							<name>ears</name>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
@@ -1370,8 +1245,9 @@
 								<north/>
 							</offsets>
 						</li>
-						
+
 						<li>
+							<!-- index 5 (was 8-9) -->
 							<name>eyes</name>
 							<userCustomizable>true</userCustomizable>
 							<colorChannel>eye</colorChannel>
@@ -1380,7 +1256,6 @@
 							<defaultOffset>Tail</defaultOffset>
 							<alignWithHead>true</alignWithHead>
 							<conditions>
-								<Gender>Female</Gender>
 								<BodyPart>
 									<bodyPart>Head</bodyPart>
 								</BodyPart>
@@ -1391,7 +1266,8 @@
 								</Posture>
 							</conditions>
 							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Eyes/FemaleEyes</HeadType>
+								<Gender For="Female">Things/Pawn/YingPawn1-5/Parts/Eyes/FemaleEyes</Gender>
+								<Gender For="Male">Things/Pawn/YingPawn1-5/Parts/Eyes/MaleEyes</Gender>
 							</extendedGraphics>
 							<offsets>
 								<south>
@@ -1409,47 +1285,9 @@
 								</east>
 							</offsets>
 						</li>
-						
+
 						<li>
-							<name>eyes</name>
-							<userCustomizable>true</userCustomizable>
-							<colorChannel>eye</colorChannel>
-							<inFrontOfBody>true</inFrontOfBody>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<defaultOffset>Tail</defaultOffset>
-							<alignWithHead>true</alignWithHead>
-							<conditions>
-								<Gender>Male</Gender>
-								<BodyPart>
-									<bodyPart>Head</bodyPart>
-								</BodyPart>
-								<RotStage>Fresh,Rotting</RotStage>
-								<Posture>
-									<drawnStanding>true</drawnStanding>
-									<drawnLaying>true</drawnLaying>
-								</Posture>
-							</conditions>
-							<extendedGraphics>
-							<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Eyes/MaleEyes</HeadType>
-							</extendedGraphics>
-							<offsets>
-								<south>
-							<layerOffset>-0.275</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.42,0.21)</YingletHead>
-									</headTypes>
-								</south>
-								<north/>
-								<east>
-							<layerOffset>-0.275</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.395,0.23)</YingletHead>
-									</headTypes>
-								</east>
-							</offsets>
-						</li>
-						
-						<li>
+							<!-- index 6 (was 10-13) -->
 							<name>upper hair</name>
 							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
@@ -1459,7 +1297,6 @@
 							<defaultOffset>Tail</defaultOffset>
 							<alignWithHead>true</alignWithHead>
 							<conditions>
-								<Gender>Female</Gender>
 								<Apparel>
 									<hiddenUnderApparelFor>
 										<li>UpperHead</li>
@@ -1476,7 +1313,8 @@
 								</Posture>
 							</conditions>
 							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Hairs/Over/Female_OverHair</HeadType>
+								<Gender For="Female">Things/Pawn/YingPawn1-5/Parts/Hairs/Over/Female_OverHair</Gender>
+								<Gender For="Male">Things/Pawn/YingPawn1-5/Parts/Hairs/Over/Male_OverHair</Gender>
 							</extendedGraphics>
 							<offsets>
 								<south>
@@ -1499,8 +1337,9 @@
 								</east>
 							</offsets>
 						</li>
-						
+
 						<li>
+							<!-- index 7 (was 11-14) -->
 							<name>lower hair</name>
 							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
@@ -1510,7 +1349,6 @@
 							<defaultOffset>Tail</defaultOffset>
 							<alignWithHead>true</alignWithHead>
 							<conditions>
-								<Gender>Female</Gender>
 								<Apparel>
 									<hiddenUnderApparelFor>
 										<li>Neck</li>
@@ -1527,7 +1365,8 @@
 								</Posture>
 							</conditions>
 							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Hairs/Under/Female_UnderHair</HeadType>
+								<Gender For="Female">Things/Pawn/YingPawn1-5/Parts/Hairs/Under/Female_UnderHair</Gender>
+								<Gender For="Male">Things/Pawn/YingPawn1-5/Parts/Hairs/Under/Male_UnderHair</Gender>
 							</extendedGraphics>
 							<offsets>
 								<south>
@@ -1547,8 +1386,9 @@
 								</east>
 							</offsets>
 						</li>
-						
+
 						<li>
+							<!-- index 8 (was 12) -->
 							<name>tailpoof</name>
 							<userCustomizable>true</userCustomizable>
 							<colorChannel>hair</colorChannel>
@@ -1591,105 +1431,6 @@
 								</east>
 							</offsets>
 						</li>
-						
-						<li>
-							<name>upper hair</name>
-							<userCustomizable>true</userCustomizable>
-							<colorChannel>hair</colorChannel>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerInvert>false</layerInvert>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<defaultOffset>Tail</defaultOffset>
-							<alignWithHead>true</alignWithHead>
-							<conditions>
-								<Gender>Male</Gender>
-								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>UpperHead</li>
-									</hiddenUnderApparelFor>
-								</Apparel>
-								<BodyPart>
-									<bodyPart>Head</bodyPart>
-								</BodyPart>
-								<RotStage>Fresh,Rotting</RotStage>
-								<Posture>
-									<drawnStanding>true</drawnStanding>
-									<drawnLaying>true</drawnLaying>
-									<drawnInBed>true</drawnInBed>
-								</Posture>
-							</conditions>
-							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Hairs/Over/Male_OverHair</HeadType>
-							</extendedGraphics>
-							<offsets>
-								<south>
-									<layerOffset>-0.26</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.42,0.21)</YingletHead>
-									</headTypes>
-									</south>
-								<north>
-									<layerOffset>-0.26</layerOffset>
-									<headTypes>
-										<YingletHead>(0,0.49)</YingletHead>
-									</headTypes>
-								</north>
-								<east>
-									<layerOffset>-0.28</layerOffset>
-									<headTypes>
-										<YingletHead>(-0.33,0.29)</YingletHead>
-									</headTypes>
-								</east>
-							</offsets>
-						</li>
-						
-						<li>
-							<name>lower hair</name>
-							<userCustomizable>true</userCustomizable>
-							<colorChannel>hair</colorChannel>
-							<inFrontOfBody>false</inFrontOfBody>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<defaultOffset>Tail</defaultOffset>
-							<alignWithHead>true</alignWithHead>
-							<conditions>
-								<Gender>Male</Gender>
-								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>Neck</li>
-									</hiddenUnderApparelFor>
-								</Apparel>
-								<BodyPart>
-									<bodyPart>Head</bodyPart>
-								</BodyPart>
-								<RotStage>Fresh,Rotting</RotStage>
-								<Posture>
-									<drawnStanding>true</drawnStanding>
-									<drawnLaying>true</drawnLaying>
-									<drawnInBed>true</drawnInBed>
-								</Posture>
-							</conditions>
-							<extendedGraphics>
-								<HeadType For="YingletHead">Things/Pawn/YingPawn1-5/Parts/Hairs/Under/Male_UnderHair</HeadType>
-							</extendedGraphics>
-							<offsets>
-								<south>
-									<headTypes>
-										<YingletHead>(-0.42,0.22)</YingletHead>
-									</headTypes>
-								</south>
-								<north>
-									<headTypes>
-										<YingletHead>(0,0.49)</YingletHead>
-									</headTypes>
-								</north>
-								<east>
-									<headTypes>
-										<YingletHead>(-0.33,0.29)</YingletHead>
-									</headTypes>
-								</east>
-							</offsets>
-						</li>
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
@@ -1701,7 +1442,7 @@
 				<apparelList>
 					<li>Apparel_ShieldBelt</li>
 					<li>Apparel_SmokepopBelt</li>
-                    <li>Yinglet_EltexRegalia</li>
+					<li>Yinglet_EltexRegalia</li>
 					<li>Yinglet_EltexCirclet</li>
 					<li>Yinglet_Loincloth</li>
 					<li>Yinglet_Herocape</li>
@@ -1744,7 +1485,7 @@
 						<label>Bonded</label>
 						<femaleLabel>Bonded</femaleLabel>
 					</li>
-            </renamer>
+			</renamer>
 			</relationSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
@@ -1766,135 +1507,135 @@
 					<li>Naked</li>
 				</cannotReceiveThoughts>
 				<replacerList>
-                <li>
-                    <original>ColonistBanished</original>
-                    <replacer>ColonistExiled</replacer> 
-                </li>
-                <li>
-                    <original>ColonistBanishedToDie</original>
-                    <replacer>ColonistExiledToDie</replacer> 
-                </li>
-                <li>
-                    <original>SleptInBarracks</original>
-                    <replacer>SleptInNest</replacer> 
-                </li>
-                <li>
-                    <original>NeedBeauty</original>
-                    <replacer>YingNeedBeauty</replacer> 
-                </li>
-                <li>
-                    <original>ClothedNudist</original>
-                    <replacer>ClothedYinglet</replacer> 
-                </li>
-                <li>
-                    <original>AteInsectMeatDirect</original>
-                    <replacer>YingAteInsectMeatDirect</replacer> 
-                </li>
-                <li>
-                    <original>AteInsectMeatAsIngredient</original>
-                    <replacer>YingAteInsectMeatAsIngredient</replacer> 
-                </li>
-				<!--Kin-->
-                <li>
-                    <original>MyWifeLost</original>
-                    <replacer>MyLoverLost</replacer> 
-                </li>
-                <li>
-                    <original>MyHusbandLost</original>
-                    <replacer>MyLoverLost</replacer> 
-                </li>
-                <li>
-                    <original>MyFianceLost</original>
-                    <replacer>MyLoverLost</replacer> 
-                </li>
-                <li>
-                    <original>MyFianceeLost</original>
-                    <replacer>MyLoverLost</replacer> 
-                </li>
-                <li>
-                    <original>MySonLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyDaughterLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
 				<li>
-                    <original>MySisterLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyBrotherLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyMotherLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyFatherLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyAuntLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyUncleLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyNieceLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyNephewLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyGrandparentLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyGrandchildLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyHalfSiblingLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-                <li>
-                    <original>MyCousinLost</original>
-                    <replacer>MyKinLost</replacer> 
-                </li>
-            </replacerList>
+					<original>ColonistBanished</original>
+					<replacer>ColonistExiled</replacer> 
+				</li>
+				<li>
+					<original>ColonistBanishedToDie</original>
+					<replacer>ColonistExiledToDie</replacer> 
+				</li>
+				<li>
+					<original>SleptInBarracks</original>
+					<replacer>SleptInNest</replacer> 
+				</li>
+				<li>
+					<original>NeedBeauty</original>
+					<replacer>YingNeedBeauty</replacer> 
+				</li>
+				<li>
+					<original>ClothedNudist</original>
+					<replacer>ClothedYinglet</replacer> 
+				</li>
+				<li>
+					<original>AteInsectMeatDirect</original>
+					<replacer>YingAteInsectMeatDirect</replacer> 
+				</li>
+				<li>
+					<original>AteInsectMeatAsIngredient</original>
+					<replacer>YingAteInsectMeatAsIngredient</replacer> 
+				</li>
+				<!--Kin-->
+				<li>
+					<original>MyWifeLost</original>
+					<replacer>MyLoverLost</replacer> 
+				</li>
+				<li>
+					<original>MyHusbandLost</original>
+					<replacer>MyLoverLost</replacer> 
+				</li>
+				<li>
+					<original>MyFianceLost</original>
+					<replacer>MyLoverLost</replacer> 
+				</li>
+				<li>
+					<original>MyFianceeLost</original>
+					<replacer>MyLoverLost</replacer> 
+				</li>
+				<li>
+					<original>MySonLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyDaughterLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MySisterLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyBrotherLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyMotherLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyFatherLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyAuntLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyUncleLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyNieceLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyNephewLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyGrandparentLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyGrandchildLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyHalfSiblingLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+				<li>
+					<original>MyCousinLost</original>
+					<replacer>MyKinLost</replacer> 
+				</li>
+			</replacerList>
 			</thoughtSettings>
-            <styleSettings>
-                <li>
-                    <key>HairDef</key>
-                    <value>
-                        <hasStyle>false</hasStyle>
-                    </value>
-                </li>
-                <li>
-                    <key>BeardDef</key>
-                    <value>
-                        <hasStyle>true</hasStyle>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
 						<styleTags>
-						  <li>alienNoStyle</li>
+							<li>alienNoStyle</li>
 						</styleTags>
-                    </value>
-                </li>
-                <li>
-                    <key>TattooDef</key>
-                    <value>
-                        <hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
 						<styleTags>
-						  <li>alienNoStyle</li>
+							<li>alienNoStyle</li>
 						</styleTags>
-                    </value>
-                </li>
-            </styleSettings>
+					</value>
+				</li>
+			</styleSettings>
 		</alienRace>
 		<statBases>
 			<MarketValue>200</MarketValue>
@@ -1991,19 +1732,18 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li Class="AlienRace.LifeStageAgeAlien">
-				  <def>YoungletOlder</def>
-				  <minAge>0</minAge>
+					<def>YoungletOlder</def>
+					<minAge>0</minAge>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
-				  <def>YingletTeen</def>
-				  <minAge>1</minAge>
+					<def>YingletTeen</def>
+					<minAge>1</minAge>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
-				  <def>YingletAdult</def>
-				  <minAge>2</minAge>
+					<def>YingletAdult</def>
+					<minAge>2</minAge>
 				</li>
 			</lifeStageAges>
-			
 			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
 				<Patient>0</Patient>
 				<PatientBedRest>0</PatientBedRest>
@@ -2027,7 +1767,6 @@
 				<Smithing>4</Smithing>
 				<Childcare MayRequire="Ludeon.RimWorld.Biotech">4</Childcare>
 			</lifeStageWorkSettings>
-
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>

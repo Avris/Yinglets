@@ -113,12 +113,12 @@ namespace ShellTooth
         }
         public static void Humped(Pawn mother, Pawn father)
         {
-			if (!YingSterile(mother) && !YingSterile(father))
+			if (!EggMaker.YingSterile(mother) && !EggMaker.YingSterile(father))
 			{
 
                 float chance = Rand.Range(0f,0.9f);
 				YingComp comp = mother.GetComp<YingComp>();
-				if ((comp.eggProgress == 0) && (chance < ShellTooth.yingletEggChance))
+				if ((comp.eggProgress == 0))
                 {
                     comp.knockedUpBy = father;
 					comp.eggProgress = 0.01f;
@@ -138,26 +138,6 @@ namespace ShellTooth
 				num = 0.5f;
 			}
 			return (int)(num * 2500f);
-        }
-		// Because the vanilla check fails for yinglet lifespans
-        public static bool YingSterile(Pawn pawn)
-        {
-            if (!pawn.ageTracker.CurLifeStage.reproductive)
-            {
-                return true;
-            }
-            if (pawn.RaceProps.Humanlike)
-            {
-                if (!ModsConfig.BiotechActive)
-                {
-                    return true;
-                }
-            }
-            if (pawn.health.hediffSet.HasHediffPreventsPregnancy())
-            {
-                return true;
-            }
-            return false;
         }
         private static readonly SimpleCurve LovinIntervalHoursFromAgeCurve = new SimpleCurve
         {

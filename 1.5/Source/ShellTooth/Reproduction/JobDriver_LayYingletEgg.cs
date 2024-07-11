@@ -4,6 +4,7 @@ using Verse;
 using Verse.AI;
 using RimWorld;
 using UnityEngine;
+using System.Net.NetworkInformation;
 
 namespace ShellTooth
 {

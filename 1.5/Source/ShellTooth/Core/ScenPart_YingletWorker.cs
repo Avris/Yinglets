@@ -24,9 +24,10 @@ namespace ShellTooth
                 splashed = true;
             }
             // This applies the debug slider
-            if ((YingDefOf.EggYingletFertilized.comps[3] as CompProperties_Hatcher).hatcherDaystoHatch != ShellTooth.yingletEgg)
+            CompProperties_Hatcher comp = YingDefOf.EggYingletFertilized.comps.Find(c => c is CompProperties_Hatcher) as CompProperties_Hatcher;
+            if (comp.hatcherDaystoHatch != ShellTooth.yingletEgg)
             {
-                (YingDefOf.EggYingletFertilized.comps[3] as CompProperties_Hatcher).hatcherDaystoHatch = ShellTooth.yingletEgg;
+                comp.hatcherDaystoHatch = ShellTooth.yingletEgg;
             }
         }
     }

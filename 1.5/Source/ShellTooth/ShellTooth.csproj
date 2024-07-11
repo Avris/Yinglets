@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\CompatibilityUpdater.cs" />
+    <Compile Include="Core\Hediff_Sleepy.cs" />
     <Compile Include="Dialogs\DebugLogging.cs" />
     <Compile Include="Core\ScenPart_YingletWorker.cs" />
     <Compile Include="Dialogs\Dialog_Compatibility.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="Core\DebugOptions.cs" />
     <Compile Include="Core\YingComp.cs" />
     <Compile Include="Core\YingDefOf.cs" />
-    <Compile Include="Patches\Harmony_HatFix.cs" />
+    <Compile Include="Patches\Harmony.cs" />
     <Compile Include="Reproduction\JobDriver_LayYingletEgg.cs" />
     <Compile Include="Reproduction\JobGiver_LayYingletEgg.cs" />
     <Compile Include="Reproduction\EggMaker.cs" />

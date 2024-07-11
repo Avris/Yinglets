@@ -19,7 +19,6 @@
 				<minAgeForAdulthood>2</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
-				<!-- Attempt to override the childhood debuffs starts here -->
 				<ageStatOverrides>
 					<WorkSpeedGlobal>
 						<useBiologicalYears>true</useBiologicalYears>
@@ -93,7 +92,6 @@
 							</curve>
 					</ArrestSuccessChance>
 				</ageStatOverrides>
-				<!-- False childhood-related number juggling ends here -->
 				<alienPartGenerator>
 					<bodyTypes>
 						<li>YoungletFluffy</li>
@@ -250,48 +248,48 @@
 							</second>
 						</li>
 					</colorChannels>
+					<bodyAddons>
+						<li>
+							<name>eyes</name>
+							<userCustomizable>true</userCustomizable>
+							<colorChannel>eye</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Tail</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<BodyType For="YoungletFluffy">Things/Pawn/YingPawn1-5/Parts/Younglet/YoungletEyes</BodyType>
+							</extendedGraphics>
+							<offsets>
+								<south>
+							<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.21)</YoungletFluffy>
+									</bodyTypes>
+								</south>
+								<north/>
+								<east>
+							<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
-			<!--<graphicPaths>
-				<li>
-                    <lifeStageDefs>
-                        <li>YoungletHatchling</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-                    <customDrawSize>(0.64,0.64)</customDrawSize>
-					<customHeadDrawSize>(0.64, 0.64)</customHeadDrawSize>
-				</li>
-				<li>
-                    <lifeStageDefs>
-                        <li>Younglet</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-                    <customDrawSize>(0.72,0.72)</customDrawSize>
-					<customHeadDrawSize>(0.72, 0.72)</customHeadDrawSize>
-				</li>
-				<li>
-                    <lifeStageDefs>
-                        <li>YoungletOlder</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-				</li>
-			</graphicPaths>-->
 			<raceRestriction>
-				<blackEndoCategories>
-					<li>Melanin</li>
-				</blackEndoCategories>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList/>
 			</raceRestriction>
@@ -389,7 +387,7 @@
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<lifeStageAges>
-				<li Class="AlienRace.LifeStageAgeAlien">
+				<li>
 					<def>YoungletHatchling</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Chick_Call</soundWounded>
@@ -397,7 +395,7 @@
 					<soundCall>Pawn_Chick_Call</soundCall>
 					<soundAngry>Pawn_Chick_Call</soundAngry>
 				</li>
-				<li Class="AlienRace.LifeStageAgeAlien">
+				<li>
 					<def>Younglet</def>
 					<minAge>0.018</minAge>
 					<soundWounded>Pawn_Chick_Call</soundWounded>
@@ -405,7 +403,7 @@
 					<soundCall>Pawn_Chick_Call</soundCall>
 					<soundAngry>Pawn_Chick_Call</soundAngry>
 				</li>
-				<li Class="AlienRace.LifeStageAgeAlien">
+				<li>
 					<def>YoungletOlder</def>
 					<minAge>0.06</minAge>
 					<soundWounded>Pawn_Chick_Call</soundWounded>
@@ -414,31 +412,6 @@
 					<soundAngry>Pawn_Chick_Call</soundAngry>
 				</li>
 			</lifeStageAges>
-			
-			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
-				<Patient>0</Patient>
-				<PatientBedRest>0</PatientBedRest>
-				<Firefighter>1</Firefighter>
-				<BasicWorker>1</BasicWorker>
-				<Cleaning>1</Cleaning>
-				<Hunting>1</Hunting>
-				<Handling>1</Handling>
-				<Growing>1</Growing>
-				<PlantCutting>1</PlantCutting>
-				<Hauling>1</Hauling>
-				<Cooking>2</Cooking>
-				<Construction>2</Construction>
-				<Crafting>2</Crafting>
-				<Mining>2</Mining>
-				<Tailoring>3</Tailoring>
-				<Art>3</Art>
-				<Research>3</Research>
-				<Doctor>4</Doctor>
-				<Warden>4</Warden>
-				<Smithing>4</Smithing>
-				<Childcare MayRequire="Ludeon.RimWorld.Biotech">4</Childcare>
-			</lifeStageWorkSettings>
-			
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
