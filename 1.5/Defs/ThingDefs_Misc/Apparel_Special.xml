@@ -120,7 +120,7 @@
     </tradeTags>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <thingCategories>
-      <li>Apparel</li>
+      <li>ApparelNoble</li>
       <li>YingletThing</li>
     </thingCategories>
     <statBases>
@@ -171,7 +171,8 @@
     </tradeTags>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <thingCategories>
-      <li>Headgear</li>
+      <li>ApparelNoble</li>
+	  <li>Headgear</li>
       <li>YingletThing</li>
     </thingCategories>
     <graphicData>
