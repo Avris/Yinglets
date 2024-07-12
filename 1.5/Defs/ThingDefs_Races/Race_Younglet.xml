@@ -6,7 +6,7 @@
 		<alienRace>
 			<graphicPaths>
 				<body>
-					<path>Things/Pawn/YingPawn/Parts/Younglet/YoungletFluffy</path>
+					<path>Things/Pawn/YingPawn/blank</path>
 				</body>
 				<head>
 					<path>Things/Pawn/YingPawn/blank</path>
@@ -268,6 +268,7 @@
 								</Posture>
 							</conditions>
 							<extendedGraphics>
+								<Hediff For="YingShuteye">Things/Pawn/YingPawn1-5/Parts/Blank/Blank</Hediff>
 								<BodyType For="YoungletFluffy">Things/Pawn/YingPawn1-5/Parts/Younglet/YoungletEyes</BodyType>
 							</extendedGraphics>
 							<offsets>
@@ -280,6 +281,44 @@
 								<north/>
 								<east>
 							<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<name>body</name>
+							<userCustomizable>true</userCustomizable>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Tail</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<BodyType For="YoungletFluffy">Things/Pawn/YingPawn1-5/Parts/Younglet/YoungletFluffy</BodyType>
+							</extendedGraphics>
+							<offsets>
+								<south>
+							<layerOffset>-0.3</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.21)</YoungletFluffy>
+									</bodyTypes>
+								</south>
+								<north/>
+								<east>
+							<layerOffset>-0.3</layerOffset>
 									<bodyTypes>
 										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
 									</bodyTypes>

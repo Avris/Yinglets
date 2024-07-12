@@ -58,20 +58,25 @@ namespace ShellTooth
                 }
             }
 
+            if (ying.jobs.curDriver != null && ying.jobs.curDriver.asleep)
+            {
+                if (ying.CurrentBed() != null && !ying.CurrentBed().def.building.bed_showSleeperBody && !ying.health.hediffSet.HasHediff(YingDefOf.Sleepying))
+                {
+                    ying.health.AddHediff(YingDefOf.Sleepying);
+                }
+                else
+                {
+                    ying.health.AddHediff(YingDefOf.YingShuteye);
+                }
+            }
+            else if (ying.health.hediffSet.HasHediff(YingDefOf.Sleepying) || ying.health.hediffSet.HasHediff(YingDefOf.YingShuteye))
+            {
+                ying.health.hediffSet.hediffs.Remove(ying.health.hediffSet.GetFirstHediffOfDef(YingDefOf.Sleepying));
+                ying.health.hediffSet.hediffs.Remove(ying.health.hediffSet.GetFirstHediffOfDef(YingDefOf.YingShuteye));
+                ying.Drawer.renderer.SetAllGraphicsDirty();
+            }
             if (ying.def == YingDefOf.Alien_Yinglet)
             {
-                if (ying.jobs.curDriver != null && ying.jobs.curDriver.asleep && ying.CurrentBed() != null)
-                {
-                    if (!ying.health.hediffSet.HasHediff(YingDefOf.Sleepying) && !ying.CurrentBed().def.building.bed_showSleeperBody)
-                    {
-                        ying.health.AddHediff(YingDefOf.Sleepying);
-                    }
-                }
-                else if (ying.health.hediffSet.HasHediff(YingDefOf.Sleepying))
-                {
-                    ying.health.hediffSet.hediffs.Remove(ying.health.hediffSet.GetFirstHediffOfDef(YingDefOf.Sleepying));
-                    ying.Drawer.renderer.SetAllGraphicsDirty();
-                }
 
                 if (Find.TickManager.TicksGame % ShellTooth.yingletGestation == 0)
                 {

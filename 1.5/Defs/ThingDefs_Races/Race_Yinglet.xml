@@ -1266,6 +1266,7 @@
 								</Posture>
 							</conditions>
 							<extendedGraphics>
+								<Hediff For="YingShuteye">Things/Pawn/YingPawn1-5/Parts/Blank/Blank</Hediff>
 								<Gender For="Female">Things/Pawn/YingPawn1-5/Parts/Eyes/FemaleEyes</Gender>
 								<Gender For="Male">Things/Pawn/YingPawn1-5/Parts/Eyes/MaleEyes</Gender>
 							</extendedGraphics>
