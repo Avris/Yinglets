@@ -39,14 +39,20 @@
 						<chance>20</chance>
 					</li>
 					<li>
-						<defName>Bisexual</defName>
-						<chance>60</chance>
-					</li>
-					<li>
-						<defName>Gay</defName>
+						<options>
+							<li>
+								<defName>Bisexual</defName>
+								<commonalityMale>90</commonalityMale>
+								<commonalityFemale>20</commonalityFemale>
+							</li>
+							<li>
+								<defName>Gay</defName>
+								<commonalityFemale>20</commonalityFemale>
+								<commonalityMale>10</commonalityMale>
+							</li>
+						</options>
+						<count>1</count>
 						<chance>100</chance>
-						<commonalityMale>30</commonalityMale>
-						<commonalityFemale>10</commonalityFemale>
 					</li>
 					<li>
 						<defName Degree="-1">Nerves</defName>
