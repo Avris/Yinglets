@@ -11,7 +11,7 @@ namespace ShellTooth
 	{
         protected override float MtbHours(Pawn pawn)
         {
-            if (pawn.GetComp<YingComp>().isDesignatedBreeder && pawn.CurrentBed() != null && pawn.CurrentBed().CurOccupants.EnumerableCount() == 2)
+            if (pawn.GetComp<YingComp>() != null && pawn.GetComp<YingComp>().isDesignatedBreeder && pawn.CurrentBed() != null && pawn.CurrentBed().CurOccupants.EnumerableCount() == 2)
             {
                 Pawn partnerInMyBed = pawn.CurrentBed().CurOccupants.First(p => p != pawn);
 				if (partnerInMyBed.GetComp<YingComp>().isDesignatedBreeder)

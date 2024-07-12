@@ -6,27 +6,50 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using LudeonTK;
+using RimWorld;
+using System.Net.NetworkInformation;
 
 namespace ShellTooth
 {
+    // Fixes graphical alignment while in bed
     internal class Harmony_HeadFix : PawnRenderSubWorker
     {
         public override void TransformOffset(PawnRenderNode node, PawnDrawParms parms, ref Vector3 offset, ref Vector3 pivot)
         {
             Pawn pawn = parms.pawn;
-            if (pawn.def == YingDefOf.Alien_Yinglet)
+            if (pawn.CurrentBed() != null && pawn.def == YingDefOf.Alien_Yinglet)
             {
-                if (parms.facing == Rot4.South)
+                if (pawn.CurrentBed().Rotation == Rot4.South)
                 {
-                    offset.z = -0.01f;
+                    if (parms.facing == Rot4.South)
+                    {
+                        offset.z = -0.01f;
+                    }
+                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    {
+                        offset.z = -0.07f;
+                    }
                 }
-                if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                if (pawn.CurrentBed().Rotation == Rot4.East || pawn.CurrentBed().Rotation == Rot4.West)
                 {
-                    offset.z = -0.07f;
+                    if (parms.facing == Rot4.South)
+                    {
+                    }
+                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    {
+                        offset.z = -0.13f;
+                    }
                 }
-                if (parms.facing == Rot4.North)
+                if (pawn.CurrentBed().Rotation == Rot4.North)
                 {
-                    offset.z = 0f;
+                    if (parms.facing == Rot4.South)
+                    {
+                        offset.z = -0.23f;
+                    }
+                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    {
+                        offset.z = -0.3f;
+                    }
                 }
             }
         }
@@ -36,19 +59,41 @@ namespace ShellTooth
         public override void TransformOffset(PawnRenderNode node, PawnDrawParms parms, ref Vector3 offset, ref Vector3 pivot)
         {
             Pawn pawn = parms.pawn;
-            if (pawn.def == YingDefOf.Alien_Yinglet)
+            if (pawn.CurrentBed() != null && pawn.def == YingDefOf.Alien_Yinglet)
             {
-                if (parms.facing == Rot4.South)
+                if (pawn.CurrentBed().Rotation == Rot4.South)
                 {
-                    offset.z = -0.01f;
+                    if (parms.facing == Rot4.South)
+                    {
+                        Log.ErrorOnce($"{pawn} bed south - body south", pawn.thingIDNumber);
+                        offset.z = -0.01f;
+                    }
+                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    {
+                        Log.ErrorOnce($"{pawn} bed south - body E/W", pawn.thingIDNumber);
+                        offset.z = -0.03f;
+                    }
                 }
-                if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                if (pawn.CurrentBed().Rotation == Rot4.East || pawn.CurrentBed().Rotation == Rot4.West)
                 {
-                    offset.z = 0.03f;
+                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    {
+                        Log.ErrorOnce($"{pawn} bed E/W - body E/W", pawn.thingIDNumber);
+                        offset.y = -0.13f;
+                    }
                 }
-                if (parms.facing == Rot4.North)
+                if (pawn.CurrentBed().Rotation == Rot4.North)
                 {
-                    offset.z = 0f;
+                    if (parms.facing == Rot4.South)
+                    {
+                        Log.ErrorOnce($"{pawn} bed north - body south", pawn.thingIDNumber);
+                        offset.z = 0.4f;
+                    }
+                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    {
+                        Log.ErrorOnce($"{pawn} bed north - body E/W", pawn.thingIDNumber);
+                        offset.z = 0.4f;
+                    }
                 }
             }
         }
