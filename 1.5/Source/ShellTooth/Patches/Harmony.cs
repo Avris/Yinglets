@@ -32,9 +32,6 @@ namespace ShellTooth
                 }
                 if (pawn.CurrentBed().Rotation == Rot4.East || pawn.CurrentBed().Rotation == Rot4.West)
                 {
-                    if (parms.facing == Rot4.South)
-                    {
-                    }
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
                         offset.z = -0.13f;
@@ -65,12 +62,10 @@ namespace ShellTooth
                 {
                     if (parms.facing == Rot4.South)
                     {
-                        Log.ErrorOnce($"{pawn} bed south - body south", pawn.thingIDNumber);
                         offset.z = -0.01f;
                     }
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
-                        Log.ErrorOnce($"{pawn} bed south - body E/W", pawn.thingIDNumber);
                         offset.z = -0.03f;
                     }
                 }
@@ -78,7 +73,6 @@ namespace ShellTooth
                 {
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
-                        Log.ErrorOnce($"{pawn} bed E/W - body E/W", pawn.thingIDNumber);
                         offset.y = -0.13f;
                     }
                 }
@@ -86,12 +80,10 @@ namespace ShellTooth
                 {
                     if (parms.facing == Rot4.South)
                     {
-                        Log.ErrorOnce($"{pawn} bed north - body south", pawn.thingIDNumber);
                         offset.z = 0.4f;
                     }
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
-                        Log.ErrorOnce($"{pawn} bed north - body E/W", pawn.thingIDNumber);
                         offset.z = 0.4f;
                     }
                 }
