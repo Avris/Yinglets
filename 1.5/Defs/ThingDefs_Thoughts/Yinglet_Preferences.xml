@@ -79,5 +79,18 @@
         <baseMoodEffect>2</baseMoodEffect>
       </li>
     </stages>
+  </ThoughtDef>  
+  <ThoughtDef>
+    <defName>AteYingletEgg</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>14</durationDays>
+    <stages>
+      <li>
+        <label>raw cannibalism</label>
+        <description>I ate a living younglet egg... I feel like a monster. How can I live like this?</description>
+        <baseMoodEffect>-50</baseMoodEffect>
+      </li>
+    </stages>
   </ThoughtDef>
 </Defs>

@@ -3,46 +3,26 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using Verse.AI;
+using System.Linq;
 
 namespace ShellTooth
 {
 	public class ThinkNode_ChancePerHour_Humpin : ThinkNode_ChancePerHour
 	{
-		protected override float MtbHours(Pawn pawn)
-		{
-			if (pawn.def.defName == "Alien_Younglet") 
-			{
-				return -1f;
-			}
-			int tick = Current.Game.tickManager.TicksGame;
-			Pawn partnerInMyBed = new Pawn();
-			try
-			{
-				if (pawn.CurrentBed() == null || !pawn.GetComp<YingComp>().isDesignatedBreeder || pawn.CurrentBed().CurOccupants.EnumerableCount() != 2)
+        protected override float MtbHours(Pawn pawn)
+        {
+            if (pawn.GetComp<YingComp>() != null && pawn.GetComp<YingComp>().isDesignatedBreeder && pawn.CurrentBed() != null && pawn.CurrentBed().CurOccupants.EnumerableCount() == 2)
+            {
+                Pawn partnerInMyBed = pawn.CurrentBed().CurOccupants.First(p => p != pawn);
+				if (partnerInMyBed.GetComp<YingComp>().isDesignatedBreeder)
 				{
-					if (pawn.CurrentBed() != null)
-					{
-						Log.Message($"{pawn} is {(pawn.GetComp<YingComp>().isDesignatedBreeder ? "enabled" : "disabled")} in a bed with {pawn.CurrentBed().CurOccupants.EnumerableCount()} {(pawn.CurrentBed().CurOccupants.EnumerableCount() != 1 ? "occupants" : "occupant")} at tick {tick}");
-					}
-					return -1f;
+					return GetHumpinMtbHours(pawn, partnerInMyBed);
 				}
-				foreach (Pawn pawns in pawn.CurrentBed().CurOccupants)
-				{
-					if (pawns != pawn && pawns.GetComp<YingComp>().isDesignatedBreeder)
-					{
-						partnerInMyBed = pawns;
-					}
-				}
-			}
-			catch (NullReferenceException nre) 
-			{ 
-				Log.Message("ShellTooth: attempted mtb check had NRE " + nre.ToString());
-			}
-			float MTB = GetHumpinMtbHours(pawn, partnerInMyBed);
-			Log.Message($"{pawn} and {partnerInMyBed} have an MTB of {MTB} at tick {tick}");
-			return MTB;
-		}
-		public float GetHumpinMtbHours(Pawn pawn, Pawn partner)
+            }
+            return -1f;
+        }
+        // This maths is old and based on vanilla numbers. Need to rewrite it to be more readable.
+        public float GetHumpinMtbHours(Pawn pawn, Pawn partner)
 		{
 			if (pawn.Dead || partner.Dead)
 			{
@@ -82,8 +62,9 @@ namespace ShellTooth
 				num3 /= 5f;
 			}
 			return num3;
-		}
-		private float HumpinMtbSinglePawnFactor(Pawn pawn)
+        }
+        // This maths is old and based on vanilla numbers. Need to rewrite it to be more readable.
+        private float HumpinMtbSinglePawnFactor(Pawn pawn)
 		{
 			float num = 1f;
 			num /= 1f - pawn.health.hediffSet.PainTotal;

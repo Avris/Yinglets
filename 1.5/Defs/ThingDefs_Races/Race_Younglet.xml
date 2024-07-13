@@ -6,7 +6,7 @@
 		<alienRace>
 			<graphicPaths>
 				<body>
-					<path>Things/Pawn/YingPawn/Parts/Younglet/YoungletFluffy</path>
+					<path>Things/Pawn/YingPawn/blank</path>
 				</body>
 				<head>
 					<path>Things/Pawn/YingPawn/blank</path>
@@ -19,6 +19,79 @@
 				<minAgeForAdulthood>2</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maxDamageForSocialfight>10</maxDamageForSocialfight>
+				<ageStatOverrides>
+					<WorkSpeedGlobal>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.2)</li>
+									<li>(1,0.8)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</WorkSpeedGlobal>
+					<ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.95)</li> 
+									<li>(1,0.98)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</ShootingAccuracyChildFactor>
+					<MarketValue>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.5)</li>
+									<li>(1,0.9)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</MarketValue>
+					<MeleeHitChance>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,0.05)</li>
+									<li>(1,0.8)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</MeleeHitChance>
+					<AimingDelayFactor>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5,1.8)</li>
+									<li>(1,1.1)</li>
+									<li>(2,1)</li>
+								</points>
+							</curve>
+					</AimingDelayFactor>
+					<ImmunityGainSpeed>
+						<curve>
+							<points>
+								<li>(0.65,1)</li>
+								<li>(0.8,0.95)</li>
+								<li>(1.0,0.9)</li>
+								<li>(1.2,0.8)</li>
+								<li>(1.5,0.5)</li>
+							</points>
+						</curve>
+					</ImmunityGainSpeed>
+					<ArrestSuccessChance>
+						<useBiologicalYears>true</useBiologicalYears>
+							<curve>
+								<points>
+									<li>(0.5, 0.05)</li>
+									<li>(1, 0.8)</li>
+									<li>(2, 1)</li>
+								</points>
+							</curve>
+					</ArrestSuccessChance>
+				</ageStatOverrides>
 				<alienPartGenerator>
 					<bodyTypes>
 						<li>YoungletFluffy</li>
@@ -175,44 +248,86 @@
 							</second>
 						</li>
 					</colorChannels>
+					<bodyAddons>
+						<li>
+							<name>eyes</name>
+							<userCustomizable>true</userCustomizable>
+							<colorChannel>eye</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Tail</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<Hediff For="YingShuteye">Things/Pawn/YingPawn1-5/Parts/Blank/Blank</Hediff>
+								<BodyType For="YoungletFluffy">Things/Pawn/YingPawn1-5/Parts/Younglet/YoungletEyes</BodyType>
+							</extendedGraphics>
+							<offsets>
+								<south>
+							<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.21)</YoungletFluffy>
+									</bodyTypes>
+								</south>
+								<north/>
+								<east>
+							<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<name>body</name>
+							<userCustomizable>true</userCustomizable>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Tail</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<BodyType For="YoungletFluffy">Things/Pawn/YingPawn1-5/Parts/Younglet/YoungletFluffy</BodyType>
+							</extendedGraphics>
+							<offsets>
+								<south>
+							<layerOffset>-0.3</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.21)</YoungletFluffy>
+									</bodyTypes>
+								</south>
+								<north/>
+								<east>
+							<layerOffset>-0.3</layerOffset>
+									<bodyTypes>
+										<YoungletFluffy>(-0.42,0.22)</YoungletFluffy>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
-			<!--<graphicPaths>
-				<li>
-                    <lifeStageDefs>
-                        <li>YoungletHatchling</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-                    <customDrawSize>(0.64,0.64)</customDrawSize>
-					<customHeadDrawSize>(0.64, 0.64)</customHeadDrawSize>
-				</li>
-				<li>
-                    <lifeStageDefs>
-                        <li>Younglet</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-                    <customDrawSize>(0.72,0.72)</customDrawSize>
-					<customHeadDrawSize>(0.72, 0.72)</customHeadDrawSize>
-				</li>
-				<li>
-                    <lifeStageDefs>
-                        <li>YoungletOlder</li>
-                    </lifeStageDefs>
-					<head>Things/Pawn/YingPawn/Parts/Younglet/</head>
-					<body>Things/Pawn/YingPawn/Icons/</body>
-					<skeleton>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying</skeleton>
-					<skull>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_skull</skull>
-					<stump>Things/Pawn/YingPawn/Icons/Desiccated/Desiccated_Ying_stump</stump>
-				</li>
-			</graphicPaths>-->
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList/>

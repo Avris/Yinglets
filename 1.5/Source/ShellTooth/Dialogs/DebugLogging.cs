@@ -18,5 +18,10 @@ namespace ShellTooth
         public static void Yinglification(Pawn origin, Pawn destination, string cause)
         {
         }
+        public static void BreedCheck(Pawn pawn)
+        {
+            int tick = Current.Game.tickManager.TicksGame;
+            Log.Message($"{pawn} is {(pawn.GetComp<YingComp>().isDesignatedBreeder ? "enabled" : "disabled")} in a bed with {pawn.CurrentBed().CurOccupants.EnumerableCount()} {(pawn.CurrentBed().CurOccupants.EnumerableCount() != 1 ? "occupants" : "occupant")} at tick {tick}");
+        }
     }
 }

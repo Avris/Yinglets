@@ -1,7 +1,7 @@
 ﻿<ModMetaData>
 	<name>Yinglets!</name>
 	<author>Chrysopoeia and ValSalia</author>
-	<packageId>Chrysopoeia.Yinglets</packageId>
+	<packageId>Chrysopoeia.Yinglets.Dev</packageId>
 	<url/>
 	<supportedVersions>
 		<li>1.0</li>

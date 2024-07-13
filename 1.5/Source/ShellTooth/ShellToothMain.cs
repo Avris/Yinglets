@@ -47,9 +47,9 @@ namespace ShellTooth
         [TweakValue("Yinglets: Chance to fertilise egg", 0f, 1f)]
         public static float yingletEggChance = 0.5f;
         [TweakValue("Yinglets: Younglet hatch time", 0.01f, 7f)]
-        public static float yingletEgg = 7f;
-        [TweakValue("Yinglets: Gestation time", 1f, 60f)]
-        public static float yingletGestation = 60f;
+        public static float yingletEgg = 4f;
+        [TweakValue("Yinglets: Gestation time", 1f, 120f)]
+        public static float yingletGestation = 120f;
         [TweakValue("Yinglets: Younglet adulthood minimum in days", 0f, 14f)]
         public static float yingletAdultDaysMinimum = 14f;
     }

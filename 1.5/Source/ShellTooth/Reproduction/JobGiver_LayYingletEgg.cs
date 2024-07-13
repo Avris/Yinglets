@@ -22,16 +22,15 @@ namespace ShellTooth
                     {
                         result = JobMaker.MakeJob(YingDefOf.LayYingletEgg, bestEggBox);
                     }
-
                 }
-                Thing thing = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(DefDatabase<ThingDef>.GetNamed("EggYingletFertilized")), peMode, traverseParms, 30f, (Thing x) => pawn.GetRoom(RegionType.Set_All) == null || x.GetRoom(RegionType.Set_All) == pawn.GetRoom(RegionType.Set_All), null, 0, -1, false, RegionType.Set_Passable, false);
+                Thing thing = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(YingDefOf.EggYingletFertilized), peMode, traverseParms, 30f, (Thing x) => pawn.GetRoom(RegionType.Set_All) == null || x.GetRoom(RegionType.Set_All) == pawn.GetRoom(RegionType.Set_All), null, 0, -1, false, RegionType.Set_Passable, false);
                 result = JobMaker.MakeJob(YingDefOf.LayYingletEgg, (thing != null) ? thing.Position : RimWorld.RCellFinder.RandomWanderDestFor(pawn, pawn.Position, 5f, null, Danger.Some));
             }
             return result;
         }
         private Thing GetBestEggBox(Pawn pawn, PathEndMode peMode, TraverseParms tp)
         {
-            ThingDef eggDef = DefDatabase<ThingDef>.GetNamed("EggYingletFertilized");
+            ThingDef eggDef = YingDefOf.EggYingletFertilized;
             return GenClosest.ClosestThing_Regionwise_ReachablePrioritized(pawn.Position, pawn.Map, ThingRequest.ForDef(ThingDefOf.EggBox), peMode, tp, 30f, new Predicate<Thing>(IsUsableBox), new Func<Thing, float>(GetScore), 10);
 
             bool IsUsableBox(Thing thing)

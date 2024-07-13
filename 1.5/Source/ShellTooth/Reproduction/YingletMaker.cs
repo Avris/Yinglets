@@ -24,7 +24,7 @@ namespace ShellTooth
                     pawn.Strip();
                     IntVec3 ploc1 = pawn.Position;
                     Map pmap1 = pawn.Map;
-                    pawn.DeSpawn();
+                    pawn.Destroy();
                     GenSpawn.Spawn(newbie, ploc1, pmap1, WipeMode.Vanish);
                     result = newbie;
                 }
