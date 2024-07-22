@@ -156,6 +156,18 @@ namespace ShellTooth
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
+            if (ShellTooth.debugMode) 
+            {
+                Texture2D icon = ContentFinder<Texture2D>.Get("World/Expanding/Yinglet/Yinglet_Player_Icon", true);
+                Command_Action debugButton = new Command_Action
+                {
+                    defaultLabel = "Debug Window",
+                    defaultDesc = ($"Let's take a look"),
+                    icon = icon,
+                    action = () => Find.WindowStack.Add(new Dialog_DebugWindow(ying))
+                };
+                yield return debugButton;
+            }
             if (!EggMaker.YingSterile(ying))
             {
                 if (eggProgress == 0)
@@ -186,7 +198,8 @@ namespace ShellTooth
                     {
                         defaultLabel = "Has egg!",
                         defaultDesc = ($"{parent} can't be assigned to breeding while she's growing an egg."),
-                        icon = icon
+                        icon = icon,
+                        action = () => { }
                     };
                     yield return hasEgg;
                 }
@@ -201,7 +214,8 @@ namespace ShellTooth
                     {
                         defaultLabel = "Younglet!",
                         defaultDesc = ($"{parent} is too young to go on the breeding registry."),
-                        icon = icon
+                        icon = icon,
+                        action = () => { }
                     };
                     yield return hasEgg;
                 }
@@ -213,7 +227,8 @@ namespace ShellTooth
                     {
                         defaultLabel = "Sterilised!",
                         defaultDesc = ($"{parent} is no longer able to breed."),
-                        icon = icon
+                        icon = icon,
+                        action = () => { }
                     };
                     yield return hasEgg;
                 }

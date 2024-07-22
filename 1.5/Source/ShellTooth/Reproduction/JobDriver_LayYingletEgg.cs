@@ -28,10 +28,13 @@ namespace ShellTooth
             yield return Toils_General.Wait(500, TargetIndex.None);
             yield return Toils_General.Do(delegate
             {
+                Letter letter = LetterMaker.MakeLetter($"Egg laid: {pawn}", $"{pawn} has laid an egg!", YingDefOf.YoungletGrown);
+                Messages.Message($"{pawn} has grown into an adolescent yinglet!", pawn, MessageTypeDefOf.PositiveEvent, true);
                 Thing thing = pawn.GetComp<YingComp>().ProduceEgg();
                 if (job.GetTarget(TargetIndex.A).HasThing && EggBoxComp.Accepts(thing.def))
                 {
                     EggBoxComp.innerContainer.TryAdd(thing, true);
+                    Find.LetterStack.ReceiveLetter(letter, null);
                     return;
                 }
                 GenPlace.TryPlaceThing(thing, pawn.Position, pawn.Map, ThingPlaceMode.Near, delegate (Thing t, int i)

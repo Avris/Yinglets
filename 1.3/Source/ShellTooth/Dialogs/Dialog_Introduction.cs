@@ -30,12 +30,9 @@ namespace ShellTooth
 		{
 			Text.Font = GameFont.Medium;
 			Text.Anchor = TextAnchor.UpperCenter;
-			Widgets.Label(container, "Welcome to the Yinglet mod public beta!");
-			Text.Font = GameFont.Small;
-			Widgets.Label(container, "\n\nThis is a work in progress - expect unfinished stuff and possible bugs." +
-				"\n\n\n" +
-				"Please make sure to check the workshop page's buglist before reporting issues.\n" +
-				"Otherwise, feel free to poke us in #yingworld channel on the official OoPs server!");
+            Widgets.Label(container, "THIS YINGLET MOD IS NOT SUPPORTED FOR 1.3");
+            Text.Font = GameFont.Small;
+			Widgets.Label(container, "\n\n\n\n\n\nThere are lots of bugs here right now! Run only if absolutely necessary.");
 			Text.Font = GameFont.Medium;
 			Text.Anchor = TextAnchor.UpperLeft;
 		}

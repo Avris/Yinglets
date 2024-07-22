@@ -7,6 +7,7 @@ using UnityEngine;
 
 namespace ShellTooth
 {
+    // Old, may replace with non-hediff later
     public class Hediff_Yingify : HediffWithComps
     {
         public override void PostMake()

@@ -40,7 +40,7 @@ namespace ShellTooth
                 return displayableVersion;
             }
         }
-        public static bool verboseLogging;
+        public static bool debugMode;
         public ShellTooth(ModContentPack content) : base(content)
         {
         }

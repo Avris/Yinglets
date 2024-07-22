@@ -1,5 +1,5 @@
 ﻿<ModMetaData>
-	<name>Yinglets!</name>
+	<name>Yinglets! Dev Version</name>
 	<author>Chrysopoeia and ValSalia</author>
 	<packageId>Chrysopoeia.Yinglets.Dev</packageId>
 	<url/>
@@ -30,7 +30,6 @@
 • Adults get extra unwanted growth points Temporary!
 • Editor mods can't change fur and hair colors.
 • Random harmless lifestage error happens sometimes.
-• Bed graphics need to be moved down a little bit.
     </description>
 	<loadAfter>
 		<li>ludeon.rimworld.royalty</li>

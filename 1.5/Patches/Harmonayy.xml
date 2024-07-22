@@ -8,34 +8,28 @@
            <li>YingletPlayerColony</li>
         </value>
     </Operation>
-	<Operation Class="PatchOperationConditional">
-        <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Head"]/subworkerClasses</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Head"]</xpath>
-            <value>
-                <subworkerClasses></subworkerClasses>
-            </value>
-        </nomatch>
-    </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Head"]/subworkerClasses</xpath>
+        <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Head"]</xpath>
         <value>
+			<subworkerClasses>
             <li>ShellTooth.Harmony_HeadFix</li>
+			</subworkerClasses>
         </value>
     </Operation>
-	<Operation Class="PatchOperationConditional">
-        <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Body"]/subworkerClasses</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Body"]</xpath>
-            <value>
-                <subworkerClasses></subworkerClasses>
-            </value>
-        </nomatch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Body"]</xpath>
+		<value>
+			<subworkerClasses>
+				<li>ShellTooth.Harmony_BodyFix</li>
+			</subworkerClasses>
+		</value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Body"]/subworkerClasses</xpath>
-        <value>
-            <li>ShellTooth.Harmony_BodyFix</li>
-        </value>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[nodeClass="PawnRenderNode_Body"]/children/li[tagDef="ApparelBody"]</xpath>
+		<value>
+			<subworkerClasses>
+				<li>ShellTooth.Harmony_ClothesFix</li>
+			</subworkerClasses>
+		</value>
     </Operation>
 </Patch>

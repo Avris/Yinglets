@@ -11,41 +11,53 @@ using System.Net.NetworkInformation;
 
 namespace ShellTooth
 {
-    // Fixes graphical alignment while in bed
+    // Fixes graphical alignment
     internal class Harmony_HeadFix : PawnRenderSubWorker
     {
         public override void TransformOffset(PawnRenderNode node, PawnDrawParms parms, ref Vector3 offset, ref Vector3 pivot)
         {
             Pawn pawn = parms.pawn;
-            if (pawn.CurrentBed() != null && pawn.def == YingDefOf.Alien_Yinglet)
+            if (pawn.def == YingDefOf.Alien_Yinglet)
             {
-                if (pawn.CurrentBed().Rotation == Rot4.South)
+                if (pawn.CurrentBed() == null)
+                // Fixes hats
                 {
-                    if (parms.facing == Rot4.South)
-                    {
-                        offset.z = -0.01f;
-                    }
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
-                        offset.z = -0.07f;
+                        offset.z = -0.1f;
                     }
                 }
-                if (pawn.CurrentBed().Rotation == Rot4.East || pawn.CurrentBed().Rotation == Rot4.West)
+                else
+                // Fixes while in bed
                 {
-                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    if (pawn.CurrentBed().Rotation == Rot4.South)
                     {
-                        offset.z = -0.13f;
+                        if (parms.facing == Rot4.South)
+                        {
+                            offset.z = -0.01f;
+                        }
+                        if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                        {
+                            offset.z = -0.07f;
+                        }
                     }
-                }
-                if (pawn.CurrentBed().Rotation == Rot4.North)
-                {
-                    if (parms.facing == Rot4.South)
+                    if (pawn.CurrentBed().Rotation == Rot4.East || pawn.CurrentBed().Rotation == Rot4.West)
                     {
-                        offset.z = -0.23f;
+                        if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                        {
+                            offset.z = -0.13f;
+                        }
                     }
-                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    if (pawn.CurrentBed().Rotation == Rot4.North)
                     {
-                        offset.z = -0.3f;
+                        if (parms.facing == Rot4.South)
+                        {
+                            offset.z = -0.23f;
+                        }
+                        if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                        {
+                            offset.z = -0.3f;
+                        }
                     }
                 }
             }
@@ -57,6 +69,7 @@ namespace ShellTooth
         {
             Pawn pawn = parms.pawn;
             if (pawn.CurrentBed() != null && pawn.def == YingDefOf.Alien_Yinglet)
+            // Fixes while in bed
             {
                 if (pawn.CurrentBed().Rotation == Rot4.South)
                 {
@@ -86,6 +99,25 @@ namespace ShellTooth
                     {
                         offset.z = 0.4f;
                     }
+                }
+            }
+        }
+    }
+    internal class Harmony_ClothesFix : PawnRenderSubWorker
+    {
+        public override void TransformOffset(PawnRenderNode node, PawnDrawParms parms, ref Vector3 offset, ref Vector3 pivot)
+        {
+            Pawn pawn = parms.pawn;
+            if (pawn.def == YingDefOf.Alien_Yinglet)
+            // Fixes clothes
+            {
+                if (parms.facing == Rot4.South)
+                {
+                    offset.z = -0.07f;
+                }
+                if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                {
+                    offset.z = -0.02f;
                 }
             }
         }
