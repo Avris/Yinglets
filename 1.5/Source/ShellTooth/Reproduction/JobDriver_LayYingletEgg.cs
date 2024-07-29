@@ -29,7 +29,7 @@ namespace ShellTooth
             yield return Toils_General.Do(delegate
             {
                 Letter letter = LetterMaker.MakeLetter($"Egg laid: {pawn}", $"{pawn} has laid an egg!", YingDefOf.YoungletGrown);
-                Messages.Message($"{pawn} has grown into an adolescent yinglet!", pawn, MessageTypeDefOf.PositiveEvent, true);
+                Messages.Message($"todo", pawn, MessageTypeDefOf.PositiveEvent, true);
                 Thing thing = pawn.GetComp<YingComp>().ProduceEgg();
                 if (job.GetTarget(TargetIndex.A).HasThing && EggBoxComp.Accepts(thing.def))
                 {
