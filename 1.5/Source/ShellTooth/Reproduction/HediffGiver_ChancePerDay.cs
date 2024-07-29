@@ -12,7 +12,7 @@ namespace ShellTooth
 		{
 			if (pawn.def == YingDefOf.Alien_Younglet)
 			{
-				float min = ShellTooth.yingletAdultDaysMinimum;
+				float min = ShelltoothSettings.yingletAdultDaysMinimum;
 				float ageDays = pawn.ageTracker.AgeBiologicalTicks / (float)GenDate.TicksPerDay;
 				if (ageDays >= min)
 				{

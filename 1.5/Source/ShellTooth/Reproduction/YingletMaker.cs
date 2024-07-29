@@ -25,7 +25,9 @@ namespace ShellTooth
                     IntVec3 ploc1 = pawn.Position;
                     Map pmap1 = pawn.Map;
                     pawn.Destroy();
+                    pawn.relations.hidePawnRelations = true;
                     GenSpawn.Spawn(newbie, ploc1, pmap1, WipeMode.Vanish);
+                    newbie.TryGetComp<YingComp>().updateStamp = ShellTooth.currentVersion;
                     result = newbie;
                 }
             }

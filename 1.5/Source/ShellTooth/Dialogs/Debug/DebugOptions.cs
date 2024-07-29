@@ -9,7 +9,7 @@ namespace ShellTooth
 {
     class DebugOptions
     {
-        private static string verboseOnOff = $"Verbose Logging: {(ShellTooth.debugMode ? "ON" : "OFF")}";
+        private static string verboseOnOff = $"Verbose Logging: {(ShelltoothSettings.debugMode ? "ON" : "OFF")}";
         [DebugAction("Yinglets", "Work In Progress Button", allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static void YingletDebugMenu()
         {
@@ -19,7 +19,7 @@ namespace ShellTooth
         [DebugAction("Yinglets", "Verbose Logging: OFF", allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static void YingletVerboseLogging()
         {
-            ShellTooth.debugMode = !ShellTooth.debugMode;
+            ShelltoothSettings.debugMode = !ShelltoothSettings.debugMode;
         }
         [DebugAction("Yinglets", "Tiplod pregnancy tester", allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static void YingletTiplodTester()

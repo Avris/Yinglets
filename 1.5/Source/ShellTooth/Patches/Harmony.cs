@@ -111,15 +111,39 @@ namespace ShellTooth
             if (pawn.def == YingDefOf.Alien_Yinglet)
             // Fixes clothes
             {
+                if (parms.facing == Rot4.North)
+                {
+                    offset.x = northx;
+                    offset.z = northz;
+                }
                 if (parms.facing == Rot4.South)
                 {
-                    offset.z = -0.07f;
+                    offset.x = southx;
+                    offset.z = southz;
                 }
-                if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                if (parms.facing == Rot4.East)
                 {
-                    offset.z = -0.02f;
+                    offset.x = eastwestx - (eastwestx * 2);
+                    offset.z = eastwestz;
+                }
+                if (parms.facing == Rot4.West)
+                {
+                    offset.x = eastwestx;
+                    offset.z = eastwestz;
                 }
             }
         }
+        [TweakValue("Shelltooth: clothesfix north x", -0.5f, 0.5f)]
+        private static float northx = 0f;
+        [TweakValue("Shelltooth: clothesfix north z", -0.5f, 0.5f)]
+        private static float northz = 0f;
+        [TweakValue("Shelltooth: clothesfix south x", -0.5f, 0.5f)]
+        private static float southx = 0f;
+        [TweakValue("Shelltooth: clothesfix south z", -0.5f, 0.5f)]
+        private static float southz = 0f;
+        [TweakValue("Shelltooth: clothesfix east/west x", -0.5f, 0.5f)]
+        private static float eastwestx = 0.08f;
+        [TweakValue("Shelltooth: clothesfix east/west z", -0.5f, 0.5f)]
+        private static float eastwestz = -0.02f;
     }
 }

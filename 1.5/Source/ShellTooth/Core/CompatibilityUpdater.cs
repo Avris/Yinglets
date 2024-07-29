@@ -25,14 +25,15 @@ namespace ShellTooth
             { "diff", 0 },
             { "rdif", 0 },
             { "type", 0 },
-            { "part", 0 }
+            { "part", 0 },
+            { "rels", 0 }
             };
             List<Pawn> AllYinglets = PawnsFinder.All_AliveOrDead.FindAll((Pawn pawn) => pawn.def == YingDefOf.Alien_Yinglet);
             int total = PawnsFinder.All_AliveOrDead.Count;
 
             foreach (Pawn pawn in AllYinglets)
             {
-                if (pawn.GetComp<YingComp>().updateStamp != currentVersion)
+                if (pawn.GetComp<YingComp>().updateStamp != ShellTooth.currentVersion)
                     switch (pawn.GetComp<YingComp>().updateStamp)
                     {
                         case "none":
@@ -40,23 +41,28 @@ namespace ShellTooth
                             FixBodyTypes(pawn, ref defs);
                             FixDefNaming(pawn, ref defs);
                             UpdateAddons(pawn, ref defs);
-                            pawn.GetComp<YingComp>().updateStamp = currentVersion;
+                            pawn.GetComp<YingComp>().updateStamp = ShellTooth.currentVersion;
                             break;
                         case "1227: applied":
                         case "1227: not applied":
                             FixDefNaming(pawn, ref defs);
                             UpdateAddons(pawn, ref defs);
-                            pawn.GetComp<YingComp>().updateStamp = currentVersion;
+                            pawn.GetComp<YingComp>().updateStamp = ShellTooth.currentVersion;
                             break;
                         case "Tiplod":
                             UpdateAddons(pawn, ref defs);
-                            pawn.GetComp<YingComp>().updateStamp = currentVersion;
+                            pawn.GetComp<YingComp>().updateStamp = ShellTooth.currentVersion;
+                            break;
+                        case "Tiplod Dev":
+                            FixRelGhosts(pawn, ref defs);
+                            pawn.GetComp<YingComp>().updateStamp = ShellTooth.currentVersion;
                             break;
                         default:
                             FixBodyTypes(pawn, ref defs);
                             FixDefNaming(pawn, ref defs);
                             UpdateAddons(pawn, ref defs);
-                            pawn.GetComp<YingComp>().updateStamp = currentVersion;
+                            FixRelGhosts(pawn, ref defs);
+                            pawn.GetComp<YingComp>().updateStamp = ShellTooth.currentVersion;
                             break;
                     }
             }
@@ -155,6 +161,20 @@ namespace ShellTooth
                 defs["rdif"]++;
             }
         }
-        public static string currentVersion = "Tiplod Dev";
+
+        /// <summary>
+        /// Updates saves to use new def naming conventions
+        /// </summary>
+        public static void FixRelGhosts(Pawn pawn, ref Dictionary<string, int> defs)
+        {
+            foreach (Pawn rel in pawn.relations.RelatedPawns)
+            {
+                if (rel.Destroyed)
+                {
+                    rel.relations.hidePawnRelations = true;
+                    defs["rels"]++;
+                }
+            }
+        }
     }
 }

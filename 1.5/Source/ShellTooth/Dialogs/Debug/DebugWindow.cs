@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using UnityEngine;
+using RimWorld;
 
 namespace ShellTooth
 {
@@ -15,7 +16,7 @@ namespace ShellTooth
         {
             get
             {
-                return new Vector2(600f, 233f);
+                return new Vector2(1000f, 1000f);
             }
         }
         public Dialog_DebugWindow(Pawn ying)
@@ -30,11 +31,10 @@ namespace ShellTooth
         }
         public override void DoWindowContents(Rect container)
         {
-            Text.Font = GameFont.Medium;
-            Text.Anchor = TextAnchor.UpperCenter;
-            Widgets.Label(container, "You're now cooking with yinglets!\n\n\n\n");
-            Widgets.Label(container, "weh");
-            Text.Anchor = TextAnchor.UpperLeft;
+            Rect test = new Rect(0, 0, 200, 200);
+            string nondev = "Disabled in public version. If you're seeing this, please let the dev know!";
+            string info = "";
+            Widgets.Label(container, nondev);
         }
     }
 }

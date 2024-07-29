@@ -66,8 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\CompatibilityUpdater.cs" />
+    <Compile Include="Dialogs\Debug\DebugWindow.cs" />
     <Compile Include="Hediffs\Hediff_Sleepy.cs" />
-    <Compile Include="Dialogs\DebugLogging.cs" />
+    <Compile Include="Dialogs\Debug\DebugLogging.cs" />
     <Compile Include="Core\ScenPart_YingletWorker.cs" />
     <Compile Include="Dialogs\Dialog_Compatibility.cs" />
     <Compile Include="Dialogs\Dialog_Introduction.cs" />
@@ -77,8 +78,8 @@
     <Compile Include="Foraging\JobDriver_Forage.cs" />
     <Compile Include="Foraging\ScenPart_EnableForaging.cs" />
     <Compile Include="Foraging\WorkGiver_Forage.cs" />
-    <Compile Include="Dialogs\Dialog_SpawnYingletObject.cs" />
-    <Compile Include="Dialogs\DebugOptions.cs" />
+    <Compile Include="Dialogs\Debug\Dialog_SpawnYingletObject.cs" />
+    <Compile Include="Dialogs\Debug\DebugOptions.cs" />
     <Compile Include="Core\YingComp.cs" />
     <Compile Include="Core\YingDefOf.cs" />
     <Compile Include="Patches\Harmony.cs" />
@@ -96,7 +97,7 @@
     <Compile Include="Reproduction\YingletMaker.cs" />
     <Compile Include="Hediffs\Hediff_Yingify.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShellToothMain.cs" />
+    <Compile Include="Core\ShellToothMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -110,11 +110,7 @@ namespace ShellTooth
 				Rect viewRect = new Rect(container.x, container.y, scrollerWidth, scrollerHeight);
 				Widgets.BeginScrollView(container, ref scrollPosition, viewRect, true);
 				viewRect.x = container.x + ((container.width - scrollerWidth) / 2) - 6;
-				float offset = 0;
-				if (thingList.Count <= 12)
-				{
-					offset = 8;
-				}
+				float offset = (thingList.Count <= 12) ? 8 : 0;
 				if (tab == Tabs.Apparel)
 				{
 					for (int i = 0, x = 0, y = 0; i < thingList.Count; i++, x++)

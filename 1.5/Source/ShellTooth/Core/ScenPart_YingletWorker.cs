@@ -25,9 +25,9 @@ namespace ShellTooth
             }
             // This applies the debug slider
             CompProperties_Hatcher comp = YingDefOf.EggYingletFertilized.comps.Find(c => c is CompProperties_Hatcher) as CompProperties_Hatcher;
-            if (comp.hatcherDaystoHatch != ShellTooth.yingletEgg)
+            if (comp.hatcherDaystoHatch != ShelltoothSettings.yingletEgg)
             {
-                comp.hatcherDaystoHatch = ShellTooth.yingletEgg;
+                comp.hatcherDaystoHatch = ShelltoothSettings.yingletEgg;
             }
         }
     }

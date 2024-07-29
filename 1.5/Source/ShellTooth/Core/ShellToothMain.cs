@@ -7,6 +7,7 @@ using Verse;
 using Verse.AI;
 using UnityEngine;
 using LudeonTK;
+using System.Runtime;
 
 namespace ShellTooth
 {
@@ -29,6 +30,7 @@ namespace ShellTooth
     }
     public class ShellTooth : Mod
     {
+        public static ShelltoothSettings settings;
         public static string Version
         {
             get
@@ -40,10 +42,42 @@ namespace ShellTooth
                 return displayableVersion;
             }
         }
-        public static bool debugMode;
         public ShellTooth(ModContentPack content) : base(content)
         {
+            settings = GetSettings<ShelltoothSettings>();
         }
+
+        public override string SettingsCategory() => "Yinglets!"; 
+        
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            base.DoSettingsWindowContents(inRect);
+            Listing_Standard listingStandard = new Listing_Standard();
+            listingStandard.Begin(inRect);
+            listingStandard.CheckboxLabeled(label: "Enable Debug", ref ShelltoothSettings.debugMode, tooltip: "Enables the Debug mode.");
+            listingStandard.End();
+        }
+        public override void WriteSettings()
+        {
+            base.WriteSettings();
+            settings.Update();
+        }
+        public static string currentVersion = "Tiplod Update 2 Dev";
+    }
+    public class ShelltoothSettings : ModSettings 
+    {
+
+        public static bool debugMode;
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref debugMode, "DebugMode", false);
+        }
+        public void Update()
+        {
+
+        }
+
         [TweakValue("Yinglets: Chance to fertilise egg", 0f, 1f)]
         public static float yingletEggChance = 0.5f;
         [TweakValue("Yinglets: Younglet hatch time", 0.01f, 7f)]

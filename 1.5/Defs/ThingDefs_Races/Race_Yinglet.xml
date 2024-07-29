@@ -165,67 +165,6 @@
 					</ArrestSuccessChance>
 				</ageStatOverrides>
 				<alienPartGenerator>
-
-
-					<anchorReplacements>
-					<!-- Head -->
-					<!-- Tail -->
-						<li>
-							<originalTag>YingletTail</originalTag>
-							<originalGroup>Torso</originalGroup>
-							<replacement>
-								<rotation>North</rotation>
-								<tag>YingletTail</tag>
-							</replacement>
-							<offsets>
-								<north>
-									<offset>(0,-0.6)</offset>
-								</north>
-							</offsets>
-						</li>
-						<li>
-							<originalTag>YingletTail</originalTag>
-							<originalGroup>Torso</originalGroup>
-							<replacement>
-								<rotation>South</rotation>
-								<tag>YingletTail</tag>
-							</replacement>
-							<offsets>
-								<south>
-									<offset>(0.25,-0.6)</offset>
-								</south>
-							</offsets>
-						</li>
-						<li>
-							<originalTag>YingletTail</originalTag>
-							<originalGroup>Torso</originalGroup>
-							<replacement>
-								<rotation>East</rotation>
-								<tag>YingletTail</tag>
-							</replacement>
-							<offsets>
-								<east>
-									<offset>(-0.2,-0.6)</offset>
-								</east>
-							</offsets>
-						</li>
-						<li>
-							<originalTag>YingletTail</originalTag>
-							<originalGroup>Torso</originalGroup>
-							<replacement>
-								<rotation>West</rotation>
-								<tag>YingletTail</tag>
-							</replacement>
-							<offsets>
-								<west>
-									<offset>(0.2,-0.6)</offset>
-								</west>
-							</offsets>
-						</li>
-					<!-- Tail -->
-					</anchorReplacements>
-
-
 					<bodyTypes>
 						<li>Ying</li>
 						<li>YingFem</li>

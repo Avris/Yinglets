@@ -78,7 +78,7 @@ namespace ShellTooth
             if (ying.def == YingDefOf.Alien_Yinglet)
             {
 
-                if (Find.TickManager.TicksGame % ShellTooth.yingletGestation == 0)
+                if (Find.TickManager.TicksGame % ShelltoothSettings.yingletGestation == 0)
                 {
                     ReapplyYinglet(ying);
                     if ((ying.gender == Gender.Female) && (eggProgress > 0))
@@ -156,7 +156,7 @@ namespace ShellTooth
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (ShellTooth.debugMode) 
+            if (ShelltoothSettings.debugMode) 
             {
                 Texture2D icon = ContentFinder<Texture2D>.Get("World/Expanding/Yinglet/Yinglet_Player_Icon", true);
                 Command_Action debugButton = new Command_Action

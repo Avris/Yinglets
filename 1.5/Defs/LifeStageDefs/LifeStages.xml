@@ -57,6 +57,7 @@
     <hungerRateFactor>0.6</hungerRateFactor>
     <marketValueFactor>0.9</marketValueFactor>
     <meleeDamageFactor>0.7</meleeDamageFactor>
+	<bodyDrawOffset>0,0,0.17</bodyDrawOffset>
     <statFactors>
       <MoveSpeed>0.65</MoveSpeed>
     </statFactors>
@@ -75,7 +76,7 @@
     <bodySizeFactor>0.85</bodySizeFactor>
     <healthScaleFactor>0.90</healthScaleFactor>
     <meleeDamageFactor>0.75</meleeDamageFactor>
-	<bodyDrawOffset>0,0,-0.06</bodyDrawOffset>
+	<bodyDrawOffset>0,0,0.17</bodyDrawOffset>
     <statFactors>
       <MoveSpeed>0.95</MoveSpeed>
     </statFactors>
@@ -92,7 +93,7 @@
     <visible>true</visible>
     <reproductive>true</reproductive>
     <milkable>true</milkable>
-	<bodyDrawOffset>0,0,-0.06</bodyDrawOffset>
+	<bodyDrawOffset>0,0,0.17</bodyDrawOffset>
     <silhouetteGraphicData>
       <texPath>Things/Pawn/YingPawn/blank</texPath>
       <graphicClass>Graphic_Single</graphicClass>
