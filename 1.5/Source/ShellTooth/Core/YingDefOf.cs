@@ -28,6 +28,8 @@ namespace ShellTooth
         public static JobDef LayYingletEgg;
         public static JobDef Yingify;
 
+        public static LetterDef YingletEgg;
+        public static LetterDef YingletEggNoBox;
         public static LetterDef YoungletGrown;
 
         public static MeditationFocusDef Whiskery;

@@ -23,5 +23,12 @@ namespace ShellTooth
             }
             return false;
         }
+        public static void KnockUp(Pawn mother, Pawn father, float progress = 0.01f)
+        {
+            YingComp comp = mother.GetComp<YingComp>();
+            comp.isDesignatedBreeder = false;
+            comp.knockedUpBy = father;
+            comp.eggProgress = progress;
+        }
     }
 }

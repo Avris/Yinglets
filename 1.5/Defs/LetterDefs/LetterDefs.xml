@@ -1,5 +1,19 @@
 <Defs>
-  <LetterDef Name="YoungletGrown">
+  <LetterDef>
+    <defName>YingletEgg</defName>
+    <color>(172, 162, 255)</color>
+    <flashColor>(255, 137, 255)</flashColor>
+    <flashInterval>90</flashInterval>
+    <arriveSound>LetterArrive_Good</arriveSound>
+  </LetterDef>
+  <LetterDef>
+    <defName>YingletEggNoBox</defName>
+    <color>(255, 172, 162)</color>
+    <flashColor>(255, 137, 113)</flashColor>
+    <flashInterval>90</flashInterval>
+    <arriveSound>LetterArrive_Bad</arriveSound>
+  </LetterDef>
+  <LetterDef>
     <defName>YoungletGrown</defName>
     <color>(172, 162, 255)</color>
     <flashColor>(113, 137, 255)</flashColor>

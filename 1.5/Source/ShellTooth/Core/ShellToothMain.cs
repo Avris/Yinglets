@@ -63,6 +63,10 @@ namespace ShellTooth
             settings.Update();
         }
         public static string currentVersion = "Tiplod Update 2 Dev";
+        public static void DoNothing()
+        {
+            // Blame Tynan for this needing to exist.
+        }
     }
     public class ShelltoothSettings : ModSettings 
     {

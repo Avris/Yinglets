@@ -22,12 +22,12 @@ namespace ShellTooth
     {
         public float eggProgress = 0;
         public string updateStamp = "none";
-        public bool checkedScenpart = false;
         public bool isDesignatedBreeder = false;
+        public bool checkedScenpart = false;
         public bool wasYounglet = false;
+        public bool sterile = false;
         public string wasOtherRace;
         public Pawn knockedUpBy;
-
         private Pawn ying 
         {
             get
@@ -75,6 +75,14 @@ namespace ShellTooth
                 ying.health.hediffSet.hediffs.Remove(ying.health.hediffSet.GetFirstHediffOfDef(YingDefOf.YingShuteye));
                 ying.Drawer.renderer.SetAllGraphicsDirty();
             }
+
+            // This is more expensive than I'd like. Maybe apply it directly from the sterilisation process?
+            if (!sterile && ying.health.hediffSet.HasHediff(HediffDefOf.Sterilized))
+            {
+                sterile = true;
+                isDesignatedBreeder = false;
+            }
+
             if (ying.def == YingDefOf.Alien_Yinglet)
             {
 
@@ -111,7 +119,7 @@ namespace ShellTooth
                 {
                     return report + "too young to lay eggs!".Colorize(new Color(1, 1, 0));
                 }
-                if (ying.health.hediffSet.HasHediff(HediffDefOf.Sterilized))
+                if (sterile)
                 {
                     return report + "sterilised - can't lay eggs.".Colorize(new Color(1, 0, 0));
                 }
@@ -158,79 +166,29 @@ namespace ShellTooth
         {
             if (ShelltoothSettings.debugMode) 
             {
-                Texture2D icon = ContentFinder<Texture2D>.Get("World/Expanding/Yinglet/Yinglet_Player_Icon", true);
-                Command_Action debugButton = new Command_Action
-                {
-                    defaultLabel = "Debug Window",
-                    defaultDesc = ($"Let's take a look"),
-                    icon = icon,
-                    action = () => Find.WindowStack.Add(new Dialog_DebugWindow(ying))
-                };
-                yield return debugButton;
+                yield return DebugGizmoWindow.GetGizmo(this);
+                yield return DebugGizmoGiveEgg.GetGizmo(this);
             }
             if (!EggMaker.YingSterile(ying))
             {
                 if (eggProgress == 0)
                 {
-                    Texture2D heart = ContentFinder<Texture2D>.Get("Things/Mote/Heart", true);
-                    Texture2D noheart = ContentFinder<Texture2D>.Get("Things/Mote/SpeechSymbols/Breakup", true);
-                    Command_Toggle commandToggle = new Command_Toggle
-                    {
-                        defaultLabel = isDesignatedBreeder ? "Breeding ON" : "Breeding OFF",
-                        defaultDesc = isDesignatedBreeder ?
-                        $"{parent} is assigned to breeding. Putting two available yinglets in the same bed might result in an egg!" :
-                        $"{parent} is not assigned to breeding. Breeding attempts won't happen!",
-                        icon = isDesignatedBreeder ? heart : noheart,
-                        tutorTag = "MakeBreedable",
-                        isActive = () => isDesignatedBreeder,
-                        toggleAction = delegate ()
-                        {
-                            isDesignatedBreeder = !isDesignatedBreeder;
-                        },
-                    };
-                    yield return commandToggle;
+                    yield return GizmoBreeder.GetGizmo(this);
                 }
                 else
                 {
-                    Texture2D icon = ContentFinder<Texture2D>.Get("Things/Item/Yegg/YEGG", true);
-                    isDesignatedBreeder = false;
-                    Command_Action hasEgg = new Command_Action
-                    {
-                        defaultLabel = "Has egg!",
-                        defaultDesc = ($"{parent} can't be assigned to breeding while she's growing an egg."),
-                        icon = icon,
-                        action = () => { }
-                    };
-                    yield return hasEgg;
+                    yield return GizmoHasEgg.GetGizmo(this);
                 }
             }
             else
             {
                 if (!ying.ageTracker.CurLifeStage.reproductive)
                 {
-                    Texture2D icon = ContentFinder<Texture2D>.Get("Things/Mote/NotBreedable", true);
-                    isDesignatedBreeder = false;
-                    Command_Action hasEgg = new Command_Action
-                    {
-                        defaultLabel = "Younglet!",
-                        defaultDesc = ($"{parent} is too young to go on the breeding registry."),
-                        icon = icon,
-                        action = () => { }
-                    };
-                    yield return hasEgg;
+                    yield return GizmoTooYoung.GetGizmo(this);
                 }
                 else if (ying.health.hediffSet.HasHediffPreventsPregnancy())
                 {
-                    Texture2D icon = ContentFinder<Texture2D>.Get("Things/Mote/NotBreedable", true);
-                    isDesignatedBreeder = false;
-                    Command_Action hasEgg = new Command_Action
-                    {
-                        defaultLabel = "Sterilised!",
-                        defaultDesc = ($"{parent} is no longer able to breed."),
-                        icon = icon,
-                        action = () => { }
-                    };
-                    yield return hasEgg;
+                    yield return GizmoSterile.GetGizmo(this);
                 }
             }
         }

@@ -62,7 +62,7 @@
 		</woundAnchors>
 	</BodyTypeDef>
 	<BodyTypeDef>
-		<defName>YingFem</defName
+		<defName>YingFem</defName>
 		<bodyNakedGraphicPath>Things/Pawn/YingPawn/blank</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/YingPawn/Parts/Bodies/Desiccated/Desiccated_Ying</bodyDessicatedGraphicPath>
 		<woundAnchors>

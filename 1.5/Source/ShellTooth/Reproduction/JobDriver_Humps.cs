@@ -120,8 +120,7 @@ namespace ShellTooth
 				YingComp comp = mother.GetComp<YingComp>();
 				if ((comp.eggProgress == 0))
                 {
-                    comp.knockedUpBy = father;
-					comp.eggProgress = 0.01f;
+					EggMaker.KnockUp(mother, father);
 				}
 			}
         }

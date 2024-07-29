@@ -33,8 +33,8 @@ namespace ShellTooth
         {
             Rect test = new Rect(0, 0, 200, 200);
             string nondev = "Disabled in public version. If you're seeing this, please let the dev know!";
-            string info = "";
-            Widgets.Label(container, nondev);
+            string info = "TODO";
+            Widgets.Label(container, info);
         }
     }
 }

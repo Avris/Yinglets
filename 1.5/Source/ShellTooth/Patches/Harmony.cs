@@ -30,33 +30,34 @@ namespace ShellTooth
                 else
                 // Fixes while in bed
                 {
+                    float lifeStageOffset = 0.17f;
                     if (pawn.CurrentBed().Rotation == Rot4.South)
                     {
                         if (parms.facing == Rot4.South)
                         {
-                            offset.z = -0.01f;
+                            offset.z = -0.01f - lifeStageOffset;
                         }
                         if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                         {
-                            offset.z = -0.07f;
+                            offset.z = -0.07f - lifeStageOffset;
                         }
                     }
                     if (pawn.CurrentBed().Rotation == Rot4.East || pawn.CurrentBed().Rotation == Rot4.West)
                     {
                         if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                         {
-                            offset.z = -0.13f;
+                            offset.z = -0.13f - lifeStageOffset;
                         }
                     }
                     if (pawn.CurrentBed().Rotation == Rot4.North)
                     {
                         if (parms.facing == Rot4.South)
                         {
-                            offset.z = -0.23f;
+                            offset.z = -0.23f - lifeStageOffset;
                         }
                         if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                         {
-                            offset.z = -0.3f;
+                            offset.z = -0.3f - lifeStageOffset;
                         }
                     }
                 }
@@ -71,33 +72,34 @@ namespace ShellTooth
             if (pawn.CurrentBed() != null && pawn.def == YingDefOf.Alien_Yinglet)
             // Fixes while in bed
             {
+                float lifeStageOffset = 0.17f;
                 if (pawn.CurrentBed().Rotation == Rot4.South)
                 {
                     if (parms.facing == Rot4.South)
                     {
-                        offset.z = -0.01f;
+                        offset.z = -0.01f - lifeStageOffset;
                     }
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
-                        offset.z = -0.03f;
+                        offset.z = -0.03f - lifeStageOffset;
                     }
                 }
                 if (pawn.CurrentBed().Rotation == Rot4.East || pawn.CurrentBed().Rotation == Rot4.West)
                 {
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
-                        offset.y = -0.13f;
+                        offset.y = -0.13f - lifeStageOffset;
                     }
                 }
                 if (pawn.CurrentBed().Rotation == Rot4.North)
                 {
                     if (parms.facing == Rot4.South)
                     {
-                        offset.z = 0.4f;
+                        offset.z = 0.4f - lifeStageOffset;
                     }
                     if (parms.facing == Rot4.East || parms.facing == Rot4.West)
                     {
-                        offset.z = 0.4f;
+                        offset.z = 0.4f - lifeStageOffset;
                     }
                 }
             }
