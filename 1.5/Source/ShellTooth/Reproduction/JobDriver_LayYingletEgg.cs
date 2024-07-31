@@ -32,7 +32,7 @@ namespace ShellTooth
                 Letter letter;
                 Messages.Message($"todo", pawn, MessageTypeDefOf.PositiveEvent, true);
                 Thing thing = pawn.GetComp<YingComp>().ProduceEgg();
-                if (job.GetTarget(TargetIndex.A).HasThing && EggBoxComp.Accepts(thing.def))
+                if (EggBoxComp.Accepts(thing.def))
                 {
                     layType = 1;
                     EggBoxComp.innerContainer.TryAdd(thing, true);

@@ -20,7 +20,7 @@ namespace ShellTooth
                     Thing bestEggBox = GetBestEggBox(pawn, peMode, traverseParms);
                     if (bestEggBox != null)
                     {
-                        result = JobMaker.MakeJob(YingDefOf.LayYingletEgg, bestEggBox);
+                        return JobMaker.MakeJob(YingDefOf.LayYingletEgg, bestEggBox);
                     }
                 }
                 Thing thing = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(YingDefOf.EggYingletFertilized), peMode, traverseParms, 30f, (Thing x) => pawn.GetRoom(RegionType.Set_All) == null || x.GetRoom(RegionType.Set_All) == pawn.GetRoom(RegionType.Set_All), null, 0, -1, false, RegionType.Set_Passable, false);
