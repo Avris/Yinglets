@@ -144,7 +144,6 @@ namespace ShellTooth
         }
         public virtual Thing ProduceEgg()
         {
-            eggProgress = 0f;
             Thing thing = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("EggYingletFertilized"), null);
             CompHatcher compHatcher = thing.TryGetComp<CompHatcher>();
             if (compHatcher != null)

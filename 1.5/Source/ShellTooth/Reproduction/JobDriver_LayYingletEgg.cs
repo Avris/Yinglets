@@ -63,6 +63,8 @@ namespace ShellTooth
                         Find.LetterStack.ReceiveLetter(LetterMaker.MakeLetter($"Egg laid: {pawn}", $"{pawn} has laid an egg without a nest box. You should build some!", YingDefOf.YingletEggNoBox), null);
                         break;
                 }
+                comp.eggProgress = 0f;
+
                 return;
             });
             yield break;
