@@ -200,7 +200,8 @@
 		</colorSpectrum>
         <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>20</configurationListOrderPriority>
-    <requiredMemes>
+    <naturalEnemy>true</naturalEnemy>
+	<requiredMemes>
       <li>Structure_Ideological</li>
       <li>Raider</li>
     </requiredMemes>
@@ -347,7 +348,8 @@
 		</colorSpectrum>
         <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>20</configurationListOrderPriority>
-    <requiredMemes>
+    <permanentEnemy>true</permanentEnemy>
+	<requiredMemes>
       <li>Structure_Ideological</li>
       <li>Raider</li>
     </requiredMemes>

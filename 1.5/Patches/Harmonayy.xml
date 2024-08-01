@@ -32,4 +32,14 @@
 			</subworkerClasses>
 		</value>
     </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+       <xpath>/Defs/MeditationFocusDef[defName = "Natural"]/requiredBackstoriesAny</xpath>
+       <value>
+        <li>
+			<categoryName>YingletBackstory</categoryName>
+			<slot>Childhood</slot>
+		</li>
+        </value>
+    </Operation>
 </Patch>
