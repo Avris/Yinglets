@@ -31,7 +31,8 @@ namespace ShellTooth
             {
                 Letter letter;
                 Messages.Message($"todo", pawn, MessageTypeDefOf.PositiveEvent, true);
-                Thing thing = pawn.GetComp<YingComp>().ProduceEgg();
+                YingComp comp = pawn.GetComp<YingComp>();
+                Thing thing = comp.ProduceEgg();
                 if (EggBoxComp.Accepts(thing.def))
                 {
                     layType = 1;

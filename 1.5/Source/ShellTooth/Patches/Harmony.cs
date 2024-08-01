@@ -19,15 +19,7 @@ namespace ShellTooth
             Pawn pawn = parms.pawn;
             if (pawn.def == YingDefOf.Alien_Yinglet)
             {
-                if (pawn.CurrentBed() == null)
-                // Fixes hats
-                {
-                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
-                    {
-                        offset.z = -0.1f;
-                    }
-                }
-                else
+                if (!pawn.CurrentBed()?.def?.building?.bed_showSleeperBody ?? false)
                 // Fixes while in bed
                 {
                     float lifeStageOffset = 0.17f;
@@ -61,6 +53,14 @@ namespace ShellTooth
                         }
                     }
                 }
+                else
+                // Fixes hats
+                {
+                    if (parms.facing == Rot4.East || parms.facing == Rot4.West)
+                    {
+                        offset.z = -0.1f;
+                    }
+                }
             }
         }
     }
@@ -69,7 +69,7 @@ namespace ShellTooth
         public override void TransformOffset(PawnRenderNode node, PawnDrawParms parms, ref Vector3 offset, ref Vector3 pivot)
         {
             Pawn pawn = parms.pawn;
-            if (pawn.CurrentBed() != null && pawn.def == YingDefOf.Alien_Yinglet)
+            if (!pawn.CurrentBed()?.def?.building?.bed_showSleeperBody ?? false && pawn.def == YingDefOf.Alien_Yinglet)
             // Fixes while in bed
             {
                 float lifeStageOffset = 0.17f;
